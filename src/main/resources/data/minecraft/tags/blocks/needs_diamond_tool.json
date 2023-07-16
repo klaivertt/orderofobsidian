@@ -1,0 +1,25 @@
+{
+  "values": [
+    "orderofobsidian:bauherite_ore",
+    "orderofobsidian:deepslate_bauherite_ore",
+    "orderofobsidian:mithril_ore",
+    "orderofobsidian:deepslate_mithril_ore",
+    "orderofobsidian:silver_ore",
+    "orderofobsidian:deepslate_silver_ore",
+    "orderofobsidian:avenronite_ore",
+    "orderofobsidian:edruelium_ore",
+    "orderofobsidian:pendorite_ore",
+    "orderofobsidian:raw_avenronite_block",
+    "orderofobsidian:raw_bauherite_block",
+    "orderofobsidian:raw_edruelium_block",
+    "orderofobsidian:raw_mithril_block",
+    "orderofobsidian:raw_pendorite_block",
+    "orderofobsidian:raw_silver_block",
+    "orderofobsidian:avenronite_block",
+    "orderofobsidian:bauherite_block",
+    "orderofobsidian:edruelium_block",
+    "orderofobsidian:mithril_block",
+    "orderofobsidian:pendorite_block",
+    "orderofobsidian:silver_block"
+  ]
+}

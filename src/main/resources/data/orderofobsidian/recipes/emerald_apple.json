@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:emerald"
+    },
+    "3": {
+      "item": "minecraft:emerald"
+    },
+    "4": {
+      "item": "minecraft:apple"
+    },
+    "5": {
+      "item": "minecraft:emerald"
+    },
+    "7": {
+      "item": "minecraft:emerald"
+    }
+  },
+
+  "result": {
+    "item": "orderofobsidian:diamond_apple",
+    "count": 1
+  }
+}

@@ -1,0 +1,181 @@
+{
+  "item.orderofobsidian.sapphire": "Zaffiro",
+  "item.orderofobsidian.raw_sapphire": "Zaffiro Grezzo",
+
+  "block.orderofobsidian.sapphire_block": "Blocco di Zaffiro",
+  "block.orderofobsidian.raw_sapphire_block": "Blocco di Zaffiro Grezzo",
+
+  "block.orderofobsidian.sapphire_ore": "Minerale di Zaffiro",
+  "block.orderofobsidian.deepslate_sapphire_ore": "Minerale di Zaffiro di Ardesia",
+  "block.orderofobsidian.end_stone_sapphire_ore": "Minerale di Zaffiro di Pietra dell'End",
+  "block.orderofobsidian.nether_sapphire_ore": "Minerale di Zaffiro del Nether",
+
+  "item.orderofobsidian.oxys": "Oxys",
+
+  "item.orderofobsidian.aikigite_ingot": "Lingotto di Aikigite",
+  "item.orderofobsidian.raw_aikigite": "Aikigite Grezzo",
+
+  "item.orderofobsidian.aluminium_ingot": "Lingotto di Alluminio",
+  "item.orderofobsidian.raw_aluminium": "Alluminio Grezzo",
+
+  "item.orderofobsidian.avenronite_ingot": "Lingotto di Avenronite",
+  "item.orderofobsidian.raw_avenronite": "Avenronite Grezzo",
+
+  "item.orderofobsidian.bauherite_ingot": "Lingotto di Bauherite",
+  "item.orderofobsidian.raw_bauherite": "Bauherite Grezzo",
+
+  "item.orderofobsidian.edruelium_ingot": "Lingotto di Edruelium",
+  "item.orderofobsidian.raw_edruelium": "Edruelium Grezzo",
+
+  "item.orderofobsidian.graphite_ingot": "Lingotto di Grafite",
+  "item.orderofobsidian.graphite_dust": "Polvere di Grafite",
+
+  "item.orderofobsidian.raw_lead": "Lingotto di Piombo",
+  "item.orderofobsidian.lead_ingot": "Piombo Grezzo",
+
+  "item.orderofobsidian.mithril_ingot": "Lingotto di Mithril",
+  "item.orderofobsidian.raw_mithril": "Mithril Grezzo",
+
+  "item.orderofobsidian.raw_pendorite": "Pendorite Grezzo",
+  "item.orderofobsidian.pendorite_ingot": "Lingotto di Pendorite",
+
+  "item.orderofobsidian.silver_ingot": "Lingotto di Argento",
+  "item.orderofobsidian.raw_silver": "Argento Grezzo",
+
+  "item.orderofobsidian.steel_dust": "Polvere di Acciaio",
+  "item.orderofobsidian.steel_ingot": "Lingotto di Acciaio",
+
+  "item.orderofobsidian.oxys_helmet": "Elmo di Oxys",
+  "item.orderofobsidian.oxys_chestplate": "Corazza di Oxys",
+  "item.orderofobsidian.oxys_leggings": "Gambiere di Oxys",
+  "item.orderofobsidian.oxys_boots": "Stivali di Oxys",
+  "item.orderofobsidian.oxys_bow": "Arco di Oxys",
+
+  "item.orderofobsidian.oxys_horse_armor": "Armatura per Cavallo di Oxys",
+  "item.orderofobsidian.oxys_pickaxe": "Piccone di Oxys",
+  "item.orderofobsidian.oxys_axe": "Ascia di Oxys",
+  "item.orderofobsidian.oxys_shovel": "Pala di Oxys",
+  "item.orderofobsidian.oxys_hoe": "Zappa di Oxys",
+  "item.orderofobsidian.oxys_sword": "Spada di Oxys",
+  "item.orderofobsidian.oxys_hammer": "Martello di Oxys",
+  "item.orderofobsidian.oxys_stick": "Bastone di Oxys",
+
+  "item.orderofobsidian.aikigite_pickaxe": "Piccone di Aikigite",
+  "item.orderofobsidian.aikigite_axe": "Ascia di Aikigite",
+  "item.orderofobsidian.aikigite_shovel": "Pala di Aikigite",
+  "item.orderofobsidian.aikigite_sword": "Spada di Aikigite",
+  "item.orderofobsidian.aikigite_bow": "Arco di Aikigite",
+
+  "item.orderofobsidian.avenronite_pickaxe": "Piccone di Avenronite",
+  "item.orderofobsidian.avenronite_axe": "Ascia di Avenronite",
+  "item.orderofobsidian.avenronite_shovel": "Pala di Avenronite",
+  "item.orderofobsidian.avenronite_hoe": "Zappa di Avenronite",
+  "item.orderofobsidian.avenronite_sword": "Spada di Avenronite",
+  "item.orderofobsidian.avenronite_bow": "Arco di Avenronite",
+
+  "item.orderofobsidian.bauherite_pickaxe": "Piccone di Bauherite",
+  "item.orderofobsidian.bauherite_axe": "Ascia di Bauherite",
+  "item.orderofobsidian.bauherite_shovel": "Pala di Bauherite",
+  "item.orderofobsidian.bauherite_sword": "Spada di Bauherite",
+  "item.orderofobsidian.bauherite_bow": "Arco di Bauherite",
+
+  "item.orderofobsidian.bone_pickaxe": "Piccone d'Osso",
+  "item.orderofobsidian.bone_axe": "Ascia d'Osso",
+  "item.orderofobsidian.bone_shovel": "Pala d'Osso",
+  "item.orderofobsidian.bone_hoe": "Zappa d'Osso",
+  "item.orderofobsidian.bone_sword": "Spada d'Osso",
+
+  "item.orderofobsidian.edruelium_pickaxe": "Piccone di Edruelium",
+  "item.orderofobsidian.edruelium_axe": "Ascia di Edruelium",
+  "item.orderofobsidian.edruelium_shovel": "Pala di Edruelium",
+  "item.orderofobsidian.edruelium_hoe": "Zappa di Edruelium",
+  "item.orderofobsidian.edruelium_sword": "Spada di Edruelium",
+  "item.orderofobsidian.edruelium_bow": "Arco di Edruelium",
+
+  "item.orderofobsidian.mithril_pickaxe": "Piccone di Mithril",
+  "item.orderofobsidian.mithril_axe": "Ascia di Mithril",
+  "item.orderofobsidian.mithril_shovel": "Pala di Mithril",
+  "item.orderofobsidian.mithril_hoe": "Zappa di Mithril",
+  "item.orderofobsidian.mithril_sword": "Spada di Mithril",
+
+  "item.orderofobsidian.obsidian_pickaxe": "Piccone di Ossidiana",
+  "item.orderofobsidian.obsidian_axe": "Ascia di Ossidiana",
+  "item.orderofobsidian.obsidian_shovel": "Pala di Ossidiana",
+  "item.orderofobsidian.obsidian_hoe": "Zappa di Ossidiana",
+  "item.orderofobsidian.obsidian_sword": "Spada di Ossidiana",
+
+  "item.orderofobsidian.pendorite_pickaxe": "Piccone di Pendorite",
+  "item.orderofobsidian.pendorite_axe": "Ascia di Pendorite",
+  "item.orderofobsidian.pendorite_shovel": "Pala di Pendorite",
+  "item.orderofobsidian.pendorite_hoe": "Zappa di Pendorite",
+  "item.orderofobsidian.pendorite_sword": "Spada di Pendorite",
+  "item.orderofobsidian.pendorite_horse_armor": "Armatura per Cavallo di Pendorite",
+
+  "item.orderofobsidian.steel_pickaxe": "Piccone di Acciaio",
+  "item.orderofobsidian.steel_axe": "Ascia di Acciaio",
+  "item.orderofobsidian.steel_shovel": "Pala di Acciaio",
+  "item.orderofobsidian.steel_hoe": "Zappa di Acciaio",
+  "item.orderofobsidian.steel_sword": "Spada di Acciaio",
+
+  "item.orderofobsidian.oxys_apple": "Mela di Oxys",
+  "item.orderofobsidian.pendorite_apple": "Mela di Pendorite",
+  "item.orderofobsidian.diamond_apple": "Mela di Diamante",
+  "item.orderofobsidian.netherite_apple": "Mela di Netherite",
+  "item.orderofobsidian.candy_apple": "Mela di Caramella",
+
+  "item.orderofobsidian.chips": "Patatine",
+  "item.orderofobsidian.fried_egg": "Uovo Fritto",
+
+  "item.orderofobsidian.rice": "Riso",
+  "item.orderofobsidian.rice_seeds": "Semi di Riso",
+  "item.orderofobsidian.cooked_rice": "Riso Cotto",
+
+  "item.orderofobsidian.sushi": "Sushi",
+
+  "item.orderofobsidian.netherite_horse_armor": "Armatura per Cavallo di Netherite",
+  "item.orderofobsidian.moss_horse_armor": "Armatura per Cavallo di Muschio",
+
+  "item.orderofobsidian.wheat_with_moss": "Grano con Muschio",
+
+  "block.orderofobsidian.aikigite_ore": "Minerale di Aikigite",
+  "block.orderofobsidian.aluminium_ore": "Minerale di Alluminio",
+  "block.orderofobsidian.avenronite_ore": "Minerale di Avenronite",
+  "block.orderofobsidian.bauherite_ore": "Minerale di Bauherite",
+  "block.orderofobsidian.deepslate_aikigite_ore": "Minerale di Aikigite di Ardesia",
+  "block.orderofobsidian.deepslate_bauherite_ore": "Minerale di Bauherite di Ardesia",
+  "block.orderofobsidian.deepslate_lead_ore": "Minerale di Piombo di Ardesia",
+  "block.orderofobsidian.deepslate_mitril_ore": "Minerale di Mithril di Ardesia",
+  "block.orderofobsidian.deepslate_silver_ore": "Minerale di Argento di Ardesia",
+  "block.orderofobsidian.edruelium_ore": "Minerale di Edruelium",
+  "block.orderofobsidian.endstone_pendorite_ore": "Minerale di Pendorite di Pietra dell'End",
+  "block.orderofobsidian.graphite_ore": "Minerale di Grafite",
+  "block.orderofobsidian.lead_ore": "Minerale di Piombo",
+  "block.orderofobsidian.mithril_ore": "Minerale di Mithril",
+  "block.orderofobsidian.oxys_ore": "Minerale di Oxys",
+  "block.orderofobsidian.pendorite_ore": "Minerale di Pendorite",
+  "block.orderofobsidian.silver_ore": "Minerale di Argento",
+
+  "block.orderofobsidian.raw_aikigite_block": "Blocco di Aikigite Grezzo",
+  "block.orderofobsidian.raw_aluminium_block": "Blocco di Alluminio Grezzo",
+  "block.orderofobsidian.raw_avenronite_block": "Blocco di Avenronite Grezzo",
+  "block.orderofobsidian.raw_bauherite_block": "Blocco di Bauherite Grezzo",
+  "block.orderofobsidian.raw_edruelium_block": "Blocco di Edruelium Grezzo",
+  "block.orderofobsidian.raw_lead_block": "Blocco di Piombo Grezzo",
+  "block.orderofobsidian.raw_mithril_block": "Blocco di Mithril Grezzo",
+  "block.orderofobsidian.raw_pendorite_block": "Blocco di Pendorite Grezzo",
+  "block.orderofobsidian.raw_silver_block": "Blocco di Argento Grezzo",
+
+  "block.orderofobsidian.aikigite_block": "Blocco di Aikigite",
+  "block.orderofobsidian.aluminium_block": "Blocco di Alluminio",
+  "block.orderofobsidian.avenronite_block": "Blocco di Avenronite",
+  "block.orderofobsidian.bauherite_block": "Blocco di Bauherite",
+  "block.orderofobsidian.edruelium_block": "Blocco di Edruelium",
+  "block.orderofobsidian.lead_block": "Blocco di Piombo",
+  "block.orderofobsidian.mithril_block": "Blocco di Mithril",
+  "block.orderofobsidian.oxys_block": "Blocco di Oxys",
+  "block.orderofobsidian.pendorite_block": "Blocco di Pendorite",
+  "block.orderofobsidian.silver_block": "Blocco di Argento",
+  "block.orderofobsidian.steel_block": "Blocco di Acciaio",
+
+  "creativetab.order_tab": "Ordine di Obsidian"
+}

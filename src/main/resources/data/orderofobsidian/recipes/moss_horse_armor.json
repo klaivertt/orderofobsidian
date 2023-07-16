@@ -1,0 +1,19 @@
+
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:iron_horse_armor"
+    },
+    "1": {
+      "tag": "minecraft:moss_block"
+    }
+  },
+  "result": {
+    "item": "orderofobsidian:moss_horse_armor",
+    "count": 1
+  }
+}

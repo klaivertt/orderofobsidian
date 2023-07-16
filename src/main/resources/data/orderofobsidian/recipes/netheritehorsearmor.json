@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "1": {
+      "tag": "orderofobsidian:netherite_ingot"
+    }
+  },
+  "result": {
+    "item": "orderofobsidian:netherite_horse_armor",
+    "count": 1
+  }
+}

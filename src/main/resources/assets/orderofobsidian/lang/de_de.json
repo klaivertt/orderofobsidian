@@ -1,0 +1,181 @@
+{
+  "item.orderofobsidian.sapphire": "Saphir",
+  "item.orderofobsidian.raw_sapphire": "Roher Saphir",
+
+  "block.orderofobsidian.sapphire_block": "Saphirblock",
+  "block.orderofobsidian.raw_sapphire_block": "Roher Saphirblock",
+
+  "block.orderofobsidian.sapphire_ore": "Saphirerz",
+  "block.orderofobsidian.deepslate_sapphire_ore": "Tiefenschiefer-Saphirerz",
+  "block.orderofobsidian.end_stone_sapphire_ore": "Endstein-Saphirerz",
+  "block.orderofobsidian.nether_sapphire_ore": "Nether-Saphirerz",
+
+  "item.orderofobsidian.oxys": "Oxys",
+
+  "item.orderofobsidian.aikigite_ingot": "Aikigite-Barren",
+  "item.orderofobsidian.raw_aikigite": "Roher Aikigit",
+
+  "item.orderofobsidian.aluminium_ingot": "Aluminium-Barren",
+  "item.orderofobsidian.raw_aluminium": "Roher Aluminium",
+
+  "item.orderofobsidian.avenronite_ingot": "Avenronite-Barren",
+  "item.orderofobsidian.raw_avenronite": "Roher Avenronit",
+
+  "item.orderofobsidian.bauherite_ingot": "Bauherite-Barren",
+  "item.orderofobsidian.raw_bauherite": "Roher Bauherit",
+
+  "item.orderofobsidian.edruelium_ingot": "Edruelium-Barren",
+  "item.orderofobsidian.raw_edruelium": "Roher Edruelium",
+
+  "item.orderofobsidian.graphite_ingot": "Graphit-Barren",
+  "item.orderofobsidian.graphite_dust": "Graphitstaub",
+
+  "item.orderofobsidian.raw_lead": "Roher Blei-Barren",
+  "item.orderofobsidian.lead_ingot": "Blei-Barren",
+
+  "item.orderofobsidian.mithril_ingot": "Mithril-Barren",
+  "item.orderofobsidian.raw_mithril": "Roher Mithril",
+
+  "item.orderofobsidian.raw_pendorite": "Roher Pendorit",
+  "item.orderofobsidian.pendorite_ingot": "Pendorit-Barren",
+
+  "item.orderofobsidian.silver_ingot": "Silber-Barren",
+  "item.orderofobsidian.raw_silver": "Roher Silber",
+
+  "item.orderofobsidian.steel_dust": "Stahlpulver",
+  "item.orderofobsidian.steel_ingot": "Stahl-Barren",
+
+  "item.orderofobsidian.oxys_helmet": "Oxys-Helm",
+  "item.orderofobsidian.oxys_chestplate": "Oxys-Brustplatte",
+  "item.orderofobsidian.oxys_leggings": "Oxys-Beinpanzer",
+  "item.orderofobsidian.oxys_boots": "Oxys-Stiefel",
+  "item.orderofobsidian.oxys_bow": "Oxys-Bogen",
+
+  "item.orderofobsidian.oxys_horse_armor": "Oxys-Pferderüstung",
+  "item.orderofobsidian.oxys_pickaxe": "Oxys-Spitzhacke",
+  "item.orderofobsidian.oxys_axe": "Oxys-Axt",
+  "item.orderofobsidian.oxys_shovel": "Oxys-Schaufel",
+  "item.orderofobsidian.oxys_hoe": "Oxys-Hacke",
+  "item.orderofobsidian.oxys_sword": "Oxys-Schwert",
+  "item.orderofobsidian.oxys_hammer": "Oxys-Hammer",
+  "item.orderofobsidian.oxys_stick": "Oxys-Stab",
+
+  "item.orderofobsidian.aikigite_pickaxe": "Aikigite-Spitzhacke",
+  "item.orderofobsidian.aikigite_axe": "Aikigite-Axt",
+  "item.orderofobsidian.aikigite_shovel": "Aikigite-Schaufel",
+  "item.orderofobsidian.aikigite_sword": "Aikigite-Schwert",
+  "item.orderofobsidian.aikigite_bow": "Aikigite-Bogen",
+
+  "item.orderofobsidian.avenronite_pickaxe": "Avenronite-Spitzhacke",
+  "item.orderofobsidian.avenronite_axe": "Avenronite-Axt",
+  "item.orderofobsidian.avenronite_shovel": "Avenronite-Schaufel",
+  "item.orderofobsidian.avenronite_hoe": "Avenronite-Hacke",
+  "item.orderofobsidian.avenronite_sword": "Avenronite-Schwert",
+  "item.orderofobsidian.avenronite_bow": "Avenronite-Bogen",
+
+  "item.orderofobsidian.bauherite_pickaxe": "Bauherite-Spitzhacke",
+  "item.orderofobsidian.bauherite_axe": "Bauherite-Axt",
+  "item.orderofobsidian.bauherite_shovel": "Bauherite-Schaufel",
+  "item.orderofobsidian.bauherite_sword": "Bauherite-Schwert",
+  "item.orderofobsidian.bauherite_bow": "Bauherite-Bogen",
+
+  "item.orderofobsidian.bone_pickaxe": "Knochen-Spitzhacke",
+  "item.orderofobsidian.bone_axe": "Knochen-Axt",
+  "item.orderofobsidian.bone_shovel": "Knochen-Schaufel",
+  "item.orderofobsidian.bone_hoe": "Knochen-Hacke",
+  "item.orderofobsidian.bone_sword": "Knochen-Schwert",
+
+  "item.orderofobsidian.edruelium_pickaxe": "Edruelium-Spitzhacke",
+  "item.orderofobsidian.edruelium_axe": "Edruelium-Axt",
+  "item.orderofobsidian.edruelium_shovel": "Edruelium-Schaufel",
+  "item.orderofobsidian.edruelium_hoe": "Edruelium-Hacke",
+  "item.orderofobsidian.edruelium_sword": "Edruelium-Schwert",
+  "item.orderofobsidian.edruelium_bow": "Edruelium-Bogen",
+
+  "item.orderofobsidian.mithril_pickaxe": "Mithril-Spitzhacke",
+  "item.orderofobsidian.mithril_axe": "Mithril-Axt",
+  "item.orderofobsidian.mithril_shovel": "Mithril-Schaufel",
+  "item.orderofobsidian.mithril_hoe": "Mithril-Hacke",
+  "item.orderofobsidian.mithril_sword": "Mithril-Schwert",
+
+  "item.orderofobsidian.obsidian_pickaxe": "Obsidian-Spitzhacke",
+  "item.orderofobsidian.obsidian_axe": "Obsidian-Axt",
+  "item.orderofobsidian.obsidian_shovel": "Obsidian-Schaufel",
+  "item.orderofobsidian.obsidian_hoe": "Obsidian-Hacke",
+  "item.orderofobsidian.obsidian_sword": "Obsidian-Schwert",
+
+  "item.orderofobsidian.pendorite_pickaxe": "Pendorit-Spitzhacke",
+  "item.orderofobsidian.pendorite_axe": "Pendorit-Axt",
+  "item.orderofobsidian.pendorite_shovel": "Pendorit-Schaufel",
+  "item.orderofobsidian.pendorite_hoe": "Pendorit-Hacke",
+  "item.orderofobsidian.pendorite_sword": "Pendorit-Schwert",
+  "item.orderofobsidian.pendorite_horse_armor": "Pendorit-Pferderüstung",
+
+  "item.orderofobsidian.steel_pickaxe": "Stahl-Spitzhacke",
+  "item.orderofobsidian.steel_axe": "Stahl-Axt",
+  "item.orderofobsidian.steel_shovel": "Stahl-Schaufel",
+  "item.orderofobsidian.steel_hoe": "Stahl-Hacke",
+  "item.orderofobsidian.steel_sword": "Stahl-Schwert",
+
+  "item.orderofobsidian.oxys_apple": "Oxys-Apfel",
+  "item.orderofobsidian.pendorite_apple": "Pendorit-Apfel",
+  "item.orderofobsidian.diamond_apple": "Diamantapfel",
+  "item.orderofobsidian.netherite_apple": "Netheritapfel",
+  "item.orderofobsidian.candy_apple": "Bonbonapfel",
+
+  "item.orderofobsidian.chips": "Chips",
+  "item.orderofobsidian.fried_egg": "Spiegelei",
+
+  "item.orderofobsidian.rice": "Reis",
+  "item.orderofobsidian.rice_seeds": "Reissamen",
+  "item.orderofobsidian.cooked_rice": "Gekochter Reis",
+
+  "item.orderofobsidian.sushi": "Sushi",
+
+  "item.orderofobsidian.netherite_horse_armor": "Netherit-Pferderüstung",
+  "item.orderofobsidian.moss_horse_armor": "Moos-Pferderüstung",
+
+  "item.orderofobsidian.wheat_with_moss": "Weizen mit Moos",
+
+  "block.orderofobsidian.aikigite_ore": "Aikigit-Erz",
+  "block.orderofobsidian.aluminium_ore": "Aluminium-Erz",
+  "block.orderofobsidian.avenronite_ore": "Avenronit-Erz",
+  "block.orderofobsidian.bauherite_ore": "Bauherit-Erz",
+  "block.orderofobsidian.deepslate_aikigite_ore": "Tiefenschiefer-Aikigit-Erz",
+  "block.orderofobsidian.deepslate_bauherite_ore": "Tiefenschiefer-Bauherit-Erz",
+  "block.orderofobsidian.deepslate_lead_ore": "Tiefenschiefer-Bleierz",
+  "block.orderofobsidian.deepslate_mitril_ore": "Tiefenschiefer-Mithrilerz",
+  "block.orderofobsidian.deepslate_silver_ore": "Tiefenschiefer-Silbererz",
+  "block.orderofobsidian.edruelium_ore": "Edruelium-Erz",
+  "block.orderofobsidian.endstone_pendorite_ore": "Endstein-Pendorit-Erz",
+  "block.orderofobsidian.graphite_ore": "Graphiterz",
+  "block.orderofobsidian.lead_ore": "Bleierz",
+  "block.orderofobsidian.mithril_ore": "Mithrilerz",
+  "block.orderofobsidian.oxys_ore": "Oxys-Erz",
+  "block.orderofobsidian.pendorite_ore": "Pendorit-Erz",
+  "block.orderofobsidian.silver_ore": "Silbererz",
+
+  "block.orderofobsidian.raw_aikigite_block": "Roher Aikigit-Block",
+  "block.orderofobsidian.raw_aluminium_block": "Roher Aluminium-Block",
+  "block.orderofobsidian.raw_avenronite_block": "Roher Avenronit-Block",
+  "block.orderofobsidian.raw_bauherite_block": "Roher Bauherit-Block",
+  "block.orderofobsidian.raw_edruelium_block": "Roher Edruelium-Block",
+  "block.orderofobsidian.raw_lead_block": "Roher Blei-Block",
+  "block.orderofobsidian.raw_mithril_block": "Roher Mithril-Block",
+  "block.orderofobsidian.raw_pendorite_block": "Roher Pendorit-Block",
+  "block.orderofobsidian.raw_silver_block": "Roher Silber-Block",
+
+  "block.orderofobsidian.aikigite_block": "Aikigit-Block",
+  "block.orderofobsidian.aluminium_block": "Aluminium-Block",
+  "block.orderofobsidian.avenronite_block": "Avenronit-Block",
+  "block.orderofobsidian.bauherite_block": "Bauherit-Block",
+  "block.orderofobsidian.edruelium_block": "Edruelium-Block",
+  "block.orderofobsidian.lead_block": "Blei-Block",
+  "block.orderofobsidian.mithril_block": "Mithril-Block",
+  "block.orderofobsidian.oxys_block": "Oxys-Block",
+  "block.orderofobsidian.pendorite_block": "Pendorit-Block",
+  "block.orderofobsidian.silver_block": "Silber-Block",
+  "block.orderofobsidian.steel_block": "Stahl-Block",
+
+  "creativetab.order_tab": "Order of Obsidian"
+}

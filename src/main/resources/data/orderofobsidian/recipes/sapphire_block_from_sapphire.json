@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "orderofobsidian:sapphire"
+    }
+  },
+  "result": {
+    "item": "orderofobsidian:sapphire_block"
+  }
+}

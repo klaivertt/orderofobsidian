@@ -1,0 +1,181 @@
+{
+  "item.orderofobsidian.sapphire": "サファイア",
+  "item.orderofobsidian.raw_sapphire": "生のサファイア",
+
+  "block.orderofobsidian.sapphire_block": "サファイアブロック",
+  "block.orderofobsidian.raw_sapphire_block": "生のサファイアブロック",
+
+  "block.orderofobsidian.sapphire_ore": "サファイア鉱石",
+  "block.orderofobsidian.deepslate_sapphire_ore": "深層滑石サファイア鉱石",
+  "block.orderofobsidian.end_stone_sapphire_ore": "エンドストーンサファイア鉱石",
+  "block.orderofobsidian.nether_sapphire_ore": "ネザーサファイア鉱石",
+
+  "item.orderofobsidian.oxys": "オキシス",
+
+  "item.orderofobsidian.aikigite_ingot": "アイキガイトインゴット",
+  "item.orderofobsidian.raw_aikigite": "生のアイキガイト",
+
+  "item.orderofobsidian.aluminium_ingot": "アルミニウムインゴット",
+  "item.orderofobsidian.raw_aluminium": "生のアルミニウム",
+
+  "item.orderofobsidian.avenronite_ingot": "アベンロナイトインゴット",
+  "item.orderofobsidian.raw_avenronite": "生のアベンロナイト",
+
+  "item.orderofobsidian.bauherite_ingot": "バウヘライトインゴット",
+  "item.orderofobsidian.raw_bauherite": "生のバウヘライト",
+
+  "item.orderofobsidian.edruelium_ingot": "エドルエリウムインゴット",
+  "item.orderofobsidian.raw_edruelium": "生のエドルエリウム",
+
+  "item.orderofobsidian.graphite_ingot": "グラファイトインゴット",
+  "item.orderofobsidian.graphite_dust": "グラファイトの粉",
+
+  "item.orderofobsidian.raw_lead": "生の鉛インゴット",
+  "item.orderofobsidian.lead_ingot": "鉛インゴット",
+
+  "item.orderofobsidian.mithril_ingot": "ミスリルインゴット",
+  "item.orderofobsidian.raw_mithril": "生のミスリル",
+
+  "item.orderofobsidian.raw_pendorite": "生のペンドライト",
+  "item.orderofobsidian.pendorite_ingot": "ペンドライトインゴット",
+
+  "item.orderofobsidian.silver_ingot": "銀インゴット",
+  "item.orderofobsidian.raw_silver": "生の銀",
+
+  "item.orderofobsidian.steel_dust": "鋼の粉",
+  "item.orderofobsidian.steel_ingot": "鋼インゴット",
+
+  "item.orderofobsidian.oxys_helmet": "オキシスヘルメット",
+  "item.orderofobsidian.oxys_chestplate": "オキシスチェストプレート",
+  "item.orderofobsidian.oxys_leggings": "オキシスレギンス",
+  "item.orderofobsidian.oxys_boots": "オキシスブーツ",
+  "item.orderofobsidian.oxys_bow": "オキシスボウ",
+
+  "item.orderofobsidian.oxys_horse_armor": "オキシス馬鎧",
+  "item.orderofobsidian.oxys_pickaxe": "オキシスピッケル",
+  "item.orderofobsidian.oxys_axe": "オキシス斧",
+  "item.orderofobsidian.oxys_shovel": "オキシスシャベル",
+  "item.orderofobsidian.oxys_hoe": "オキシスホー",
+  "item.orderofobsidian.oxys_sword": "オキシス剣",
+  "item.orderofobsidian.oxys_hammer": "オキシスハンマー",
+  "item.orderofobsidian.oxys_stick": "オキシス棒",
+
+  "item.orderofobsidian.aikigite_pickaxe": "アイキガイトピッケル",
+  "item.orderofobsidian.aikigite_axe": "アイキガイト斧",
+  "item.orderofobsidian.aikigite_shovel": "アイキガイトシャベル",
+  "item.orderofobsidian.aikigite_sword": "アイキガイト剣",
+  "item.orderofobsidian.aikigite_bow": "アイキガイトボウ",
+
+  "item.orderofobsidian.avenronite_pickaxe": "アベンロナイトピッケル",
+  "item.orderofobsidian.avenronite_axe": "アベンロナイト斧",
+  "item.orderofobsidian.avenronite_shovel": "アベンロナイトシャベル",
+  "item.orderofobsidian.avenronite_hoe": "アベンロナイトホー",
+  "item.orderofobsidian.avenronite_sword": "アベンロナイト剣",
+  "item.orderofobsidian.avenronite_bow": "アベンロナイトボウ",
+
+  "item.orderofobsidian.bauherite_pickaxe": "バウヘライトピッケル",
+  "item.orderofobsidian.bauherite_axe": "バウヘライト斧",
+  "item.orderofobsidian.bauherite_shovel": "バウヘライトシャベル",
+  "item.orderofobsidian.bauherite_sword": "バウヘライト剣",
+  "item.orderofobsidian.bauherite_bow": "バウヘライトボウ",
+
+  "item.orderofobsidian.bone_pickaxe": "骨ピッケル",
+  "item.orderofobsidian.bone_axe": "骨斧",
+  "item.orderofobsidian.bone_shovel": "骨シャベル",
+  "item.orderofobsidian.bone_hoe": "骨ホー",
+  "item.orderofobsidian.bone_sword": "骨剣",
+
+  "item.orderofobsidian.edruelium_pickaxe": "エドルエリウムピッケル",
+  "item.orderofobsidian.edruelium_axe": "エドルエリウム斧",
+  "item.orderofobsidian.edruelium_shovel": "エドルエリウムシャベル",
+  "item.orderofobsidian.edruelium_hoe": "エドルエリウムホー",
+  "item.orderofobsidian.edruelium_sword": "エドルエリウム剣",
+  "item.orderofobsidian.edruelium_bow": "エドルエリウムボウ",
+
+  "item.orderofobsidian.mithril_pickaxe": "ミスリルピッケル",
+  "item.orderofobsidian.mithril_axe": "ミスリル斧",
+  "item.orderofobsidian.mithril_shovel": "ミスリルシャベル",
+  "item.orderofobsidian.mithril_hoe": "ミスリルホー",
+  "item.orderofobsidian.mithril_sword": "ミスリル剣",
+
+  "item.orderofobsidian.obsidian_pickaxe": "黒曜石ピッケル",
+  "item.orderofobsidian.obsidian_axe": "黒曜石斧",
+  "item.orderofobsidian.obsidian_shovel": "黒曜石シャベル",
+  "item.orderofobsidian.obsidian_hoe": "黒曜石ホー",
+  "item.orderofobsidian.obsidian_sword": "黒曜石剣",
+
+  "item.orderofobsidian.pendorite_pickaxe": "ペンドライトピッケル",
+  "item.orderofobsidian.pendorite_axe": "ペンドライト斧",
+  "item.orderofobsidian.pendorite_shovel": "ペンドライトシャベル",
+  "item.orderofobsidian.pendorite_hoe": "ペンドライトホー",
+  "item.orderofobsidian.pendorite_sword": "ペンドライト剣",
+  "item.orderofobsidian.pendorite_horse_armor": "ペンドライト馬鎧",
+
+  "item.orderofobsidian.steel_pickaxe": "鋼ピッケル",
+  "item.orderofobsidian.steel_axe": "鋼斧",
+  "item.orderofobsidian.steel_shovel": "鋼シャベル",
+  "item.orderofobsidian.steel_hoe": "鋼ホー",
+  "item.orderofobsidian.steel_sword": "鋼剣",
+
+  "item.orderofobsidian.oxys_apple": "オキシスのリンゴ",
+  "item.orderofobsidian.pendorite_apple": "ペンドライトのリンゴ",
+  "item.orderofobsidian.diamond_apple": "ダイヤモンドのリンゴ",
+  "item.orderofobsidian.netherite_apple": "ネザライトのリンゴ",
+  "item.orderofobsidian.candy_apple": "キャンディーのリンゴ",
+
+  "item.orderofobsidian.chips": "チップス",
+  "item.orderofobsidian.fried_egg": "目玉焼き",
+
+  "item.orderofobsidian.rice": "米",
+  "item.orderofobsidian.rice_seeds": "米の種",
+  "item.orderofobsidian.cooked_rice": "炊きたてのごはん",
+
+  "item.orderofobsidian.sushi": "寿司",
+
+  "item.orderofobsidian.netherite_horse_armor": "ネザライト馬鎧",
+  "item.orderofobsidian.moss_horse_armor": "苔馬鎧",
+
+  "item.orderofobsidian.wheat_with_moss": "苔付き小麦",
+
+  "block.orderofobsidian.aikigite_ore": "アイキガイト鉱石",
+  "block.orderofobsidian.aluminium_ore": "アルミニウム鉱石",
+  "block.orderofobsidian.avenronite_ore": "アベンロナイト鉱石",
+  "block.orderofobsidian.bauherite_ore": "バウヘライト鉱石",
+  "block.orderofobsidian.deepslate_aikigite_ore": "深層滑石アイキガイト鉱石",
+  "block.orderofobsidian.deepslate_bauherite_ore": "深層滑石バウヘライト鉱石",
+  "block.orderofobsidian.deepslate_lead_ore": "深層滑石鉛鉱石",
+  "block.orderofobsidian.deepslate_mitril_ore": "深層滑石ミスリル鉱石",
+  "block.orderofobsidian.deepslate_silver_ore": "深層滑石銀鉱石",
+  "block.orderofobsidian.edruelium_ore": "エドルエリウム鉱石",
+  "block.orderofobsidian.endstone_pendorite_ore": "エンドストーンペンドライト鉱石",
+  "block.orderofobsidian.graphite_ore": "黒鉛鉱石",
+  "block.orderofobsidian.lead_ore": "鉛鉱石",
+  "block.orderofobsidian.mithril_ore": "ミスリル鉱石",
+  "block.orderofobsidian.oxys_ore": "オキシス鉱石",
+  "block.orderofobsidian.pendorite_ore": "ペンドライト鉱石",
+  "block.orderofobsidian.silver_ore": "銀鉱石",
+
+  "block.orderofobsidian.raw_aikigite_block": "生のアイキガイトブロック",
+  "block.orderofobsidian.raw_aluminium_block": "生のアルミニウムブロック",
+  "block.orderofobsidian.raw_avenronite_block": "生のアベンロナイトブロック",
+  "block.orderofobsidian.raw_bauherite_block": "生のバウヘライトブロック",
+  "block.orderofobsidian.raw_edruelium_block": "生のエドルエリウムブロック",
+  "block.orderofobsidian.raw_lead_block": "生の鉛ブロック",
+  "block.orderofobsidian.raw_mithril_block": "生のミスリルブロック",
+  "block.orderofobsidian.raw_pendorite_block": "生のペンドライトブロック",
+  "block.orderofobsidian.raw_silver_block": "生の銀ブロック",
+
+  "block.orderofobsidian.aikigite_block": "アイキガイトブロック",
+  "block.orderofobsidian.aluminium_block": "アルミニウムブロック",
+  "block.orderofobsidian.avenronite_block": "アベンロナイトブロック",
+  "block.orderofobsidian.bauherite_block": "バウヘライトブロック",
+  "block.orderofobsidian.edruelium_block": "エドルエリウムブロック",
+  "block.orderofobsidian.lead_block": "鉛ブロック",
+  "block.orderofobsidian.mithril_block": "ミスリルブロック",
+  "block.orderofobsidian.oxys_block": "オキシスブロック",
+  "block.orderofobsidian.pendorite_block": "ペンドライトブロック",
+  "block.orderofobsidian.silver_block": "銀ブロック",
+  "block.orderofobsidian.steel_block": "鋼ブロック",
+
+  "creativetab.order_tab": "オーダーオブオブシディアン"
+}
