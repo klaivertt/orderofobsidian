@@ -1,15 +1,4 @@
 {
-  "item.orderofobsidian.sapphire": "Zafiro",
-  "item.orderofobsidian.raw_sapphire": "Zafiro crudo",
-
-  "block.orderofobsidian.sapphire_block": "Bloque de Zafiro",
-  "block.orderofobsidian.raw_sapphire_block": "Bloque de Zafiro crudo",
-
-  "block.orderofobsidian.sapphire_ore": "Mineral de Zafiro",
-  "block.orderofobsidian.deepslate_sapphire_ore": "Mineral de Zafiro de Pizarra Profunda",
-  "block.orderofobsidian.end_stone_sapphire_ore": "Mineral de Zafiro de Piedra de End",
-  "block.orderofobsidian.nether_sapphire_ore": "Mineral de Zafiro del Inframundo",
-
   "item.orderofobsidian.oxys": "Oxys",
 
   "item.orderofobsidian.aikigite_ingot": "Lingote de Aikigite",
@@ -93,8 +82,6 @@
   "item.orderofobsidian.edruelium_bow": "Arco de Edruelium",
 
   "item.orderofobsidian.mithril_pickaxe": "Pico de Mithril",
-
-
   "item.orderofobsidian.mithril_axe": "Hacha de Mithril",
   "item.orderofobsidian.mithril_shovel": "Pala de Mithril",
   "item.orderofobsidian.mithril_hoe": "Azada de Mithril",
@@ -178,6 +165,44 @@
   "block.orderofobsidian.pendorite_block": "Bloque de Pendorita",
   "block.orderofobsidian.silver_block": "Bloque de Plata",
   "block.orderofobsidian.steel_block": "Bloque de Acero",
+
+  "item.orderofobsidian.aikigite_helmet": "Aikigite Helmet",
+  "item.orderofobsidian.aikigite_chestplate": "Aikigite Chestplate",
+  "item.orderofobsidian.aikigite_leggings": "Aikigite Leggings",
+  "item.orderofobsidian.aikigite_boots": "Aikigite Boots",
+
+  "item.orderofobsidian.avenronite_helmet": "Avenronite Helmet",
+  "item.orderofobsidian.avenronite_chestplate": "Avenronite Chestplate",
+  "item.orderofobsidian.avenronite_leggings": "Avenronite Leggings",
+  "item.orderofobsidian.avenronite_boots": "Avenronite Boots",
+
+  "item.orderofobsidian.bauherite_helmet": "Bauherite Helmet",
+  "item.orderofobsidian.bauherite_chestplate": "Bauherite Chestplate",
+  "item.orderofobsidian.bauherite_leggings": "Bauherite Leggings",
+  "item.orderofobsidian.bauherite_boots": "Bauherite Boots",
+
+  "item.orderofobsidian.bone_helmet": "Bone Helmet",
+  "item.orderofobsidian.bone_chestplate": "Bone Chestplate",
+  "item.orderofobsidian.bone_leggings": "Bone Leggings",
+  "item.orderofobsidian.bone_boots": "Bone Boots",
+
+  "item.orderofobsidian.edruelium_helmet": "Edruelium Helmet",
+  "item.orderofobsidian.edruelium_chestplate": "Edruelium Chestplate",
+  "item.orderofobsidian.edruelium_leggings": "Edruelium Leggings",
+  "item.orderofobsidian.edruelium_boots": "Edruelium Boots",
+
+  "item.orderofobsidian.bar_brawl_music_disc": "Bar Brawl Music Disc",
+  "item.orderofobsidian.bar_brawl_music_disc.desc": "Bryan Tech - Bar Brawl (CC0)",
+
+  "item.orderofobsidian.cat_remix_music_disc": "C418 - Cat Remix",
+  "item.orderofobsidian.cat_remix_music_disc.desc": "C418 - Cat (Caution & Crisis Remix)",
+
+  "item.orderofobsidian.little_adventures_music_disc": "little adventures",
+  "item.orderofobsidian.little_adventures_music_disc.desc": "Rukasu - little adventures (CC0)",
+
+  "item.orderofobsidian.paradise_music_disc": "Paradise",
+  "item.orderofobsidian.paradise_music_disc.desc": "Rukasu -Paradise",
+
 
   "creativetab.order_tab": "Orden de Obsidiana"
 }

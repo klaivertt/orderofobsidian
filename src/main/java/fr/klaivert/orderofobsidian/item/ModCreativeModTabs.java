@@ -192,10 +192,30 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.EDRUELIUM_LEGGING.get());
                         pOutput.accept(ModItems.EDRUELIUM_BOOTS.get());
 
+                        pOutput.accept(ModItems.MITHRIL_HELMET.get());
+                        pOutput.accept(ModItems.MITHRIL_CHESTPLATE.get());
+                        pOutput.accept(ModItems.MITHRIL_LEGGINGS.get());
+                        pOutput.accept(ModItems.MITHRIL_BOOTS.get());
+
+                        pOutput.accept(ModItems.OBSIDIAN_HELMET.get());
+                        pOutput.accept(ModItems.OBSIDIAN_CHESTPLATE.get());
+                        pOutput.accept(ModItems.OBSIDIAN_LEGGINGS.get());
+                        pOutput.accept(ModItems.OBSIDIAN_BOOTS.get());
+
                         pOutput.accept(ModItems.OXYS_HELMET.get());
                         pOutput.accept(ModItems.OXYS_CHESTPLATE.get());
                         pOutput.accept(ModItems.OXYS_LEGGING.get());
                         pOutput.accept(ModItems.OXYS_BOOTS.get());
+
+                        pOutput.accept(ModItems.PENDORITE_HELMET.get());
+                        pOutput.accept(ModItems.PENDORITE_CHESTPLATE.get());
+                        pOutput.accept(ModItems.PENDORITE_LEGGING.get());
+                        pOutput.accept(ModItems.PENDORITE_BOOTS.get());
+
+                        pOutput.accept(ModItems.STEEL_HELMET.get());
+                        pOutput.accept(ModItems.STEEL_CHESTPLATE.get());
+                        pOutput.accept(ModItems.STEEL_LEGGINGS.get());
+                        pOutput.accept(ModItems.STEEL_BOOTS.get());
 
                         pOutput.accept(ModItems.RICE.get());
 
@@ -221,6 +241,9 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.CAT_REMIX.get());
                         pOutput.accept(ModItems.LITTLE_ADVENTURES.get());
                         pOutput.accept(ModItems.PARADISE.get());
+
+                        pOutput.accept(ModBlocks.CHEST_GAME.get());
+                        pOutput.accept(ModBlocks.EYES_IN_BOTTLE.get());
 
                     })
                     .build());

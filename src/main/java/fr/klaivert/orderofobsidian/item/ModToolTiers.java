@@ -64,7 +64,7 @@ public class ModToolTiers {
 
         OBSIDIAN = TierSortingRegistry.registerTier(
                 new ForgeTier(3, 1900, 6f, 1.8f, 20,
-                        BlockTags.NEEDS_STONE_TOOL, () -> Ingredient.of(Items.OBSIDIAN)),
+                        BlockTags.NEEDS_DIAMOND_TOOL, () -> Ingredient.of(Items.OBSIDIAN)),
                 new ResourceLocation(OrderOfObsidianMod.MOD_ID, "obsidian"), List.of(Tiers.DIAMOND), List.of());
         PENDORITE = TierSortingRegistry.registerTier(
                 new ForgeTier(4, 2200, 8f, 2.5f, 25,
@@ -73,7 +73,7 @@ public class ModToolTiers {
 
         STEEL = TierSortingRegistry.registerTier(
                 new ForgeTier(3, 1200, 3f, 1.5f, 11,
-                        ModTags.Blocks.NEEDS_NETHERITE_TOOL, () -> Ingredient.of(ModItems.OXYS.get())),
+                        BlockTags.NEEDS_DIAMOND_TOOL, () -> Ingredient.of(ModItems.OXYS.get())),
                 new ResourceLocation(OrderOfObsidianMod.MOD_ID, "steel"), List.of(Tiers.DIAMOND), List.of());
 
     }

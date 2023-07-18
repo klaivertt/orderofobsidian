@@ -1,6 +1,8 @@
 package fr.klaivert.orderofobsidian.block;
 
 import fr.klaivert.orderofobsidian.OrderOfObsidianMod;
+import fr.klaivert.orderofobsidian.block.custom.chessgameblock;
+import fr.klaivert.orderofobsidian.block.custom.eyesinbotlleblock;
 import fr.klaivert.orderofobsidian.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -174,6 +176,14 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> STEEL_BLOCK = registerBlock("steel_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.METAL)
+                    .strength(1f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> CHEST_GAME = registerBlock("chessgame",
+            () -> new chessgameblock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).sound(SoundType.WOOD)
+                    .strength(1f).requiresCorrectToolForDrops().noOcclusion()));
+
+    public static final RegistryObject<Block> EYES_IN_BOTTLE = registerBlock("eyes_in_bottle",
+            () -> new eyesinbotlleblock(BlockBehaviour.Properties.copy(Blocks.GLASS).sound(SoundType.GLASS)
                     .strength(1f).requiresCorrectToolForDrops()));
 
     private static <T extends Block> RegistryObject<T> registerBlockWithoutBlockItem(String name, Supplier<T> block) {

@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "orderofobsidian:pendorite_ingot"
+    },
+    "2": {
+      "item": "orderofobsidian:pendorite_ingot"
+    },
+    "3": {
+      "item": "orderofobsidian:pendorite_ingot"
+    },
+    "5": {
+      "item": "orderofobsidian:pendorite_ingot"
+    }
+  },
+  "result": {
+    "item": "orderofobsidian:pendorite_boots",
+    "count": 1
+  }
+}
