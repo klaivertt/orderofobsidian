@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "lit=false": { "model": "orderofobsidian:block/blast_furnace_off" },
+    "lit=true": { "model": "orderofobsidian:block/blast_furnace_on" }
+  }
+}

@@ -245,6 +245,8 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModBlocks.CHEST_GAME.get());
                         pOutput.accept(ModBlocks.EYES_IN_BOTTLE.get());
 
+                        pOutput.accept(ModBlocks.BLAST_FURNACE.get());
+
                     })
                     .build());
 

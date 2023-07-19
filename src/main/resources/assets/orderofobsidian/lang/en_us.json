@@ -55,6 +55,11 @@
   "item.orderofobsidian.bone_leggings": "Bone Leggings",
   "item.orderofobsidian.bone_boots": "Bone Boots",
 
+  "item.orderofobsidian.candy_apple": "Candy Apple",
+  "item.orderofobsidian.diamond_apple": "Diamond Apple",
+
+  "item.orderofobsidian.blast_furnace": "Blast Furnace",
+
   "item.orderofobsidian.edruelium_ingot": "Edruelium Ingot",
   "item.orderofobsidian.raw_edruelium": "Raw Edruelium",
   "item.orderofobsidian.edruelium_pickaxe": "Edruelium Pickaxe",
@@ -67,6 +72,8 @@
   "item.orderofobsidian.edruelium_chestplate": "Edruelium Chestplate",
   "item.orderofobsidian.edruelium_leggings": "Edruelium Leggings",
   "item.orderofobsidian.edruelium_boots": "Edruelium Boots",
+
+  "item.orderofobsidian.emerald_apple": "Emerald Apple",
 
   "item.orderofobsidian.graphite_ingot": "Graphite Ingot",
   "item.orderofobsidian.graphite_dust": "Graphite Dust",
@@ -100,6 +107,7 @@
   "item.orderofobsidian.obsidian_chestplate": "Obsidian Chestplate",
   "item.orderofobsidian.obsidian_leggings": "Obsidian Leggings",
   "item.orderofobsidian.obsidian_boots": "Obsidian Boots",
+  "item.orderofobsidian.obsidian_apple": "Obsidian Apple",
 
   "item.orderofobsidian.oxys": "Oxys",
   "item.orderofobsidian.oxys_apple": "Oxys Apple",

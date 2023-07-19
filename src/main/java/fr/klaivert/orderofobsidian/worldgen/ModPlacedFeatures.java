@@ -21,6 +21,8 @@ import java.util.List;
 public class ModPlacedFeatures {
 
     public static final ResourceKey<PlacedFeature> AIKIGITE_PLACED_KEY = createKey("aikigite_placed");
+    public static final ResourceKey<PlacedFeature> AVENRONITE_PLACED_KEY = createKey("avenronite_placed");
+    public static final ResourceKey<PlacedFeature> OXYS_ORE_KEY = createKey("oxys_placed");
     public static void bootstrap(BootstapContext<PlacedFeature> context) {
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
 

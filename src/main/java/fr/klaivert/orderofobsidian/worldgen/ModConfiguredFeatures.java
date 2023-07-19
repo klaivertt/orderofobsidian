@@ -29,6 +29,9 @@ public class ModConfiguredFeatures {
 
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_AIKIGITE_ORES_KEY = registerKey("aikigite_ore");
 
+    public static final ResourceKey<ConfiguredFeature<?, ?>> AVENRONITE_ORE_KEY = registerKey("avenronite_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OXYS_ORE_KEY = registerKey("oxys_ore");
+
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
         RuleTest stoneReplaceables = new TagMatchTest(BlockTags.STONE_ORE_REPLACEABLES);
         RuleTest deepslateReplaceables = new TagMatchTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
@@ -40,7 +43,10 @@ public class ModConfiguredFeatures {
                 OreConfiguration.target(deepslateReplaceables, ModBlocks.DEEPSLATE_AIKIGITE_ORE.get().defaultBlockState()));
 
         register(context, OVERWORLD_AIKIGITE_ORES_KEY, Feature.ORE, new OreConfiguration(overworldAikigiteOres, 9));
-
+        register(context, AVENRONITE_ORE_KEY, Feature.ORE, new OreConfiguration(netherrackReplaceables,
+                ModBlocks.AVENRONITE_ORE.get().defaultBlockState(),9));
+        register(context, OXYS_ORE_KEY, Feature.ORE, new OreConfiguration(endstoneReplaceables,
+                ModBlocks.OXYS_BLOCK.get().defaultBlockState(),9));
     }
 
 

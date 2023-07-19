@@ -1,6 +1,7 @@
 package fr.klaivert.orderofobsidian.block;
 
 import fr.klaivert.orderofobsidian.OrderOfObsidianMod;
+import fr.klaivert.orderofobsidian.block.custom.Blast_Furnace;
 import fr.klaivert.orderofobsidian.block.custom.chessgameblock;
 import fr.klaivert.orderofobsidian.block.custom.eyesinbotlleblock;
 import fr.klaivert.orderofobsidian.item.ModItems;
@@ -184,7 +185,7 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> EYES_IN_BOTTLE = registerBlock("eyes_in_bottle",
             () -> new eyesinbotlleblock(BlockBehaviour.Properties.copy(Blocks.GLASS).sound(SoundType.GLASS)
-                    .strength(1f).requiresCorrectToolForDrops()));
+                    .strength(1f).requiresCorrectToolForDrops().noOcclusion()));
 
     private static <T extends Block> RegistryObject<T> registerBlockWithoutBlockItem(String name, Supplier<T> block) {
         return BLOCKS.register(name, block);
@@ -192,6 +193,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> MOSS_BRICKS = registerBlock("moss_bricks",
             () -> new Block(BlockBehaviour.Properties.copy(MOSS_BLOCK)
                     .strength(0.5f)));
+    public static final RegistryObject<Block> BLAST_FURNACE = registerBlock("blast_furnace",
+            () -> new Blast_Furnace(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).lightLevel(state -> state.getValue(Blast_Furnace.LIT) ? 10:0).sound(SoundType.ANCIENT_DEBRIS)
+                    .strength(1f).requiresCorrectToolForDrops().noOcclusion()));
 
 
 
