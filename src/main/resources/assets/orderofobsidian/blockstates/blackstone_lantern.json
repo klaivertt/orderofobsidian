@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "hanging=false": {
+      "model": "orderofobsidian:block/blackstone_lantern"
+    },
+    "hanging=true": {
+      "model": "orderofobsidian:block/blackstone_lantern_hanging"
+    }
+  }
+}

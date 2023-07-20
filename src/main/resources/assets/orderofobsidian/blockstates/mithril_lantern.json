@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "hanging=false": {
+      "model": "orderofobsidian:block/mithril_lantern"
+    },
+    "hanging=true": {
+      "model": "orderofobsidian:block/mithril_lantern_hanging"
+    }
+  }
+}

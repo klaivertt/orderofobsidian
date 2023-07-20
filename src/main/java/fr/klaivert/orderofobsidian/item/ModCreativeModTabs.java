@@ -73,6 +73,7 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModBlocks.RAW_EDUELIUM_BLOCK.get());
 
                         pOutput.accept(ModBlocks.GRAPHITE_ORE.get());
+                        pOutput.accept(ModBlocks.GRAPHITE_BLOCK.get());
 
                         pOutput.accept(ModBlocks.LEAD_BLOCK.get());
                         pOutput.accept(ModBlocks.LEAD_ORE.get());
@@ -247,6 +248,24 @@ public class ModCreativeModTabs {
 
                         pOutput.accept(ModBlocks.BLAST_FURNACE.get());
 
+                        pOutput.accept(ModBlocks.BLACKSTONE_LANTERN.get());
+                        pOutput.accept(ModBlocks.COBBLED_DEEPSLATE_LANTERN.get());
+                        pOutput.accept(ModBlocks.CRIMSON_STEM_LANTERN.get());
+                        pOutput.accept(ModBlocks.END_STONE_LANTERN.get());
+                        pOutput.accept(ModBlocks.GRAPHITE_LANTERN.get());
+                        pOutput.accept(ModBlocks.MITHRIL_LANTERN.get());
+                        pOutput.accept(ModBlocks.MITHRIL_CHAIN.get());
+                        pOutput.accept(ModBlocks.OBSIDIAN_LANTERN.get());
+                        pOutput.accept(ModBlocks.WARPED_STEM_LANTERN.get());
+
+
+                        pOutput.accept(ModBlocks.CUT_GRAPHITE.get());
+                        pOutput.accept(ModBlocks.CUT_GRAPHITE_SLAB.get());
+                        pOutput.accept(ModBlocks.CUT_GRAPHITE_STAIR.get());
+                        pOutput.accept(ModBlocks.CUT_GRAPHITE_WALL.get());
+                        pOutput.accept(ModBlocks.GRAPHITE_BLOCK_SLAB.get());
+                        pOutput.accept(ModBlocks.GRAPHITE_BLOCK_STAIR.get());
+                        pOutput.accept(ModBlocks.GRAPHITE_BLOCK_WALL.get());
                     })
                     .build());
 

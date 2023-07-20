@@ -1,0 +1,6 @@
+{
+  "parent": "block/template_lantern",
+  "textures": {
+    "lantern": "orderofobsidian:block/cobbled_deepslate_lantern"
+  }
+}

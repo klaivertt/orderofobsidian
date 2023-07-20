@@ -5,6 +5,7 @@ import fr.klaivert.orderofobsidian.block.custom.Blast_Furnace;
 import fr.klaivert.orderofobsidian.block.custom.chessgameblock;
 import fr.klaivert.orderofobsidian.block.custom.eyesinbotlleblock;
 import fr.klaivert.orderofobsidian.item.ModItems;
+import net.minecraft.client.resources.model.Material;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -154,7 +155,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> EDRUELIUM_BLOCK = registerBlock("edruelium_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.METAL)
                     .strength(1.5f).requiresCorrectToolForDrops()));
-
+    public static final RegistryObject<Block> GRAPHITE_BLOCK = registerBlock("graphite_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.METAL)
+                    .strength(0.7f).requiresCorrectToolForDrops()));
     public static final RegistryObject<Block> LEAD_BLOCK = registerBlock("lead_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.METAL)
                     .strength(1f).requiresCorrectToolForDrops()));
@@ -197,8 +200,69 @@ public class ModBlocks {
             () -> new Blast_Furnace(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).lightLevel(state -> state.getValue(Blast_Furnace.LIT) ? 10:0).sound(SoundType.ANCIENT_DEBRIS)
                     .strength(1f).requiresCorrectToolForDrops().noOcclusion()));
 
+    public static final RegistryObject<Block> BLACKSTONE_LANTERN = registerBlock("blackstone_lantern",
+            () -> new LanternBlock(BlockBehaviour.Properties.copy(Blocks.LANTERN).sound(SoundType.LANTERN)
+                    .strength(1f).requiresCorrectToolForDrops().noOcclusion()));
 
+    public static final RegistryObject<Block> MITHRIL_LANTERN = registerBlock("mithril_lantern",
+            () -> new LanternBlock(BlockBehaviour.Properties.copy(Blocks.LANTERN).sound(SoundType.LANTERN)
+                    .strength(1f).requiresCorrectToolForDrops().noOcclusion()));
 
+    public static final RegistryObject<Block> MITHRIL_CHAIN = registerBlock("mithril_chain",
+            () -> new ChainBlock(BlockBehaviour.Properties.copy(Blocks.LANTERN).sound(SoundType.LANTERN)
+                    .strength(1f).requiresCorrectToolForDrops().noOcclusion()));
+
+    public static final RegistryObject<Block> OBSIDIAN_LANTERN = registerBlock("obsidian_lantern",
+            () -> new LanternBlock(BlockBehaviour.Properties.copy(Blocks.LANTERN).sound(SoundType.LANTERN)
+                    .strength(1f).requiresCorrectToolForDrops().noOcclusion()));
+
+    public static final RegistryObject<Block> COBBLED_DEEPSLATE_LANTERN = registerBlock("cobbled_deepslate_lantern",
+            () -> new LanternBlock(BlockBehaviour.Properties.copy(Blocks.LANTERN).sound(SoundType.LANTERN)
+                    .strength(1f).requiresCorrectToolForDrops().noOcclusion()));
+
+    public static final RegistryObject<Block> CRIMSON_STEM_LANTERN = registerBlock("crimson_stem_lantern",
+            () -> new LanternBlock(BlockBehaviour.Properties.copy(Blocks.LANTERN).sound(SoundType.LANTERN)
+                    .strength(1f).requiresCorrectToolForDrops().noOcclusion()));
+
+    public static final RegistryObject<Block> END_STONE_LANTERN = registerBlock("end_stone_lantern",
+            () -> new LanternBlock(BlockBehaviour.Properties.copy(Blocks.LANTERN).sound(SoundType.LANTERN)
+                    .strength(1f).requiresCorrectToolForDrops().noOcclusion()));
+
+    public static final RegistryObject<Block> WARPED_STEM_LANTERN = registerBlock("warped_stem_lantern",
+            () -> new LanternBlock(BlockBehaviour.Properties.copy(Blocks.LANTERN).sound(SoundType.LANTERN)
+                    .strength(1f).requiresCorrectToolForDrops().noOcclusion()));
+
+    public static final RegistryObject<Block> GRAPHITE_LANTERN = registerBlock("graphite_lantern",
+            () -> new LanternBlock(BlockBehaviour.Properties.copy(Blocks.LANTERN).sound(SoundType.LANTERN)
+                    .strength(1f).requiresCorrectToolForDrops().noOcclusion()));
+
+    public static final RegistryObject<Block> CUT_GRAPHITE = registerBlock("cut_graphite",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.METAL)
+                    .strength(0.7f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> CUT_GRAPHITE_SLAB = registerBlock("cut_graphite_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.METAL)
+                    .strength(0.7f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> CUT_GRAPHITE_STAIR = registerBlock("cut_graphite_stairs",
+            () -> new StairBlock(() -> ModBlocks.CUT_GRAPHITE.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.METAL).strength(0.7f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> CUT_GRAPHITE_WALL = registerBlock("cut_graphite_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.METAL)
+                    .strength(0.7f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> GRAPHITE_BLOCK_SLAB = registerBlock("graphite_block_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.METAL)
+                    .strength(0.7f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> GRAPHITE_BLOCK_STAIR = registerBlock("graphite_block_stairs",
+            () -> new StairBlock(() -> ModBlocks.GRAPHITE_BLOCK.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.METAL).strength(0.7f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> GRAPHITE_BLOCK_WALL = registerBlock("graphite_block_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.METAL)
+                    .strength(0.7f).requiresCorrectToolForDrops()));
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "hanging=false": {
+      "model": "orderofobsidian:block/graphite_lantern"
+    },
+    "hanging=true": {
+      "model": "orderofobsidian:block/graphite_lantern_hanging"
+    }
+  }
+}

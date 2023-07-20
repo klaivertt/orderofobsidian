@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "hanging=false": {
+      "model": "orderofobsidian:block/cobbled_deepslate_lantern"
+    },
+    "hanging=true": {
+      "model": "orderofobsidian:block/cobbled_deepslate_lantern_hanging"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "hanging=false": {
+      "model": "orderofobsidian:block/crimson_stem_lantern"
+    },
+    "hanging=true": {
+      "model": "orderofobsidian:block/crimson_stem_lantern_hanging"
+    }
+  }
+}

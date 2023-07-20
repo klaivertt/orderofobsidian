@@ -216,5 +216,25 @@
   "block.orderofobsidian.silver_block": "Silver Block",
   "block.orderofobsidian.steel_block": "Steel Block",
 
-  "block.orderofobsidian.chessgame": "Chess Game"
+  "block.orderofobsidian.cut_graphite": "Cut Graphite",
+  "block.orderofobsidian.cut_graphite_stairs": "Cut Graphite Stairs",
+  "block.orderofobsidian.cut_graphite_slab": "Cut Graphite Slab",
+  "block.orderofobsidian.cut_graphite_wall": "Cut Graphite Wall",
+  "block.orderofobsidian.graphite_block": "Graphite Block",
+  "block.orderofobsidian.graphite_block_stairs": "Graphite Block Stairs",
+  "block.orderofobsidian.graphite_block_slab": "Graphite Block Slab",
+  "block.orderofobsidian.graphite_block_wall": "Graphite Block Wall",
+
+  "block.orderofobsidian.blackstone_lantern": "Blackstone Lantern",
+  "block.orderofobsidian.mithril_lantern": "Mithril Lantern",
+  "block.orderofobsidian.mithril_chain": "Mithril Chain",
+  "block.orderofobsidian.obsidian_lantern": "Obisian Lantern",
+  "block.orderofobsidian.cobbled_deepslate_lantern": "Cobbled Deepslate Lantern",
+  "block.orderofobsidian.crimson_stem_lantern": "Crimson Stem Lantern",
+  "block.orderofobsidian.end_stone_lantern": "End Stone Lantern",
+  "block.orderofobsidian.warped_stem_lantern": "Warped Stem Lantern",
+  "block.orderofobsidian.graphite_lantern": "Graphite Lantern",
+
+  "block.orderofobsidian.chessgame": "Chess Game",
+  "block.orderofobsidian.blast_furnace": "Blast Furnace"
 }
