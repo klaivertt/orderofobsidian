@@ -575,13 +575,13 @@ public class ModItems {
     //end woden
 
     public static final RegistryObject<Item> BAR_BRAWL = ITEMS.register("bar_brawl_music_disc",
-            () -> new RecordItem(8, ModSounds.BAR_BRAWL, new Item.Properties().stacksTo(1), 320));
+            () -> new RecordItem(8, ModSounds.BAR_BRAWL, new Item.Properties().stacksTo(1), 2460));
     public static final RegistryObject<Item> CAT_REMIX = ITEMS.register("cat_remix_music_disc",
-            () -> new RecordItem(8, ModSounds.CAT_REMIX, new Item.Properties().stacksTo(1), 320));
+            () -> new RecordItem(8, ModSounds.CAT_REMIX, new Item.Properties().stacksTo(1), 6400));
     public static final RegistryObject<Item> LITTLE_ADVENTURES = ITEMS.register("little_adventures_music_disc",
-            () -> new RecordItem(8, ModSounds.LITTLE_ADVENTURES, new Item.Properties().stacksTo(1), 320));
+            () -> new RecordItem(8, ModSounds.LITTLE_ADVENTURES, new Item.Properties().stacksTo(1), 3120));
     public static final RegistryObject<Item> PARADISE = ITEMS.register("paradise_music_disc",
-            () -> new RecordItem(8, ModSounds.PARADISE, new Item.Properties().stacksTo(1), 320));
+            () -> new RecordItem(8, ModSounds.PARADISE, new Item.Properties().stacksTo(1), 2440));
 
 
 

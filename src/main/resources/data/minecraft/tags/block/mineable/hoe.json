@@ -1,0 +1,46 @@
+{
+  "values": [
+    {
+      "values": [
+        "orderofobsidian:aikigite_ore",
+        "orderofobsidian:deepslate_aikigite_ore",
+        "orderofobsidian:aluminium_ore",
+        "orderofobsidian:bauherite_ore",
+        "orderofobsidian:deepslate_bauherite_ore",
+        "orderofobsidian:graphite_ore",
+        "orderofobsidian:mithril_ore",
+        "orderofobsidian:deepslate_mithril_ore",
+        "orderofobsidian:lead_ore",
+        "orderofobsidian:deepslate_lead_ore",
+        "orderofobsidian:silver_ore",
+        "orderofobsidian:deepslate_silver_ore",
+        "orderofobsidian:avenronite_ore",
+        "orderofobsidian:edruelium_ore",
+        "orderofobsidian:pendorite_ore",
+        "orderofobsidian:endstone_pendorite_ore",
+        "orderofobsidian:oxys_ore",
+        "orderofobsidian:raw_aikigite_block",
+        "orderofobsidian:raw_aluminium_block",
+        "orderofobsidian:raw_avenronite_block",
+        "orderofobsidian:raw_bauherite_block",
+        "orderofobsidian:raw_edruelium_block",
+        "orderofobsidian:raw_lead_block",
+        "orderofobsidian:raw_mithril_block",
+        "orderofobsidian:raw_pendorite_block",
+        "orderofobsidian:raw_silver_block",
+        "orderofobsidian:aikigite_block",
+        "orderofobsidian:aluminium_block",
+        "orderofobsidian:avenronite_block",
+        "orderofobsidian:bauherite_block",
+        "orderofobsidian:edruelium_block",
+        "orderofobsidian:lead_block",
+        "orderofobsidian:mithril_block",
+        "orderofobsidian:oxys_block",
+        "orderofobsidian:pendorite_block",
+        "orderofobsidian:silver_block",
+        "orderofobsidian:steel_block",
+        "orderofobsidian:deepslate_aluminium_ore"
+      ]
+    }
+  ]
+}

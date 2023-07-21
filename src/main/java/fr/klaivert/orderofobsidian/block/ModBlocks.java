@@ -10,6 +10,7 @@ import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
+import net.minecraft.world.level.block.entity.FurnaceBlockEntity;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -31,7 +32,7 @@ public class ModBlocks {
                     .strength(1.5f).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> DEEPSLATE_AIKIGITE_ORE = registerBlock("deepslate_aikigite_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE)
                     .strength(2f).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> ALUMINIUM_ORE = registerBlock("aluminium_ore",
@@ -39,7 +40,7 @@ public class ModBlocks {
                     .strength(1f).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> DEEPSLATE_ALUMINIUM_ORE = registerBlock("deepslate_aluminium_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE)
                     .strength(1f).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> BAUHERITE_ORE = registerBlock("bauherite_ore",
@@ -47,7 +48,7 @@ public class ModBlocks {
                     .strength(2.1f).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> DEEPSLATE_BAUHERITE_ORE = registerBlock("deepslate_bauherite_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE)
                     .strength(2.3f).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> GRAPHITE_ORE = registerBlock("graphite_ore",
@@ -59,7 +60,7 @@ public class ModBlocks {
                     .strength(2.2f).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> DEEPSLATE_MITHRIL_ORE = registerBlock("deepslate_mithril_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE)
                     .strength(2.5f).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> SILVER_ORE = registerBlock("silver_ore",
@@ -67,7 +68,7 @@ public class ModBlocks {
                     .strength(2.2f).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> DEEPSLATE_SILVER_ORE = registerBlock("deepslate_silver_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE)
                     .strength(2.5f).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> LEAD_ORE = registerBlock("lead_ore",
@@ -75,7 +76,7 @@ public class ModBlocks {
                     .strength(1.8f).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> DEEPSLATE_LEAD_ORE = registerBlock("deepslate_lead_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE)
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE)
                     .strength(2f).requiresCorrectToolForDrops()));
 
 
@@ -263,6 +264,8 @@ public class ModBlocks {
     public static final RegistryObject<Block> GRAPHITE_BLOCK_WALL = registerBlock("graphite_block_wall",
             () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.METAL)
                     .strength(0.7f).requiresCorrectToolForDrops()));
+
+
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

@@ -1,0 +1,17 @@
+{
+  "values": [
+    "orderofobsidian:aikigite_ore",
+    "orderofobsidian:deepslate_aikigite_ore",
+    "orderofobsidian:lead_ore",
+    "orderofobsidian:deepslate_lead_ore",
+    "orderofobsidian:silver_ore",
+    "orderofobsidian:deepslate_silver_ore",
+    "orderofobsidian:raw_aikigite_block",
+    "orderofobsidian:raw_lead_block",
+    "orderofobsidian:raw_silver_block",
+    "orderofobsidian:aikigite_block",
+    "orderofobsidian:lead_block",
+    "orderofobsidian:silver_block",
+    "orderofobsidian:steel_block"
+  ]
+}

@@ -1,5 +1,6 @@
 {
   "parent": "block/template_hanging_lantern",
+  "render_type": "cutout",
   "textures": {
     "lantern": "orderofobsidian:block/cobbled_deepslate_lantern"
   }
