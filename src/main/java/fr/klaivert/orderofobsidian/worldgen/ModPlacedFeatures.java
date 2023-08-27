@@ -33,6 +33,8 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> PENDORITE_PLACED_KEY = createKey("pendorite_placed");
     public static final ResourceKey<PlacedFeature> END_PENDORITE_PLACED_KEY = createKey("end_pendorite_placed");
     public static final ResourceKey<PlacedFeature> OXYS_ORE_KEY = createKey("oxys_placed");
+    public static final ResourceKey<PlacedFeature> END_DEPHSTONE_KEY = createKey("end_depthstone_placed");
+
     public static void bootstrap(BootstapContext<PlacedFeature> context) {
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
 
@@ -83,6 +85,10 @@ public class ModPlacedFeatures {
         register(context, OXYS_ORE_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OXYS_ORE_KEY),
                 ModOrePlacement.commonOrePlacement(5, // veins per chunk
                         HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(-64), VerticalAnchor.absolute(80))));
+
+        register(context, END_DEPHSTONE_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.END_DEPHSTONE_KEY),
+                ModOrePlacement.commonOrePlacement(4, // veins per chunk
+                        HeightRangePlacement.uniform(VerticalAnchor.aboveBottom(-140), VerticalAnchor.absolute(120))));
 
     }
 

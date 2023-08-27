@@ -1,14 +1,4 @@
 {
-  "item.orderofobsidian.sapphire": "Safira",
-  "item.orderofobsidian.raw_sapphire": "Safira Bruta",
-
-  "block.orderofobsidian.sapphire_block": "Bloco de Safira",
-  "block.orderofobsidian.raw_sapphire_block": "Bloco de Safira Bruta",
-
-  "block.orderofobsidian.sapphire_ore": "Minério de Safira",
-  "block.orderofobsidian.deepslate_sapphire_ore": "Minério de Safira em Rocha Profunda",
-  "block.orderofobsidian.end_stone_sapphire_ore": "Minério de Safira em Pedra do Fim",
-  "block.orderofobsidian.nether_sapphire_ore": "Minério de Safira no Nether",
 
   "item.orderofobsidian.oxys": "Oxys",
 
@@ -57,7 +47,6 @@
   "item.orderofobsidian.oxys_shovel": "Pá de Oxys",
   "item.orderofobsidian.oxys_hoe": "Enxada de Oxys",
   "item.orderofobsidian.oxys_sword": "Espada de Oxys",
-  "item.orderofobsidian.oxys_hammer": "Martelo de Oxys",
   "item.orderofobsidian.oxys_stick": "Bastão de Oxys",
 
   "item.orderofobsidian.aikigite_pickaxe": "Picareta de Aikigite",
@@ -127,7 +116,7 @@
   "item.orderofobsidian.fried_egg": "Ovo Frito",
 
   "item.orderofobsidian.rice": "Arroz",
-  "item.orderofobsidian.rice_seeds": "Sementes de Arroz",
+  "item.orderofobsidian.rice_seed": "Sementes de Arroz",
   "item.orderofobsidian.cooked_rice": "Arroz Cozido",
 
   "item.orderofobsidian.sushi": "Sushi",
@@ -144,7 +133,7 @@
   "block.orderofobsidian.deepslate_aikigite_ore": "Minério de Aikigite em Rocha Profunda",
   "block.orderofobsidian.deepslate_bauherite_ore": "Minério de Bauherita em Rocha Profunda",
   "block.orderofobsidian.deepslate_lead_ore": "Minério de Chumbo em Rocha Profunda",
-  "block.orderofobsidian.deepslate_mitril_ore": "Minério de Mithril em Rocha Profunda",
+  "block.orderofobsidian.deepslate_mithril_ore": "Minério de Mithril em Rocha Profunda",
   "block.orderofobsidian.deepslate_silver_ore": "Minério de Prata em Rocha Profunda",
   "block.orderofobsidian.edruelium_ore": "Minério de Edruelium",
   "block.orderofobsidian.endstone_pendorite_ore": "Minério de Pendorita em Pedra do Fim",
@@ -177,5 +166,14 @@
   "block.orderofobsidian.silver_block": "Bloco de Prata",
   "block.orderofobsidian.steel_block": "Bloco de Aço",
 
-  "creativetab.order_tab": "Ordem do Obsidiano"
+  "creativetab.order_tab": "Ordem do Obsidiano",
+
+  "advancements.areyousureyouwanttogrowwiththis.title": "Você tem certeza de que quer crescer com isso?",
+  "advancements.areyousureyouwanttogrowwiththis.descr": "Se você gosta de jogar seus recursos pela janela, isso é feito para você.",
+
+  "advancements.orderofobsidian.end.oxys_armor.title": "Cubra-me com Minério Duvidoso",
+  "advancements.orderofobsidian.end.oxys_armor.description": "Obtenha um conjunto completo de armadura Oxys.",
+
+  "advancements.dubious_ore.title": "O que é este minério duvidoso?",
+  "advancements.dubious_ore.descr": "Obtenha um Minério Oxys."
 }

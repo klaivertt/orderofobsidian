@@ -1,10 +1,17 @@
 package fr.klaivert.orderofobsidian.block.custom;
 
 import net.minecraft.core.BlockPos;
+import net.minecraft.network.chat.Component;
+import net.minecraft.world.Container;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
+import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.inventory.AbstractContainerMenu;
+import net.minecraft.world.inventory.ContainerData;
+import net.minecraft.world.inventory.FurnaceMenu;
 import net.minecraft.world.item.context.BlockPlaceContext;
+import net.minecraft.world.item.crafting.RecipeType;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
@@ -25,7 +32,6 @@ public class Blast_Furnace extends Block {
     public static final DirectionProperty FACING = BlockStateProperties.FACING;
     private static final VoxelShape SHAPE =
             Block.box(0, 0, 0, 16, 18, 16);
-
     @Override
     public VoxelShape getShape(BlockState p_60555_, BlockGetter p_60556_, BlockPos p_60557_, CollisionContext p_60558_) {
         return SHAPE;
@@ -62,4 +68,5 @@ public class Blast_Furnace extends Block {
         builder.add(FACING);
         builder.add(LIT);
     }
+
 }

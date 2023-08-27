@@ -1,0 +1,11 @@
+{
+  "parent": "orderofobsidian:custom/brazier",
+  "render_type": "cutout",
+  "textures": {
+    "all": "orderofobsidian:block/mithril_brazier_base",
+    "particle": "orderofobsidian:block/mithril_brazier_base",
+    "side": "orderofobsidian:block/mithril_brazier",
+    "fire": "orderofobsidian:block/purple_fire",
+    "base": "orderofobsidian:block/mithril_brazier_base"
+  }
+}

@@ -2,6 +2,7 @@
   "creativetab.order_tab": "Order Of Obsidian",
 
   "item.orderofobsidian.aikigite_ingot": "Aikigite Ingot",
+  "item.orderofobsidian.raw_aikigite": "Raw Aikigite",
   "item.orderofobsidian.aikigite_pickaxe": "Aikigite Pickaxe",
   "item.orderofobsidian.aikigite_axe": "Aikigite Axe",
   "item.orderofobsidian.aikigite_shovel": "Aikigite Shovel",
@@ -37,6 +38,7 @@
   "item.orderofobsidian.raw_bauherite": "Raw Bauherite",
   "item.orderofobsidian.bauherite_pickaxe": "Bauherite Pickaxe",
   "item.orderofobsidian.bauherite_axe": "Bauherite Axe",
+  "item.orderofobsidian.bauherite_hoe": "Bauherite Hoe",
   "item.orderofobsidian.bauherite_shovel": "Bauherite Shovel",
   "item.orderofobsidian.bauherite_sword": "Bauherite Sword",
   "item.orderofobsidian.bauherite_bow": "Bauherite Bow",
@@ -54,6 +56,16 @@
   "item.orderofobsidian.bone_chestplate": "Bone Chestplate",
   "item.orderofobsidian.bone_leggings": "Bone Leggings",
   "item.orderofobsidian.bone_boots": "Bone Boots",
+
+  "item.orderofobsidian.wither_pickaxe": "Wither Pickaxe",
+  "item.orderofobsidian.wither_axe": "Wither Axe",
+  "item.orderofobsidian.wither_shovel": "Wither Shovel",
+  "item.orderofobsidian.wither_hoe": "Wither Hoe",
+  "item.orderofobsidian.wither_sword": "Wither Sword",
+  "item.orderofobsidian.wither_helmet": "Wither Helmet",
+  "item.orderofobsidian.wither_chestplate": "Wither Chestplate",
+  "item.orderofobsidian.wither_leggings": "Wither Leggings",
+  "item.orderofobsidian.wither_boots": "Wither Boots",
 
   "item.orderofobsidian.candy_apple": "Candy Apple",
   "item.orderofobsidian.diamond_apple": "Diamond Apple",
@@ -98,6 +110,8 @@
   "item.orderofobsidian.mithril_leggings": "Mithril Leggings",
   "item.orderofobsidian.mithril_boots": "Mithril Boots",
 
+  "item.orderofobsidian.netherite_apple": "Netherite Apple",
+
   "item.orderofobsidian.obsidian_pickaxe": "Obsidian Pickaxe",
   "item.orderofobsidian.obsidian_axe": "Obsidian Axe",
   "item.orderofobsidian.obsidian_shovel": "Obsidian Shovel",
@@ -134,6 +148,11 @@
   "item.orderofobsidian.pendorite_horse_armor": "Pendorite Horse Armor",
   "item.orderofobsidian.pendorite_apple": "Pendorite Apple",
 
+  "item.orderofobsidian.pendorite_helmet": "Pendorite Helmet",
+  "item.orderofobsidian.pendorite_chestplate": "Pendorite Chestplate",
+  "item.orderofobsidian.pendorite_leggings": "Pendorite Leggings",
+  "item.orderofobsidian.pendorite_boots": "Pendorite Boots",
+
   "item.orderofobsidian.silver_ingot": "Silver Ingot",
   "item.orderofobsidian.raw_silver": "Raw Silver",
   "item.orderofobsidian.silver_helmet": "Silver Helmet",
@@ -148,6 +167,11 @@
   "item.orderofobsidian.steel_leggings": "Steel Leggings",
   "item.orderofobsidian.steel_boots": "Steel Boots",
 
+  "item.orderofobsidian.steel_sword": "Steel Sword",
+  "item.orderofobsidian.steel_pickaxe": "Steel Pickaxe",
+  "item.orderofobsidian.steel_shovel": "Steel Shovel",
+  "item.orderofobsidian.steel_axe": "Steel Axe",
+  "item.orderofobsidian.steel_hoe": "Steel Hoe",
 
   "item.orderofobsidian.bar_brawl_music_disc": "Bar Brawl Music Disc",
   "item.orderofobsidian.bar_brawl_music_disc.desc": "Bryan Tech - Bar Brawl (CC0)",
@@ -165,10 +189,11 @@
   "item.orderofobsidian.fried_egg": "Fried egg",
 
   "item.orderofobsidian.rice": "Rice",
-  "item.orderofobsidian.rice_seeds": "Rice Seeds",
+  "item.orderofobsidian.rice_seed": "Rice Seeds",
   "item.orderofobsidian.cooked_rice": "Cooked Rice",
 
   "item.orderofobsidian.sushi": "Sushi",
+  "item.orderofobsidian.wither_skeleton_shard": "Wither Skeleton Shard",
 
   "item.orderofobsidian.netherite_horse_armor": "Netherite Horse Armor",
   "item.orderofobsidian.moss_horse_armor": "Moss Horse Armor",
@@ -183,7 +208,7 @@
   "block.orderofobsidian.deepslate_aluminium_ore": "Deepslate Aluminum Ore",
   "block.orderofobsidian.deepslate_bauherite_ore": "Deepslate Bauherite Ore",
   "block.orderofobsidian.deepslate_lead_ore": "Deepslate Lead Ore",
-  "block.orderofobsidian.deepslate_mitril_ore": "Deepslate Mitril Ore",
+  "block.orderofobsidian.deepslate_mithril_ore": "Deepslate Mithril Ore",
   "block.orderofobsidian.deepslate_silver_ore": "Deepslate Silver Ore",
   "block.orderofobsidian.edruelium_ore": "Edruelium Ore",
   "block.orderofobsidian.endstone_pendorite_ore": "Endstone Pendorite Ore",
@@ -235,6 +260,42 @@
   "block.orderofobsidian.warped_stem_lantern": "Warped Stem Lantern",
   "block.orderofobsidian.graphite_lantern": "Graphite Lantern",
 
+  "block.orderofobsidian.cracked_end_depthstone_bricks": "Graphite Lantern",
+  "block.orderofobsidian.cracked_end_depthstone_tiles": "Graphite Lantern",
+
+  "block.orderofobsidian.end_depthstone": "End Depthstone",
+  "block.orderofobsidian.end_depthstone_slab": "End Depthstone Slab",
+  "block.orderofobsidian.end_depthstone_stairs": "End Depthstone Stairs",
+  "block.orderofobsidian.end_depthstone_wall": "End Depthstone Wall",
+
+  "block.orderofobsidian.end_depthstone_bricks": "End Depthstone Brick",
+  "block.orderofobsidian.end_depthstone_brick_slab": "End Depthstone Brick Slab",
+  "block.orderofobsidian.end_depthstone_brick_stairs": "End Depthstone Brick Stairs",
+  "block.orderofobsidian.end_depthstone_brick_wall": "End Depthstone Brick Wall",
+
+  "block.orderofobsidian.end_depthstone_tiles": "End Depthstone Tile",
+  "block.orderofobsidian.end_depthstone_tile_slab": "End Depthstone Tile Slab",
+  "block.orderofobsidian.end_depthstone_tile_stairs": "End Depthstone Tile Stairs",
+  "block.orderofobsidian.end_depthstone_tile_wall": "End Depthstone Tile Wall",
+
+  "block.orderofobsidian.brazier": "Brazier",
+  "block.orderofobsidian.soul_brazier": "Soul Brazier",
+
+  "block.orderofobsidian.mithril_brazier": "Mithril Brazier",
+  "block.orderofobsidian.mithril_soul_brazier": "Mithril Soul Brazier",
+
+  "block.orderofobsidian.eyes_in_bottle": "Eyes In bottle",
   "block.orderofobsidian.chessgame": "Chess Game",
-  "block.orderofobsidian.blast_furnace": "Blast Furnace"
+  "block.orderofobsidian.blast_furnace": "Blast Furnace",
+
+  "block.orderofobsidian.rice": "Rice",
+
+  "advancements.areyousureyouwanttogrowwiththis.title": "are you sure you want to grow with this?",
+  "advancements.areyousureyouwanttogrowwiththis.descr": "if you like to throw your resources through the window, it is made for you.",
+
+  "advancements.orderofobsidian.end.oxys_armor.title": "Cover Me in Dubious Ore",
+  "advancements.orderofobsidian.end.oxys_armor.description": "Get a full suit of Oxys armor",
+
+  "advancements.dubious_ore.title": "what is this dubious ore?",
+  "advancements.dubious_ore.descr": "Get a Oxys Ore"
 }

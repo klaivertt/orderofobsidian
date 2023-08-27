@@ -4,11 +4,7 @@ import com.mojang.logging.LogUtils;
 import fr.klaivert.orderofobsidian.block.ModBlocks;
 import fr.klaivert.orderofobsidian.item.ModCreativeModTabs;
 import fr.klaivert.orderofobsidian.item.ModItems;
-import fr.klaivert.orderofobsidian.sound.ModSounds;
-import net.minecraft.client.renderer.ItemBlockRenderTypes;
-import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.item.CreativeModeTabs;
-import net.minecraft.world.level.block.GlassBlock;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -20,10 +16,6 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
-
-import java.awt.*;
-
-import static net.minecraft.client.renderer.RenderType.translucent;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(OrderOfObsidianMod.MOD_ID)
@@ -38,8 +30,6 @@ public class OrderOfObsidianMod {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
-
-        ModSounds.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 

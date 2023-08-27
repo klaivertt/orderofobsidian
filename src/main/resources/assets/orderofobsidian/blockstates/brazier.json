@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "lit=true": {
+      "model": "orderofobsidian:block/brazier"
+    },
+    "lit=false": {
+      "model": "orderofobsidian:block/brazier_extinguished"
+    }
+  }
+}

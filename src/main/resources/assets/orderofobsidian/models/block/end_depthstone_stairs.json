@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "orderofobsidian:block/end_depthstone",
+    "side": "orderofobsidian:block/end_depthstone",
+    "top": "orderofobsidian:block/end_depthstone"
+  }
+}

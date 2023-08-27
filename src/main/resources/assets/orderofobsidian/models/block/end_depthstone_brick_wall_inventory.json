@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "orderofobsidian:block/end_depthstone_bricks"
+  }
+}

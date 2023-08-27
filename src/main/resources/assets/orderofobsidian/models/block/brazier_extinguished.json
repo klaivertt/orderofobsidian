@@ -1,0 +1,10 @@
+{
+  "parent": "orderofobsidian:custom/brazier_extinguished",
+  "render_type": "cutout",
+  "textures": {
+    "all": "orderofobsidian:block/brazier_base",
+    "particle": "orderofobsidian:block/brazier_base",
+    "side": "orderofobsidian:block/brazier",
+    "base": "orderofobsidian:block/brazier_base"
+  }
+}

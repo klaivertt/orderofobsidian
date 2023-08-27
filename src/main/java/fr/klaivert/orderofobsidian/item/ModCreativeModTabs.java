@@ -1,7 +1,7 @@
 package fr.klaivert.orderofobsidian.item;
 
-import fr.klaivert.orderofobsidian.block.ModBlocks;
 import fr.klaivert.orderofobsidian.OrderOfObsidianMod;
+import fr.klaivert.orderofobsidian.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -98,11 +98,8 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModBlocks.OXYS_BLOCK.get());
                         pOutput.accept(ModBlocks.OXYS_ORE.get());
 
+                        pOutput.accept(ModBlocks.STEEL_BLOCK.get());
 
-                        pOutput.accept(ModItems.AIKIGITE_SWORD.get());
-                        pOutput.accept(ModItems.AIKIGITE_PICKAXE.get());
-                        pOutput.accept(ModItems.AIKIGITE_SHOVEL.get());
-                        pOutput.accept(ModItems.AIKIGITE_AXE.get());
                         pOutput.accept(ModItems.AIKIGITE_BOW.get());
 
                         pOutput.accept(ModItems.AVENRONITE_SWORD.get());
@@ -112,18 +109,9 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.AVENRONITE_HOE.get());
                         pOutput.accept(ModItems.AVENRONITE_BOW.get());
 
-                        pOutput.accept(ModItems.BAUHERITE_SWORD.get());
-                        pOutput.accept(ModItems.BAUHERITE_PICKAXE.get());
-                        pOutput.accept(ModItems.BAUHERITE_SHOVEL.get());
-                        pOutput.accept(ModItems.BAUHERITE_AXE.get());
-                        pOutput.accept(ModItems.BAUHERITE_HOE.get());
+
                         pOutput.accept(ModItems.BAUHERITE_BOW.get());
 
-                        pOutput.accept(ModItems.BONE_SWORD.get());
-                        pOutput.accept(ModItems.BONE_PICKAXE.get());
-                        pOutput.accept(ModItems.BONE_SHOVEL.get());
-                        pOutput.accept(ModItems.BONE_AXE.get());
-                        pOutput.accept(ModItems.BONE_HOE.get());
 
                         pOutput.accept(ModItems.EDRUELIUM_SWORD.get());
                         pOutput.accept(ModItems.EDRUELIUM_PICKAXE.get());
@@ -132,17 +120,6 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.EDRUELIUM_HOE.get());
                         pOutput.accept(ModItems.EDRUELIUM_BOW.get());
 
-                        pOutput.accept(ModItems.MITHRIL_SWORD.get());
-                        pOutput.accept(ModItems.MITHRIL_PICKAXE.get());
-                        pOutput.accept(ModItems.MITHRIL_SHOVEL.get());
-                        pOutput.accept(ModItems.MITHRIL_AXE.get());
-                        pOutput.accept(ModItems.MITHRIL_HOE.get());
-
-                        pOutput.accept(ModItems.OBSIDIAN_SWORD.get());
-                        pOutput.accept(ModItems.OBSIDIAN_PICKAXE.get());
-                        pOutput.accept(ModItems.OBSIDIAN_SHOVEL.get());
-                        pOutput.accept(ModItems.OBSIDIAN_AXE.get());
-                        pOutput.accept(ModItems.OBSIDIAN_HOE.get());
 
                         pOutput.accept(ModItems.OXYS_SWORD.get());
                         pOutput.accept(ModItems.OXYS_PICKAXE.get());
@@ -157,11 +134,6 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.PENDORITE_AXE.get());
                         pOutput.accept(ModItems.PENDORITE_HOE.get());
 
-                        pOutput.accept(ModItems.STEEL_SWORD.get());
-                        pOutput.accept(ModItems.STEEL_PICKAXE.get());
-                        pOutput.accept(ModItems.STEEL_SHOVEL.get());
-                        pOutput.accept(ModItems.STEEL_AXE.get());
-                        pOutput.accept(ModItems.STEEL_HOE.get());
 
                         pOutput.accept(ModItems.AIKIGITE_HELMET.get());
                         pOutput.accept(ModItems.AIKIGITE_CHESTPLATE.get());
@@ -218,7 +190,13 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.STEEL_LEGGINGS.get());
                         pOutput.accept(ModItems.STEEL_BOOTS.get());
 
+                        pOutput.accept(ModItems.WITHER_HELMET.get());
+                        pOutput.accept(ModItems.WITHER_CHESTPLATE.get());
+                        pOutput.accept(ModItems.WITHER_LEGGING.get());
+                        pOutput.accept(ModItems.WITHER_BOOTS.get());
+
                         pOutput.accept(ModItems.RICE.get());
+                        pOutput.accept(ModItems.RICE_SEED.get());
 
                         pOutput.accept(ModItems.CHIPS.get());
                         pOutput.accept(ModItems.FRIED_EGG.get());
@@ -248,6 +226,11 @@ public class ModCreativeModTabs {
 
                         pOutput.accept(ModBlocks.BLAST_FURNACE.get());
 
+                        pOutput.accept(ModBlocks.BRAZIER.get());
+                        pOutput.accept(ModBlocks.SOUL_BRAZIER.get());
+                        pOutput.accept(ModBlocks.MITHRIL_BRAZIER.get());
+                        pOutput.accept(ModBlocks.MITHRIL_SOUL_BRAZIER.get());
+
                         pOutput.accept(ModBlocks.BLACKSTONE_LANTERN.get());
                         pOutput.accept(ModBlocks.COBBLED_DEEPSLATE_LANTERN.get());
                         pOutput.accept(ModBlocks.CRIMSON_STEM_LANTERN.get());
@@ -258,7 +241,6 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModBlocks.OBSIDIAN_LANTERN.get());
                         pOutput.accept(ModBlocks.WARPED_STEM_LANTERN.get());
 
-
                         pOutput.accept(ModBlocks.CUT_GRAPHITE.get());
                         pOutput.accept(ModBlocks.CUT_GRAPHITE_SLAB.get());
                         pOutput.accept(ModBlocks.CUT_GRAPHITE_STAIR.get());
@@ -266,8 +248,27 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModBlocks.GRAPHITE_BLOCK_SLAB.get());
                         pOutput.accept(ModBlocks.GRAPHITE_BLOCK_STAIR.get());
                         pOutput.accept(ModBlocks.GRAPHITE_BLOCK_WALL.get());
+
+                        pOutput.accept(ModBlocks.CRAKED_END_DEPHSTONE_BRICKS.get());
+                        pOutput.accept(ModBlocks.CRAKED_END_DEPHSTONE_TILES.get());
+
+                        pOutput.accept(ModBlocks.END_DEPHSTONE_BRICKS.get());
+                        pOutput.accept(ModBlocks.END_DEPHSTONE_BRICKS_SLAB.get());
+                        pOutput.accept(ModBlocks.END_DEPHSTONE_BRICKS_STAIR.get());
+                        pOutput.accept(ModBlocks.END_DEPHSTONE_BRICKS_WALL.get());
+
+                        pOutput.accept(ModBlocks.END_DEPHSTONE_TILES.get());
+                        pOutput.accept(ModBlocks.END_DEPHSTONE_TILES_SLAB.get());
+                        pOutput.accept(ModBlocks.END_DEPHSTONE_TILES_STAIR.get());
+                        pOutput.accept(ModBlocks.END_DEPHSTONE_TILES_WALL.get());
+
+                        pOutput.accept(ModBlocks.END_DEPHSTONE.get());
+                        pOutput.accept(ModBlocks.END_DEPHSTONE_SLAB.get());
+                        pOutput.accept(ModBlocks.END_DEPHSTONE_STAIR.get());
+                        pOutput.accept(ModBlocks.END_DEPHSTONE_WALL.get());
                     })
                     .build());
+
 
 
     public static void register(IEventBus eventBus) {

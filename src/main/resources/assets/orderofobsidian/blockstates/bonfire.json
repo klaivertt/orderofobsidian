@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "orderofobsidian:block/bonfire"
+      },
+      {
+        "model": "orderofobsidian:block/bonfire_alt"
+      }
+    ]
+  }
+}

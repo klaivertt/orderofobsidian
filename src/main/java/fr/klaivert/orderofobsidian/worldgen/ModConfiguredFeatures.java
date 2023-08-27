@@ -13,6 +13,7 @@ import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.OreConfiguration;
+import net.minecraft.world.level.levelgen.feature.configurations.SculkPatchConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration;
 import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize;
 import net.minecraft.world.level.levelgen.feature.foliageplacers.BlobFoliagePlacer;
@@ -40,6 +41,7 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> PENDORITE_ORE_KEY = registerKey("pendorite_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> ENDSTONE_PENDORITE_ORE_KEY = registerKey("endstone_pendorite_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> OXYS_ORE_KEY = registerKey("oxys_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> END_DEPHSTONE_KEY = registerKey("end_depthstone");
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
         RuleTest stoneReplaceables = new TagMatchTest(BlockTags.STONE_ORE_REPLACEABLES);
@@ -96,7 +98,12 @@ public class ModConfiguredFeatures {
 
         register(context, OXYS_ORE_KEY, Feature.ORE, new OreConfiguration(endstoneReplaceables,
                 ModBlocks.OXYS_ORE.get().defaultBlockState(),3));
+
+        register(context, END_DEPHSTONE_KEY, Feature.ORE, new OreConfiguration(endstoneReplaceables,
+                ModBlocks.END_DEPHSTONE.get().defaultBlockState(),60));
     }
+
+
 
 
     public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {

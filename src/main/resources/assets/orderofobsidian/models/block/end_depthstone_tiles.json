@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "orderofobsidian:block/end_depthstone_tiles"
+  }
+}

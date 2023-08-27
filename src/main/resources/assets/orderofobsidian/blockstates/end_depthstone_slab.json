@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "orderofobsidian:block/end_depthstone_slab"
+    },
+    "type=double": {
+      "model": "orderofobsidian:block/end_depthstone"
+    },
+    "type=top": {
+      "model": "orderofobsidian:block/end_depthstone_slab_top"
+    }
+  }
+}

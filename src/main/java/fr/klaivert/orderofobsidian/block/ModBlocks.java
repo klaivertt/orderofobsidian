@@ -1,17 +1,15 @@
 package fr.klaivert.orderofobsidian.block;
 
 import fr.klaivert.orderofobsidian.OrderOfObsidianMod;
-import fr.klaivert.orderofobsidian.block.custom.Blast_Furnace;
-import fr.klaivert.orderofobsidian.block.custom.chessgameblock;
-import fr.klaivert.orderofobsidian.block.custom.eyesinbotlleblock;
+import fr.klaivert.orderofobsidian.block.custom.*;
 import fr.klaivert.orderofobsidian.item.ModItems;
-import net.minecraft.client.resources.model.Material;
+import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
-import net.minecraft.world.level.block.entity.FurnaceBlockEntity;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -19,12 +17,9 @@ import net.minecraftforge.registries.RegistryObject;
 
 import java.util.function.Supplier;
 
-import static net.minecraft.world.level.block.Blocks.MOSS_BLOCK;
-
 public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, OrderOfObsidianMod.MOD_ID);
-
 
 
     public static final RegistryObject<Block> AIKIGITE_ORE = registerBlock("aikigite_ore",
@@ -195,7 +190,7 @@ public class ModBlocks {
         return BLOCKS.register(name, block);
     }
     public static final RegistryObject<Block> MOSS_BRICKS = registerBlock("moss_bricks",
-            () -> new Block(BlockBehaviour.Properties.copy(MOSS_BLOCK)
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.MOSS_BLOCK)
                     .strength(0.5f)));
     public static final RegistryObject<Block> BLAST_FURNACE = registerBlock("blast_furnace",
             () -> new Blast_Furnace(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).lightLevel(state -> state.getValue(Blast_Furnace.LIT) ? 10:0).sound(SoundType.ANCIENT_DEBRIS)
@@ -210,7 +205,7 @@ public class ModBlocks {
                     .strength(1f).requiresCorrectToolForDrops().noOcclusion()));
 
     public static final RegistryObject<Block> MITHRIL_CHAIN = registerBlock("mithril_chain",
-            () -> new ChainBlock(BlockBehaviour.Properties.copy(Blocks.LANTERN).sound(SoundType.LANTERN)
+            () -> new ChainBlock(BlockBehaviour.Properties.copy(Blocks.CHAIN).sound(SoundType.CHAIN)
                     .strength(1f).requiresCorrectToolForDrops().noOcclusion()));
 
     public static final RegistryObject<Block> OBSIDIAN_LANTERN = registerBlock("obsidian_lantern",
@@ -264,6 +259,85 @@ public class ModBlocks {
     public static final RegistryObject<Block> GRAPHITE_BLOCK_WALL = registerBlock("graphite_block_wall",
             () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.METAL)
                     .strength(0.7f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> CRAKED_END_DEPHSTONE_BRICKS = registerBlock("cracked_end_depthstone_bricks",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.END_STONE).sound(SoundType.STONE)
+                    .strength(2f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> CRAKED_END_DEPHSTONE_TILES = registerBlock("cracked_end_depthstone_tiles",
+            () -> new  Block(BlockBehaviour.Properties.copy(Blocks.END_STONE).sound(SoundType.STONE)
+                    .strength(2f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> END_DEPHSTONE = registerBlock("end_depthstone",
+            () -> new  Block(BlockBehaviour.Properties.copy(Blocks.END_STONE).sound(SoundType.STONE)
+                    .strength(2f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> END_DEPHSTONE_SLAB = registerBlock("end_depthstone_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.END_STONE).sound(SoundType.STONE)
+                    .strength(2f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> END_DEPHSTONE_STAIR = registerBlock("end_depthstone_stairs",
+            () -> new StairBlock(() -> ModBlocks.END_DEPHSTONE.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.END_STONE).sound(SoundType.STONE).strength(2f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> END_DEPHSTONE_WALL = registerBlock("end_depthstone_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.END_STONE).sound(SoundType.STONE)
+                    .strength(2f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> END_DEPHSTONE_BRICKS = registerBlock("end_depthstone_bricks",
+            () -> new  Block(BlockBehaviour.Properties.copy(Blocks.END_STONE).sound(SoundType.STONE)
+                    .strength(2f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> END_DEPHSTONE_BRICKS_SLAB = registerBlock("end_depthstone_brick_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.END_STONE).sound(SoundType.STONE)
+                    .strength(0.7f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> END_DEPHSTONE_BRICKS_STAIR = registerBlock("end_depthstone_brick_stairs",
+            () -> new StairBlock(() -> ModBlocks.END_DEPHSTONE_BRICKS.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.END_STONE).sound(SoundType.STONE).strength(0.7f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> END_DEPHSTONE_BRICKS_WALL = registerBlock("end_depthstone_brick_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.END_STONE).sound(SoundType.STONE)
+                    .strength(2f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> END_DEPHSTONE_TILES = registerBlock("end_depthstone_tiles",
+            () -> new  Block(BlockBehaviour.Properties.copy(Blocks.END_STONE).sound(SoundType.STONE)
+                    .strength(2f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> END_DEPHSTONE_TILES_SLAB = registerBlock("end_depthstone_tile_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.END_STONE).sound(SoundType.STONE)
+                    .strength(2f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> END_DEPHSTONE_TILES_STAIR = registerBlock("end_depthstone_tile_stairs",
+            () -> new StairBlock(() -> ModBlocks.END_DEPHSTONE_TILES.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.END_STONE).sound(SoundType.STONE).strength(2f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> END_DEPHSTONE_TILES_WALL = registerBlock("end_depthstone_tile_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.END_STONE).sound(SoundType.STONE)
+                    .strength(2f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> BRAZIER = registerBlock("brazier",
+            () -> new BrazierBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).lightLevel(state -> state.getValue(Blast_Furnace.LIT) ? 10:0).sound(SoundType.METAL)
+                    .strength(2f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> SOUL_BRAZIER = registerBlock("soul_brazier",
+            () -> new BrazierBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).lightLevel(state -> state.getValue(Blast_Furnace.LIT) ? 10:0).sound(SoundType.METAL)
+                    .strength(2f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> MITHRIL_BRAZIER = registerBlock("mithril_brazier",
+            () -> new BrazierBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).lightLevel(state -> state.getValue(Blast_Furnace.LIT) ? 10:0).sound(SoundType.METAL)
+                    .strength(2f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> MITHRIL_SOUL_BRAZIER = registerBlock("mithril_soul_brazier",
+            () -> new BrazierBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).lightLevel(state -> state.getValue(Blast_Furnace.LIT) ? 10:0).sound(SoundType.METAL)
+                    .strength(2f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> BONFIRE = registerBlock("bonfire",
+            () -> new BrazierBlock(BlockBehaviour.Properties.copy(Blocks.FIRE).lightLevel(state -> state.getValue(Blast_Furnace.LIT) ? 10:0).sound(SoundType.CANDLE)
+                    .strength(2f).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> RICE_PLANT = registerBlockWithoutBlockItem("rice_plant",
+            () -> new RiceBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion()));
+
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

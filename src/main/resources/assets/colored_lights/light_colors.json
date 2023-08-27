@@ -1,0 +1,16 @@
+{
+	"replace": false,
+	"colors": {
+		"orderofobsidian:blackstone_lantern": "#17cfbd",
+		"orderofobsidian:mithril_lantern": "#17cfbd",
+		"orderofobsidian:obsidian_lantern": "#7617CF",
+		"orderofobsidian:cobbled_deepslate_lantern": "#1776CF",
+		"orderofobsidian:crimson_stem_lantern": "#FF7E7E",
+		"orderofobsidian:end_stone_lantern": "#17cfbd",
+		"orderofobsidian:warped_stem_lantern": "#17cfbd",
+		"orderofobsidian:graphite_lantern": "#525252",
+		"orderofobsidian:soul_brazier": "#17cfbd",
+		"orderofobsidian:mithril_brazier": "#FF2B2B",
+		"orderofobsidian:mithril_soul_brazier": "#AA00FF"
+	}
+}
