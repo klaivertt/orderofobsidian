@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 125,
+  "experience": 1.25,
+  "group": "pendorite_ingot",
+  "ingredient": {
+    "item": "orderofobsidian:pendorite_ore"
+  },
+  "result": "orderofobsidian:pendorite_ingot"
+}

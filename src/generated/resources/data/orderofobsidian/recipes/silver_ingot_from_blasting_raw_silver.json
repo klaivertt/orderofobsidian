@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 1.1,
+  "group": "silver_ingot",
+  "ingredient": {
+    "item": "orderofobsidian:raw_silver"
+  },
+  "result": "orderofobsidian:silver_ingot"
+}

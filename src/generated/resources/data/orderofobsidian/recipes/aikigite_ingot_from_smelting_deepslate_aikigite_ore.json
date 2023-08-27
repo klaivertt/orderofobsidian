@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.25,
+  "group": "aikigite_ingot",
+  "ingredient": {
+    "item": "orderofobsidian:deepslate_aikigite_ore"
+  },
+  "result": "orderofobsidian:aikigite_ingot"
+}

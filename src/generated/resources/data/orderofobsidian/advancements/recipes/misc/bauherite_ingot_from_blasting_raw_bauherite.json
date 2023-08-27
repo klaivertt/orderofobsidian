@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_raw_bauherite": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "orderofobsidian:raw_bauherite"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "orderofobsidian:bauherite_ingot_from_blasting_raw_bauherite"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_raw_bauherite",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "orderofobsidian:bauherite_ingot_from_blasting_raw_bauherite"
+    ]
+  },
+  "sends_telemetry_event": false
+}

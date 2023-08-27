@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 250,
+  "experience": 1.25,
+  "group": "edruelium_ingot",
+  "ingredient": {
+    "item": "orderofobsidian:edruelium_ore"
+  },
+  "result": "orderofobsidian:edruelium_ingot"
+}

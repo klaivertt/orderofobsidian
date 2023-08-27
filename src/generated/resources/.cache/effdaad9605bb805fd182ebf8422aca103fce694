@@ -1,0 +1,12 @@
+// 1.20.1	2023-08-27T17:39:15.9482475	Tags for minecraft:block mod id orderofobsidian
+de02aed1bd59024e7ea670ba921c0d2bf115407c data/forge/tags/blocks/needs_netherite_tool.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/blocks/fences.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/blocks/fence_gates.json
+996202cd6dccc3c4d65671dbe4392d5748c98c4f data/minecraft/tags/blocks/mineable/axe.json
+11c38e67821c10e4789072fdc9a471900139b855 data/minecraft/tags/blocks/mineable/pickaxe.json
+d561ef5a9e16f20fa80634c54f6f7ef44c3e946e data/minecraft/tags/blocks/needs_diamond_tool.json
+521d07292ad4925f00a76fa265a14d6bd9c27a35 data/minecraft/tags/blocks/needs_iron_tool.json
+072ac4e6cb275acbb0953d356881fa9cef58b664 data/minecraft/tags/blocks/needs_stone_tool.json
+22c6673eee2ea8f323645aee660b9a89bcb50f9d data/minecraft/tags/blocks/slabs.json
+a8b237c078c60cbb195789b4194466707c5f58fb data/minecraft/tags/blocks/stairs.json
+2b7df60ef4c01e139eb8d261b896f2e6f71e0000 data/minecraft/tags/blocks/walls.json

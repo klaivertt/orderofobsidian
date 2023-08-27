@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 125,
+  "experience": 1.25,
+  "group": "avenronite_ingot",
+  "ingredient": {
+    "item": "orderofobsidian:raw_avenronite"
+  },
+  "result": "orderofobsidian:avenronite_ingot"
+}
