@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "orderofobsidian:graphite_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "orderofobsidian:graphite_ingot"
+  }
+}

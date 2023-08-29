@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "orderofobsidian:block/lead_chain",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "orderofobsidian:block/lead_chain"
+    },
+    "axis=z": {
+      "model": "orderofobsidian:block/lead_chain",
+      "x": 90
+    }
+  }
+}

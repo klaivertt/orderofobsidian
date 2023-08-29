@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "A": {
+      "item": "minecraft:stick"
+    },
+    "S": {
+      "item": "orderofobsidian:edruelium_ingot"
+    }
+  },
+  "pattern": [
+    "SSS",
+    " A ",
+    " A "
+  ],
+  "result": {
+    "item": "orderofobsidian:edruelium_pickaxe"
+  },
+  "show_notification": true
+}

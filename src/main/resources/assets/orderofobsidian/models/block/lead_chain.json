@@ -1,0 +1,7 @@
+{
+  "parent": "orderofobsidian:custom/chain",
+  "textures": {
+    "particle": "orderofobsidian:block/lead_chain",
+    "texture": "orderofobsidian:block/lead_chain"
+  }
+}

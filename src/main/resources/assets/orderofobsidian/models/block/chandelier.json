@@ -1,0 +1,11 @@
+{
+  "parent": "orderofobsidian:custom/chandelier",
+
+  "render_type": "cutout",
+  "textures": {
+    "particle": "orderofobsidian:block/chandelier_base",
+    "torch2": "orderofobsidian:block/torch_2",
+    "torch": "orderofobsidian:block/torch_2",
+    "base": "orderofobsidian:block/chandelier_base"
+  }
+}

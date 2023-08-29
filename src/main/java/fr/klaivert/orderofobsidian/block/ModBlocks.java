@@ -2,6 +2,7 @@ package fr.klaivert.orderofobsidian.block;
 
 import fr.klaivert.orderofobsidian.OrderOfObsidianMod;
 import fr.klaivert.orderofobsidian.block.custom.*;
+import fr.klaivert.orderofobsidian.block.custom.ChainBlock;
 import fr.klaivert.orderofobsidian.item.ModItems;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -325,8 +326,12 @@ public class ModBlocks {
             () -> new BrazierBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).lightLevel(state -> state.getValue(Blast_Furnace.LIT) ? 10:0).sound(SoundType.METAL)
                     .strength(2f).requiresCorrectToolForDrops()));
 
+    public static final RegistryObject<Block> CHANDELIER = registerBlock("chandelier",
+            () -> new ChandelierBlock(Block.Properties.copy(Blocks.IRON_BLOCK).strength(0.3F).sound(SoundType.WOOD).noOcclusion().lightLevel(state -> 15), false));;
+    public static final RegistryObject<Block> SOUL_CHANDELIER = registerBlock("soul_chandelier", ()
+            -> new ChandelierBlock(Block.Properties.copy(Blocks.IRON_BLOCK).strength(0.3F).sound(SoundType.WOOD).noOcclusion().lightLevel(state -> 11), true));
 
-
+    public static final RegistryObject<Block> LEAD_CHAIN = registerBlock("lead_chain", () -> new ChainBlock(BlockBehaviour.Properties.copy(ModBlocks.LEAD_BLOCK.get()).strength(4.3F).sound(SoundType.METAL).noOcclusion()));
     private static <T extends Block> RegistryObject<T> registerBlockWithoutBlockItem(String name, Supplier<T> block) {
         return BLOCKS.register(name, block);
     }

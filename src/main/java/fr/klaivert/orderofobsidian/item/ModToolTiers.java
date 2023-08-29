@@ -34,4 +34,38 @@ public class ModToolTiers {
                     Tags.Blocks.NEEDS_NETHERITE_TOOL, () -> Ingredient.of(ModItems.PENDORITE_INGOT.get())),
             new ResourceLocation(OrderOfObsidianMod.MOD_ID, "pendorite"), List.of(Tiers.NETHERITE), List.of());
 
+    public static final Tier AIKIGITE    = TierSortingRegistry.registerTier(
+            new ForgeTier(3, 650, 9f, 1.4f, 30,
+                    Tags.Blocks.NEEDS_NETHERITE_TOOL, () -> Ingredient.of(ModItems.AIKIGITE_INGOT.get())),
+            new ResourceLocation(OrderOfObsidianMod.MOD_ID, "aikigite"), List.of(Tiers.DIAMOND), List.of());
+
+    public static final Tier BAUHERITE    = TierSortingRegistry.registerTier(
+            new ForgeTier(3, 1800, 5f, 2f, 50,
+                    Tags.Blocks.NEEDS_NETHERITE_TOOL, () -> Ingredient.of(ModItems.BAUHERITE_INGOT.get())),
+            new ResourceLocation(OrderOfObsidianMod.MOD_ID, "bauherite"), List.of(Tiers.DIAMOND), List.of());
+
+    public static final Tier BONE    = TierSortingRegistry.registerTier(
+            new ForgeTier(1, 150, 2f, 1f, 10,
+                    Tags.Blocks.NEEDS_NETHERITE_TOOL, () -> Ingredient.of(Items.BONE)),
+            new ResourceLocation(OrderOfObsidianMod.MOD_ID, "bone"), List.of(Tiers.STONE), List.of());
+
+    public static final Tier MITHRIL    = TierSortingRegistry.registerTier(
+            new ForgeTier(3, 2200, 6f, 2f, 100,
+                    Tags.Blocks.NEEDS_NETHERITE_TOOL, () -> Ingredient.of(ModItems.MITHRIL_INGOT.get())),
+            new ResourceLocation(OrderOfObsidianMod.MOD_ID, "mithril"), List.of(Tiers.DIAMOND), List.of());
+
+    public static final Tier OBSIDIAN    = TierSortingRegistry.registerTier(
+            new ForgeTier(3, 2000, 5.5f, 1.5f, 10,
+                    Tags.Blocks.NEEDS_NETHERITE_TOOL, () -> Ingredient.of(Items.OBSIDIAN)),
+            new ResourceLocation(OrderOfObsidianMod.MOD_ID, "obsidian"), List.of(Tiers.DIAMOND), List.of());
+
+    public static final Tier STEEL    = TierSortingRegistry.registerTier(
+            new ForgeTier(3, 1000, 2f, 1.5f, 25,
+                    Tags.Blocks.NEEDS_NETHERITE_TOOL, () -> Ingredient.of(ModItems.STEEL_INGOT.get())),
+            new ResourceLocation(OrderOfObsidianMod.MOD_ID, "steel"), List.of(Tiers.DIAMOND), List.of());
+
+    public static final Tier WITHER    = TierSortingRegistry.registerTier(
+            new ForgeTier(2, 750, 1.6f, 1.3f, 20,
+                    Tags.Blocks.NEEDS_NETHERITE_TOOL, () -> Ingredient.of(Items.BONE)),
+            new ResourceLocation(OrderOfObsidianMod.MOD_ID, "wither"), List.of(Tiers.IRON), List.of());
 }

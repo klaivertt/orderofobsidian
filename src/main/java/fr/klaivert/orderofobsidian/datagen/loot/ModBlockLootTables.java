@@ -57,32 +57,32 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.STEEL_BLOCK.get());
 
         this.add(ModBlocks.AIKIGITE_ORE.get(),
-                block -> createCopperLikeOreDrops(ModBlocks.AIKIGITE_ORE.get(), ModItems.RAW_AIKIGITE.get()));
+                block -> createOreDrop(ModBlocks.AIKIGITE_ORE.get(), ModItems.RAW_AIKIGITE.get()));
         this.add(ModBlocks.DEEPSLATE_AIKIGITE_ORE.get(),
-                block -> createCopperLikeOreDrops(ModBlocks.DEEPSLATE_AIKIGITE_ORE.get(), ModItems.RAW_AIKIGITE.get()));
+                block -> createOreDrop(ModBlocks.DEEPSLATE_AIKIGITE_ORE.get(), ModItems.RAW_AIKIGITE.get()));
 
         this.add(ModBlocks.ALUMINIUM_ORE.get(),
-                block -> createCopperLikeOreDrops(ModBlocks.ALUMINIUM_ORE.get(), ModItems.RAW_ALUMINIUM.get()));
+                block -> createOreDrop(ModBlocks.ALUMINIUM_ORE.get(), ModItems.RAW_ALUMINIUM.get()));
         this.add(ModBlocks.DEEPSLATE_ALUMINIUM_ORE.get(),
-                block -> createCopperLikeOreDrops(ModBlocks.DEEPSLATE_ALUMINIUM_ORE.get(), ModItems.RAW_ALUMINIUM.get()));
+                block -> createOreDrop(ModBlocks.DEEPSLATE_ALUMINIUM_ORE.get(), ModItems.RAW_ALUMINIUM.get()));
 
         this.add(ModBlocks.BAUHERITE_ORE.get(),
-                block -> createCopperLikeOreDrops(ModBlocks.BAUHERITE_ORE.get(), ModItems.RAW_BAUHERITE.get()));
+                block -> createOreDrop(ModBlocks.BAUHERITE_ORE.get(), ModItems.RAW_BAUHERITE.get()));
         this.add(ModBlocks.DEEPSLATE_BAUHERITE_ORE.get(),
-                block -> createCopperLikeOreDrops(ModBlocks.DEEPSLATE_BAUHERITE_ORE.get(), ModItems.RAW_BAUHERITE.get()));
+                block -> createOreDrop(ModBlocks.DEEPSLATE_BAUHERITE_ORE.get(), ModItems.RAW_BAUHERITE.get()));
 
         this.add(ModBlocks.GRAPHITE_ORE.get(),
                 block -> createCopperLikeOreDrops(ModBlocks.GRAPHITE_ORE.get(), ModItems.GRAPHITE_DUST.get()));
 
         this.add(ModBlocks.MITHRIL_ORE.get(),
-                block -> createCopperLikeOreDrops(ModBlocks.MITHRIL_ORE.get(), ModItems.RAW_MITHRIL.get()));
+                block -> createOreDrop(ModBlocks.MITHRIL_ORE.get(), ModItems.RAW_MITHRIL.get()));
         this.add(ModBlocks.DEEPSLATE_MITHRIL_ORE.get(),
-                block -> createCopperLikeOreDrops(ModBlocks.DEEPSLATE_MITHRIL_ORE.get(), ModItems.RAW_MITHRIL.get()));
+                block -> createOreDrop(ModBlocks.DEEPSLATE_MITHRIL_ORE.get(), ModItems.RAW_MITHRIL.get()));
 
         this.add(ModBlocks.SILVER_ORE.get(),
-                block -> createCopperLikeOreDrops(ModBlocks.SILVER_ORE.get(), ModItems.RAW_SILVER.get()));
+                block -> createOreDrop(ModBlocks.SILVER_ORE.get(), ModItems.RAW_SILVER.get()));
         this.add(ModBlocks.DEEPSLATE_SILVER_ORE.get(),
-                block -> createCopperLikeOreDrops(ModBlocks.DEEPSLATE_SILVER_ORE.get(), ModItems.RAW_SILVER .get()));
+                block -> createOreDrop(ModBlocks.DEEPSLATE_SILVER_ORE.get(), ModItems.RAW_SILVER .get()));
 
         this.add(ModBlocks.LEAD_ORE.get(),
                 block -> createCopperLikeOreDrops(ModBlocks.LEAD_ORE.get(), ModItems.RAW_LEAD.get()));
@@ -90,18 +90,18 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 block -> createCopperLikeOreDrops(ModBlocks.DEEPSLATE_LEAD_ORE.get(), ModItems.RAW_LEAD .get()));
 
         this.add(ModBlocks.AVENRONITE_ORE.get(),
-                block -> createCopperLikeOreDrops(ModBlocks.AVENRONITE_ORE.get(), ModItems.RAW_AVENRONITE.get()));
+                block -> createOreDrop(ModBlocks.AVENRONITE_ORE.get(), ModItems.RAW_AVENRONITE.get()));
 
         this.add(ModBlocks.EDRUELIUM_ORE.get(),
-                block -> createCopperLikeOreDrops(ModBlocks.EDRUELIUM_ORE.get(), ModItems.RAW_EDRUELIUM.get()));
+                block -> createOreDrop(ModBlocks.EDRUELIUM_ORE.get(), ModItems.RAW_EDRUELIUM.get()));
 
         this.add(ModBlocks.PENDORITE_ORE.get(),
-                block -> createCopperLikeOreDrops(ModBlocks.PENDORITE_ORE.get(), ModItems.RAW_PENDORITE.get()));
+                block -> createOreDrop(ModBlocks.PENDORITE_ORE.get(), ModItems.RAW_PENDORITE.get()));
         this.add(ModBlocks.ENDSTONE_PENDORITE_ORE.get(),
-                block -> createCopperLikeOreDrops(ModBlocks.ENDSTONE_PENDORITE_ORE.get(), ModItems.RAW_PENDORITE .get()));
+                block -> createOreDrop(ModBlocks.ENDSTONE_PENDORITE_ORE.get(), ModItems.RAW_PENDORITE .get()));
 
         this.add(ModBlocks.OXYS_ORE.get(),
-                block -> createCopperLikeOreDrops(ModBlocks.OXYS_ORE.get(), ModItems.OXYS.get()));
+                block -> createOreDrop(ModBlocks.OXYS_ORE.get(), ModItems.OXYS.get()));
 
         this.dropSelf(ModBlocks.CHEST_GAME.get());
         this.dropSelf(ModBlocks.EYES_IN_BOTTLE.get());
@@ -136,7 +136,9 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.SOUL_BRAZIER.get());
         this.dropSelf(ModBlocks.MITHRIL_BRAZIER.get());
         this.dropSelf(ModBlocks.MITHRIL_SOUL_BRAZIER.get());
-
+        this.dropSelf(ModBlocks.CHANDELIER.get());
+        this.dropSelf(ModBlocks.SOUL_CHANDELIER.get());
+        this.dropSelf(ModBlocks.LEAD_CHAIN.get());
         this.add(ModBlocks.CUT_GRAPHITE_SLAB.get(),
                 block -> createSlabItemTable(ModBlocks.CUT_GRAPHITE_SLAB.get()));
 

@@ -124,6 +124,19 @@ public class ModItems {
                     ArmorItem.Type.BOOTS,
                     new Item.Properties()));
 
+    public static final RegistryObject<Item> AIKIGITE_SWORD = ITEMS.register("aikigite_sword",
+            () -> new SwordItem(ModToolTiers.AIKIGITE, 6, 1.7f,
+                    new Item.Properties()));
+    public static final RegistryObject<Item> AIKIGITE_PICKAXE = ITEMS.register("aikigite_pickaxe",
+            () -> new PickaxeItem(ModToolTiers.AIKIGITE, 0, 1f,
+                    new Item.Properties()));
+    public static final RegistryObject<Item> AIKIGITE_SHOVEL = ITEMS.register("aikigite_shovel",
+            () -> new ShovelItem(ModToolTiers.AIKIGITE, 0, 1f,
+                    new Item.Properties()));
+    public static final RegistryObject<Item> AIKIGITE_AXE = ITEMS.register("aikigite_axe",
+            () -> new AxeItem(ModToolTiers.AIKIGITE, 7, 1f,
+                    new Item.Properties()));
+
     //end Aikigite
     //aluminum
     public static final RegistryObject<ArmorItem> ALUMINUM_HELMET = ITEMS.register("aluminum_helmet",
@@ -209,6 +222,23 @@ public class ModItems {
                     ArmorItem.Type.BOOTS,
                     new Item.Properties()));
 
+    public static final RegistryObject<Item> BAUHERITE_SWORD = ITEMS.register("bauherite_sword",
+            () -> new SwordItem(ModToolTiers.BAUHERITE, 6, 1.7f,
+                    new Item.Properties()));
+    public static final RegistryObject<Item> BAUHERITE_PICKAXE = ITEMS.register("bauherite_pickaxe",
+            () -> new PickaxeItem(ModToolTiers.BAUHERITE, 0, 1f,
+                    new Item.Properties()));
+    public static final RegistryObject<Item> BAUHERITE_SHOVEL = ITEMS.register("bauherite_shovel",
+            () -> new ShovelItem(ModToolTiers.BAUHERITE, 0, 1f,
+                    new Item.Properties()));
+    public static final RegistryObject<Item> BAUHERITE_AXE = ITEMS.register("bauherite_axe",
+            () -> new AxeItem(ModToolTiers.BAUHERITE, 7, 1f,
+                    new Item.Properties()));
+
+    public static final RegistryObject<Item> BAUHERITE_HOE = ITEMS.register("bauherite_hoe",
+            () -> new HoeItem(ModToolTiers.BAUHERITE, 0, 1f,
+                    new Item.Properties()));
+
     public static final RegistryObject<Item> BAUHERITE_BOW = ITEMS.register("bauherite_bow",
             () -> new BowItem(new Item.Properties().durability(650)));
     //end bauherite
@@ -233,6 +263,23 @@ public class ModItems {
                     ModArmorMaterial.BONE_ARMOR,
                     ArmorItem.Type.BOOTS,
                     new Item.Properties()));
+
+    public static final RegistryObject<Item> BONE_SWORD = ITEMS.register("bone_sword",
+            () -> new SwordItem(ModToolTiers.BONE, 4, 1.7f,
+                    new Item.Properties()));
+    public static final RegistryObject<Item> BONE_PICKAXE = ITEMS.register("bone_pickaxe",
+            () -> new PickaxeItem(ModToolTiers.BONE, 0, 1f,
+                    new Item.Properties()));
+    public static final RegistryObject<Item> BONE_SHOVEL = ITEMS.register("bone_shovel",
+            () -> new ShovelItem(ModToolTiers.BONE, 0, 1f,
+                    new Item.Properties()));
+    public static final RegistryObject<Item> BONE_AXE = ITEMS.register("bone_axe",
+            () -> new AxeItem(ModToolTiers.BONE, 5, 1f,
+                    new Item.Properties()));
+    public static final RegistryObject<Item> BONE_HOE = ITEMS.register("bone_hoe",
+            () -> new HoeItem(ModToolTiers.BONE, 0, 1f,
+                    new Item.Properties()));
+
 
 
     //end bone
@@ -323,6 +370,23 @@ public class ModItems {
                     ArmorItem.Type.BOOTS,
                     new Item.Properties()));
 
+    public static final RegistryObject<Item> MITHRIL_SWORD = ITEMS.register("mithril_sword",
+            () -> new SwordItem(ModToolTiers.MITHRIL, 7, 1.7f,
+                    new Item.Properties()));
+    public static final RegistryObject<Item> MITHRIL_PICKAXE = ITEMS.register("mithril_pickaxe",
+            () -> new PickaxeItem(ModToolTiers.MITHRIL, 0, 1f,
+                    new Item.Properties()));
+    public static final RegistryObject<Item> MITHRIL_SHOVEL = ITEMS.register("mithril_shovel",
+            () -> new ShovelItem(ModToolTiers.MITHRIL, 0, 1f,
+                    new Item.Properties()));
+    public static final RegistryObject<Item> MITHRIL_AXE = ITEMS.register("mithril_axe",
+            () -> new AxeItem(ModToolTiers.MITHRIL, 8, 1f,
+                    new Item.Properties()));
+    public static final RegistryObject<Item> MITHRIL_HOE = ITEMS.register("mithril_hoe",
+            () -> new HoeItem(ModToolTiers.MITHRIL, 0, 1f,
+                    new Item.Properties()));
+
+
     //end mithril
     //netherite
     public static final RegistryObject<Item> NETHERITE_HORSE_ARMOR = ITEMS.register("netherite_horse_armor",
@@ -356,6 +420,22 @@ public class ModItems {
             () -> new ArmorItem(
                     ModArmorMaterial.OBSIDIAN_ARMOR,
                     ArmorItem.Type.BOOTS,
+                    new Item.Properties().fireResistant()));
+
+    public static final RegistryObject<Item> OBSIDIAN_SWORD = ITEMS.register("obsidian_sword",
+            () -> new SwordItem(ModToolTiers.OBSIDIAN, 7, 1.7f,
+                    new Item.Properties().fireResistant()));
+    public static final RegistryObject<Item> OBSIDIAN_PICKAXE = ITEMS.register("obsidian_pickaxe",
+            () -> new PickaxeItem(ModToolTiers.OBSIDIAN, 0, 1f,
+                    new Item.Properties().fireResistant()));
+    public static final RegistryObject<Item> OBSIDIAN_SHOVEL = ITEMS.register("obsidian_shovel",
+            () -> new ShovelItem(ModToolTiers.OBSIDIAN, 0, 1f,
+                    new Item.Properties().fireResistant()));
+    public static final RegistryObject<Item> OBSIDIAN_AXE = ITEMS.register("obsidian_axe",
+            () -> new AxeItem(ModToolTiers.OBSIDIAN, 8, 1f,
+                    new Item.Properties().fireResistant()));
+    public static final RegistryObject<Item> OBSIDIAN_HOE = ITEMS.register("obsidian_hoe",
+            () -> new HoeItem(ModToolTiers.OBSIDIAN, 0, 1f,
                     new Item.Properties().fireResistant()));
 
     //end Obsidian
@@ -479,6 +559,22 @@ public class ModItems {
                     ModArmorMaterial.STEEL_ARMOR,
                     ArmorItem.Type.BOOTS,
                     new Item.Properties()));
+
+    public static final RegistryObject<Item> STEEL_SWORD = ITEMS.register("steel_sword",
+            () -> new SwordItem(ModToolTiers.STEEL, 5, 1.7f,
+                    new Item.Properties()));
+    public static final RegistryObject<Item> STEEL_PICKAXE = ITEMS.register("steel_pickaxe",
+            () -> new PickaxeItem(ModToolTiers.STEEL, 0, 1f,
+                    new Item.Properties()));
+    public static final RegistryObject<Item> STEEL_SHOVEL = ITEMS.register("steel_shovel",
+            () -> new ShovelItem(ModToolTiers.STEEL, 0, 1f,
+                    new Item.Properties()));
+    public static final RegistryObject<Item> STEEL_AXE = ITEMS.register("steel_axe",
+            () -> new AxeItem(ModToolTiers.STEEL, 6, 1f,
+                    new Item.Properties()));
+    public static final RegistryObject<Item> STEEL_HOE = ITEMS.register("steel_hoe",
+            () -> new HoeItem(ModToolTiers.STEEL, 0, 1f,
+                    new Item.Properties()));
     //end steel
     //sushi
     public static final RegistryObject<Item> SUSHI = ITEMS.register("sushi",
@@ -526,6 +622,22 @@ public class ModItems {
                     ModArmorMaterial.WITHER_ARMOR,
                     ArmorItem.Type.BOOTS,
                     new Item.Properties().fireResistant()));
+
+    public static final RegistryObject<Item> WITHER_SWORD = ITEMS.register("wither_sword",
+            () -> new SwordItem(ModToolTiers.WITHER, 5, 1.7f,
+                    new Item.Properties()));
+    public static final RegistryObject<Item> WITHER_PICKAXE = ITEMS.register("wither_pickaxe",
+            () -> new PickaxeItem(ModToolTiers.WITHER, 0, 1f,
+                    new Item.Properties()));
+    public static final RegistryObject<Item> WITHER_SHOVEL = ITEMS.register("wither_shovel",
+            () -> new ShovelItem(ModToolTiers.WITHER, 0, 1f,
+                    new Item.Properties()));
+    public static final RegistryObject<Item> WITHER_AXE = ITEMS.register("wither_axe",
+            () -> new AxeItem(ModToolTiers.WITHER, 6, 1f,
+                    new Item.Properties()));
+    public static final RegistryObject<Item> WITHER_HOE = ITEMS.register("wither_hoe",
+            () -> new HoeItem(ModToolTiers.STEEL, 0, 1f,
+                    new Item.Properties()));
 
     //end wither
 

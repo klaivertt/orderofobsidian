@@ -20,7 +20,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider pProvider) {
 
-        this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
+        this.tag(Tags.Blocks.ORES)
                 .add(ModBlocks.AIKIGITE_ORE.get(),
                         ModBlocks.DEEPSLATE_AIKIGITE_ORE.get(),
 
@@ -49,10 +49,28 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
 
                         ModBlocks.ENDSTONE_PENDORITE_ORE.get(),
 
+                        ModBlocks.OXYS_ORE.get());
+
+        this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .add(ModBlocks.AIKIGITE_ORE.get(),
+                        ModBlocks.DEEPSLATE_AIKIGITE_ORE.get(),
+                        ModBlocks.ALUMINIUM_ORE.get(),
+                        ModBlocks.DEEPSLATE_ALUMINIUM_ORE.get(),
+                        ModBlocks.BAUHERITE_ORE.get(),
+                        ModBlocks.DEEPSLATE_BAUHERITE_ORE.get(),
+                        ModBlocks.GRAPHITE_ORE.get(),
+                        ModBlocks.MITHRIL_ORE.get(),
+                        ModBlocks.DEEPSLATE_MITHRIL_ORE.get(),
+                        ModBlocks.SILVER_ORE.get(),
+                        ModBlocks.DEEPSLATE_SILVER_ORE.get(),
+                        ModBlocks.LEAD_ORE.get(),
+                        ModBlocks.DEEPSLATE_LEAD_ORE.get(),
+                        ModBlocks.AVENRONITE_ORE.get(),
+                        ModBlocks.EDRUELIUM_ORE.get(),
+                        ModBlocks.PENDORITE_ORE.get(),
+                        ModBlocks.ENDSTONE_PENDORITE_ORE.get(),
                         ModBlocks.OXYS_ORE.get(),
-
                         ModBlocks.RAW_AIKIGITE_BLOCK.get(),
-
                         ModBlocks.RAW_ALUMINIUM_BLOCK.get(),
 
                         ModBlocks.RAW_AVENRONTE_BLOCK.get(),
@@ -131,12 +149,30 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.END_DEPHSTONE_TILES_SLAB.get(),
                         ModBlocks.END_DEPHSTONE_TILES_STAIR.get(),
                         ModBlocks.END_DEPHSTONE_TILES_WALL.get(),
-
+                        ModBlocks.CHANDELIER.get(),
+                        ModBlocks.SOUL_CHANDELIER.get(),
+                        ModBlocks.LEAD_CHAIN.get(),
                         ModBlocks.BRAZIER.get(),
                         ModBlocks.SOUL_BRAZIER.get(),
 
                         ModBlocks.MITHRIL_BRAZIER.get(),
                         ModBlocks.MITHRIL_SOUL_BRAZIER.get());
+
+        this.tag(Tags.Blocks.END_STONES)
+                .add(ModBlocks.CRAKED_END_DEPHSTONE_BRICKS.get(),
+                        ModBlocks.CRAKED_END_DEPHSTONE_TILES.get(),
+                        ModBlocks.END_DEPHSTONE.get(),
+                        ModBlocks.END_DEPHSTONE_SLAB.get(),
+                        ModBlocks.END_DEPHSTONE_STAIR.get(),
+                        ModBlocks.END_DEPHSTONE_WALL.get(),
+                        ModBlocks.END_DEPHSTONE_BRICKS.get(),
+                        ModBlocks.END_DEPHSTONE_BRICKS_SLAB.get(),
+                        ModBlocks.END_DEPHSTONE_BRICKS_STAIR.get(),
+                        ModBlocks.END_DEPHSTONE_BRICKS_WALL.get(),
+                        ModBlocks.END_DEPHSTONE_TILES.get(),
+                        ModBlocks.END_DEPHSTONE_TILES_SLAB.get(),
+                        ModBlocks.END_DEPHSTONE_TILES_STAIR.get(),
+                        ModBlocks.END_DEPHSTONE_TILES_WALL.get());
 
         this.tag(BlockTags.MINEABLE_WITH_AXE)
                 .add(ModBlocks.CHEST_GAME.get());
@@ -152,6 +188,9 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.DEEPSLATE_LEAD_ORE.get(),
                         ModBlocks.RAW_LEAD_BLOCK.get(),
                         ModBlocks.LEAD_BLOCK.get(),
+                        ModBlocks.CHANDELIER.get(),
+                        ModBlocks.SOUL_CHANDELIER.get(),
+                        ModBlocks.LEAD_CHAIN.get(),
 
                         ModBlocks.STEEL_BLOCK.get(),
 
@@ -233,9 +272,6 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.BRAZIER.get(),
                         ModBlocks.SOUL_BRAZIER.get());
 
-        this.tag(Tags.Blocks.NEEDS_NETHERITE_TOOL)
-                .add(ModBlocks.OXYS_ORE.get(),
-                        ModBlocks.OXYS_BLOCK.get());
 
 
 

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "orderofobsidian:end_depthstone_tiles"
+  },
+  "result": "orderofobsidian:end_depthstone_tile_stairs"
+}

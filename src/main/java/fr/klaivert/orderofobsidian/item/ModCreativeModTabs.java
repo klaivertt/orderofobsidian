@@ -100,6 +100,10 @@ public class ModCreativeModTabs {
 
                         pOutput.accept(ModBlocks.STEEL_BLOCK.get());
 
+                        pOutput.accept(ModItems.AIKIGITE_SWORD.get());
+                        pOutput.accept(ModItems.AIKIGITE_PICKAXE.get());
+                        pOutput.accept(ModItems.AIKIGITE_SHOVEL.get());
+                        pOutput.accept(ModItems.AIKIGITE_AXE.get());
                         pOutput.accept(ModItems.AIKIGITE_BOW.get());
 
                         pOutput.accept(ModItems.AVENRONITE_SWORD.get());
@@ -109,8 +113,18 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.AVENRONITE_HOE.get());
                         pOutput.accept(ModItems.AVENRONITE_BOW.get());
 
-
+                        pOutput.accept(ModItems.BAUHERITE_SWORD.get());
+                        pOutput.accept(ModItems.BAUHERITE_PICKAXE.get());
+                        pOutput.accept(ModItems.BAUHERITE_SHOVEL.get());
+                        pOutput.accept(ModItems.BAUHERITE_AXE.get());
+                        pOutput.accept(ModItems.BAUHERITE_HOE.get());
                         pOutput.accept(ModItems.BAUHERITE_BOW.get());
+
+                        pOutput.accept(ModItems.BONE_SWORD.get());
+                        pOutput.accept(ModItems.BONE_PICKAXE.get());
+                        pOutput.accept(ModItems.BONE_SHOVEL.get());
+                        pOutput.accept(ModItems.BONE_AXE.get());
+                        pOutput.accept(ModItems.BONE_HOE.get());
 
 
                         pOutput.accept(ModItems.EDRUELIUM_SWORD.get());
@@ -120,6 +134,17 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.EDRUELIUM_HOE.get());
                         pOutput.accept(ModItems.EDRUELIUM_BOW.get());
 
+                        pOutput.accept(ModItems.MITHRIL_SWORD.get());
+                        pOutput.accept(ModItems.MITHRIL_PICKAXE.get());
+                        pOutput.accept(ModItems.MITHRIL_SHOVEL.get());
+                        pOutput.accept(ModItems.MITHRIL_AXE.get());
+                        pOutput.accept(ModItems.MITHRIL_HOE.get());
+
+                        pOutput.accept(ModItems.OBSIDIAN_SWORD.get());
+                        pOutput.accept(ModItems.OBSIDIAN_PICKAXE.get());
+                        pOutput.accept(ModItems.OBSIDIAN_SHOVEL.get());
+                        pOutput.accept(ModItems.OBSIDIAN_AXE.get());
+                        pOutput.accept(ModItems.OBSIDIAN_HOE.get());
 
                         pOutput.accept(ModItems.OXYS_SWORD.get());
                         pOutput.accept(ModItems.OXYS_PICKAXE.get());
@@ -128,12 +153,23 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.OXYS_HOE.get());
                         pOutput.accept(ModItems.OXYS_BOW.get());
 
+                        pOutput.accept(ModItems.STEEL_SWORD.get());
+                        pOutput.accept(ModItems.STEEL_PICKAXE.get());
+                        pOutput.accept(ModItems.STEEL_SHOVEL.get());
+                        pOutput.accept(ModItems.STEEL_AXE.get());
+                        pOutput.accept(ModItems.STEEL_HOE.get());
+
+                        pOutput.accept(ModItems.WITHER_SWORD.get());
+                        pOutput.accept(ModItems.WITHER_PICKAXE.get());
+                        pOutput.accept(ModItems.WITHER_SHOVEL.get());
+                        pOutput.accept(ModItems.WITHER_AXE.get());
+                        pOutput.accept(ModItems.WITHER_HOE.get());
+
                         pOutput.accept(ModItems.PENDORITE_SWORD.get());
                         pOutput.accept(ModItems.PENDORITE_PICKAXE.get());
                         pOutput.accept(ModItems.PENDORITE_SHOVEL.get());
                         pOutput.accept(ModItems.PENDORITE_AXE.get());
                         pOutput.accept(ModItems.PENDORITE_HOE.get());
-
 
                         pOutput.accept(ModItems.AIKIGITE_HELMET.get());
                         pOutput.accept(ModItems.AIKIGITE_CHESTPLATE.get());
@@ -229,6 +265,10 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModBlocks.SOUL_BRAZIER.get());
                         pOutput.accept(ModBlocks.MITHRIL_BRAZIER.get());
                         pOutput.accept(ModBlocks.MITHRIL_SOUL_BRAZIER.get());
+
+                        pOutput.accept(ModBlocks.CHANDELIER.get());
+                        pOutput.accept(ModBlocks.SOUL_CHANDELIER.get());
+                        pOutput.accept(ModBlocks.LEAD_CHAIN.get());
 
                         pOutput.accept(ModBlocks.BLACKSTONE_LANTERN.get());
                         pOutput.accept(ModBlocks.COBBLED_DEEPSLATE_LANTERN.get());
