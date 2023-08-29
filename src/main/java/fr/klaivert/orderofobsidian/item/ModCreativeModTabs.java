@@ -196,7 +196,6 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.WITHER_BOOTS.get());
 
                         pOutput.accept(ModItems.RICE.get());
-                        pOutput.accept(ModItems.RICE_SEED.get());
 
                         pOutput.accept(ModItems.CHIPS.get());
                         pOutput.accept(ModItems.FRIED_EGG.get());

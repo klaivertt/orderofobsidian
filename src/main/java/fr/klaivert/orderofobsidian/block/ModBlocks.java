@@ -186,12 +186,6 @@ public class ModBlocks {
             () -> new eyesinbotlleblock(BlockBehaviour.Properties.copy(Blocks.GLASS).sound(SoundType.GLASS)
                     .strength(1f).requiresCorrectToolForDrops().noOcclusion()));
 
-    private static <T extends Block> RegistryObject<T> registerBlockWithoutBlockItem(String name, Supplier<T> block) {
-        return BLOCKS.register(name, block);
-    }
-    public static final RegistryObject<Block> MOSS_BRICKS = registerBlock("moss_bricks",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.MOSS_BLOCK)
-                    .strength(0.5f)));
     public static final RegistryObject<Block> BLAST_FURNACE = registerBlock("blast_furnace",
             () -> new Blast_Furnace(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).lightLevel(state -> state.getValue(Blast_Furnace.LIT) ? 10:0).sound(SoundType.ANCIENT_DEBRIS)
                     .strength(1f).requiresCorrectToolForDrops().noOcclusion()));
@@ -331,14 +325,11 @@ public class ModBlocks {
             () -> new BrazierBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).lightLevel(state -> state.getValue(Blast_Furnace.LIT) ? 10:0).sound(SoundType.METAL)
                     .strength(2f).requiresCorrectToolForDrops()));
 
-    public static final RegistryObject<Block> BONFIRE = registerBlock("bonfire",
-            () -> new BrazierBlock(BlockBehaviour.Properties.copy(Blocks.FIRE).lightLevel(state -> state.getValue(Blast_Furnace.LIT) ? 10:0).sound(SoundType.CANDLE)
-                    .strength(2f).requiresCorrectToolForDrops()));
-
-    public static final RegistryObject<Block> RICE_PLANT = registerBlockWithoutBlockItem("rice_plant",
-            () -> new RiceBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion()));
 
 
+    private static <T extends Block> RegistryObject<T> registerBlockWithoutBlockItem(String name, Supplier<T> block) {
+        return BLOCKS.register(name, block);
+    }
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

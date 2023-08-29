@@ -499,8 +499,7 @@ public class ModItems {
     public static final RegistryObject<Item> PARADISE = ITEMS.register("paradise_music_disc",
             () -> new RecordItem(8, ModSounds.PARADISE, new Item.Properties().stacksTo(1), 2440));
 
-    public static final RegistryObject<Item> RICE_SEED = ITEMS.register("rice_seed",
-            () -> new ItemNameBlockItem(ModBlocks.RICE_PLANT.get(), new Item.Properties()));
+
 
 
     public static final RegistryObject<Item> MOSS_HORSE_ARMROR = ITEMS.register("moss_horse_armor",

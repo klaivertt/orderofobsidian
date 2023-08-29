@@ -5,10 +5,12 @@ import fr.klaivert.orderofobsidian.block.ModBlocks;
 import fr.klaivert.orderofobsidian.item.ModItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.AbstractCookingRecipe;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.world.level.ItemLike;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 
 import java.util.List;
@@ -89,6 +91,668 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .requires(ModBlocks.AIKIGITE_BLOCK.get())
                 .unlockedBy(getHasName(ModBlocks.AIKIGITE_BLOCK.get()), has(ModBlocks.AIKIGITE_BLOCK.get()))
                 .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.AVENRONITE_BLOCK.get())
+                .pattern("SSS")
+                .pattern("SSS")
+                .pattern("SSS")
+                .define('S', ModItems.AVENRONITE_INGOT.get())
+                .unlockedBy(getHasName(ModItems.AVENRONITE_INGOT.get()), has(ModItems.AVENRONITE_INGOT.get()))
+                .save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.AVENRONITE_INGOT.get(), 9)
+                .requires(ModBlocks.AVENRONITE_BLOCK.get())
+                .unlockedBy(getHasName(ModBlocks.AVENRONITE_BLOCK.get()), has(ModBlocks.AVENRONITE_BLOCK.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.BAUHERITE_BLOCK.get())
+                .pattern("SSS")
+                .pattern("SSS")
+                .pattern("SSS")
+                .define('S', ModItems.BAUHERITE_INGOT.get())
+                .unlockedBy(getHasName(ModItems.BAUHERITE_INGOT.get()), has(ModItems.BAUHERITE_INGOT.get()))
+                .save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.BAUHERITE_INGOT.get(), 9)
+                .requires(ModBlocks.BAUHERITE_BLOCK.get())
+                .unlockedBy(getHasName(ModBlocks.BAUHERITE_BLOCK.get()), has(ModBlocks.BAUHERITE_BLOCK.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.EDRUELIUM_BLOCK.get())
+                .pattern("SSS")
+                .pattern("SSS")
+                .pattern("SSS")
+                .define('S', ModItems.EDRUELIUM_INGOT.get())
+                .unlockedBy(getHasName(ModItems.EDRUELIUM_INGOT.get()), has(ModItems.EDRUELIUM_INGOT.get()))
+                .save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.EDRUELIUM_INGOT.get(), 9)
+                .requires(ModBlocks.EDRUELIUM_BLOCK.get())
+                .unlockedBy(getHasName(ModBlocks.EDRUELIUM_BLOCK.get()), has(ModBlocks.EDRUELIUM_BLOCK.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.GRAPHITE_BLOCK.get())
+                .pattern("SSS")
+                .pattern("SSS")
+                .pattern("SSS")
+                .define('S', ModItems.GRAPHITE_INGOT.get())
+                .unlockedBy(getHasName(ModItems.GRAPHITE_INGOT.get()), has(ModItems.GRAPHITE_INGOT.get()))
+                .save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.GRAPHITE_INGOT.get(), 9)
+                .requires(ModBlocks.GRAPHITE_BLOCK.get())
+                .unlockedBy(getHasName(ModBlocks.GRAPHITE_BLOCK.get()), has(ModBlocks.GRAPHITE_BLOCK.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.LEAD_BLOCK.get())
+                .pattern("SSS")
+                .pattern("SSS")
+                .pattern("SSS")
+                .define('S', ModItems.LEAD_INGOT.get())
+                .unlockedBy(getHasName(ModItems.LEAD_INGOT.get()), has(ModItems.LEAD_INGOT.get()))
+                .save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.LEAD_INGOT.get(), 9)
+                .requires(ModBlocks.LEAD_BLOCK.get())
+                .unlockedBy(getHasName(ModBlocks.LEAD_BLOCK.get()), has(ModBlocks.LEAD_BLOCK.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.MITRHIL_BLOCK.get())
+                .pattern("SSS")
+                .pattern("SSS")
+                .pattern("SSS")
+                .define('S', ModItems.MITHRIL_INGOT.get())
+                .unlockedBy(getHasName(ModItems.MITHRIL_INGOT.get()), has(ModItems.MITHRIL_INGOT.get()))
+                .save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.MITHRIL_INGOT.get(), 9)
+                .requires(ModBlocks.MITRHIL_BLOCK.get())
+                .unlockedBy(getHasName(ModBlocks.MITRHIL_BLOCK.get()), has(ModBlocks.MITRHIL_BLOCK.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.OXYS_BLOCK.get())
+                .pattern("SSS")
+                .pattern("SSS")
+                .pattern("SSS")
+                .define('S', ModItems.OXYS.get())
+                .unlockedBy(getHasName(ModItems.OXYS.get()), has(ModItems.OXYS.get()))
+                .save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.OXYS.get(), 9)
+                .requires(ModBlocks.OXYS_BLOCK.get())
+                .unlockedBy(getHasName(ModBlocks.OXYS_BLOCK.get()), has(ModBlocks.OXYS_BLOCK.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.PENDORITE_BLOCK.get())
+                .pattern("SSS")
+                .pattern("SSS")
+                .pattern("SSS")
+                .define('S', ModItems.PENDORITE_INGOT.get())
+                .unlockedBy(getHasName(ModItems.PENDORITE_INGOT.get()), has(ModItems.PENDORITE_INGOT.get()))
+                .save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.PENDORITE_INGOT.get(), 9)
+                .requires(ModBlocks.PENDORITE_BLOCK.get())
+                .unlockedBy(getHasName(ModBlocks.PENDORITE_BLOCK.get()), has(ModBlocks.PENDORITE_BLOCK.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.SILVER_BLOCK.get())
+                .pattern("SSS")
+                .pattern("SSS")
+                .pattern("SSS")
+                .define('S', ModItems.SILVER_INGOT.get())
+                .unlockedBy(getHasName(ModItems.SILVER_INGOT.get()), has(ModItems.SILVER_INGOT.get()))
+                .save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.SILVER_INGOT.get(), 9)
+                .requires(ModBlocks.SILVER_BLOCK.get())
+                .unlockedBy(getHasName(ModBlocks.SILVER_BLOCK.get()), has(ModBlocks.SILVER_BLOCK.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.STEEL_BLOCK.get())
+                .pattern("SSS")
+                .pattern("SSS")
+                .pattern("SSS")
+                .define('S', ModItems.STEEL_INGOT.get())
+                .unlockedBy(getHasName(ModItems.STEEL_INGOT.get()), has(ModItems.STEEL_INGOT.get()))
+                .save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.STEEL_INGOT.get(), 9)
+                .requires(ModBlocks.STEEL_BLOCK.get())
+                .unlockedBy(getHasName(ModBlocks.STEEL_BLOCK.get()), has(ModBlocks.STEEL_BLOCK.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.AVENRONITE_AXE.get())
+                .pattern("SS")
+                .pattern("SA")
+                .pattern(" A")
+                .define('S', ModItems.AVENRONITE_INGOT.get())
+                .define('A', Items.STICK)
+                .unlockedBy(getHasName(ModItems.AVENRONITE_INGOT.get()), has(ModItems.AVENRONITE_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.AVENRONITE_SHOVEL.get())
+                .pattern("S")
+                .pattern("A")
+                .pattern("A")
+                .define('S', ModItems.AVENRONITE_INGOT.get())
+                .define('A', Items.STICK)
+                .unlockedBy(getHasName(ModItems.AVENRONITE_INGOT.get()), has(ModItems.AVENRONITE_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.AVENRONITE_HOE.get())
+                .pattern("SS")
+                .pattern(" A")
+                .pattern(" A")
+                .define('S', ModItems.AVENRONITE_INGOT.get())
+                .define('A', Items.STICK)
+                .unlockedBy(getHasName(ModItems.AVENRONITE_INGOT.get()), has(ModItems.AVENRONITE_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.AVENRONITE_PICKAXE.get())
+                .pattern("SSS")
+                .pattern(" A ")
+                .pattern(" A ")
+                .define('S', ModItems.AVENRONITE_INGOT.get())
+                .define('A', Items.STICK)
+                .unlockedBy(getHasName(ModItems.AVENRONITE_INGOT.get()), has(ModItems.AVENRONITE_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.AVENRONITE_SWORD.get())
+                .pattern("S")
+                .pattern("S")
+                .pattern("A")
+                .define('S', ModItems.AVENRONITE_INGOT.get())
+                .define('A', Items.STICK)
+                .unlockedBy(getHasName(ModItems.AVENRONITE_INGOT.get()), has(ModItems.AVENRONITE_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.AVENRONITE_BOW.get())
+                .pattern("SA")
+                .define('S', ModItems.AVENRONITE_INGOT.get())
+                .define('A', Items.BOW)
+                .unlockedBy(getHasName(ModItems.AVENRONITE_INGOT.get()), has(ModItems.AVENRONITE_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.AIKIGITE_CHESTPLATE.get())
+                .pattern("S S")
+                .pattern("SSS")
+                .pattern("SSS")
+                .define('S', ModItems.AIKIGITE_INGOT.get())
+                .unlockedBy(getHasName(ModItems.AIKIGITE_INGOT.get()), has(ModItems.AIKIGITE_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.AIKIGITE_HELMET.get())
+                .pattern("SSS")
+                .pattern("S S")
+                .define('S', ModItems.AIKIGITE_INGOT.get())
+                .unlockedBy(getHasName(ModItems.AIKIGITE_INGOT.get()), has(ModItems.AIKIGITE_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.AIKIGITE_LEGGING.get())
+                .pattern("SSS")
+                .pattern("S S")
+                .pattern("S S")
+                .define('S', ModItems.AIKIGITE_INGOT.get())
+                .unlockedBy(getHasName(ModItems.AIKIGITE_INGOT.get()), has(ModItems.AIKIGITE_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.AIKIGITE_BOOTS.get())
+                .pattern("S S")
+                .pattern("S S")
+                .define('S', ModItems.AIKIGITE_INGOT.get())
+                .unlockedBy(getHasName(ModItems.AIKIGITE_INGOT.get()), has(ModItems.AIKIGITE_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.ALUMINUM_CHESTPLATE.get())
+                .pattern("S S")
+                .pattern("SSS")
+                .pattern("SSS")
+                .define('S', ModItems.ALUMINIUM_INGOT.get())
+                .unlockedBy(getHasName(ModItems.ALUMINIUM_INGOT.get()), has(ModItems.ALUMINIUM_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.ALUMINUM_HELMET.get())
+                .pattern("SSS")
+                .pattern("S S")
+                .define('S', ModItems.ALUMINIUM_INGOT.get())
+                .unlockedBy(getHasName(ModItems.ALUMINIUM_INGOT.get()), has(ModItems.ALUMINIUM_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.ALUMINUM_LEGGINGS.get())
+                .pattern("SSS")
+                .pattern("S S")
+                .pattern("S S")
+                .define('S', ModItems.ALUMINIUM_INGOT.get())
+                .unlockedBy(getHasName(ModItems.ALUMINIUM_INGOT.get()), has(ModItems.ALUMINIUM_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.ALUMINUM_BOOTS.get())
+                .pattern("S S")
+                .pattern("S S")
+                .define('S', ModItems.ALUMINIUM_INGOT.get())
+                .unlockedBy(getHasName(ModItems.ALUMINIUM_INGOT.get()), has(ModItems.ALUMINIUM_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.AVENRONITE_CHESTPLATE.get())
+                .pattern("S S")
+                .pattern("SSS")
+                .pattern("SSS")
+                .define('S', ModItems.AVENRONITE_INGOT.get())
+                .unlockedBy(getHasName(ModItems.AVENRONITE_INGOT.get()), has(ModItems.AVENRONITE_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.AVENRONITE_HELMET.get())
+                .pattern("SSS")
+                .pattern("S S")
+                .define('S', ModItems.AVENRONITE_INGOT.get())
+                .unlockedBy(getHasName(ModItems.AVENRONITE_INGOT.get()), has(ModItems.AVENRONITE_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.AVENRONITE_LEGGING.get())
+                .pattern("SSS")
+                .pattern("S S")
+                .pattern("S S")
+                .define('S', ModItems.AVENRONITE_INGOT.get())
+                .unlockedBy(getHasName(ModItems.AVENRONITE_INGOT.get()), has(ModItems.AVENRONITE_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.AVENRONITE_BOOTS.get())
+                .pattern("S S")
+                .pattern("S S")
+                .define('S', ModItems.AVENRONITE_INGOT.get())
+                .unlockedBy(getHasName(ModItems.AVENRONITE_INGOT.get()), has(ModItems.AVENRONITE_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.BAUHERITE_CHESTPLATE.get())
+                .pattern("S S")
+                .pattern("SSS")
+                .pattern("SSS")
+                .define('S', ModItems.BAUHERITE_INGOT.get())
+                .unlockedBy(getHasName(ModItems.BAUHERITE_INGOT.get()), has(ModItems.BAUHERITE_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.BAUHERITE_HELMET.get())
+                .pattern("SSS")
+                .pattern("S S")
+                .define('S', ModItems.BAUHERITE_INGOT.get())
+                .unlockedBy(getHasName(ModItems.BAUHERITE_INGOT.get()), has(ModItems.BAUHERITE_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.BAUHERITE_LEGGING.get())
+                .pattern("SSS")
+                .pattern("S S")
+                .pattern("S S")
+                .define('S', ModItems.BAUHERITE_INGOT.get())
+                .unlockedBy(getHasName(ModItems.BAUHERITE_INGOT.get()), has(ModItems.BAUHERITE_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.BAUHERITE_BOOTS.get())
+                .pattern("S S")
+                .pattern("S S")
+                .define('S', ModItems.BAUHERITE_INGOT.get())
+                .unlockedBy(getHasName(ModItems.BAUHERITE_INGOT.get()), has(ModItems.BAUHERITE_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.BONE_CHESTPLATE.get())
+                .pattern("S S")
+                .pattern("SSS")
+                .pattern("SSS")
+                .define('S', Items.BONE)
+                .unlockedBy(getHasName(Items.BONE), has(Items.BONE))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.BONE_HELMET.get())
+                .pattern("SSS")
+                .pattern("S S")
+                .define('S', Items.BONE)
+                .unlockedBy(getHasName(Items.BONE), has(Items.BONE))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.BONE_LEGGING.get())
+                .pattern("SSS")
+                .pattern("S S")
+                .pattern("S S")
+                .define('S', Items.BONE)
+                .unlockedBy(getHasName(Items.BONE), has(Items.BONE))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.BONE_BOOTS.get())
+                .pattern("S S")
+                .pattern("S S")
+                .define('S', Items.BONE)
+                .unlockedBy(getHasName(Items.BONE), has(Items.BONE))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.EDRUELIUM_CHESTPLATE.get())
+                .pattern("S S")
+                .pattern("SSS")
+                .pattern("SSS")
+                .define('S', ModItems.EDRUELIUM_INGOT.get())
+                .unlockedBy(getHasName(ModItems.EDRUELIUM_INGOT.get()), has(ModItems.EDRUELIUM_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.EDRUELIUM_HELMET.get())
+                .pattern("SSS")
+                .pattern("S S")
+                .define('S', ModItems.EDRUELIUM_INGOT.get())
+                .unlockedBy(getHasName(ModItems.EDRUELIUM_INGOT.get()), has(ModItems.EDRUELIUM_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.EDRUELIUM_LEGGING.get())
+                .pattern("SSS")
+                .pattern("S S")
+                .pattern("S S")
+                .define('S', ModItems.EDRUELIUM_INGOT.get())
+                .unlockedBy(getHasName(ModItems.EDRUELIUM_INGOT.get()), has(ModItems.EDRUELIUM_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.EDRUELIUM_BOOTS.get())
+                .pattern("S S")
+                .pattern("S S")
+                .define('S', ModItems.EDRUELIUM_INGOT.get())
+                .unlockedBy(getHasName(ModItems.EDRUELIUM_INGOT.get()), has(ModItems.EDRUELIUM_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.EDRUELIUM_AXE.get())
+                .pattern("SS")
+                .pattern("SA")
+                .pattern(" A")
+                .define('S', ModItems.EDRUELIUM_INGOT.get())
+                .define('A', Items.STICK)
+                .unlockedBy(getHasName(ModItems.EDRUELIUM_INGOT.get()), has(ModItems.EDRUELIUM_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.EDRUELIUM_SHOVEL.get())
+                .pattern("S")
+                .pattern("A")
+                .pattern("A")
+                .define('S', ModItems.EDRUELIUM_INGOT.get())
+                .define('A', Items.STICK)
+                .unlockedBy(getHasName(ModItems.EDRUELIUM_INGOT.get()), has(ModItems.EDRUELIUM_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.EDRUELIUM_HOE.get())
+                .pattern("SS")
+                .pattern(" A")
+                .pattern(" A")
+                .define('S', ModItems.EDRUELIUM_INGOT.get())
+                .define('A', Items.STICK)
+                .unlockedBy(getHasName(ModItems.EDRUELIUM_INGOT.get()), has(ModItems.EDRUELIUM_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.EDRUELIUM_PICKAXE.get())
+                .pattern("SSS")
+                .pattern(" A ")
+                .pattern(" A ")
+                .define('S', ModItems.EDRUELIUM_INGOT.get())
+                .define('A', Items.STICK)
+                .unlockedBy(getHasName(ModItems.EDRUELIUM_INGOT.get()), has(ModItems.EDRUELIUM_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.EDRUELIUM_SWORD.get())
+                .pattern("S")
+                .pattern("S")
+                .pattern("A")
+                .define('S', ModItems.EDRUELIUM_INGOT.get())
+                .define('A', Items.STICK)
+                .unlockedBy(getHasName(ModItems.EDRUELIUM_INGOT.get()), has(ModItems.EDRUELIUM_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.EDRUELIUM_BOW.get())
+                .pattern("SA")
+                .define('S', ModItems.EDRUELIUM_INGOT.get())
+                .define('A', Items.BOW)
+                .unlockedBy(getHasName(ModItems.EDRUELIUM_INGOT.get()), has(ModItems.EDRUELIUM_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.MITHRIL_HELMET.get())
+                .pattern("SSS")
+                .pattern("S S")
+                .define('S', ModItems.MITHRIL_INGOT.get())
+                .unlockedBy(getHasName(ModItems.MITHRIL_INGOT.get()), has(ModItems.MITHRIL_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.MITHRIL_CHESTPLATE.get())
+                .pattern("S S")
+                .pattern("SSS")
+                .pattern("SSS")
+                .define('S', ModItems.MITHRIL_INGOT.get())
+                .unlockedBy(getHasName(ModItems.MITHRIL_INGOT.get()), has(ModItems.MITHRIL_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.MITHRIL_LEGGINGS.get())
+                .pattern("SSS")
+                .pattern("S S")
+                .pattern("S S")
+                .define('S', ModItems.MITHRIL_INGOT.get())
+                .unlockedBy(getHasName(ModItems.MITHRIL_INGOT.get()), has(ModItems.MITHRIL_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.MITHRIL_BOOTS.get())
+                .pattern("S S")
+                .pattern("S S")
+                .define('S', ModItems.MITHRIL_INGOT.get())
+                .unlockedBy(getHasName(ModItems.MITHRIL_INGOT.get()), has(ModItems.MITHRIL_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.OBSIDIAN_CHESTPLATE.get())
+                .pattern("S S")
+                .pattern("SSS")
+                .pattern("SSS")
+                .define('S', Blocks.OBSIDIAN)
+                .unlockedBy(getHasName(Blocks.OBSIDIAN), has(Blocks.OBSIDIAN))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.OBSIDIAN_HELMET.get())
+                .pattern("SSS")
+                .pattern("S S")
+                .define('S', Blocks.OBSIDIAN)
+                .unlockedBy(getHasName(Blocks.OBSIDIAN), has(Blocks.OBSIDIAN))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.OBSIDIAN_LEGGINGS.get())
+                .pattern("SSS")
+                .pattern("S S")
+                .pattern("S S")
+                .define('S', Blocks.OBSIDIAN)
+                .unlockedBy(getHasName(Blocks.OBSIDIAN), has(Blocks.OBSIDIAN))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.OBSIDIAN_BOOTS.get())
+                .pattern("S S")
+                .pattern("S S")
+                .define('S', Blocks.OBSIDIAN)
+                .unlockedBy(getHasName(Blocks.OBSIDIAN), has(Blocks.OBSIDIAN))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.OXYS_HELMET.get())
+                .pattern("SSS")
+                .pattern("S S")
+                .define('S', ModItems.OXYS.get())
+                .unlockedBy(getHasName(ModItems.OXYS.get()), has(ModItems.OXYS.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.OXYS_CHESTPLATE.get())
+                .pattern("S S")
+                .pattern("SSS")
+                .pattern("SSS")
+                .define('S', ModItems.OXYS.get())
+                .unlockedBy(getHasName(ModItems.OXYS.get()), has(ModItems.OXYS.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.OXYS_LEGGING.get())
+                .pattern("SSS")
+                .pattern("S S")
+                .pattern("S S")
+                .define('S', ModItems.OXYS.get())
+                .unlockedBy(getHasName(ModItems.OXYS.get()), has(ModItems.OXYS.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.OXYS_BOOTS.get())
+                .pattern("S S")
+                .pattern("S S")
+                .define('S', ModItems.OXYS.get())
+                .unlockedBy(getHasName(ModItems.OXYS.get()), has(ModItems.OXYS.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.OXYS_AXE.get())
+                .pattern("SS")
+                .pattern("SA")
+                .pattern(" A")
+                .define('S', ModItems.OXYS.get())
+                .define('A', Items.STICK)
+                .unlockedBy(getHasName(ModItems.OXYS.get()), has(ModItems.OXYS.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.OXYS_SHOVEL.get())
+                .pattern("S")
+                .pattern("A")
+                .pattern("A")
+                .define('S', ModItems.OXYS.get())
+                .define('A', Items.STICK)
+                .unlockedBy(getHasName(ModItems.OXYS.get()), has(ModItems.OXYS.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.OXYS_HOE.get())
+                .pattern("SS")
+                .pattern(" A")
+                .pattern(" A")
+                .define('S', ModItems.OXYS.get())
+                .define('A', Items.STICK)
+                .unlockedBy(getHasName(ModItems.OXYS.get()), has(ModItems.OXYS.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.OXYS_PICKAXE.get())
+                .pattern("SSS")
+                .pattern(" A ")
+                .pattern(" A ")
+                .define('S', ModItems.OXYS.get())
+                .define('A', Items.STICK)
+                .unlockedBy(getHasName(ModItems.OXYS.get()), has(ModItems.OXYS.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.OXYS_SWORD.get())
+                .pattern("S")
+                .pattern("S")
+                .pattern("A")
+                .define('S', ModItems.OXYS.get())
+                .define('A', Items.STICK)
+                .unlockedBy(getHasName(ModItems.OXYS.get()), has(ModItems.OXYS.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.OXYS_BOW.get())
+                .pattern("SA")
+                .define('S', ModItems.OXYS.get())
+                .define('A', Items.BOW)
+                .unlockedBy(getHasName(ModItems.OXYS.get()), has(ModItems.OXYS.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.PENDORITE_HELMET.get())
+                .pattern("SSS")
+                .pattern("S S")
+                .define('S', ModItems.PENDORITE_INGOT.get())
+                .unlockedBy(getHasName(ModItems.PENDORITE_INGOT.get()), has(ModItems.PENDORITE_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.PENDORITE_CHESTPLATE.get())
+                .pattern("S S")
+                .pattern("SSS")
+                .pattern("SSS")
+                .define('S', ModItems.PENDORITE_INGOT.get())
+                .unlockedBy(getHasName(ModItems.PENDORITE_INGOT.get()), has(ModItems.PENDORITE_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.PENDORITE_LEGGING.get())
+                .pattern("SSS")
+                .pattern("S S")
+                .pattern("S S")
+                .define('S', ModItems.PENDORITE_INGOT.get())
+                .unlockedBy(getHasName(ModItems.PENDORITE_INGOT.get()), has(ModItems.PENDORITE_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.PENDORITE_BOOTS.get())
+                .pattern("S S")
+                .pattern("S S")
+                .define('S', ModItems.PENDORITE_INGOT.get())
+                .unlockedBy(getHasName(ModItems.PENDORITE_INGOT.get()), has(ModItems.PENDORITE_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.PENDORITE_AXE.get())
+                .pattern("SS")
+                .pattern("SA")
+                .pattern(" A")
+                .define('S', ModItems.PENDORITE_INGOT.get())
+                .define('A', Items.STICK)
+                .unlockedBy(getHasName(ModItems.PENDORITE_INGOT.get()), has(ModItems.PENDORITE_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.PENDORITE_SHOVEL.get())
+                .pattern("S")
+                .pattern("A")
+                .pattern("A")
+                .define('S', ModItems.PENDORITE_INGOT.get())
+                .define('A', Items.STICK)
+                .unlockedBy(getHasName(ModItems.PENDORITE_INGOT.get()), has(ModItems.PENDORITE_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.PENDORITE_HOE.get())
+                .pattern("SS")
+                .pattern(" A")
+                .pattern(" A")
+                .define('S', ModItems.PENDORITE_INGOT.get())
+                .define('A', Items.STICK)
+                .unlockedBy(getHasName(ModItems.PENDORITE_INGOT.get()), has(ModItems.PENDORITE_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.PENDORITE_PICKAXE.get())
+                .pattern("SSS")
+                .pattern(" A ")
+                .pattern(" A ")
+                .define('S', ModItems.PENDORITE_INGOT.get())
+                .define('A', Items.STICK)
+                .unlockedBy(getHasName(ModItems.PENDORITE_INGOT.get()), has(ModItems.PENDORITE_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.PENDORITE_SWORD.get())
+                .pattern("S")
+                .pattern("S")
+                .pattern("A")
+                .define('S', ModItems.PENDORITE_INGOT.get())
+                .define('A', Items.STICK)
+                .unlockedBy(getHasName(ModItems.PENDORITE_INGOT.get()), has(ModItems.PENDORITE_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.STEEL_HELMET.get())
+                .pattern("SSS")
+                .pattern("S S")
+                .define('S', ModItems.STEEL_INGOT.get())
+                .unlockedBy(getHasName(ModItems.STEEL_INGOT.get()), has(ModItems.STEEL_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.STEEL_CHESTPLATE.get())
+                .pattern("S S")
+                .pattern("SSS")
+                .pattern("SSS")
+                .define('S', ModItems.STEEL_INGOT.get())
+                .unlockedBy(getHasName(ModItems.STEEL_INGOT.get()), has(ModItems.STEEL_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.STEEL_LEGGINGS.get())
+                .pattern("SSS")
+                .pattern("S S")
+                .pattern("S S")
+                .define('S', ModItems.STEEL_INGOT.get())
+                .unlockedBy(getHasName(ModItems.STEEL_INGOT.get()), has(ModItems.STEEL_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.STEEL_BOOTS.get())
+                .pattern("S S")
+                .pattern("S S")
+                .define('S', ModItems.STEEL_INGOT.get())
+                .unlockedBy(getHasName(ModItems.STEEL_INGOT.get()), has(ModItems.STEEL_INGOT.get()))
+                .save(pWriter);
+
     }
 
     protected static void oreSmelting(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTIme, String pGroup) {

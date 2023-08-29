@@ -61,5 +61,15 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                         ModItems.STEEL_CHESTPLATE.get(),
                         ModItems.STEEL_LEGGINGS.get(),
                         ModItems.STEEL_BOOTS.get());
+        this.tag(ItemTags.MUSIC_DISCS)
+                .add(ModItems.BAR_BRAWL.get(),
+                        ModItems.CAT_REMIX.get(),
+                        ModItems.LITTLE_ADVENTURES.get(),
+                        ModItems.PARADISE.get());
+        this.tag(ItemTags.CREEPER_DROP_MUSIC_DISCS)
+                .add(ModItems.BAR_BRAWL.get(),
+                        ModItems.CAT_REMIX.get(),
+                        ModItems.LITTLE_ADVENTURES.get(),
+                        ModItems.PARADISE.get());
     }
 }
