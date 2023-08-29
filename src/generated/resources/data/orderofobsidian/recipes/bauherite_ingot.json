@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "orderofobsidian:bauherite_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "orderofobsidian:bauherite_ingot"
+  }
+}

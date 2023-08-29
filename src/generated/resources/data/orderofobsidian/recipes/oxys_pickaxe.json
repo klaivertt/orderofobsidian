@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "A": {
+      "item": "minecraft:stick"
+    },
+    "S": {
+      "item": "orderofobsidian:oxys"
+    }
+  },
+  "pattern": [
+    "SSS",
+    " A ",
+    " A "
+  ],
+  "result": {
+    "item": "orderofobsidian:oxys_pickaxe"
+  },
+  "show_notification": true
+}
