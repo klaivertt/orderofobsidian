@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_cut_graphite": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "orderofobsidian:cut_graphite"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "orderofobsidian:cut_graphite_wall"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_cut_graphite",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "orderofobsidian:cut_graphite_wall"
+    ]
+  },
+  "sends_telemetry_event": false
+}

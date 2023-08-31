@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "E": {
+      "item": "orderofobsidian:end_depthstone"
+    }
+  },
+  "pattern": [
+    "EEE",
+    "EEE"
+  ],
+  "result": {
+    "item": "orderofobsidian:end_depthstone_wall"
+  },
+  "show_notification": true
+}

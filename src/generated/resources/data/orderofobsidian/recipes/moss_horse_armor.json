@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "A": {
+      "item": "minecraft:iron_horse_armor"
+    },
+    "S": {
+      "item": "minecraft:moss_block"
+    }
+  },
+  "pattern": [
+    "SA"
+  ],
+  "result": {
+    "item": "orderofobsidian:moss_horse_armor"
+  },
+  "show_notification": true
+}

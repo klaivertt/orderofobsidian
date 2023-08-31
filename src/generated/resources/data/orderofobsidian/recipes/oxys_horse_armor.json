@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "A": {
+      "item": "minecraft:saddle"
+    },
+    "S": {
+      "item": "orderofobsidian:oxys"
+    }
+  },
+  "pattern": [
+    "  S",
+    "SAS",
+    "SSS"
+  ],
+  "result": {
+    "item": "orderofobsidian:oxys_horse_armor"
+  },
+  "show_notification": true
+}

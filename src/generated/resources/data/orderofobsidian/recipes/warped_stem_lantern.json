@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:torch"
+    },
+    "S": {
+      "item": "minecraft:warped_stem"
+    }
+  },
+  "pattern": [
+    "SSS",
+    "SAS",
+    "SSS"
+  ],
+  "result": {
+    "item": "orderofobsidian:warped_stem_lantern"
+  },
+  "show_notification": true
+}

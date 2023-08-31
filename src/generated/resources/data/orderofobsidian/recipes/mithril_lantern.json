@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:torch"
+    },
+    "E": {
+      "item": "minecraft:iron_ingot"
+    },
+    "S": {
+      "item": "orderofobsidian:mithril_ingot"
+    }
+  },
+  "pattern": [
+    "ESE",
+    "SAS",
+    "ESE"
+  ],
+  "result": {
+    "item": "orderofobsidian:mithril_lantern"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "A": {
+      "item": "minecraft:chain"
+    },
+    "S": {
+      "item": "minecraft:iron_nugget"
+    }
+  },
+  "pattern": [
+    "S S",
+    "AAA",
+    "SAS"
+  ],
+  "result": {
+    "item": "minecraft:chainmail_chestplate"
+  },
+  "show_notification": true
+}

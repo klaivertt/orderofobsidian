@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "E": {
+      "item": "orderofobsidian:graphite_ingot"
+    }
+  },
+  "pattern": [
+    "EEE"
+  ],
+  "result": {
+    "item": "orderofobsidian:graphite_block_slab"
+  },
+  "show_notification": true
+}

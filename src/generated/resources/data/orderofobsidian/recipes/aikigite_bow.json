@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "A": {
+      "item": "minecraft:bow"
+    },
+    "S": {
+      "item": "orderofobsidian:aikigite_ingot"
+    }
+  },
+  "pattern": [
+    "SA"
+  ],
+  "result": {
+    "item": "orderofobsidian:aikigite_bow"
+  },
+  "show_notification": true
+}

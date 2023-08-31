@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "A": {
+      "item": "minecraft:stick"
+    },
+    "S": {
+      "item": "orderofobsidian:bauherite_ingot"
+    }
+  },
+  "pattern": [
+    "SS",
+    "SA",
+    " A"
+  ],
+  "result": {
+    "item": "orderofobsidian:bauherite_axe"
+  },
+  "show_notification": true
+}

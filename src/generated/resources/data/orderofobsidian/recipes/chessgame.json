@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:black_dye"
+    },
+    "B": {
+      "item": "minecraft:clay_ball"
+    },
+    "C": {
+      "item": "minecraft:white_dye"
+    },
+    "D": {
+      "tag": "minecraft:wooden_slabs"
+    }
+  },
+  "pattern": [
+    "ABC",
+    " D "
+  ],
+  "result": {
+    "item": "orderofobsidian:chessgame"
+  },
+  "show_notification": true
+}

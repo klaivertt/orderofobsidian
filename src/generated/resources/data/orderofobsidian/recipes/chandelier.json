@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:torch"
+    },
+    "S": {
+      "item": "orderofobsidian:lead_ingot"
+    }
+  },
+  "pattern": [
+    " A ",
+    "ASA",
+    "SSS"
+  ],
+  "result": {
+    "item": "orderofobsidian:chandelier"
+  },
+  "show_notification": true
+}

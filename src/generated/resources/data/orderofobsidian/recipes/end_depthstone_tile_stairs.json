@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "E": {
+      "item": "orderofobsidian:end_depthstone_tiles"
+    }
+  },
+  "pattern": [
+    "E  ",
+    "EE ",
+    "EEE"
+  ],
+  "result": {
+    "item": "orderofobsidian:end_depthstone_tile_stairs"
+  },
+  "show_notification": true
+}
