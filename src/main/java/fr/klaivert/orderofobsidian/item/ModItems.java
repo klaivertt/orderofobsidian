@@ -1,6 +1,5 @@
 package fr.klaivert.orderofobsidian.item;
 
-import fr.klaivert.orderofobsidian.ModArmorMaterial;
 import fr.klaivert.orderofobsidian.OrderOfObsidianMod;
 import fr.klaivert.orderofobsidian.block.ModBlocks;
 import fr.klaivert.orderofobsidian.sound.ModSounds;
@@ -105,22 +104,22 @@ public class ModItems {
 
     public static final RegistryObject<ArmorItem> AIKIGITE_HELMET = ITEMS.register("aikigite_helmet",
             () -> new ArmorItem(
-                    ModArmorMaterial.AIKIGITE_ARMOR,
+                    ModArmorMaterials.AIKIGITE,
                     ArmorItem.Type.HELMET,
                     new Item.Properties()));
     public static final RegistryObject<ArmorItem> AIKIGITE_CHESTPLATE = ITEMS.register("aikigite_chestplate",
             () -> new ArmorItem(
-                    ModArmorMaterial.AIKIGITE_ARMOR,
+                    ModArmorMaterials.AIKIGITE,
                     ArmorItem.Type.CHESTPLATE,
                     new Item.Properties()));
     public static final RegistryObject<ArmorItem> AIKIGITE_LEGGING = ITEMS.register("aikigite_leggings",
             () -> new ArmorItem(
-                    ModArmorMaterial.AIKIGITE_ARMOR,
+                    ModArmorMaterials.AIKIGITE,
                     ArmorItem.Type.LEGGINGS,
                     new Item.Properties()));
     public static final RegistryObject<ArmorItem> AIKIGITE_BOOTS = ITEMS.register("aikigite_boots",
             () -> new ArmorItem(
-                    ModArmorMaterial.AIKIGITE_ARMOR,
+                    ModArmorMaterials.AIKIGITE,
                     ArmorItem.Type.BOOTS,
                     new Item.Properties()));
 
@@ -141,44 +140,44 @@ public class ModItems {
     //aluminum
     public static final RegistryObject<ArmorItem> ALUMINUM_HELMET = ITEMS.register("aluminum_helmet",
             () -> new ArmorItem(
-                    ModArmorMaterial.ALUMINUM_ARMOR,
+                    ModArmorMaterials.ALUMINUM,
                     ArmorItem.Type.HELMET,
                     new Item.Properties()));
     public static final RegistryObject<ArmorItem> ALUMINUM_CHESTPLATE = ITEMS.register("aluminum_chestplate",
             () -> new ArmorItem(
-                    ModArmorMaterial.ALUMINUM_ARMOR,
+                    ModArmorMaterials.ALUMINUM,
                     ArmorItem.Type.CHESTPLATE,
                     new Item.Properties()));
     public static final RegistryObject<ArmorItem> ALUMINUM_LEGGINGS = ITEMS.register("aluminum_leggings",
             () -> new ArmorItem(
-                    ModArmorMaterial.ALUMINUM_ARMOR,
+                    ModArmorMaterials.ALUMINUM,
                     ArmorItem.Type.LEGGINGS,
                     new Item.Properties()));
     public static final RegistryObject<ArmorItem> ALUMINUM_BOOTS = ITEMS.register("aluminum_boots",
             () -> new ArmorItem(
-                    ModArmorMaterial.ALUMINUM_ARMOR,
+                    ModArmorMaterials.ALUMINUM,
                     ArmorItem.Type.BOOTS,
                     new Item.Properties()));
     //end aluminum
     //avenronite
     public static final RegistryObject<ArmorItem> AVENRONITE_HELMET = ITEMS.register("avenronite_helmet",
             () -> new ArmorItem(
-                    ModArmorMaterial.AVENRONITE_ARMOR,
+                    ModArmorMaterials.AVENRONITE,
                     ArmorItem.Type.HELMET,
                     new Item.Properties().fireResistant()));
     public static final RegistryObject<ArmorItem> AVENRONITE_CHESTPLATE = ITEMS.register("avenronite_chestplate",
             () -> new ArmorItem(
-                    ModArmorMaterial.AVENRONITE_ARMOR,
+                    ModArmorMaterials.AVENRONITE,
                     ArmorItem.Type.CHESTPLATE,
                     new Item.Properties().fireResistant()));
     public static final RegistryObject<ArmorItem> AVENRONITE_LEGGING = ITEMS.register("avenronite_leggings",
             () -> new ArmorItem(
-                    ModArmorMaterial.AVENRONITE_ARMOR,
+                    ModArmorMaterials.AVENRONITE,
                     ArmorItem.Type.LEGGINGS,
                     new Item.Properties().fireResistant()));
     public static final RegistryObject<ArmorItem> AVENRONITE_BOOTS = ITEMS.register("avenronite_boots",
             () -> new ArmorItem(
-                    ModArmorMaterial.AVENRONITE_ARMOR,
+                    ModArmorMaterials.AVENRONITE,
                     ArmorItem.Type.BOOTS,
                     new Item.Properties().fireResistant()));
     public static final RegistryObject<Item> AVENRONITE_SWORD = ITEMS.register("avenronite_sword",
@@ -203,22 +202,22 @@ public class ModItems {
     //bauherite
     public static final RegistryObject<ArmorItem> BAUHERITE_HELMET = ITEMS.register("bauherite_helmet",
             () -> new ArmorItem(
-                    ModArmorMaterial.BAUHERITE_ARMOR,
+                    ModArmorMaterials.BAUHERITE,
                     ArmorItem.Type.HELMET,
                     new Item.Properties()));
     public static final RegistryObject<ArmorItem> BAUHERITE_CHESTPLATE = ITEMS.register("bauherite_chestplate",
             () -> new ArmorItem(
-                    ModArmorMaterial.BAUHERITE_ARMOR,
+                    ModArmorMaterials.BAUHERITE,
                     ArmorItem.Type.CHESTPLATE,
                     new Item.Properties()));
     public static final RegistryObject<ArmorItem> BAUHERITE_LEGGING = ITEMS.register("bauherite_leggings",
             () -> new ArmorItem(
-                    ModArmorMaterial.BAUHERITE_ARMOR,
+                    ModArmorMaterials.BAUHERITE,
                     ArmorItem.Type.LEGGINGS,
                     new Item.Properties()));
     public static final RegistryObject<ArmorItem> BAUHERITE_BOOTS = ITEMS.register("bauherite_boots",
             () -> new ArmorItem(
-                    ModArmorMaterial.BAUHERITE_ARMOR,
+                    ModArmorMaterials.BAUHERITE,
                     ArmorItem.Type.BOOTS,
                     new Item.Properties()));
 
@@ -245,22 +244,22 @@ public class ModItems {
     //bone
     public static final RegistryObject<ArmorItem> BONE_HELMET = ITEMS.register("bone_helmet",
             () -> new ArmorItem(
-                    ModArmorMaterial.BONE_ARMOR,
+                    ModArmorMaterials.BONE,
                     ArmorItem.Type.HELMET,
                     new Item.Properties()));
     public static final RegistryObject<ArmorItem> BONE_CHESTPLATE = ITEMS.register("bone_chestplate",
             () -> new ArmorItem(
-                    ModArmorMaterial.BONE_ARMOR,
+                    ModArmorMaterials.BONE,
                     ArmorItem.Type.CHESTPLATE,
                     new Item.Properties()));
     public static final RegistryObject<ArmorItem> BONE_LEGGING = ITEMS.register("bone_leggings",
             () -> new ArmorItem(
-                    ModArmorMaterial.BONE_ARMOR,
+                    ModArmorMaterials.BONE,
                     ArmorItem.Type.LEGGINGS,
                     new Item.Properties()));
     public static final RegistryObject<ArmorItem> BONE_BOOTS = ITEMS.register("bone_boots",
             () -> new ArmorItem(
-                    ModArmorMaterial.BONE_ARMOR,
+                    ModArmorMaterials.BONE,
                     ArmorItem.Type.BOOTS,
                     new Item.Properties()));
 
@@ -294,27 +293,27 @@ public class ModItems {
     //end chips
     //diamond
     public static final RegistryObject<Item> DIAMOND_APPLE = ITEMS.register("diamond_apple",
-            () -> new Item(new Item.Properties().food(ModFoods.DIAMOND_APPLE)));
+            () -> new Item(new Item.Properties().rarity(Rarity.RARE).food(ModFoods.DIAMOND_APPLE)));
     //end diamond
     //edruelium
     public static final RegistryObject<ArmorItem> EDRUELIUM_HELMET = ITEMS.register("edruelium_helmet",
             () -> new ArmorItem(
-                    ModArmorMaterial.EDRUELIUM_ARMOR,
+                    ModArmorMaterials.EDRUELIUM,
                     ArmorItem.Type.HELMET,
                     new Item.Properties().fireResistant()));
     public static final RegistryObject<ArmorItem> EDRUELIUM_CHESTPLATE = ITEMS.register("edruelium_chestplate",
             () -> new ArmorItem(
-                    ModArmorMaterial.EDRUELIUM_ARMOR,
+                    ModArmorMaterials.EDRUELIUM,
                     ArmorItem.Type.CHESTPLATE,
                     new Item.Properties().fireResistant()));
     public static final RegistryObject<ArmorItem> EDRUELIUM_LEGGING = ITEMS.register("edruelium_leggings",
             () -> new ArmorItem(
-                    ModArmorMaterial.EDRUELIUM_ARMOR,
+                    ModArmorMaterials.EDRUELIUM,
                     ArmorItem.Type.LEGGINGS,
                     new Item.Properties().fireResistant()));
     public static final RegistryObject<ArmorItem> EDRUELIUM_BOOTS = ITEMS.register("edruelium_boots",
             () -> new ArmorItem(
-                    ModArmorMaterial.EDRUELIUM_ARMOR,
+                    ModArmorMaterials.EDRUELIUM,
                     ArmorItem.Type.BOOTS,
                     new Item.Properties().fireResistant()));
     public static final RegistryObject<Item> EDRUELIUM_SWORD = ITEMS.register("edruelium_sword",
@@ -337,7 +336,7 @@ public class ModItems {
     //end edruelium
     //emelard
     public static final RegistryObject<Item> EMERALD_APPLE = ITEMS.register("emerald_apple",
-            () -> new Item(new Item.Properties().food(ModFoods.EMERALD_APPLE)));
+            () -> new Item(new Item.Properties().rarity(Rarity.UNCOMMON).food(ModFoods.EMERALD_APPLE)));
     //end emerald
 
     //fried Egg
@@ -351,22 +350,22 @@ public class ModItems {
 
     public static final RegistryObject<ArmorItem> MITHRIL_HELMET = ITEMS.register("mithril_helmet",
             () -> new ArmorItem(
-                    ModArmorMaterial.MITHRIL_ARMOR,
+                    ModArmorMaterials.MITHRIL,
                     ArmorItem.Type.HELMET,
                     new Item.Properties()));
     public static final RegistryObject<ArmorItem> MITHRIL_CHESTPLATE = ITEMS.register("mithril_chestplate",
             () -> new ArmorItem(
-                    ModArmorMaterial.MITHRIL_ARMOR,
+                    ModArmorMaterials.MITHRIL,
                     ArmorItem.Type.CHESTPLATE,
                     new Item.Properties()));
     public static final RegistryObject<ArmorItem> MITHRIL_LEGGINGS = ITEMS.register("mithril_leggings",
             () -> new ArmorItem(
-                    ModArmorMaterial.MITHRIL_ARMOR,
+                    ModArmorMaterials.MITHRIL,
                     ArmorItem.Type.LEGGINGS,
                     new Item.Properties()));
     public static final RegistryObject<ArmorItem> MITHRIL_BOOTS = ITEMS.register("mithril_boots",
             () -> new ArmorItem(
-                    ModArmorMaterial.MITHRIL_ARMOR,
+                    ModArmorMaterials.MITHRIL,
                     ArmorItem.Type.BOOTS,
                     new Item.Properties()));
 
@@ -392,33 +391,33 @@ public class ModItems {
     public static final RegistryObject<Item> NETHERITE_HORSE_ARMOR = ITEMS.register("netherite_horse_armor",
             () -> new HorseArmorItem(13,"netherite", new Item.Properties().fireResistant().stacksTo(1)));
     public static final RegistryObject<Item> NETHERITE_APPLE = ITEMS.register("netherite_apple",
-            () -> new Item(new Item.Properties().fireResistant().food(ModFoods.NETHERITE_APPLE)));
+            () -> new Item(new Item.Properties().rarity(Rarity.RARE).fireResistant().food(ModFoods.NETHERITE_APPLE)));
     //end netherite
     //netherrack
     //end netherrack
     //obsidian
 
     public static final RegistryObject<Item> OBSIDIAN_APPLE = ITEMS.register("obsidian_apple",
-            () -> new Item(new Item.Properties().food(ModFoods.OBSIDIAN_APPLE)));
+            () -> new Item(new Item.Properties().rarity(Rarity.UNCOMMON).food(ModFoods.OBSIDIAN_APPLE)));
 
     public static final RegistryObject<ArmorItem> OBSIDIAN_HELMET = ITEMS.register("obsidian_helmet",
             () -> new ArmorItem(
-                    ModArmorMaterial.OBSIDIAN_ARMOR,
+                    ModArmorMaterials.OBSIDIAN,
                     ArmorItem.Type.HELMET,
                     new Item.Properties().fireResistant()));
     public static final RegistryObject<ArmorItem> OBSIDIAN_CHESTPLATE = ITEMS.register("obsidian_chestplate",
             () -> new ArmorItem(
-                    ModArmorMaterial.OBSIDIAN_ARMOR,
+                    ModArmorMaterials.OBSIDIAN,
                     ArmorItem.Type.CHESTPLATE,
                     new Item.Properties().fireResistant()));
     public static final RegistryObject<ArmorItem> OBSIDIAN_LEGGINGS = ITEMS.register("obsidian_leggings",
             () -> new ArmorItem(
-                    ModArmorMaterial.OBSIDIAN_ARMOR,
+                    ModArmorMaterials.OBSIDIAN,
                     ArmorItem.Type.LEGGINGS,
                     new Item.Properties().fireResistant()));
     public static final RegistryObject<ArmorItem> OBSIDIAN_BOOTS = ITEMS.register("obsidian_boots",
             () -> new ArmorItem(
-                    ModArmorMaterial.OBSIDIAN_ARMOR,
+                    ModArmorMaterials.OBSIDIAN,
                     ArmorItem.Type.BOOTS,
                     new Item.Properties().fireResistant()));
 
@@ -442,22 +441,22 @@ public class ModItems {
     //oxys
     public static final RegistryObject<ArmorItem> OXYS_HELMET = ITEMS.register("oxys_helmet",
             () -> new ArmorItem(
-                    ModArmorMaterial.OXYS_ARMOR,
+                    ModArmorMaterials.OXYS,
                     ArmorItem.Type.HELMET,
                     new Item.Properties().fireResistant()));
     public static final RegistryObject<ArmorItem> OXYS_CHESTPLATE = ITEMS.register("oxys_chestplate",
             () -> new ArmorItem(
-                    ModArmorMaterial.OXYS_ARMOR,
+                    ModArmorMaterials.OXYS,
                     ArmorItem.Type.CHESTPLATE,
                     new Item.Properties().fireResistant()));
     public static final RegistryObject<ArmorItem> OXYS_LEGGING = ITEMS.register("oxys_leggings",
             () -> new ArmorItem(
-                    ModArmorMaterial.OXYS_ARMOR,
+                    ModArmorMaterials.OXYS,
                     ArmorItem.Type.LEGGINGS,
                     new Item.Properties().fireResistant()));
     public static final RegistryObject<ArmorItem> OXYS_BOOTS = ITEMS.register("oxys_boots",
             () -> new ArmorItem(
-                    ModArmorMaterial.OXYS_ARMOR,
+                    ModArmorMaterials.OXYS,
                     ArmorItem.Type.BOOTS,
                     new Item.Properties().fireResistant()));
     public static final RegistryObject<Item> OXYS_HORSE_ARMOR = ITEMS.register("oxys_horse_armor",
@@ -483,28 +482,28 @@ public class ModItems {
                     new Item.Properties().fireResistant()));
 
     public static final RegistryObject<Item> OXYS_APPLE = ITEMS.register("oxys_apple",
-            () -> new Item(new Item.Properties().fireResistant().food(ModFoods.OXYS_APPLE)));
+            () -> new Item(new Item.Properties().rarity(Rarity.EPIC).fireResistant().food(ModFoods.OXYS_APPLE)));
 
     //end oxys
     //pendorite
     public static final RegistryObject<ArmorItem> PENDORITE_HELMET = ITEMS.register("pendorite_helmet",
             () -> new ArmorItem(
-                    ModArmorMaterial.PENDORITE_ARMOR,
+                    ModArmorMaterials.PENDORITE,
                     ArmorItem.Type.HELMET,
                     new Item.Properties().fireResistant()));
     public static final RegistryObject<ArmorItem> PENDORITE_CHESTPLATE = ITEMS.register("pendorite_chestplate",
             () -> new ArmorItem(
-                    ModArmorMaterial.PENDORITE_ARMOR,
+                    ModArmorMaterials.PENDORITE,
                     ArmorItem.Type.CHESTPLATE,
                     new Item.Properties().fireResistant()));
     public static final RegistryObject<ArmorItem> PENDORITE_LEGGING = ITEMS.register("pendorite_leggings",
             () -> new ArmorItem(
-                    ModArmorMaterial.PENDORITE_ARMOR,
+                    ModArmorMaterials.PENDORITE,
                     ArmorItem.Type.LEGGINGS,
                     new Item.Properties().fireResistant()));
     public static final RegistryObject<ArmorItem> PENDORITE_BOOTS = ITEMS.register("pendorite_boots",
             () -> new ArmorItem(
-                    ModArmorMaterial.PENDORITE_ARMOR,
+                    ModArmorMaterials.PENDORITE,
                     ArmorItem.Type.BOOTS,
                     new Item.Properties().fireResistant()));
     public static final RegistryObject<Item> PENDORITE_SWORD = ITEMS.register("pendorite_sword",
@@ -525,7 +524,7 @@ public class ModItems {
     public static final RegistryObject<Item> PENDORITE_HORSE_ARMOR = ITEMS.register("pendorite_horse_armor",
             () -> new HorseArmorItem(15,"pendorite", new Item.Properties().fireResistant().stacksTo(1)));
     public static final RegistryObject<Item> PENDORITE_APPLE = ITEMS.register("pendorite_apple",
-            () -> new Item(new Item.Properties().fireResistant().food(ModFoods.PENDORITE_APPLE)));
+            () -> new Item(new Item.Properties().rarity(Rarity.RARE).fireResistant().food(ModFoods.PENDORITE_APPLE)));
 
     //end pendorite
     //rice
@@ -541,22 +540,22 @@ public class ModItems {
     //steel
     public static final RegistryObject<ArmorItem> STEEL_HELMET = ITEMS.register("steel_helmet",
             () -> new ArmorItem(
-                    ModArmorMaterial.STEEL_ARMOR,
+                    ModArmorMaterials.STEEL,
                     ArmorItem.Type.HELMET,
                     new Item.Properties()));
     public static final RegistryObject<ArmorItem> STEEL_CHESTPLATE = ITEMS.register("steel_chestplate",
             () -> new ArmorItem(
-                    ModArmorMaterial.STEEL_ARMOR,
+                    ModArmorMaterials.STEEL,
                     ArmorItem.Type.CHESTPLATE,
                     new Item.Properties()));
     public static final RegistryObject<ArmorItem> STEEL_LEGGINGS = ITEMS.register("steel_leggings",
             () -> new ArmorItem(
-                    ModArmorMaterial.STEEL_ARMOR,
+                    ModArmorMaterials.STEEL,
                     ArmorItem.Type.LEGGINGS,
                     new Item.Properties()));
     public static final RegistryObject<ArmorItem> STEEL_BOOTS = ITEMS.register("steel_boots",
             () -> new ArmorItem(
-                    ModArmorMaterial.STEEL_ARMOR,
+                    ModArmorMaterials.STEEL,
                     ArmorItem.Type.BOOTS,
                     new Item.Properties()));
 
@@ -604,40 +603,40 @@ public class ModItems {
     //wither
     public static final RegistryObject<ArmorItem> WITHER_HELMET = ITEMS.register("wither_helmet",
             () -> new ArmorItem(
-                    ModArmorMaterial.WITHER_ARMOR,
+                    ModArmorMaterials.WITHER,
                     ArmorItem.Type.HELMET,
                     new Item.Properties().fireResistant()));
     public static final RegistryObject<ArmorItem> WITHER_CHESTPLATE = ITEMS.register("wither_chestplate",
             () -> new ArmorItem(
-                    ModArmorMaterial.WITHER_ARMOR,
+                    ModArmorMaterials.WITHER,
                     ArmorItem.Type.CHESTPLATE,
                     new Item.Properties().fireResistant()));
     public static final RegistryObject<ArmorItem> WITHER_LEGGING = ITEMS.register("wither_leggings",
             () -> new ArmorItem(
-                    ModArmorMaterial.WITHER_ARMOR,
+                    ModArmorMaterials.WITHER,
                     ArmorItem.Type.LEGGINGS,
                     new Item.Properties().fireResistant()));
     public static final RegistryObject<ArmorItem> WITHER_BOOTS = ITEMS.register("wither_boots",
             () -> new ArmorItem(
-                    ModArmorMaterial.WITHER_ARMOR,
+                    ModArmorMaterials.WITHER,
                     ArmorItem.Type.BOOTS,
                     new Item.Properties().fireResistant()));
 
     public static final RegistryObject<Item> WITHER_SWORD = ITEMS.register("wither_sword",
             () -> new SwordItem(ModToolTiers.WITHER, 5, 1.7f,
-                    new Item.Properties()));
+                    new Item.Properties().fireResistant()));
     public static final RegistryObject<Item> WITHER_PICKAXE = ITEMS.register("wither_pickaxe",
             () -> new PickaxeItem(ModToolTiers.WITHER, 0, 1f,
-                    new Item.Properties()));
+                    new Item.Properties().fireResistant()));
     public static final RegistryObject<Item> WITHER_SHOVEL = ITEMS.register("wither_shovel",
             () -> new ShovelItem(ModToolTiers.WITHER, 0, 1f,
-                    new Item.Properties()));
+                    new Item.Properties().fireResistant()));
     public static final RegistryObject<Item> WITHER_AXE = ITEMS.register("wither_axe",
             () -> new AxeItem(ModToolTiers.WITHER, 6, 1f,
-                    new Item.Properties()));
+                    new Item.Properties().fireResistant()));
     public static final RegistryObject<Item> WITHER_HOE = ITEMS.register("wither_hoe",
             () -> new HoeItem(ModToolTiers.STEEL, 0, 1f,
-                    new Item.Properties()));
+                    new Item.Properties().fireResistant()));
 
     //end wither
 

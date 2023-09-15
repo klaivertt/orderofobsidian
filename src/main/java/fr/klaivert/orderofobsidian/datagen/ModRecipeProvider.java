@@ -997,6 +997,30 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.BONE_HELMET.get()), has(ModItems.BONE_HELMET.get()) )
                 .save(pWriter);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.WITHER_CHESTPLATE.get())
+                .pattern("SA")
+                .define('S', ModItems.WITHER_SKELETON_SHARD.get())
+                .define('A', ModItems.BONE_CHESTPLATE.get())
+                .unlockedBy(getHasName(ModItems.WITHER_SKELETON_SHARD.get()), has(ModItems.WITHER_SKELETON_SHARD.get()))
+                .unlockedBy(getHasName(ModItems.BONE_HELMET.get()), has(ModItems.BONE_HELMET.get()) )
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.WITHER_LEGGING.get())
+                .pattern("SA")
+                .define('S', ModItems.WITHER_SKELETON_SHARD.get())
+                .define('A', ModItems.BONE_LEGGING.get())
+                .unlockedBy(getHasName(ModItems.WITHER_SKELETON_SHARD.get()), has(ModItems.WITHER_SKELETON_SHARD.get()))
+                .unlockedBy(getHasName(ModItems.BONE_HELMET.get()), has(ModItems.BONE_HELMET.get()) )
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.WITHER_BOOTS.get())
+                .pattern("SA")
+                .define('S', ModItems.WITHER_SKELETON_SHARD.get())
+                .define('A', ModItems.BONE_BOOTS.get())
+                .unlockedBy(getHasName(ModItems.WITHER_SKELETON_SHARD.get()), has(ModItems.WITHER_SKELETON_SHARD.get()))
+                .unlockedBy(getHasName(ModItems.BONE_HELMET.get()), has(ModItems.BONE_HELMET.get()) )
+                .save(pWriter);
+
         ShapedRecipeBuilder.shaped(RecipeCategory.DECORATIONS, ModBlocks.LEAD_CHAIN.get())
                 .pattern("S")
                 .pattern("S")
