@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "A": {
+      "item": "orderofobsidian:bone_boots"
+    },
+    "S": {
+      "item": "orderofobsidian:wither_skeleton_shard"
+    }
+  },
+  "pattern": [
+    "SA"
+  ],
+  "result": {
+    "item": "orderofobsidian:wither_boots"
+  },
+  "show_notification": true
+}
