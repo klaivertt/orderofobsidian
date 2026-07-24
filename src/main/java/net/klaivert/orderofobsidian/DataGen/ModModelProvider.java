@@ -1,5 +1,6 @@
 package net.klaivert.orderofobsidian.DataGen;
 
+import net.klaivert.orderofobsidian.Blocks.ModBlocks;
 import net.klaivert.orderofobsidian.OrderOfObsidian;
 import net.klaivert.orderofobsidian.items.ModItems;
 import net.minecraft.client.data.models.BlockModelGenerators;
@@ -16,8 +17,12 @@ public class ModModelProvider extends ModelProvider
     }
 
     @Override
-    protected void registerModels(BlockModelGenerators blockModels, ItemModelGenerators itemModels)
+    protected void registerModels(BlockModelGenerators _blockModels, ItemModelGenerators _itemModels)
     {
-        itemModels.generateFlatItem(ModItems.OXYS.get(), ModelTemplates.FLAT_ITEM);
+        _itemModels.generateFlatItem(ModItems.OXYS.get(), ModelTemplates.FLAT_ITEM);
+
+        //Blocks
+        _blockModels.createTrivialCube(ModBlocks.OXYS_ORE.get());
+        _blockModels.createTrivialCube(ModBlocks.OXYS_BLOCK.get());
     }
 }

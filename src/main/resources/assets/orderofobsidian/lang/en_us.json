@@ -1,14 +1,10 @@
 {
-  "itemGroup.orderofobsidian": "Example Mod Tab",
-  "block.orderofobsidian.example_block": "Example Block",
-  "item.orderofobsidian.example_item": "Example Item",
-
   "orderofobsidian.configuration.title": "Order Of Obsidian Configs",
   "orderofobsidian.configuration.section.orderofobsidian.common.toml": "Order Of Obsidian Configs",
   "orderofobsidian.configuration.section.orderofobsidian.common.toml.title": "Order Of Obsidian Configs",
-  "orderofobsidian.configuration.items": "Item List",
-  "orderofobsidian.configuration.logDirtBlock": "Log Dirt Block",
-  "orderofobsidian.configuration.magicNumberIntroduction": "Magic Number Text",
-  "orderofobsidian.configuration.magicNumber": "Magic Number",
-  "creativetab.orderofobsidian.orderofobsidian_tab": "Order of Obsidian"
+
+  "creativetab.orderofobsidian.orderofobsidian_tab": "Order of Obsidian",
+  "item.orderofobsidian.oxys": "Oxys",
+  "block.orderofobsidian.oxys_ore": "Oxys Ore",
+  "block.orderofobsidian.oxys_block": "Block of Oxys"
 }

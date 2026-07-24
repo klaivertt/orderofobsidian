@@ -1,5 +1,6 @@
 package net.klaivert.orderofobsidian;
 
+import net.klaivert.orderofobsidian.Blocks.ModBlocks;
 import net.klaivert.orderofobsidian.CreativeModTab.ModCreativeModTab;
 import net.klaivert.orderofobsidian.items.ModItems;
 import org.slf4j.Logger;
@@ -31,6 +32,7 @@ public class OrderOfObsidian
 
         ModCreativeModTab.Register(_modEventBus);
         ModItems.Register(_modEventBus);
+        ModBlocks.Registered(_modEventBus);
 
         NeoForge.EVENT_BUS.register(this);
 

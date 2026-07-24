@@ -1,5 +1,6 @@
 package net.klaivert.orderofobsidian.CreativeModTab;
 
+import net.klaivert.orderofobsidian.Blocks.ModBlocks;
 import net.klaivert.orderofobsidian.OrderOfObsidian;
 import net.klaivert.orderofobsidian.items.ModItems;
 import net.minecraft.core.registries.Registries;
@@ -23,6 +24,8 @@ public class ModCreativeModTab
                             .displayItems((itemDisplayParameters, output) ->
                             {
                                 output.accept(ModItems.OXYS);
+                                output.accept(ModBlocks.OXYS_ORE);
+                                output.accept(ModBlocks.OXYS_BLOCK);
                             })
                             .withSearchBar()
                             .build());
