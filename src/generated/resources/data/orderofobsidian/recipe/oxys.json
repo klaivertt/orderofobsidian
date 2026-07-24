@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "oxys",
+  "ingredients": [
+    "orderofobsidian:oxys_block"
+  ],
+  "result": {
+    "count": 9,
+    "id": "orderofobsidian:oxys"
+  }
+}

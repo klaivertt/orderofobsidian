@@ -3,6 +3,7 @@ package net.klaivert.orderofobsidian;
 import net.klaivert.orderofobsidian.DataGen.ModBlockLootTableProvider;
 import net.klaivert.orderofobsidian.DataGen.ModBlockTagsProvider;
 import net.klaivert.orderofobsidian.DataGen.ModModelProvider;
+import net.klaivert.orderofobsidian.DataGen.ModRecipeProvider;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.loot.LootTableProvider;
@@ -30,5 +31,7 @@ class OrderOfObsidianDataGen
         generator.addProvider(true, new LootTableProvider(packOutput, Collections.emptySet(),
                 List.of(
                         new LootTableProvider.SubProviderEntry(ModBlockLootTableProvider::new, LootContextParamSets.BLOCK)
-                ), lookupProvider)); }
+                ), lookupProvider));
+        generator.addProvider(true, new ModRecipeProvider.Runner(packOutput, lookupProvider));
+    }
 }

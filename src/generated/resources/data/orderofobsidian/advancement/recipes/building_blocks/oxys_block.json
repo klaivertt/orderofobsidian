@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_oxys": {
+      "conditions": {
+        "items": [
+          {
+            "items": "orderofobsidian:oxys"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "orderofobsidian:oxys_block"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_oxys"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "orderofobsidian:oxys_block"
+    ]
+  }
+}

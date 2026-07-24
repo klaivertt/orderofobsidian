@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "oxys",
+  "key": {
+    "A": "orderofobsidian:oxys"
+  },
+  "pattern": [
+    "AAA",
+    "AAA",
+    "AAA"
+  ],
+  "result": {
+    "id": "orderofobsidian:oxys_block"
+  }
+}
