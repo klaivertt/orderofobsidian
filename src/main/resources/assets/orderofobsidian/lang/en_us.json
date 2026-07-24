@@ -9,5 +9,6 @@
   "orderofobsidian.configuration.items": "Item List",
   "orderofobsidian.configuration.logDirtBlock": "Log Dirt Block",
   "orderofobsidian.configuration.magicNumberIntroduction": "Magic Number Text",
-  "orderofobsidian.configuration.magicNumber": "Magic Number"
+  "orderofobsidian.configuration.magicNumber": "Magic Number",
+  "creativetab.orderofobsidian.orderofobsidian_tab": "Order of Obsidian"
 }
