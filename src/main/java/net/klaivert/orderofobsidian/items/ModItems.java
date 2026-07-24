@@ -1,6 +1,8 @@
 package net.klaivert.orderofobsidian.items;
 
 import net.klaivert.orderofobsidian.OrderOfObsidian;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.Item;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -15,5 +17,10 @@ public class ModItems
     public static void Register(IEventBus _eventBus)
     {
         items.register(_eventBus);
+    }
+
+    public static ResourceKey<Item> getRK(Item item)
+    {
+        return BuiltInRegistries.ITEM.getResourceKey(item).get();
     }
 }

@@ -2,6 +2,8 @@ package net.klaivert.orderofobsidian.Blocks;
 
 import net.klaivert.orderofobsidian.OrderOfObsidian;
 import net.klaivert.orderofobsidian.items.ModItems;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.level.block.Block;
@@ -49,6 +51,11 @@ public class ModBlocks
     private static <T extends Block> void RegisterBlockItem(String _name, DeferredBlock<T> _block)
     {
         ModItems.items.registerItem(_name,properties -> new BlockItem(_block.get(), properties.useBlockDescriptionPrefix()));
+    }
+
+    public static ResourceKey<Block> getRK(Block block)
+    {
+        return BuiltInRegistries.BLOCK.getResourceKey(block).get();
     }
 
 
