@@ -13,6 +13,7 @@ public class ModItems
     public static final DeferredRegister.Items items = DeferredRegister.createItems(OrderOfObsidian.MOD_ID);
 
     public static final DeferredItem<Item> OXYS = items.registerSimpleItem("oxys");
+    public static final DeferredItem<Item> TEST_TRIM_TEMPLATE = items.registerSimpleItem("test_trim_template");
 
     public static void Register(IEventBus _eventBus)
     {
