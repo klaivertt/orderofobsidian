@@ -20,6 +20,7 @@ public class ModModelProvider extends ModelProvider
     protected void registerModels(BlockModelGenerators _blockModels, ItemModelGenerators _itemModels)
     {
         _itemModels.generateFlatItem(ModItems.OXYS.get(), ModelTemplates.FLAT_ITEM);
+        _itemModels.generateFlatItem(ModItems.TEST_TRIM_TEMPLATE.get(), ModelTemplates.FLAT_ITEM);
 
         //Blocks
         _blockModels.createTrivialCube(ModBlocks.OXYS_ORE.get());

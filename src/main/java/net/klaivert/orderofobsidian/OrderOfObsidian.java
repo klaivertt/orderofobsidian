@@ -2,7 +2,9 @@ package net.klaivert.orderofobsidian;
 
 import net.klaivert.orderofobsidian.Blocks.ModBlocks;
 import net.klaivert.orderofobsidian.CreativeModTab.ModCreativeModTab;
+import net.klaivert.orderofobsidian.WorldGen.ModFeatures;
 import net.klaivert.orderofobsidian.items.ModItems;
+import net.minecraft.resources.Identifier;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -33,6 +35,7 @@ public class OrderOfObsidian
         ModCreativeModTab.Register(_modEventBus);
         ModItems.Register(_modEventBus);
         ModBlocks.Registered(_modEventBus);
+        ModFeatures.Registered(_modEventBus);
 
         NeoForge.EVENT_BUS.register(this);
 
@@ -58,5 +61,10 @@ public class OrderOfObsidian
     public void onServerStarting(ServerStartingEvent _event)
     {
 
+    }
+
+    public static Identifier id(String _name)
+    {
+        return Identifier.fromNamespaceAndPath(MOD_ID, _name);
     }
 }

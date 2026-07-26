@@ -35,6 +35,26 @@ public class Config
             .comment("A list of items to log on common setup.")
             .defineListAllowEmpty("items", List.of("minecraft:iron_ingot"), () -> "", Config::validateItemName);
 
+    // === oxys worldgen config ===
+    public static final ModConfigSpec.IntValue OXYS_SPAWN_CHANCE_PERCENT = BUILDER
+            .comment("Chance (0-100) for a chunk to contain one oxys vein")
+            .defineInRange("oxysSpawnChancePercent", 25, 0, 100);
+
+    public static final ModConfigSpec.IntValue OXYS_VEIN_WEIGHT_SIZE_1 = BUILDER
+            .comment("Relative weight for generating a vein of size 1 (higher = more likely; used with sizes 2 and 3)")
+            .defineInRange("oxysVeinWeightSize1", 50, 0, Integer.MAX_VALUE);
+
+    public static final ModConfigSpec.IntValue OXYS_VEIN_WEIGHT_SIZE_2 = BUILDER
+            .comment("Relative weight for generating a vein of size 2")
+            .defineInRange("oxysVeinWeightSize2", 40, 0, Integer.MAX_VALUE);
+
+    public static final ModConfigSpec.IntValue OXYS_VEIN_WEIGHT_SIZE_3 = BUILDER
+            .comment("Relative weight for generating a vein of size 3 (very rare by default)")
+            .defineInRange("oxysVeinWeightSize3", 10, 0, Integer.MAX_VALUE);
+
+
+    // === end oxys config ===
+
     static final ModConfigSpec SPEC = BUILDER.build();
 
     private static boolean validateItemName(final Object obj)
