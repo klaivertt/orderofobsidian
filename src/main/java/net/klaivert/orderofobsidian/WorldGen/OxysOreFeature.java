@@ -14,11 +14,10 @@ import net.minecraft.world.level.levelgen.feature.configurations.NoneFeatureConf
 
 import javax.annotation.Nullable;
 
-public class OxysOreFeature extends Feature<NoneFeatureConfiguration> {
+public class OxysOreFeature extends Feature<NoneFeatureConfiguration>
+{
 
-    /** Rayon horizontal (en blocs) autour de l'origine ou l'on cherche une colonne d'end stone. */
     private static final int SEARCH_RADIUS = 3;
-    /** Nombre de colonnes testees avant d'abandonner le chunk. */
     private static final int COLUMN_ATTEMPTS = 16;
 
     public OxysOreFeature(Codec<NoneFeatureConfiguration> codec) {
@@ -31,12 +30,12 @@ public class OxysOreFeature extends Feature<NoneFeatureConfiguration> {
         WorldGenLevel level = context.level();
 
         if (random.nextInt(100) >= Config.OXYS_SPAWN_CHANCE_PERCENT.get()) {
-            return false; // pas de vein dans ce chunk
+            return false;
         }
 
         BlockPos start = pickOreSpot(level, context.origin(), random);
         if (start == null) {
-            return false; // que du vide sous ce chunk (l'End est majoritairement vide)
+            return false;
         }
 
         int veinSize = pickWeightedSize(random);
@@ -44,8 +43,6 @@ public class OxysOreFeature extends Feature<NoneFeatureConfiguration> {
         BlockPos.MutableBlockPos pos = new BlockPos.MutableBlockPos();
 
         int placed = 0;
-        // On tire des positions dans le cube 3x3x3 autour de start ; un bloc deja converti
-        // n'est plus de l'end stone donc il ne sera pas recompte.
         for (int attempt = veinSize * 6; attempt > 0 && placed < veinSize; attempt--) {
             pos.setWithOffset(start, random.nextInt(3) - 1, random.nextInt(3) - 1, random.nextInt(3) - 1);
             if (level.getBlockState(pos).is(Blocks.END_STONE)) {
@@ -56,11 +53,7 @@ public class OxysOreFeature extends Feature<NoneFeatureConfiguration> {
         return placed > 0;
     }
 
-    /**
-     * Tire un bloc d'end stone uniformement au hasard dans une colonne, sur toute la hauteur du monde.
-     * Comme les blocs interieurs d'une ile sont bien plus nombreux que les deux couches de surface,
-     * l'oxys se retrouve enfoui la plupart du temps, comme un minerai classique.
-     */
+
     @Nullable
     private static BlockPos pickOreSpot(WorldGenLevel level, BlockPos origin, RandomSource random) {
         BlockPos.MutableBlockPos cursor = new BlockPos.MutableBlockPos();
@@ -71,8 +64,7 @@ public class OxysOreFeature extends Feature<NoneFeatureConfiguration> {
             int x = origin.getX() + random.nextInt(SEARCH_RADIUS * 2 + 1) - SEARCH_RADIUS;
             int z = origin.getZ() + random.nextInt(SEARCH_RADIUS * 2 + 1) - SEARCH_RADIUS;
 
-            // Echantillonnage par reservoir : un seul passage sur la colonne, chaque bloc d'end stone
-            // ayant exactement la meme probabilite d'etre retenu.
+
             int seen = 0;
             int pickedY = minY;
             for (int y = minY; y <= maxY; y++) {

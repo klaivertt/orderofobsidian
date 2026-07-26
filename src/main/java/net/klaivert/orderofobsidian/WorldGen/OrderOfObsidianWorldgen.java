@@ -40,12 +40,10 @@ public final class OrderOfObsidianWorldgen {
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = _context.lookup(Registries.CONFIGURED_FEATURE);
 
 
-        // Pas de heightmap ni de height_range : les iles de l'End flottent a des altitudes variables,
-        // donc c'est la feature qui tire une profondeur uniforme dans la roche.
         _context.register(OXYS_ORE_PLACED, new PlacedFeature(
                 configuredFeatures.getOrThrow(OXYS_ORE),
                 List.of(
-                        InSquarePlacement.spread(), // colonne aleatoire dans le chunk
+                        InSquarePlacement.spread(),
                         BiomeFilter.biome()
                 )
         ));
