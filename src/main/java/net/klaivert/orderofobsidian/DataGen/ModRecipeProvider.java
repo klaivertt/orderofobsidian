@@ -5,10 +5,7 @@ import net.klaivert.orderofobsidian.Blocks.ModBlocks;
 import net.klaivert.orderofobsidian.items.ModItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
-import net.minecraft.data.recipes.RecipeCategory;
-import net.minecraft.data.recipes.RecipeOutput;
-import net.minecraft.data.recipes.RecipeProvider;
-import net.minecraft.data.recipes.SimpleCookingRecipeBuilder;
+import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.AbstractCookingRecipe;
 import net.minecraft.world.item.crafting.CookingBookCategory;
@@ -42,6 +39,7 @@ public class ModRecipeProvider extends RecipeProvider {
 
 
     private static final String OXYS_GROUP = "oxys";
+    private static final String END_DEPHSTONE_GROUP = "end_depthstone";
 
     @Override
     protected void buildRecipes() {
@@ -65,7 +63,64 @@ public class ModRecipeProvider extends RecipeProvider {
         oreSmelting(OXYS_SMELTABLES, RecipeCategory.MISC, CookingBookCategory.MISC, ModItems.OXYS.get(), 10.f, 450, OXYS_GROUP);
         oreBlasting(OXYS_SMELTABLES, RecipeCategory.MISC, CookingBookCategory.MISC, ModItems.OXYS.get(), 10.f, 250, OXYS_GROUP);
 
+        shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.END_DEPHSTONE_BRICKS.get(), 4)
+                .pattern("##")
+                .pattern("##")
+                .define('#', ModBlocks.END_DEPHSTONE)
+                .unlockedBy(getHasName(ModBlocks.END_DEPHSTONE.get()), has(ModBlocks.END_DEPHSTONE))
+                .group(END_DEPHSTONE_GROUP)
+                .save(output);
+
+
+        shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.END_DEPHSTONE_TILES.get(), 4)
+                .pattern("##")
+                .pattern("##")
+                .define('#', ModBlocks.END_DEPHSTONE_BRICKS)
+                .unlockedBy(getHasName(ModBlocks.END_DEPHSTONE_BRICKS.get()), has(ModBlocks.END_DEPHSTONE_BRICKS))
+                .group(END_DEPHSTONE_GROUP)
+                .save(output);
+
+        smeltingResultFromBase(ModBlocks.CRACKED_END_DEPHSTONE_BRICKS.get(), ModBlocks.END_DEPHSTONE_BRICKS.get());
+        smeltingResultFromBase(ModBlocks.CRACKED_END_DEPHSTONE_TILES.get(), ModBlocks.END_DEPHSTONE_TILES.get());
+
+        stairBuilder(ModBlocks.COBBLED_END_DEPHSTONE_STAIRS.get(), Ingredient.of(ModBlocks.COBBLED_END_DEPHSTONE))
+                .unlockedBy(getHasName(ModBlocks.COBBLED_END_DEPHSTONE.get()), has(ModBlocks.COBBLED_END_DEPHSTONE))
+                .group(END_DEPHSTONE_GROUP).save(output);
+
+        slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.COBBLED_END_DEPHSTONE_SLAB.get(), ModBlocks.COBBLED_END_DEPHSTONE.get());
+        wall(RecipeCategory.BUILDING_BLOCKS, ModBlocks.COBBLED_END_DEPHSTONE_WALL.get(), ModBlocks.COBBLED_END_DEPHSTONE.get());
+
+        stairBuilder(ModBlocks.END_DEPHSTONE_TILES_STAIRS.get(), Ingredient.of(ModBlocks.END_DEPHSTONE_TILES))
+                .unlockedBy(getHasName(ModBlocks.END_DEPHSTONE_TILES.get()), has(ModBlocks.END_DEPHSTONE_TILES))
+                .group(END_DEPHSTONE_GROUP).save(output);
+
+        slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.END_DEPHSTONE_TILES_SLAB.get(), ModBlocks.END_DEPHSTONE_TILES.get());
+        wall(RecipeCategory.BUILDING_BLOCKS, ModBlocks.END_DEPHSTONE_TILES_WALL.get(), ModBlocks.END_DEPHSTONE_TILES.get());
+
+        stairBuilder(ModBlocks.END_DEPHSTONE_BRICKS_STAIRS.get(), Ingredient.of(ModBlocks.END_DEPHSTONE_BRICKS))
+                .unlockedBy(getHasName(ModBlocks.END_DEPHSTONE_BRICKS.get()), has(ModBlocks.END_DEPHSTONE_BRICKS))
+                .group(END_DEPHSTONE_GROUP).save(output);
+
+        slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.END_DEPHSTONE_BRICKS_SLAB.get(), ModBlocks.END_DEPHSTONE_BRICKS.get());
+        wall(RecipeCategory.BUILDING_BLOCKS, ModBlocks.END_DEPHSTONE_BRICKS_WALL.get(), ModBlocks.END_DEPHSTONE_BRICKS.get());
+
+        stonecutting(RecipeCategory.BUILDING_BLOCKS, ModBlocks.END_DEPHSTONE_BRICKS.get(), ModBlocks.END_DEPHSTONE.get());
+
+        stonecutting(RecipeCategory.BUILDING_BLOCKS, ModBlocks.COBBLED_END_DEPHSTONE_STAIRS.get(), ModBlocks.COBBLED_END_DEPHSTONE.get());
+        stonecutting(RecipeCategory.BUILDING_BLOCKS, ModBlocks.COBBLED_END_DEPHSTONE_SLAB.get(), ModBlocks.COBBLED_END_DEPHSTONE.get(), 2);
+        stonecutting(RecipeCategory.BUILDING_BLOCKS, ModBlocks.COBBLED_END_DEPHSTONE_WALL.get(), ModBlocks.COBBLED_END_DEPHSTONE.get());
+
+        stonecutting(RecipeCategory.BUILDING_BLOCKS, ModBlocks.END_DEPHSTONE_TILES.get(), ModBlocks.END_DEPHSTONE_BRICKS.get());
+        stonecutting(RecipeCategory.BUILDING_BLOCKS, ModBlocks.END_DEPHSTONE_BRICKS_STAIRS.get(), ModBlocks.END_DEPHSTONE_BRICKS.get());
+        stonecutting(RecipeCategory.BUILDING_BLOCKS, ModBlocks.END_DEPHSTONE_BRICKS_SLAB.get(), ModBlocks.END_DEPHSTONE_BRICKS.get(), 2);
+        stonecutting(RecipeCategory.BUILDING_BLOCKS, ModBlocks.END_DEPHSTONE_BRICKS_WALL.get(), ModBlocks.END_DEPHSTONE_BRICKS.get());
+
+        stonecutting(RecipeCategory.BUILDING_BLOCKS, ModBlocks.END_DEPHSTONE_TILES_STAIRS.get(), ModBlocks.END_DEPHSTONE_TILES.get());
+        stonecutting(RecipeCategory.BUILDING_BLOCKS, ModBlocks.END_DEPHSTONE_TILES_SLAB.get(), ModBlocks.END_DEPHSTONE_TILES.get(), 2);
+        stonecutting(RecipeCategory.BUILDING_BLOCKS, ModBlocks.END_DEPHSTONE_TILES_WALL.get(), ModBlocks.END_DEPHSTONE_TILES.get());
+
     }
+
 
     @Override
     protected <T extends AbstractCookingRecipe> void oreCooking(AbstractCookingRecipe.Factory<T> factory, List<ItemLike> smeltables,
@@ -75,5 +130,16 @@ public class ModRecipeProvider extends RecipeProvider {
             SimpleCookingRecipeBuilder.generic(Ingredient.of(itemlike), craftingCategory, cookingCategory, result, experience, cookingTime, factory).group(group).unlockedBy(getHasName(itemlike), has(itemlike))
                     .save(output, OrderOfObsidian.MOD_ID + ":" + getItemName(result) + fromDesc + "_" + getItemName(itemlike));
         }
+    }
+
+
+    private void stonecutting(RecipeCategory category, ItemLike result, ItemLike base) {
+        stonecutting(category, result, base, 1);
+    }
+
+    private void stonecutting(RecipeCategory category, ItemLike result, ItemLike base, int count) {
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(base), category, result, count)
+                .unlockedBy(getHasName(base), has(base))
+                .save(output, OrderOfObsidian.MOD_ID + ":" + getItemName(result) + "_from_" + getItemName(base) + "_stonecutting");
     }
 }

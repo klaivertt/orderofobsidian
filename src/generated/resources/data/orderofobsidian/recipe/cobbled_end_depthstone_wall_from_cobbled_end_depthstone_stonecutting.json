@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "orderofobsidian:cobbled_end_depthstone",
+  "result": {
+    "id": "orderofobsidian:cobbled_end_depthstone_wall"
+  }
+}

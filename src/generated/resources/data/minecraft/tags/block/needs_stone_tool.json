@@ -1,0 +1,19 @@
+{
+  "values": [
+    "orderofobsidian:end_depthstone",
+    "orderofobsidian:end_depthstone_bricks",
+    "orderofobsidian:end_depthstone_tiles",
+    "orderofobsidian:cracked_end_depthstone_bricks",
+    "orderofobsidian:cracked_end_depthstone_tiles",
+    "orderofobsidian:cobbled_end_depthstone",
+    "orderofobsidian:cobbled_end_depthstone_stairs",
+    "orderofobsidian:cobbled_end_depthstone_slab",
+    "orderofobsidian:cobbled_end_depthstone_wall",
+    "orderofobsidian:end_depthstone_bricks_stairs",
+    "orderofobsidian:end_depthstone_bricks_slab",
+    "orderofobsidian:end_depthstone_bricks_wall",
+    "orderofobsidian:end_depthstone_tiles_stairs",
+    "orderofobsidian:end_depthstone_tiles_slab",
+    "orderofobsidian:end_depthstone_tiles_wall"
+  ]
+}

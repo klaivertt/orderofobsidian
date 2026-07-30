@@ -26,6 +26,25 @@ public class ModCreativeModTab
                                 output.accept(ModItems.OXYS);
                                 output.accept(ModBlocks.OXYS_ORE);
                                 output.accept(ModBlocks.OXYS_BLOCK);
+
+                                output.accept(ModBlocks.END_DEPHSTONE);
+                                output.accept(ModBlocks.COBBLED_END_DEPHSTONE);
+                                output.accept(ModBlocks.END_DEPHSTONE_BRICKS);
+                                output.accept(ModBlocks.END_DEPHSTONE_TILES);
+                                output.accept(ModBlocks.CRACKED_END_DEPHSTONE_BRICKS);
+                                output.accept(ModBlocks.CRACKED_END_DEPHSTONE_TILES);
+
+                                output.accept(ModBlocks.COBBLED_END_DEPHSTONE_STAIRS);
+                                output.accept(ModBlocks.COBBLED_END_DEPHSTONE_SLAB);
+                                output.accept(ModBlocks.COBBLED_END_DEPHSTONE_WALL);
+
+                                output.accept(ModBlocks.END_DEPHSTONE_BRICKS_SLAB);
+                                output.accept(ModBlocks.END_DEPHSTONE_BRICKS_STAIRS);
+                                output.accept(ModBlocks.END_DEPHSTONE_BRICKS_WALL);
+
+                                output.accept(ModBlocks.END_DEPHSTONE_TILES_SLAB);
+                                output.accept(ModBlocks.END_DEPHSTONE_TILES_STAIRS);
+                                output.accept(ModBlocks.END_DEPHSTONE_TILES_WALL);
                             })
                             .withSearchBar()
                             .build());

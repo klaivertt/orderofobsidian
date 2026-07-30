@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": "orderofobsidian:cobbled_end_depthstone"
+  },
+  "pattern": [
+    "###"
+  ],
+  "result": {
+    "count": 6,
+    "id": "orderofobsidian:cobbled_end_depthstone_slab"
+  }
+}

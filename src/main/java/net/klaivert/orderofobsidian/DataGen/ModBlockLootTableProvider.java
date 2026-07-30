@@ -38,6 +38,26 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider
         add(ModBlocks.OXYS_ORE.get(), createNoFortuneOreDrop(ModBlocks.OXYS_ORE.get(), ModItems.OXYS.get()));
 
 //        add(ModBlocks.OXYS_ORE.get(), createOreDrop(ModBlocks.OXYS_ORE.get(), ModItems.OXYS.get()));
+
+        dropSelf(ModBlocks.CRACKED_END_DEPHSTONE_BRICKS.get());
+        dropSelf(ModBlocks.CRACKED_END_DEPHSTONE_TILES.get());
+        dropOther(ModBlocks.END_DEPHSTONE.get(),ModBlocks.COBBLED_END_DEPHSTONE.get());
+        dropSelf(ModBlocks.END_DEPHSTONE_BRICKS.get());
+        dropSelf(ModBlocks.END_DEPHSTONE_TILES.get());
+
+        dropSelf(ModBlocks.COBBLED_END_DEPHSTONE.get());
+        dropSelf(ModBlocks.COBBLED_END_DEPHSTONE_STAIRS.get());
+        dropSelf(ModBlocks.COBBLED_END_DEPHSTONE_SLAB.get());
+        dropSelf(ModBlocks.COBBLED_END_DEPHSTONE_WALL.get());
+
+        dropSelf(ModBlocks.END_DEPHSTONE_BRICKS_STAIRS.get());
+        dropSelf(ModBlocks.END_DEPHSTONE_BRICKS_SLAB.get());
+        dropSelf(ModBlocks.END_DEPHSTONE_BRICKS_WALL.get());
+
+        dropSelf(ModBlocks.END_DEPHSTONE_TILES_STAIRS.get());
+        dropSelf(ModBlocks.END_DEPHSTONE_TILES_SLAB.get());
+        dropSelf(ModBlocks.END_DEPHSTONE_TILES_WALL.get());
+
     }
 
     protected LootTable.Builder createNoFortuneOreDrop(Block block, Item item)

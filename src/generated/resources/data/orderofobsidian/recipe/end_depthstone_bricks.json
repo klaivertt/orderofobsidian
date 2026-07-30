@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "end_depthstone",
+  "key": {
+    "#": "orderofobsidian:end_depthstone"
+  },
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "result": {
+    "count": 4,
+    "id": "orderofobsidian:end_depthstone_bricks"
+  }
+}

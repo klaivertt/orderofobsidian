@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": "orderofobsidian:end_depthstone_bricks",
+  "result": {
+    "id": "orderofobsidian:end_depthstone_bricks_stairs"
+  }
+}

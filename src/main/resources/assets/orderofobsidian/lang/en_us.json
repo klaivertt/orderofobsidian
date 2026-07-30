@@ -6,5 +6,24 @@
   "creativetab.orderofobsidian.orderofobsidian_tab": "Order of Obsidian",
   "item.orderofobsidian.oxys": "Oxys",
   "block.orderofobsidian.oxys_ore": "Oxys Ore",
-  "block.orderofobsidian.oxys_block": "Block of Oxys"
+  "block.orderofobsidian.oxys_block": "Block of Oxys",
+
+  "block.orderofobsidian.end_depthstone": "End Depthstone",
+  "block.orderofobsidian.cracked_end_depthstone_bricks": "Cracked End Depthstone Bricks",
+  "block.orderofobsidian.cracked_end_depthstone_tiles": "Cracked End Depthstone Tiles",
+
+  "block.orderofobsidian.cobbled_end_depthstone": "Cobbled End Depthstone",
+  "block.orderofobsidian.cobbled_end_depthstone_slab": "Cobbled End Depthstone Slab",
+  "block.orderofobsidian.cobbled_end_depthstone_stairs": "Cobbled End Depthstone Stairs",
+  "block.orderofobsidian.cobbled_end_depthstone_wall": "Cobbled End Depthstone Wall",
+
+  "block.orderofobsidian.end_depthstone_bricks": "End Depthstone Brick",
+  "block.orderofobsidian.end_depthstone_bricks_slab": "End Depthstone Brick Slab",
+  "block.orderofobsidian.end_depthstone_bricks_stairs": "End Depthstone Brick Stairs",
+  "block.orderofobsidian.end_depthstone_bricks_wall": "End Depthstone Brick Wall",
+
+  "block.orderofobsidian.end_depthstone_tiles": "End Depthstone Tile",
+  "block.orderofobsidian.end_depthstone_tiles_slab": "End Depthstone Tile Slab",
+  "block.orderofobsidian.end_depthstone_tiles_stairs": "End Depthstone Tile Stairs",
+  "block.orderofobsidian.end_depthstone_tiles_wall": "End Depthstone Tile Wall"
 }

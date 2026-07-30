@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_end_depthstone_tiles": {
+      "conditions": {
+        "items": [
+          {
+            "items": "orderofobsidian:end_depthstone_tiles"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "orderofobsidian:end_depthstone_tiles_wall_from_end_depthstone_tiles_stonecutting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_end_depthstone_tiles"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "orderofobsidian:end_depthstone_tiles_wall_from_end_depthstone_tiles_stonecutting"
+    ]
+  }
+}

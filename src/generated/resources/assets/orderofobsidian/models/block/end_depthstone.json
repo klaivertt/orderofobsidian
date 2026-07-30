@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "orderofobsidian:block/end_depthstone_top",
+    "side": "orderofobsidian:block/end_depthstone"
+  }
+}

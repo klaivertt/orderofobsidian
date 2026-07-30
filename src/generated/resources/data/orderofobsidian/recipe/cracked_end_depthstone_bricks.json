@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "experience": 0.1,
+  "ingredient": "orderofobsidian:end_depthstone_bricks",
+  "result": {
+    "id": "orderofobsidian:cracked_end_depthstone_bricks"
+  }
+}
