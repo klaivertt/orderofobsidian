@@ -2,6 +2,7 @@ package net.klaivert.orderofobsidian.DataGen;
 
 import net.klaivert.orderofobsidian.Blocks.ModBlocks;
 import net.klaivert.orderofobsidian.OrderOfObsidian;
+import net.klaivert.orderofobsidian.items.ModArmorMaterials;
 import net.klaivert.orderofobsidian.items.ModItems;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
@@ -22,6 +23,19 @@ public class ModModelProvider extends ModelProvider
     {
         _itemModels.generateFlatItem(ModItems.OXYS.get(), ModelTemplates.FLAT_ITEM);
         _itemModels.generateFlatItem(ModItems.TEST_TRIM_TEMPLATE.get(), ModelTemplates.FLAT_ITEM);
+
+        _itemModels.generateFlatItem(ModItems.OXYS_SWORD.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        _itemModels.generateFlatItem(ModItems.OXYS_PICKAXE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        _itemModels.generateFlatItem(ModItems.OXYS_SHOVEL.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        _itemModels.generateFlatItem(ModItems.OXYS_AXE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        _itemModels.generateFlatItem(ModItems.OXYS_HOE.get(), ModelTemplates.FLAT_HANDHELD_ITEM);
+        _itemModels.generateSpear(ModItems.OXYS_SPEAR.get());
+
+        _itemModels.generateTrimmableItem(ModItems.OXYS_HELMET.get(), ModArmorMaterials.OXYS_KEY, ItemModelGenerators.TRIM_PREFIX_HELMET, false);
+        _itemModels.generateTrimmableItem(ModItems.OXYS_CHESTPLATE.get(), ModArmorMaterials.OXYS_KEY, ItemModelGenerators.TRIM_PREFIX_CHESTPLATE, false);
+        _itemModels.generateTrimmableItem(ModItems.OXYS_LEGGINGS.get(), ModArmorMaterials.OXYS_KEY, ItemModelGenerators.TRIM_PREFIX_LEGGINGS, false);
+        _itemModels.generateTrimmableItem(ModItems.OXYS_BOOTS.get(), ModArmorMaterials.OXYS_KEY, ItemModelGenerators.TRIM_PREFIX_BOOTS, false);
+        
 
         //Blocks
         _blockModels.createTrivialCube(ModBlocks.OXYS_ORE.get());
@@ -48,6 +62,15 @@ public class ModModelProvider extends ModelProvider
                 .slab(ModBlocks.END_DEPHSTONE_TILES_SLAB.get())
                 .wall(ModBlocks.END_DEPHSTONE_TILES_WALL.get()
                 );
+
+        _blockModels.createRotatedPillarWithHorizontalVariant(
+                ModBlocks.YEW_LOG.get(),
+                TexturedModel.COLUMN,
+                TexturedModel.COLUMN_HORIZONTAL
+        );
+        _blockModels.createTrivialCube(ModBlocks.YEW_PLANKS.get());
+        _blockModels.createTrivialCube(ModBlocks.YEW_LEAVES.get());
+        _blockModels.createCrossBlockWithDefaultItem(ModBlocks.YEW_SAPLING.get(), BlockModelGenerators.PlantType.NOT_TINTED);
 
 
     }

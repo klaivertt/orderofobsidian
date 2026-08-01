@@ -2,15 +2,22 @@ package net.klaivert.orderofobsidian.DataGen;
 
 import net.klaivert.orderofobsidian.OrderOfObsidian;
 import net.klaivert.orderofobsidian.Blocks.ModBlocks;
+import net.klaivert.orderofobsidian.Tags.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
+import net.minecraft.resources.Identifier;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.tags.TagKey;
+import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.data.BlockTagsProvider;
 
 import java.util.concurrent.CompletableFuture;
 
 public class ModBlockTagsProvider extends BlockTagsProvider {
+    private static final TagKey<Block> LOGS_THAT_BURN = BlockTags.create(Identifier.withDefaultNamespace("logs_that_burn"));
+    private static final TagKey<Block> SAPLINGS = BlockTags.create(Identifier.withDefaultNamespace("saplings"));
+
     public ModBlockTagsProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider) {
         super(output, lookupProvider, OrderOfObsidian.MOD_ID);
     }
@@ -56,10 +63,71 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
                 .add(ModBlocks.getRK(ModBlocks.END_DEPHSTONE_TILES_WALL.get())
                 );
 
-        tag(BlockTags.NEEDS_IRON_TOOL);
-        tag(BlockTags.NEEDS_DIAMOND_TOOL);
+
+
+        tag(BlockTags.INCORRECT_FOR_DIAMOND_TOOL)
+                .addTag(Tags.Blocks.NEEDS_NETHERITE_TOOL);
+
         tag(Tags.Blocks.NEEDS_NETHERITE_TOOL)
                 .add(ModBlocks.getRK(ModBlocks.OXYS_ORE.get()))
                 .add(ModBlocks.getRK(ModBlocks.OXYS_BLOCK.get()));
+
+        tag(Tags.Blocks.ORES)
+                .add(ModBlocks.getRK(ModBlocks.OXYS_ORE.get()));
+
+        tag(Tags.Blocks.STORAGE_BLOCKS)
+                .add(ModBlocks.getRK(ModBlocks.OXYS_BLOCK.get()));
+
+        tag(Tags.Blocks.END_STONES)
+                .add(ModBlocks.getRK(ModBlocks.END_DEPHSTONE.get()));
+
+        tag(Tags.Blocks.COBBLESTONES)
+                .add(ModBlocks.getRK(ModBlocks.COBBLED_END_DEPHSTONE.get()));
+
+
+
+        tag(BlockTags.STAIRS)
+                .add(ModBlocks.getRK(ModBlocks.COBBLED_END_DEPHSTONE_STAIRS.get()))
+                .add(ModBlocks.getRK(ModBlocks.END_DEPHSTONE_BRICKS_STAIRS.get()))
+                .add(ModBlocks.getRK(ModBlocks.END_DEPHSTONE_TILES_STAIRS.get()));
+
+
+        tag(BlockTags.SLABS)
+                .add(ModBlocks.getRK(ModBlocks.COBBLED_END_DEPHSTONE_SLAB.get()))
+                .add(ModBlocks.getRK(ModBlocks.END_DEPHSTONE_BRICKS_SLAB.get()))
+                .add(ModBlocks.getRK(ModBlocks.END_DEPHSTONE_TILES_SLAB.get()));
+
+        tag(BlockTags.WALLS)
+                .add(ModBlocks.getRK(ModBlocks.COBBLED_END_DEPHSTONE_WALL.get()))
+                .add(ModBlocks.getRK(ModBlocks.END_DEPHSTONE_BRICKS_WALL.get()))
+                .add(ModBlocks.getRK(ModBlocks.END_DEPHSTONE_TILES_WALL.get())
+                );
+
+        tag(BlockTags.MINEABLE_WITH_AXE)
+                .add(ModBlocks.getRK(ModBlocks.YEW_LOG.get()))
+                .add(ModBlocks.getRK(ModBlocks.YEW_PLANKS.get()));
+
+        tag(BlockTags.MINEABLE_WITH_HOE)
+                .add(ModBlocks.getRK(ModBlocks.YEW_LEAVES.get()));
+
+        tag(BlockTags.LOGS)
+                .add(ModBlocks.getRK(ModBlocks.YEW_LOG.get()));
+
+        tag(LOGS_THAT_BURN)
+                .add(ModBlocks.getRK(ModBlocks.YEW_LOG.get()));
+
+        tag(BlockTags.PLANKS)
+                .add(ModBlocks.getRK(ModBlocks.YEW_PLANKS.get()));
+
+        tag(BlockTags.LEAVES)
+                .add(ModBlocks.getRK(ModBlocks.YEW_LEAVES.get()));
+
+        tag(SAPLINGS)
+                .add(ModBlocks.getRK(ModBlocks.YEW_SAPLING.get()));
+
+        tag(ModTags.Blocks.SUPPORTS_YEW)
+                .addTag(Tags.Blocks.END_STONES);
+
+        tag(ModTags.Blocks.INCORRECT_FOR_OXYS_TOOL);
     }
 }

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "group": "yew",
+  "ingredients": [
+    "orderofobsidian:yew_log"
+  ],
+  "result": {
+    "count": 4,
+    "id": "orderofobsidian:yew_planks"
+  }
+}

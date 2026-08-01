@@ -58,6 +58,11 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider
         dropSelf(ModBlocks.END_DEPHSTONE_TILES_SLAB.get());
         dropSelf(ModBlocks.END_DEPHSTONE_TILES_WALL.get());
 
+        dropSelf(ModBlocks.YEW_LOG.get());
+        dropSelf(ModBlocks.YEW_PLANKS.get());
+        add(ModBlocks.YEW_LEAVES.get(), createLeavesDrops(ModBlocks.YEW_LEAVES.get(), ModBlocks.YEW_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+        dropSelf(ModBlocks.YEW_SAPLING.get());
+
     }
 
     protected LootTable.Builder createNoFortuneOreDrop(Block block, Item item)

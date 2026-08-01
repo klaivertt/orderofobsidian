@@ -8,6 +8,18 @@
   "block.orderofobsidian.oxys_ore": "Oxys Ore",
   "block.orderofobsidian.oxys_block": "Block of Oxys",
 
+  "item.orderofobsidian.oxys_helmet": "Oxys Helmet",
+  "item.orderofobsidian.oxys_chestplate": "Oxys Chestplate",
+  "item.orderofobsidian.oxys_leggings": "Oxys Leggings",
+  "item.orderofobsidian.oxys_boots": "Oxys Boots",
+  "item.orderofobsidian.oxys_pickaxe": "Oxys Pickaxe",
+  "item.orderofobsidian.oxys_axe": "Oxys Axe",
+  "item.orderofobsidian.oxys_shovel": "Oxys Shovel",
+  "item.orderofobsidian.oxys_hoe": "Oxys Hoe",
+  "item.orderofobsidian.oxys_sword": "Oxys Sword",
+  "item.orderofobsidian.oxys_spear": "Oxys Spear",
+
+
   "block.orderofobsidian.end_depthstone": "End Depthstone",
   "block.orderofobsidian.cracked_end_depthstone_bricks": "Cracked End Depthstone Bricks",
   "block.orderofobsidian.cracked_end_depthstone_tiles": "Cracked End Depthstone Tiles",
@@ -25,5 +37,10 @@
   "block.orderofobsidian.end_depthstone_tiles": "End Depthstone Tile",
   "block.orderofobsidian.end_depthstone_tiles_slab": "End Depthstone Tile Slab",
   "block.orderofobsidian.end_depthstone_tiles_stairs": "End Depthstone Tile Stairs",
-  "block.orderofobsidian.end_depthstone_tiles_wall": "End Depthstone Tile Wall"
+  "block.orderofobsidian.end_depthstone_tiles_wall": "End Depthstone Tile Wall",
+
+  "block.orderofobsidian.yew_log": "Yew Log",
+  "block.orderofobsidian.yew_planks": "Yew Planks",
+  "block.orderofobsidian.yew_leaves": "Yew Leaves",
+  "block.orderofobsidian.yew_sapling": "Yew Sapling"
 }

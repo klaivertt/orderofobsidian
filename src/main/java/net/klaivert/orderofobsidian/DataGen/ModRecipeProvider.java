@@ -40,6 +40,7 @@ public class ModRecipeProvider extends RecipeProvider {
 
     private static final String OXYS_GROUP = "oxys";
     private static final String END_DEPHSTONE_GROUP = "end_depthstone";
+    private static final String YEW_GROUP = "yew";
 
     @Override
     protected void buildRecipes() {
@@ -118,6 +119,12 @@ public class ModRecipeProvider extends RecipeProvider {
         stonecutting(RecipeCategory.BUILDING_BLOCKS, ModBlocks.END_DEPHSTONE_TILES_STAIRS.get(), ModBlocks.END_DEPHSTONE_TILES.get());
         stonecutting(RecipeCategory.BUILDING_BLOCKS, ModBlocks.END_DEPHSTONE_TILES_SLAB.get(), ModBlocks.END_DEPHSTONE_TILES.get(), 2);
         stonecutting(RecipeCategory.BUILDING_BLOCKS, ModBlocks.END_DEPHSTONE_TILES_WALL.get(), ModBlocks.END_DEPHSTONE_TILES.get());
+
+        shapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.YEW_PLANKS.get(), 4)
+                .requires(ModBlocks.YEW_LOG.get())
+                .unlockedBy(getHasName(ModBlocks.YEW_LOG.get()), has(ModBlocks.YEW_LOG))
+                .group(YEW_GROUP)
+                .save(output);
 
     }
 

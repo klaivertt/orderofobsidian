@@ -1,9 +1,6 @@
 package net.klaivert.orderofobsidian;
 
-import net.klaivert.orderofobsidian.DataGen.ModBlockLootTableProvider;
-import net.klaivert.orderofobsidian.DataGen.ModBlockTagsProvider;
-import net.klaivert.orderofobsidian.DataGen.ModModelProvider;
-import net.klaivert.orderofobsidian.DataGen.ModRecipeProvider;
+import net.klaivert.orderofobsidian.DataGen.*;
 import net.klaivert.orderofobsidian.WorldGen.OrderOfObsidianWorldgen;
 import net.minecraft.core.RegistrySetBuilder;
 import net.minecraft.core.registries.Registries;
@@ -25,8 +22,6 @@ class OrderOfObsidianDataGen
     @SubscribeEvent
     public static void GatherClientData(GatherDataEvent.Client _event)
     {
-        // Doit passer en premier : les providers suivants doivent voir les registres dynamiques
-        // enrichis (configured_feature / placed_feature / biome_modifier) via getLookupProvider().
         _event.createDatapackRegistryObjects(new RegistrySetBuilder()
                 .add(Registries.CONFIGURED_FEATURE, OrderOfObsidianWorldgen::bootstrapConfiguredFeatures)
                 .add(Registries.PLACED_FEATURE, OrderOfObsidianWorldgen::bootstrapPlacedFeatures)
@@ -39,6 +34,9 @@ class OrderOfObsidianDataGen
 
         generator.addProvider(true, new ModModelProvider(packOutput));
         generator.addProvider(true, new ModBlockTagsProvider(packOutput, lookupProvider));
+        generator.addProvider(true, new ModItemTagsProvider(packOutput, lookupProvider));
+        generator.addProvider(true, new ModEquipmentAssetProvider(packOutput));
+
         generator.addProvider(true, new LootTableProvider(packOutput, Collections.emptySet(),
                 List.of(
                         new LootTableProvider.SubProviderEntry(ModBlockLootTableProvider::new, LootContextParamSets.BLOCK)

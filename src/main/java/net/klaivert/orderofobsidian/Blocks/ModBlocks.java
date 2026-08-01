@@ -1,6 +1,8 @@
 package net.klaivert.orderofobsidian.Blocks;
 
+import net.klaivert.orderofobsidian.Blocks.Custom.YewSaplingBlock;
 import net.klaivert.orderofobsidian.OrderOfObsidian;
+import net.klaivert.orderofobsidian.WorldGen.ModTreeGrowers;
 import net.klaivert.orderofobsidian.items.ModItems;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceKey;
@@ -167,6 +169,32 @@ public class ModBlocks {
                     properties.strength(2.25f)
                             .requiresCorrectToolForDrops()
                             .sound(SoundType.STONE)
+            )
+    );
+
+    public static final DeferredBlock<Block> YEW_LOG = RegisterBlock("yew_log",
+            properties -> new RotatedPillarBlock(
+                    properties.strength(2.0f).sound(SoundType.WOOD).ignitedByLava()
+            )
+    );
+
+    public static final DeferredBlock<Block> YEW_PLANKS = RegisterBlock("yew_planks",
+            properties -> new Block(
+                    properties.strength(2.0f, 3.0f).sound(SoundType.WOOD).ignitedByLava()
+            )
+    );
+
+    public static final DeferredBlock<Block> YEW_LEAVES = RegisterBlock("yew_leaves",
+            properties -> new TintedParticleLeavesBlock(
+                    0.01F,
+                    properties.strength(0.2f).randomTicks().sound(SoundType.GRASS).noOcclusion().ignitedByLava()
+            )
+    );
+
+    public static final DeferredBlock<Block> YEW_SAPLING = RegisterBlock("yew_sapling",
+            properties -> new YewSaplingBlock(
+                    ModTreeGrowers.YEW,
+                    properties.noCollision().instabreak().randomTicks().sound(SoundType.GRASS)
             )
     );
 

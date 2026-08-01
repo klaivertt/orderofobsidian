@@ -1,0 +1,19 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "orderofobsidian:oxys"
+      }
+    ],
+    "humanoid_baby": [
+      {
+        "texture": "orderofobsidian:oxys"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "orderofobsidian:oxys"
+      }
+    ]
+  }
+}
