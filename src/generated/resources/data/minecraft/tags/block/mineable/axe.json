@@ -1,6 +1,15 @@
 {
   "values": [
     "orderofobsidian:yew_log",
-    "orderofobsidian:yew_planks"
+    "orderofobsidian:stripped_yew_log",
+    "orderofobsidian:yew_planks",
+    "orderofobsidian:yew_stairs",
+    "orderofobsidian:yew_slab",
+    "orderofobsidian:yew_button",
+    "orderofobsidian:yew_pressure_plate",
+    "orderofobsidian:yew_door",
+    "orderofobsidian:yew_fence",
+    "orderofobsidian:yew_fence_gate",
+    "orderofobsidian:yew_trapdoor"
   ]
 }

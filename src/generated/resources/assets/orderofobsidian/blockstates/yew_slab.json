@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "orderofobsidian:block/yew_slab"
+    },
+    "type=double": {
+      "model": "orderofobsidian:block/yew_planks"
+    },
+    "type=top": {
+      "model": "orderofobsidian:block/yew_slab_top"
+    }
+  }
+}

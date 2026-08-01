@@ -1,5 +1,6 @@
 package net.klaivert.orderofobsidian.Blocks;
 
+import net.klaivert.orderofobsidian.Blocks.Custom.YewLogBlock;
 import net.klaivert.orderofobsidian.Blocks.Custom.YewSaplingBlock;
 import net.klaivert.orderofobsidian.OrderOfObsidian;
 import net.klaivert.orderofobsidian.WorldGen.ModTreeGrowers;
@@ -10,6 +11,11 @@ import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.BlockSetType;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
+import net.minecraft.world.level.block.state.properties.WoodType;
+import net.minecraft.world.level.material.MapColor;
+import net.minecraft.world.level.material.PushReaction;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -173,7 +179,7 @@ public class ModBlocks {
     );
 
     public static final DeferredBlock<Block> YEW_LOG = RegisterBlock("yew_log",
-            properties -> new RotatedPillarBlock(
+            properties -> new YewLogBlock(
                     properties.strength(2.0f).sound(SoundType.WOOD).ignitedByLava()
             )
     );
@@ -183,6 +189,43 @@ public class ModBlocks {
                     properties.strength(2.0f, 3.0f).sound(SoundType.WOOD).ignitedByLava()
             )
     );
+
+    public static final DeferredBlock<Block> STRIPPED_YEW_LOG = RegisterBlock("stripped_yew_log",
+            properties -> new RotatedPillarBlock(
+                    properties.strength(2.0f).sound(SoundType.WOOD).ignitedByLava()
+            )
+    );
+
+    public static final DeferredBlock<Block> YEW_STAIRS = RegisterBlock("yew_stairs",
+            properties -> new StairBlock(ModBlocks.YEW_PLANKS.get().defaultBlockState(),
+                    properties.strength(3f).requiresCorrectToolForDrops().sound(SoundType.CHERRY_WOOD)));
+    public static final DeferredBlock<Block> YEW_SLAB = RegisterBlock("yew_slab",
+            properties -> new SlabBlock(properties.strength(3f)
+                    .requiresCorrectToolForDrops().sound(SoundType.CHERRY_WOOD)));
+
+    public static final DeferredBlock<Block> YEW_PRESSURE_PLATE = RegisterBlock("yew_pressure_plate",
+            properties -> new PressurePlateBlock(BlockSetType.CHERRY, properties
+                    .mapColor(MapColor.COLOR_PURPLE).forceSolidOn().instrument(NoteBlockInstrument.BASS)
+                    .requiresCorrectToolForDrops().noCollision().strength(0.5F).pushReaction(PushReaction.DESTROY)));
+    public static final DeferredBlock<Block> YEW_BUTTON = RegisterBlock("yew_button",
+            properties -> new ButtonBlock(BlockSetType.CHERRY, 20, properties
+                    .noCollision().strength(0.5F).pushReaction(PushReaction.DESTROY)));
+
+    public static final DeferredBlock<Block> YEW_FENCE = RegisterBlock("yew_fence",
+            properties -> new FenceBlock(properties.strength(2F)
+                    .requiresCorrectToolForDrops().sound(SoundType.CHERRY_WOOD)));
+    public static final DeferredBlock<Block> YEW_FENCE_GATE = RegisterBlock("yew_fence_gate",
+            properties -> new FenceGateBlock(WoodType.CHERRY, properties.strength(2F)
+                    .requiresCorrectToolForDrops().sound(SoundType.CHERRY_WOOD)));
+
+    public static final DeferredBlock<Block> YEW_DOOR = RegisterBlock("yew_door",
+            properties -> new DoorBlock(BlockSetType.CHERRY, properties.strength(2F)
+                    .requiresCorrectToolForDrops().sound(SoundType.CHERRY_WOOD).noOcclusion()));
+    public static final DeferredBlock<Block> YEW_TRAPDOOR = RegisterBlock("yew_trapdoor",
+            properties -> new TrapDoorBlock(BlockSetType.CHERRY, properties.strength(2F)
+                    .requiresCorrectToolForDrops().sound(SoundType.CHERRY_WOOD).noOcclusion()));
+
+
 
     public static final DeferredBlock<Block> YEW_LEAVES = RegisterBlock("yew_leaves",
             properties -> new TintedParticleLeavesBlock(

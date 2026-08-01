@@ -68,7 +68,23 @@ public class ModModelProvider extends ModelProvider
                 TexturedModel.COLUMN,
                 TexturedModel.COLUMN_HORIZONTAL
         );
-        _blockModels.createTrivialCube(ModBlocks.YEW_PLANKS.get());
+
+        _blockModels.createRotatedPillarWithHorizontalVariant(
+                ModBlocks.STRIPPED_YEW_LOG.get(),
+                TexturedModel.COLUMN,
+                TexturedModel.COLUMN_HORIZONTAL
+        );
+
+        _blockModels.family(ModBlocks.YEW_PLANKS.get())
+                .stairs(ModBlocks.YEW_STAIRS.get())
+                .slab(ModBlocks.YEW_SLAB.get())
+                .pressurePlate(ModBlocks.YEW_PRESSURE_PLATE.get())
+                .button(ModBlocks.YEW_BUTTON.get())
+                .fence(ModBlocks.YEW_FENCE.get())
+                .fenceGate(ModBlocks.YEW_FENCE_GATE.get())
+                .door(ModBlocks.YEW_DOOR.get())
+                .trapdoor(ModBlocks.YEW_TRAPDOOR.get());
+
         _blockModels.createTrivialCube(ModBlocks.YEW_LEAVES.get());
         _blockModels.createCrossBlockWithDefaultItem(ModBlocks.YEW_SAPLING.get(), BlockModelGenerators.PlantType.NOT_TINTED);
 

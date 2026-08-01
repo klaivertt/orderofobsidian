@@ -59,10 +59,23 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider
         dropSelf(ModBlocks.END_DEPHSTONE_TILES_WALL.get());
 
         dropSelf(ModBlocks.YEW_LOG.get());
+        dropSelf(ModBlocks.STRIPPED_YEW_LOG.get());
         dropSelf(ModBlocks.YEW_PLANKS.get());
         add(ModBlocks.YEW_LEAVES.get(), createLeavesDrops(ModBlocks.YEW_LEAVES.get(), ModBlocks.YEW_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
         dropSelf(ModBlocks.YEW_SAPLING.get());
         dropSelf(ModBlocks.END_HEATHER_STONE.get());
+
+        add(ModBlocks.YEW_SLAB.get(), this::createSlabItemTable);
+
+        dropSelf(ModBlocks.YEW_PRESSURE_PLATE.get());
+        dropSelf(ModBlocks.YEW_BUTTON.get());
+        dropSelf(ModBlocks.YEW_FENCE.get());
+        dropSelf(ModBlocks.YEW_STAIRS.get());
+        dropSelf(ModBlocks.YEW_FENCE_GATE.get());
+        dropSelf(ModBlocks.YEW_TRAPDOOR.get());
+
+        add(ModBlocks.YEW_DOOR.get(), this::createDoorTable);
+        
 
     }
 

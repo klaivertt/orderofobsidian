@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "group": "yew",
+  "ingredients": [
+    "orderofobsidian:yew_planks"
+  ],
+  "result": {
+    "id": "orderofobsidian:yew_button"
+  }
+}

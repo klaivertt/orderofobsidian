@@ -24,7 +24,9 @@ import net.minecraft.world.level.levelgen.feature.configurations.OreConfiguratio
 import net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration;
 import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize;
 import net.minecraft.world.level.levelgen.feature.foliageplacers.BlobFoliagePlacer;
+import net.minecraft.world.level.levelgen.feature.foliageplacers.RandomSpreadFoliagePlacer;
 import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
+import net.minecraft.world.level.levelgen.feature.trunkplacers.ForkingTrunkPlacer;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.StraightTrunkPlacer;
 import net.minecraft.world.level.levelgen.placement.*;
 import net.minecraft.world.level.levelgen.structure.templatesystem.BlockMatchTest;
@@ -68,14 +70,41 @@ public final class OrderOfObsidianWorldgen {
                 END_DEPTHSTONE_PATCH_SIZE
         )));
 
-        _context.register(YEW_TREE, new ConfiguredFeature<>(Feature.TREE, new TreeConfiguration.TreeConfigurationBuilder(
-                BlockStateProvider.simple(ModBlocks.YEW_LOG.get()),
-                new StraightTrunkPlacer(5, 2, 0),
-                BlockStateProvider.simple(ModBlocks.YEW_LEAVES.get()),
-                new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 3),
-                new TwoLayersFeatureSize(1, 0, 2),
-                BlockStateProvider.simple(Blocks.END_STONE)
-        ).ignoreVines().build()));
+        _context.register(
+                YEW_TREE,
+                new ConfiguredFeature<>(
+                        Feature.TREE,
+                        new TreeConfiguration.TreeConfigurationBuilder(
+
+                                BlockStateProvider.simple(ModBlocks.YEW_LOG.get()),
+
+                                new ForkingTrunkPlacer(
+                                        8,
+                                        3,
+                                        2
+                                ),
+
+                                BlockStateProvider.simple(ModBlocks.YEW_LEAVES.get()),
+
+                                new RandomSpreadFoliagePlacer(
+                                        ConstantInt.of(8),
+                                        ConstantInt.of(5),
+                                        ConstantInt.of(6),
+                                        70
+                                ),
+
+                                new TwoLayersFeatureSize(
+                                        3,
+                                        1,
+                                        6
+                                ),
+
+                                BlockStateProvider.simple(Blocks.AIR)
+                        )
+                                .ignoreVines()
+                                .build()
+                )
+        );
     }
 
     public static void bootstrapPlacedFeatures(BootstrapContext<PlacedFeature> _context)
@@ -103,18 +132,26 @@ public final class OrderOfObsidianWorldgen {
         ));
 
 
-        _context.register(YEW_TREE_PLACED, new PlacedFeature(
-                configuredFeatures.getOrThrow(YEW_TREE),
-                List.of(
-                        CountPlacement.of(YEW_TREE_COUNT),
-                        InSquarePlacement.spread(),
-                        HeightmapPlacement.onHeightmap(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES),
-                        BlockPredicateFilter.forPredicate(
-                                BlockPredicate.matchesTag(new Vec3i(0, -1, 0), ModTags.Blocks.SUPPORTS_YEW)
-                        ),
-                        BiomeFilter.biome()
+        _context.register(
+                YEW_TREE_PLACED,
+                new PlacedFeature(
+                        configuredFeatures.getOrThrow(YEW_TREE),
+                        List.of(
+                                CountPlacement.of(YEW_TREE_COUNT),
+                                InSquarePlacement.spread(),
+                                HeightmapPlacement.onHeightmap(
+                                        Heightmap.Types.MOTION_BLOCKING_NO_LEAVES
+                                ),
+                                BlockPredicateFilter.forPredicate(
+                                        BlockPredicate.matchesTag(
+                                                new Vec3i(0, -1, 0),
+                                                ModTags.Blocks.SUPPORTS_YEW
+                                        )
+                                ),
+                                BiomeFilter.biome()
+                        )
                 )
-        ));
+        );
     }
 
     public static void bootstrapBiomeModifiers(BootstrapContext<BiomeModifier> _context)

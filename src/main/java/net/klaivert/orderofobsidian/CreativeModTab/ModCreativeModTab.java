@@ -63,6 +63,15 @@ public class ModCreativeModTab
         _output.accept(ModBlocks.YEW_LEAVES);
         _output.accept(ModBlocks.YEW_SAPLING);
 
+        _output.accept(ModBlocks.YEW_STAIRS);
+        _output.accept(ModBlocks.YEW_SLAB);
+        _output.accept(ModBlocks.YEW_PRESSURE_PLATE);
+        _output.accept(ModBlocks.YEW_BUTTON);
+        _output.accept(ModBlocks.YEW_FENCE);
+        _output.accept(ModBlocks.YEW_DOOR);
+        _output.accept(ModBlocks.YEW_TRAPDOOR);
+
+
         _output.accept(ModItems.OXYS_SWORD);
         _output.accept(ModItems.OXYS_PICKAXE);
         _output.accept(ModItems.OXYS_SHOVEL);

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top_left",
+  "textures": {
+    "bottom": "orderofobsidian:block/yew_door_bottom",
+    "top": "orderofobsidian:block/yew_door_top"
+  }
+}

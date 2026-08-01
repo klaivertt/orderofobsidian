@@ -88,5 +88,6 @@ public class ModItemTagsProvider extends ItemTagsProvider {
         tag(ItemTags.FOOT_ARMOR)
                 .add(ModItems.getRK(ModItems.OXYS_BOOTS.get().asItem()));
 
+
     }
 }

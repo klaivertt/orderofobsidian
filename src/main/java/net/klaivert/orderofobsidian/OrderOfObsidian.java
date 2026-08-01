@@ -50,7 +50,6 @@ public class OrderOfObsidian
 
     private void commonSetup(FMLCommonSetupEvent _event)
     {
-
         LOGGER.info("Order of Obsidian");
     }
 

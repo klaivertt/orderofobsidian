@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button",
+  "textures": {
+    "texture": "orderofobsidian:block/yew_planks"
+  }
+}

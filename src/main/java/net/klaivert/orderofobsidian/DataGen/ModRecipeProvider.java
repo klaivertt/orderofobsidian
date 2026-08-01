@@ -126,6 +126,29 @@ public class ModRecipeProvider extends RecipeProvider {
                 .group(YEW_GROUP)
                 .save(output);
 
+        stairBuilder(ModBlocks.YEW_STAIRS.get(), Ingredient.of(ModBlocks.YEW_PLANKS))
+                .unlockedBy(getHasName(ModBlocks.YEW_PLANKS.get()), has(ModBlocks.YEW_PLANKS))
+                .group(YEW_GROUP).save(output);
+        slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.YEW_SLAB.get(), ModBlocks.YEW_PLANKS.get());
+
+        buttonBuilder(ModBlocks.YEW_BUTTON.get(), Ingredient.of(ModBlocks.YEW_PLANKS))
+                .unlockedBy(getHasName(ModBlocks.YEW_PLANKS.get()), has(ModBlocks.YEW_PLANKS))
+                .group(YEW_GROUP).save(output);
+        pressurePlate(ModBlocks.YEW_PRESSURE_PLATE.get(), ModBlocks.YEW_PLANKS.get());
+
+        fenceBuilder(ModBlocks.YEW_FENCE.get(), Ingredient.of(ModBlocks.YEW_PLANKS.get()))
+                .unlockedBy(getHasName(ModBlocks.YEW_PLANKS.get()), has(ModBlocks.YEW_PLANKS))
+                .group(YEW_GROUP).save(output);
+        fenceGateBuilder(ModBlocks.YEW_FENCE_GATE.get(), Ingredient.of(ModBlocks.YEW_PLANKS.get()))
+                .unlockedBy(getHasName(ModBlocks.YEW_PLANKS.get()), has(ModBlocks.YEW_PLANKS))
+                .group(YEW_GROUP).save(output);
+
+        doorBuilder(ModBlocks.YEW_DOOR.get(), Ingredient.of(ModBlocks.YEW_PLANKS.get()))
+                .unlockedBy(getHasName(ModBlocks.YEW_PLANKS.get()), has(ModBlocks.YEW_PLANKS))
+                .group(YEW_GROUP).save(output);
+        trapdoorBuilder(ModBlocks.YEW_TRAPDOOR.get(), Ingredient.of(ModBlocks.YEW_PLANKS.get()))
+                .unlockedBy(getHasName(ModBlocks.YEW_PLANKS.get()), has(ModBlocks.YEW_PLANKS))
+                .group(YEW_GROUP).save(output);
     }
 
 

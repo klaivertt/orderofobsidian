@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "orderofobsidian:block/yew_planks",
+    "side": "orderofobsidian:block/yew_planks",
+    "top": "orderofobsidian:block/yew_planks"
+  }
+}
