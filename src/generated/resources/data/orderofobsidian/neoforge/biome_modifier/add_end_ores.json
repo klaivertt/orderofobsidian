@@ -4,8 +4,12 @@
     "minecraft:end_highlands",
     "minecraft:end_midlands",
     "minecraft:end_barrens",
-    "minecraft:small_end_islands"
+    "minecraft:small_end_islands",
+    "orderofobsidian:heather_islands"
   ],
-  "features": "orderofobsidian:oxys_ore",
+  "features": [
+    "orderofobsidian:end_depthstone_patch",
+    "orderofobsidian:oxys_ore"
+  ],
   "step": "underground_ores"
 }

@@ -198,6 +198,11 @@ public class ModBlocks {
             )
     );
 
+    public static final DeferredBlock<Block> END_HEATHER_STONE = RegisterBlock("end_heather_stone",
+            properties -> new GrassBlock(
+                    properties.strength(2.0f, 3.0f).sound(SoundType.STONE)
+            )
+    );
 
     private static <T extends Block> DeferredBlock<T> RegisterBlock(String _name, Function<BlockBehaviour.Properties, T> _function) {
         DeferredBlock<T> toReturn = blocks.registerBlock(_name, _function);

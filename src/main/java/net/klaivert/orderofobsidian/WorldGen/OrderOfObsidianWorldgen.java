@@ -51,8 +51,7 @@ public final class OrderOfObsidianWorldgen {
     public static final ResourceKey<PlacedFeature> END_DEPTHSTONE_PATCH_PLACED = placedFeatureKey("end_depthstone_patch");
     public static final ResourceKey<PlacedFeature> YEW_TREE_PLACED = placedFeatureKey("yew_tree");
 
-    public static final ResourceKey<BiomeModifier> ADD_OXYS_ORE = biomeModifierKey("add_oxys_ore");
-    public static final ResourceKey<BiomeModifier> ADD_END_DEPTHSTONE_PATCH = biomeModifierKey("add_end_depthstone_patch");
+    public static final ResourceKey<BiomeModifier> ADD_END_ORES = biomeModifierKey("add_end_ores");
     public static final ResourceKey<BiomeModifier> ADD_YEW_TREE = biomeModifierKey("add_yew_tree");
 
     private OrderOfObsidianWorldgen() {
@@ -123,27 +122,24 @@ public final class OrderOfObsidianWorldgen {
         HolderGetter<Biome> biomes = _context.lookup(Registries.BIOME);
         HolderGetter<PlacedFeature> placedFeatures = _context.lookup(Registries.PLACED_FEATURE);
 
-        _context.register(ADD_OXYS_ORE, new BiomeModifiers.AddFeaturesBiomeModifier(
+        _context.register(ADD_END_ORES, new BiomeModifiers.AddFeaturesBiomeModifier(
                 HolderSet.direct(
                         biomes.getOrThrow(Biomes.END_HIGHLANDS),
                         biomes.getOrThrow(Biomes.END_MIDLANDS),
                         biomes.getOrThrow(Biomes.END_BARRENS),
-                        biomes.getOrThrow(Biomes.SMALL_END_ISLANDS)
+                        biomes.getOrThrow(Biomes.SMALL_END_ISLANDS),
+                        biomes.getOrThrow(ModBiomes.HEATHER_ISLANDS)
                 ),
-                HolderSet.direct(placedFeatures.getOrThrow(OXYS_ORE_PLACED)),
-                GenerationStep.Decoration.UNDERGROUND_ORES
-        ));
-
-        _context.register(ADD_END_DEPTHSTONE_PATCH, new BiomeModifiers.AddFeaturesBiomeModifier(
-                biomes.getOrThrow(BiomeTags.IS_END),
-                HolderSet.direct(placedFeatures.getOrThrow(END_DEPTHSTONE_PATCH_PLACED)),
+                HolderSet.direct(
+                        placedFeatures.getOrThrow(END_DEPTHSTONE_PATCH_PLACED),
+                        placedFeatures.getOrThrow(OXYS_ORE_PLACED)
+                ),
                 GenerationStep.Decoration.UNDERGROUND_ORES
         ));
 
         _context.register(ADD_YEW_TREE, new BiomeModifiers.AddFeaturesBiomeModifier(
                 HolderSet.direct(
-                        biomes.getOrThrow(Biomes.END_HIGHLANDS),
-                        biomes.getOrThrow(Biomes.END_MIDLANDS)
+                        biomes.getOrThrow(ModBiomes.HEATHER_ISLANDS)
                 ),
                 HolderSet.direct(placedFeatures.getOrThrow(YEW_TREE_PLACED)),
                 GenerationStep.Decoration.VEGETAL_DECORATION

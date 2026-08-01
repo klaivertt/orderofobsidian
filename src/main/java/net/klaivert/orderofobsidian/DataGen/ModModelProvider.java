@@ -72,6 +72,6 @@ public class ModModelProvider extends ModelProvider
         _blockModels.createTrivialCube(ModBlocks.YEW_LEAVES.get());
         _blockModels.createCrossBlockWithDefaultItem(ModBlocks.YEW_SAPLING.get(), BlockModelGenerators.PlantType.NOT_TINTED);
 
-
+        _blockModels.createTrivialBlock(ModBlocks.END_HEATHER_STONE.get(), TexturedModel.CUBE_TOP);
     }
 }

@@ -62,6 +62,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider
         dropSelf(ModBlocks.YEW_PLANKS.get());
         add(ModBlocks.YEW_LEAVES.get(), createLeavesDrops(ModBlocks.YEW_LEAVES.get(), ModBlocks.YEW_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
         dropSelf(ModBlocks.YEW_SAPLING.get());
+        dropSelf(ModBlocks.END_HEATHER_STONE.get());
 
     }
 

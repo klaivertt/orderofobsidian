@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_top",
+  "textures": {
+    "side": "orderofobsidian:block/end_heather_stone_side",
+    "top": "orderofobsidian:block/end_heather_stone_top"
+  }
+}

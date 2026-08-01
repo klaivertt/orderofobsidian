@@ -126,7 +126,8 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
                 .add(ModBlocks.getRK(ModBlocks.YEW_SAPLING.get()));
 
         tag(ModTags.Blocks.SUPPORTS_YEW)
-                .addTag(Tags.Blocks.END_STONES);
+                .addTag(Tags.Blocks.END_STONES)
+                .add(ModBlocks.getRK(ModBlocks.END_HEATHER_STONE.get()));
 
         tag(ModTags.Blocks.INCORRECT_FOR_OXYS_TOOL);
     }
