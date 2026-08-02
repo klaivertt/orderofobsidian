@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": "orderofobsidian:oxys",
+  "base": "minecraft:netherite_shovel",
+  "result": {
+    "id": "orderofobsidian:oxys_shovel"
+  },
+  "template": "orderofobsidian:oxys_upgrade_smithing_template"
+}

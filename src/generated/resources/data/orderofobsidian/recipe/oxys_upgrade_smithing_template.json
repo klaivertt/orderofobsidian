@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "oxys_upgrade_template",
+  "key": {
+    "D": "minecraft:diamond",
+    "N": "minecraft:netherite_ingot",
+    "O": "orderofobsidian:oxys",
+    "S": "minecraft:netherite_scrap"
+  },
+  "pattern": [
+    "SDS",
+    "ONO",
+    "SDS"
+  ],
+  "result": {
+    "id": "orderofobsidian:oxys_upgrade_smithing_template"
+  }
+}

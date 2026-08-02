@@ -214,6 +214,7 @@ public class ModBlocks {
     public static final DeferredBlock<Block> YEW_FENCE = RegisterBlock("yew_fence",
             properties -> new FenceBlock(properties.strength(2F)
                     .requiresCorrectToolForDrops().sound(SoundType.CHERRY_WOOD)));
+
     public static final DeferredBlock<Block> YEW_FENCE_GATE = RegisterBlock("yew_fence_gate",
             properties -> new FenceGateBlock(WoodType.CHERRY, properties.strength(2F)
                     .requiresCorrectToolForDrops().sound(SoundType.CHERRY_WOOD)));

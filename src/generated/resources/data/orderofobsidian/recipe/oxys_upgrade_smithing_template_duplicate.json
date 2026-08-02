@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "oxys_upgrade_template",
+  "ingredients": [
+    "orderofobsidian:oxys_upgrade_smithing_template",
+    "minecraft:diamond",
+    "minecraft:netherite_scrap",
+    "minecraft:netherite_scrap",
+    "orderofobsidian:oxys"
+  ],
+  "result": {
+    "count": 2,
+    "id": "orderofobsidian:oxys_upgrade_smithing_template"
+  }
+}

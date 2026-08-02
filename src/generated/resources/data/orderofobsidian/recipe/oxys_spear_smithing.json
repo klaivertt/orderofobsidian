@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": "orderofobsidian:oxys",
+  "base": "minecraft:netherite_spear",
+  "result": {
+    "id": "orderofobsidian:oxys_spear"
+  },
+  "template": "orderofobsidian:oxys_upgrade_smithing_template"
+}

@@ -6,6 +6,7 @@ import net.klaivert.orderofobsidian.items.ModItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.AbstractCookingRecipe;
 import net.minecraft.world.item.crafting.CookingBookCategory;
@@ -39,6 +40,8 @@ public class ModRecipeProvider extends RecipeProvider {
 
 
     private static final String OXYS_GROUP = "oxys";
+    private static final String OXYS_UPGRADE_GROUP = "oxys_upgrade_template";
+
     private static final String END_DEPHSTONE_GROUP = "end_depthstone";
     private static final String YEW_GROUP = "yew";
 
@@ -53,6 +56,29 @@ public class ModRecipeProvider extends RecipeProvider {
                 .group(OXYS_GROUP)
                 .save(output);
 
+
+
+        shaped(RecipeCategory.MISC, ModItems.OXYS_UPGRADE_SMITHING_TEMPLATE.get())
+                .pattern("SDS")
+                .pattern("ONO")
+                .pattern("SDS")
+                .define('O', ModItems.OXYS.get())
+                .define('D', Items.DIAMOND)
+                .define('N', Items.NETHERITE_INGOT)
+                .define('S', Items.NETHERITE_SCRAP)
+                .unlockedBy(getHasName(ModItems.OXYS.get()), has(ModItems.OXYS))
+                .group(OXYS_UPGRADE_GROUP)
+                .save(output);
+
+        shapeless(RecipeCategory.MISC, ModItems.OXYS_UPGRADE_SMITHING_TEMPLATE.get(), 2)
+                .requires(ModItems.OXYS_UPGRADE_SMITHING_TEMPLATE.get())
+                .requires(Items.DIAMOND)
+                .requires(Items.NETHERITE_SCRAP, 2)
+                .requires( ModItems.OXYS.get())
+                .unlockedBy(getHasName(ModItems.OXYS_UPGRADE_SMITHING_TEMPLATE.get()), has(ModItems.OXYS_UPGRADE_SMITHING_TEMPLATE))
+                .group(OXYS_UPGRADE_GROUP)
+                .save(output, OrderOfObsidian.MOD_ID + ":oxys_upgrade_smithing_template_duplicate");
+
         shapeless(RecipeCategory.MISC, ModItems.OXYS.get(), 9)
                 .requires(ModBlocks.OXYS_BLOCK)
                 .unlockedBy(getHasName(ModBlocks.OXYS_BLOCK.get()), has(ModBlocks.OXYS_BLOCK))
@@ -63,6 +89,18 @@ public class ModRecipeProvider extends RecipeProvider {
 
         oreSmelting(OXYS_SMELTABLES, RecipeCategory.MISC, CookingBookCategory.MISC, ModItems.OXYS.get(), 10.f, 450, OXYS_GROUP);
         oreBlasting(OXYS_SMELTABLES, RecipeCategory.MISC, CookingBookCategory.MISC, ModItems.OXYS.get(), 10.f, 250, OXYS_GROUP);
+
+        oxysSmithing(Items.NETHERITE_SWORD, RecipeCategory.COMBAT, ModItems.OXYS_SWORD.get());
+        oxysSmithing(Items.NETHERITE_PICKAXE, RecipeCategory.TOOLS, ModItems.OXYS_PICKAXE.get());
+        oxysSmithing(Items.NETHERITE_SHOVEL, RecipeCategory.TOOLS, ModItems.OXYS_SHOVEL.get());
+        oxysSmithing(Items.NETHERITE_AXE, RecipeCategory.TOOLS, ModItems.OXYS_AXE.get());
+        oxysSmithing(Items.NETHERITE_HOE, RecipeCategory.TOOLS, ModItems.OXYS_HOE.get());
+
+        oxysSmithing(Items.NETHERITE_HELMET, RecipeCategory.COMBAT, ModItems.OXYS_HELMET.get());
+        oxysSmithing(Items.NETHERITE_CHESTPLATE, RecipeCategory.COMBAT, ModItems.OXYS_CHESTPLATE.get());
+        oxysSmithing(Items.NETHERITE_LEGGINGS, RecipeCategory.COMBAT, ModItems.OXYS_LEGGINGS.get());
+        oxysSmithing(Items.NETHERITE_BOOTS, RecipeCategory.COMBAT, ModItems.OXYS_BOOTS.get());
+        oxysSmithing(Items.NETHERITE_SPEAR, RecipeCategory.COMBAT, ModItems.OXYS_SPEAR.get());
 
         shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.END_DEPHSTONE_BRICKS.get(), 4)
                 .pattern("##")
@@ -171,5 +209,17 @@ public class ModRecipeProvider extends RecipeProvider {
         SingleItemRecipeBuilder.stonecutting(Ingredient.of(base), category, result, count)
                 .unlockedBy(getHasName(base), has(base))
                 .save(output, OrderOfObsidian.MOD_ID + ":" + getItemName(result) + "_from_" + getItemName(base) + "_stonecutting");
+    }
+
+    private void oxysSmithing(ItemLike base, RecipeCategory category, Item result) {
+        SmithingTransformRecipeBuilder.smithing(
+                        Ingredient.of(ModItems.OXYS_UPGRADE_SMITHING_TEMPLATE.get()),
+                        Ingredient.of(base),
+                        Ingredient.of(ModItems.OXYS.get()),
+                        category,
+                        result
+                )
+                .unlocks(getHasName(ModItems.OXYS_UPGRADE_SMITHING_TEMPLATE.get()), has(ModItems.OXYS_UPGRADE_SMITHING_TEMPLATE))
+                .save(output, OrderOfObsidian.MOD_ID + ":" + getItemName(result) + "_smithing");
     }
 }

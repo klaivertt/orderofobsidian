@@ -42,5 +42,14 @@
   "block.orderofobsidian.yew_log": "Yew Log",
   "block.orderofobsidian.yew_planks": "Yew Planks",
   "block.orderofobsidian.yew_leaves": "Yew Leaves",
-  "block.orderofobsidian.yew_sapling": "Yew Sapling"
+  "block.orderofobsidian.yew_sapling": "Yew Sapling",
+  "block.orderofobsidian.stripped_yew_log": "Stripped Yew Log",
+  "block.orderofobsidian.yew_stairs": "Yew Stairs",
+  "block.orderofobsidian.yew_slab": "Yew Slab",
+  "block.orderofobsidian.yew_pressure_plate": "Yew Pressure Plate",
+  "block.orderofobsidian.yew_button": "Yew Button",
+  "block.orderofobsidian.yew_fence": "Yew Fence",
+  "block.orderofobsidian.yew_fence_gate": "Yew Fence Gate",
+  "block.orderofobsidian.yew_door": "Yew Door",
+  "block.orderofobsidian.yew_trapdoor": "Yew Trapdoor"
 }

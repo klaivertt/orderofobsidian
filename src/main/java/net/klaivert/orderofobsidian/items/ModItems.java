@@ -17,7 +17,7 @@ public class ModItems
     public static final DeferredRegister.Items items = DeferredRegister.createItems(OrderOfObsidian.MOD_ID);
 
     public static final DeferredItem<Item> OXYS = items.registerSimpleItem("oxys");
-    public static final DeferredItem<Item> TEST_TRIM_TEMPLATE = items.registerSimpleItem("test_trim_template");
+    public static final DeferredItem<Item> OXYS_UPGRADE_SMITHING_TEMPLATE = items.registerSimpleItem("oxys_upgrade_smithing_template");
 
     public static final DeferredItem<Item> OXYS_SWORD = items.registerItem("oxys_sword",
             properties -> new Item(properties.sword(ModToolTiers.OXYS, 5.f, -2.4f)));
@@ -26,11 +26,11 @@ public class ModItems
     public static final DeferredItem<Item> OXYS_SHOVEL = items.registerItem("oxys_shovel",
             properties -> new ShovelItem(ModToolTiers.OXYS, 1.5f, -3.0f, properties));
     public static final DeferredItem<Item> OXYS_AXE = items.registerItem("oxys_axe",
-            properties -> new AxeItem(ModToolTiers.OXYS, 6.5f, -3.2f, properties));
+            properties -> new AxeItem(ModToolTiers.OXYS, 7.5f, -3.2f, properties));
     public static final DeferredItem<Item> OXYS_HOE = items.registerItem("oxys_hoe",
             properties -> new HoeItem(ModToolTiers.OXYS, 0, -3.0f, properties));
     public static final DeferredItem<Item> OXYS_SPEAR = items.registerItem("oxys_spear",
-            properties -> new Item(properties.spear(ModToolTiers.OXYS, 0.95f, 0.7f, 0.7f,
+            properties -> new Item(properties.spear(ModToolTiers.OXYS, 0.95f, 1.2f, 0.7f,
                     3.5f, 13f, 8.5f, 5.1f, 13.37f, 4.67f)));
 
     public static final DeferredItem<Item> OXYS_HELMET = items.registerItem("oxys_helmet",

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_oxys_upgrade_smithing_template": {
+      "conditions": {
+        "items": [
+          {
+            "items": "orderofobsidian:oxys_upgrade_smithing_template"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "orderofobsidian:oxys_shovel_smithing"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_oxys_upgrade_smithing_template"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "orderofobsidian:oxys_shovel_smithing"
+    ]
+  }
+}

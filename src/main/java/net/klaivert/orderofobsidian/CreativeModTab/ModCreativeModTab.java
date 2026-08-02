@@ -68,6 +68,7 @@ public class ModCreativeModTab
         _output.accept(ModBlocks.YEW_PRESSURE_PLATE);
         _output.accept(ModBlocks.YEW_BUTTON);
         _output.accept(ModBlocks.YEW_FENCE);
+        _output.accept(ModBlocks.YEW_FENCE_GATE);
         _output.accept(ModBlocks.YEW_DOOR);
         _output.accept(ModBlocks.YEW_TRAPDOOR);
 
