@@ -248,6 +248,13 @@ public class ModBlocks {
             )
     );
 
+//    public static final DeferredBlock<Block> YEW_LEAF_LITTER = RegisterBlock("yew_leaf_litter",
+//            properties -> new LeafLitterBlock(
+//                    properties.noCollision().instabreak().replaceable()
+//                            .sound(SoundType.CHERRY_LEAVES)
+//            )
+//    );
+
     public static final DeferredBlock<Block> YEW_SAPLING = RegisterBlock("yew_sapling",
             properties -> new YewSaplingBlock(
                     ModTreeGrowers.YEW,

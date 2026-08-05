@@ -10,6 +10,7 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.tags.BiomeTags;
 import net.minecraft.util.random.WeightedList;
 import net.minecraft.util.valueproviders.ConstantInt;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.level.biome.Biomes;
 import net.minecraft.world.level.block.Blocks;
@@ -26,6 +27,7 @@ import net.minecraft.world.level.levelgen.feature.foliageplacers.BlobFoliagePlac
 import net.minecraft.world.level.levelgen.feature.foliageplacers.RandomSpreadFoliagePlacer;
 import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
 import net.minecraft.world.level.levelgen.feature.stateproviders.WeightedStateProvider;
+import net.minecraft.world.level.levelgen.feature.trunkplacers.BendingTrunkPlacer;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.ForkingTrunkPlacer;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.StraightTrunkPlacer;
 import net.minecraft.world.level.levelgen.placement.*;
@@ -74,19 +76,25 @@ public final class OrderOfObsidianWorldgen {
 
 
 
-    public static void bootstrapProcessorLists(BootstrapContext<StructureProcessorList> _context) {
-        _context.register(ANCIENT_BONE_PROCESSORS, new StructureProcessorList(List.of(
-                new RuleProcessor(List.of(
-                        new ProcessorRule(
-                                new BlockMatchTest(Blocks.BONE_BLOCK),
-                                AlwaysTrueTest.INSTANCE,
-                                ModBlocks.ANCIENT_BONE.get().defaultBlockState()
-                        )
+    public static void bootstrapProcessorLists(BootstrapContext<StructureProcessorList> context) {
+        context.register(
+                ANCIENT_BONE_PROCESSORS,
+                new StructureProcessorList(List.of(
+                        new RuleProcessor(List.of(
+                                new ProcessorRule(
+                                        new BlockMatchTest(Blocks.BONE_BLOCK),
+                                        AlwaysTrueTest.INSTANCE,
+                                        ModBlocks.ANCIENT_BONE.get().defaultBlockState()
+                                ),
+                                new ProcessorRule(
+                                        new BlockMatchTest(Blocks.COAL_ORE),
+                                        AlwaysTrueTest.INSTANCE,
+                                        ModBlocks.ANCIENT_BONE.get().defaultBlockState()
+                                )
+                        ))
                 ))
-        )));
-
+        );
     }
-
     public static void bootstrapConfiguredFeatures(BootstrapContext<ConfiguredFeature<?, ?>> _context)
     {
         HolderGetter<StructureProcessorList> processorLists = _context.lookup(Registries.PROCESSOR_LIST);
@@ -105,34 +113,18 @@ public final class OrderOfObsidianWorldgen {
                 new ConfiguredFeature<>(
                         Feature.TREE,
                         new TreeConfiguration.TreeConfigurationBuilder(
-
                                 BlockStateProvider.simple(ModBlocks.YEW_LOG.get()),
-
-                                new ForkingTrunkPlacer(
-                                        8,
-                                        3,
-                                        2
-                                ),
-
+                                new BendingTrunkPlacer(8, 3, 2, 3, UniformInt.of(1, 3)),
                                 BlockStateProvider.simple(ModBlocks.YEW_LEAVES.get()),
-
                                 new RandomSpreadFoliagePlacer(
-                                        ConstantInt.of(5),
-                                        ConstantInt.of(5),
-                                        ConstantInt.of(6),
-                                        70
+                                        ConstantInt.of(2),
+                                        ConstantInt.of(4),
+                                        ConstantInt.of(3),
+                                        60
                                 ),
-
-                                new TwoLayersFeatureSize(
-                                        3,
-                                        1,
-                                        6
-                                ),
-
+                                new TwoLayersFeatureSize(3, 1, 6),
                                 BlockStateProvider.simple(Blocks.AIR)
-                        )
-                                .ignoreVines()
-                                .build()
+                        ).ignoreVines().build()
                 )
         );
 

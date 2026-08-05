@@ -17,6 +17,21 @@
               "axis": "y"
             }
           }
+        },
+        {
+          "input_predicate": {
+            "block": "minecraft:coal_ore",
+            "predicate_type": "minecraft:block_match"
+          },
+          "location_predicate": {
+            "predicate_type": "minecraft:always_true"
+          },
+          "output_state": {
+            "Name": "orderofobsidian:ancient_bone",
+            "Properties": {
+              "axis": "y"
+            }
+          }
         }
       ]
     }
