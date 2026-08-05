@@ -1,5 +1,6 @@
 package net.klaivert.orderofobsidian.Blocks;
 
+import net.klaivert.orderofobsidian.Blocks.Custom.BrackenBushBlock;
 import net.klaivert.orderofobsidian.Blocks.Custom.YewLogBlock;
 import net.klaivert.orderofobsidian.Blocks.Custom.YewSaplingBlock;
 import net.klaivert.orderofobsidian.OrderOfObsidian;
@@ -180,19 +181,19 @@ public class ModBlocks {
 
     public static final DeferredBlock<Block> YEW_LOG = RegisterBlock("yew_log",
             properties -> new YewLogBlock(
-                    properties.strength(2.0f).sound(SoundType.WOOD).ignitedByLava()
+                    properties.strength(2.0f).sound(SoundType.WOOD)
             )
     );
 
     public static final DeferredBlock<Block> YEW_PLANKS = RegisterBlock("yew_planks",
             properties -> new Block(
-                    properties.strength(2.0f, 3.0f).sound(SoundType.WOOD).ignitedByLava()
+                    properties.strength(2.0f, 3.0f).sound(SoundType.WOOD)
             )
     );
 
     public static final DeferredBlock<Block> STRIPPED_YEW_LOG = RegisterBlock("stripped_yew_log",
             properties -> new RotatedPillarBlock(
-                    properties.strength(2.0f).sound(SoundType.WOOD).ignitedByLava()
+                    properties.strength(2.0f).sound(SoundType.WOOD)
             )
     );
 
@@ -226,7 +227,19 @@ public class ModBlocks {
             properties -> new TrapDoorBlock(BlockSetType.CHERRY, properties.strength(2F)
                     .requiresCorrectToolForDrops().sound(SoundType.CHERRY_WOOD).noOcclusion()));
 
+    public static final DeferredBlock<Block> ANCIENT_BONE = RegisterBlock("ancient_bone",
+            properties -> new RotatedPillarBlock(
+                    properties.strength(2F)
+                            .requiresCorrectToolForDrops()
+                            .sound(SoundType.BONE_BLOCK))
+    );
 
+    public static final DeferredBlock<Block> BRACKEN_BUSH = RegisterBlock("bracken_bush",
+            properties -> new BrackenBushBlock(
+                    properties.noCollision().instabreak().replaceable()
+                            .sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ)
+            )
+    );
 
     public static final DeferredBlock<Block> YEW_LEAVES = RegisterBlock("yew_leaves",
             properties -> new TintedParticleLeavesBlock(

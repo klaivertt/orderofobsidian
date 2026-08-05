@@ -89,5 +89,16 @@ public class ModModelProvider extends ModelProvider
         _blockModels.createCrossBlockWithDefaultItem(ModBlocks.YEW_SAPLING.get(), BlockModelGenerators.PlantType.NOT_TINTED);
 
         _blockModels.createTrivialBlock(ModBlocks.END_HEATHER_STONE.get(), TexturedModel.CUBE_TOP);
+
+        _blockModels.createRotatedPillarWithHorizontalVariant(
+                ModBlocks.ANCIENT_BONE.get(),
+                TexturedModel.COLUMN,
+                TexturedModel.COLUMN_HORIZONTAL
+        );
+
+        _blockModels.createCrossBlockWithDefaultItem(
+                ModBlocks.BRACKEN_BUSH.get(),
+                BlockModelGenerators.PlantType.NOT_TINTED
+        );
     }
 }

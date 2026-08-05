@@ -35,10 +35,54 @@ public class ModCreativeModTab
 
     protected static void StoreItems(CreativeModeTab.Output _output)
     {
+        OxysRegistered(_output);
+        DephstoneRegistered(_output);
+        _output.accept(ModBlocks.ANCIENT_BONE);
+        YewRegistered(_output);
+        OxysToolsRegistered(_output);
+    }
+
+    protected static void OxysRegistered(CreativeModeTab.Output _output)
+    {
         _output.accept(ModItems.OXYS);
         _output.accept(ModBlocks.OXYS_ORE);
         _output.accept(ModBlocks.OXYS_BLOCK);
+    }
 
+    protected static void OxysToolsRegistered(CreativeModeTab.Output _output)
+    {
+        _output.accept(ModItems.OXYS_SWORD);
+        _output.accept(ModItems.OXYS_PICKAXE);
+        _output.accept(ModItems.OXYS_SHOVEL);
+        _output.accept(ModItems.OXYS_AXE);
+        _output.accept(ModItems.OXYS_HOE);
+        _output.accept(ModItems.OXYS_SPEAR);
+
+        _output.accept(ModItems.OXYS_HELMET);
+        _output.accept(ModItems.OXYS_CHESTPLATE);
+        _output.accept(ModItems.OXYS_LEGGINGS);
+        _output.accept(ModItems.OXYS_BOOTS);
+    }
+
+    protected static void YewRegistered(CreativeModeTab.Output _output)
+    {
+        _output.accept(ModBlocks.YEW_LOG);
+        _output.accept(ModBlocks.YEW_PLANKS);
+        _output.accept(ModBlocks.YEW_LEAVES);
+        _output.accept(ModBlocks.YEW_SAPLING);
+
+        _output.accept(ModBlocks.YEW_STAIRS);
+        _output.accept(ModBlocks.YEW_SLAB);
+        _output.accept(ModBlocks.YEW_PRESSURE_PLATE);
+        _output.accept(ModBlocks.YEW_BUTTON);
+        _output.accept(ModBlocks.YEW_FENCE);
+        _output.accept(ModBlocks.YEW_FENCE_GATE);
+        _output.accept(ModBlocks.YEW_DOOR);
+        _output.accept(ModBlocks.YEW_TRAPDOOR);
+    }
+
+    protected static void DephstoneRegistered(CreativeModeTab.Output _output)
+    {
         _output.accept(ModBlocks.END_DEPHSTONE);
         _output.accept(ModBlocks.COBBLED_END_DEPHSTONE);
         _output.accept(ModBlocks.END_DEPHSTONE_BRICKS);
@@ -57,32 +101,6 @@ public class ModCreativeModTab
         _output.accept(ModBlocks.END_DEPHSTONE_TILES_SLAB);
         _output.accept(ModBlocks.END_DEPHSTONE_TILES_STAIRS);
         _output.accept(ModBlocks.END_DEPHSTONE_TILES_WALL);
-
-        _output.accept(ModBlocks.YEW_LOG);
-        _output.accept(ModBlocks.YEW_PLANKS);
-        _output.accept(ModBlocks.YEW_LEAVES);
-        _output.accept(ModBlocks.YEW_SAPLING);
-
-        _output.accept(ModBlocks.YEW_STAIRS);
-        _output.accept(ModBlocks.YEW_SLAB);
-        _output.accept(ModBlocks.YEW_PRESSURE_PLATE);
-        _output.accept(ModBlocks.YEW_BUTTON);
-        _output.accept(ModBlocks.YEW_FENCE);
-        _output.accept(ModBlocks.YEW_FENCE_GATE);
-        _output.accept(ModBlocks.YEW_DOOR);
-        _output.accept(ModBlocks.YEW_TRAPDOOR);
-
-
-        _output.accept(ModItems.OXYS_SWORD);
-        _output.accept(ModItems.OXYS_PICKAXE);
-        _output.accept(ModItems.OXYS_SHOVEL);
-        _output.accept(ModItems.OXYS_AXE);
-        _output.accept(ModItems.OXYS_HOE);
-        _output.accept(ModItems.OXYS_SPEAR);
-
-        _output.accept(ModItems.OXYS_HELMET);
-        _output.accept(ModItems.OXYS_CHESTPLATE);
-        _output.accept(ModItems.OXYS_LEGGINGS);
-        _output.accept(ModItems.OXYS_BOOTS);
     }
+
 }

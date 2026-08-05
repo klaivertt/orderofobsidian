@@ -75,8 +75,9 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider
         dropSelf(ModBlocks.YEW_TRAPDOOR.get());
 
         add(ModBlocks.YEW_DOOR.get(), this::createDoorTable);
-        
 
+        dropSelf(ModBlocks.ANCIENT_BONE.get());
+        dropSelf(ModBlocks.BRACKEN_BUSH.get());
     }
 
     protected LootTable.Builder createNoFortuneOreDrop(Block block, Item item)

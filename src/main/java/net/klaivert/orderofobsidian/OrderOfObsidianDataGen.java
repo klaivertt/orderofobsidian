@@ -26,6 +26,7 @@ class OrderOfObsidianDataGen
     {
         _event.createDatapackRegistryObjects(new RegistrySetBuilder()
                 .add(Registries.BIOME, ModBiomes::bootstrap)
+                .add(Registries.PROCESSOR_LIST, OrderOfObsidianWorldgen::bootstrapProcessorLists)
                 .add(Registries.CONFIGURED_FEATURE, OrderOfObsidianWorldgen::bootstrapConfiguredFeatures)
                 .add(Registries.PLACED_FEATURE, OrderOfObsidianWorldgen::bootstrapPlacedFeatures)
                 .add(NeoForgeRegistries.Keys.BIOME_MODIFIERS, OrderOfObsidianWorldgen::bootstrapBiomeModifiers));

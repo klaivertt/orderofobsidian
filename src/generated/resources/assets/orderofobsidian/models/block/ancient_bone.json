@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "orderofobsidian:block/ancient_bone_top",
+    "side": "orderofobsidian:block/ancient_bone_side"
+  }
+}

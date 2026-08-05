@@ -51,5 +51,9 @@
   "block.orderofobsidian.yew_fence": "Yew Fence",
   "block.orderofobsidian.yew_fence_gate": "Yew Fence Gate",
   "block.orderofobsidian.yew_door": "Yew Door",
-  "block.orderofobsidian.yew_trapdoor": "Yew Trapdoor"
+  "block.orderofobsidian.yew_trapdoor": "Yew Trapdoor",
+
+  "block.orderofobsidian.ancient_bone": "Ancient Bone",
+  "block.orderofobsidian.bracken_bush": "Bracken Bush"
+
 }
