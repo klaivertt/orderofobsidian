@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_aluminium_block": {
+    "has_deepslate_aluminium_ore": {
       "conditions": {
         "items": [
           {
-            "items": "orderofobsidian:aluminium_block"
+            "items": "orderofobsidian:deepslate_aluminium_ore"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "orderofobsidian:aluminum_ingot"
+        "recipe": "orderofobsidian:aluminium_ingot_from_smelting_deepslate_aluminium_ore"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_aluminium_block"
+      "has_deepslate_aluminium_ore"
     ]
   ],
   "rewards": {
     "recipes": [
-      "orderofobsidian:aluminum_ingot"
+      "orderofobsidian:aluminium_ingot_from_smelting_deepslate_aluminium_ore"
     ]
   }
 }

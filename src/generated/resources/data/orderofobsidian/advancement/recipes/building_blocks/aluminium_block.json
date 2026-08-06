@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_aluminum_ingot": {
+    "has_aluminium_ingot": {
       "conditions": {
         "items": [
           {
-            "items": "orderofobsidian:aluminum_ingot"
+            "items": "orderofobsidian:aluminium_ingot"
           }
         ]
       },
@@ -21,7 +21,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_aluminum_ingot"
+      "has_aluminium_ingot"
     ]
   ],
   "rewards": {

@@ -175,6 +175,10 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
                 .add(ModBlocks.getRK(ModBlocks.ANCIENT_PACKED_ICE.get()))
                 .add(ModBlocks.getRK(ModBlocks.ANCIENT_BLUE_ICE.get()));
 
+        tag(ModTags.Blocks.SUPPORTS_END_MOSS_GRASS)
+                .add(ModBlocks.getRK(Blocks.END_STONE))
+                .add(ModBlocks.getRK(ModBlocks.END_HEATHER_STONE.get()));
+
         tag(BlockTags.WOODEN_BUTTONS)
                 .add(ModBlocks.getRK(ModBlocks.YEW_BUTTON.get()));
 

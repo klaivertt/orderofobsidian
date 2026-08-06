@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "orderofobsidian:aluminum_ingot_from_blasting_raw_aluminium"
+        "recipe": "orderofobsidian:aluminium_ingot_from_blasting_raw_aluminium"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "orderofobsidian:aluminum_ingot_from_blasting_raw_aluminium"
+      "orderofobsidian:aluminium_ingot_from_blasting_raw_aluminium"
     ]
   }
 }

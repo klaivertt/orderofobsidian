@@ -2,8 +2,8 @@
   "type": "minecraft:blasting",
   "experience": 0.7,
   "group": "aluminium",
-  "ingredient": "orderofobsidian:aluminium_ore",
+  "ingredient": "orderofobsidian:raw_aluminium",
   "result": {
-    "id": "orderofobsidian:aluminum_ingot"
+    "id": "orderofobsidian:aluminium_ingot"
   }
 }

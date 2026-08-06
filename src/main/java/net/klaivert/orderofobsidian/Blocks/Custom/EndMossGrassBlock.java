@@ -14,6 +14,6 @@ public class EndMossGrassBlock extends BushBlock {
 
     @Override
     protected boolean mayPlaceOn(BlockState state, BlockGetter level, BlockPos pos) {
-        return state.is(ModTags.Blocks.END_MOSS_GRASS);
+        return state.is(ModTags.Blocks.SUPPORTS_END_MOSS_GRASS);
     }
 }

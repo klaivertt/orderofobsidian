@@ -1,9 +1,9 @@
 {
-  "type": "minecraft:smelting",
+  "type": "minecraft:blasting",
   "experience": 0.7,
   "group": "aluminium",
   "ingredient": "orderofobsidian:deepslate_aluminium_ore",
   "result": {
-    "id": "orderofobsidian:aluminum_ingot"
+    "id": "orderofobsidian:aluminium_ingot"
   }
 }
