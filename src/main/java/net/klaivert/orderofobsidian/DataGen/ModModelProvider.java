@@ -119,6 +119,7 @@ public class ModModelProvider extends ModelProvider {
                 BlockModelGenerators.PlantType.NOT_TINTED
         );
 
+        _blockModels.createTrivialBlock(ModBlocks.ICY_END_STONE.get(), TexturedModel.CUBE);
         _blockModels.createTrivialBlock(ModBlocks.ANCIENT_ICE.get(), TexturedModel.CUBE);
         _blockModels.createTrivialBlock(ModBlocks.ANCIENT_PACKED_ICE.get(), TexturedModel.CUBE);
         _blockModels.createTrivialBlock(ModBlocks.ANCIENT_BLUE_ICE.get(), TexturedModel.CUBE);

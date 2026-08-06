@@ -25,7 +25,7 @@
                   }
                 }
               ],
-              "name": "orderofobsidian:end_heather_stone"
+              "name": "orderofobsidian:icy_end_stone"
             },
             {
               "type": "minecraft:item",
@@ -37,5 +37,5 @@
       "rolls": 1.0
     }
   ],
-  "random_sequence": "orderofobsidian:blocks/end_heather_stone"
+  "random_sequence": "orderofobsidian:blocks/icy_end_stone"
 }

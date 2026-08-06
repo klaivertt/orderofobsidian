@@ -43,6 +43,9 @@ public class ModCreativeModTab
         DephstoneRegistered(_output);
         AncientIceRegistered(_output);
         _output.accept(ModBlocks.ANCIENT_BONE);
+        _output.accept(ModBlocks.BRACKEN_BUSH);
+        _output.accept(ModBlocks.END_MOSS_GRASS);
+        _output.accept(ModBlocks.TWISTED_END_MOSS_GRASS);
         YewRegistered(_output);
         OxysToolsRegistered(_output);
     }
@@ -110,6 +113,7 @@ public class ModCreativeModTab
 
     protected static void AncientIceRegistered(CreativeModeTab.Output _output)
     {
+        _output.accept(ModBlocks.ICY_END_STONE);
         _output.accept(ModBlocks.ANCIENT_ICE);
         _output.accept(ModBlocks.ANCIENT_PACKED_ICE);
         _output.accept(ModBlocks.ANCIENT_BLUE_ICE);

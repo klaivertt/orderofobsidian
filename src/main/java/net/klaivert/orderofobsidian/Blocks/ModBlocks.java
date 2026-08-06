@@ -262,9 +262,15 @@ public class ModBlocks {
 
     //ancient Ice
 
+    public static final DeferredBlock<Block> ICY_END_STONE  = RegisterBlock("icy_end_stone",
+            properties -> new Block(
+                    properties.strength(2.f, 3f).sound(SoundType.GLASS).friction(0.95f)
+            )
+    );
+
     public static final DeferredBlock<Block> ANCIENT_ICE = RegisterBlock("ancient_ice",
             properties -> new IceBlock(
-                    properties.strength(1f, 2.0f).sound(SoundType.GLASS).friction(0.985f)
+                    properties.strength(1f, 2.0f).sound(SoundType.GLASS).friction(0.985f).noOcclusion()
             )
     );
 

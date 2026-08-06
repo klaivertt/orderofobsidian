@@ -107,6 +107,7 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
 
         tag(Tags.Blocks.END_STONES)
                 .add(ModBlocks.getRK(ModBlocks.END_DEPHSTONE.get()))
+                .add(ModBlocks.getRK(ModBlocks.ICY_END_STONE.get()))
                 .add(ModBlocks.getRK(ModBlocks.END_HEATHER_STONE.get()));
 
         tag(Tags.Blocks.COBBLESTONES)

@@ -12,6 +12,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.storage.loot.LootPool;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
@@ -30,19 +31,69 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
     @Override
     protected void generate() {
-        add(ModBlocks.OXYS_ORE.get(), createNoFortuneOreDrop(ModBlocks.OXYS_ORE.get(), ModItems.OXYS.get()));
 
-        add(ModBlocks.ALUMINIUM_ORE.get(), createOreDrop(ModBlocks.ALUMINIUM_ORE.get(), ModItems.RAW_ALUMINIUM.get()));
-        add(ModBlocks.DEEPSLATE_ALUMINIUM_ORE.get(), createOreDrop(ModBlocks.DEEPSLATE_ALUMINIUM_ORE.get(), ModItems.RAW_ALUMINIUM.get()));
+        add(ModBlocks.OXYS_ORE.get(),
+                createNoFortuneOreDrop(
+                        ModBlocks.OXYS_ORE.get(),
+                        ModItems.OXYS.get()
+                )
+        );
 
-        add(ModBlocks.LEAD_ORE.get(), createOreDrop(ModBlocks.LEAD_ORE.get(), ModItems.RAW_LEAD.get()));
-        add(ModBlocks.DEEPSLATE_LEAD_ORE.get(), createOreDrop(ModBlocks.DEEPSLATE_LEAD_ORE.get(), ModItems.RAW_LEAD.get()));
+        add(ModBlocks.ALUMINIUM_ORE.get(),
+                createOreDrop(
+                        ModBlocks.ALUMINIUM_ORE.get(),
+                        ModItems.RAW_ALUMINIUM.get()
+                )
+        );
 
-        add(ModBlocks.MITHRIL_ORE.get(), createOreDrop(ModBlocks.MITHRIL_ORE.get(), ModItems.RAW_MITHRIL.get()));
-        add(ModBlocks.DEEPSLATE_MITHRIL_ORE.get(), createOreDrop(ModBlocks.DEEPSLATE_MITHRIL_ORE.get(), ModItems.RAW_MITHRIL.get()));
+        add(ModBlocks.DEEPSLATE_ALUMINIUM_ORE.get(),
+                createOreDrop(
+                        ModBlocks.DEEPSLATE_ALUMINIUM_ORE.get(),
+                        ModItems.RAW_ALUMINIUM.get()
+                )
+        );
 
-        add(ModBlocks.SILVER_ORE.get(), createOreDrop(ModBlocks.SILVER_ORE.get(), ModItems.RAW_SILVER.get()));
-        add(ModBlocks.DEEPSLATE_SILVER_ORE.get(), createOreDrop(ModBlocks.DEEPSLATE_SILVER_ORE.get(), ModItems.RAW_SILVER.get()));
+        add(ModBlocks.LEAD_ORE.get(),
+                createOreDrop(
+                        ModBlocks.LEAD_ORE.get(),
+                        ModItems.RAW_LEAD.get()
+                )
+        );
+
+        add(ModBlocks.DEEPSLATE_LEAD_ORE.get(),
+                createOreDrop(
+                        ModBlocks.DEEPSLATE_LEAD_ORE.get(),
+                        ModItems.RAW_LEAD.get()
+                )
+        );
+
+        add(ModBlocks.MITHRIL_ORE.get(),
+                createOreDrop(
+                        ModBlocks.MITHRIL_ORE.get(),
+                        ModItems.RAW_MITHRIL.get()
+                )
+        );
+
+        add(ModBlocks.DEEPSLATE_MITHRIL_ORE.get(),
+                createOreDrop(
+                        ModBlocks.DEEPSLATE_MITHRIL_ORE.get(),
+                        ModItems.RAW_MITHRIL.get()
+                )
+        );
+
+        add(ModBlocks.SILVER_ORE.get(),
+                createOreDrop(
+                        ModBlocks.SILVER_ORE.get(),
+                        ModItems.RAW_SILVER.get()
+                )
+        );
+
+        add(ModBlocks.DEEPSLATE_SILVER_ORE.get(),
+                createOreDrop(
+                        ModBlocks.DEEPSLATE_SILVER_ORE.get(),
+                        ModItems.RAW_SILVER.get()
+                )
+        );
 //        add(ModBlocks.OXYS_ORE.get(), createOreDrop(ModBlocks.OXYS_ORE.get(), ModItems.OXYS.get()));
 
         dropSelf(ModBlocks.OXYS_BLOCK.get());
@@ -78,9 +129,22 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.YEW_LOG.get());
         dropSelf(ModBlocks.STRIPPED_YEW_LOG.get());
         dropSelf(ModBlocks.YEW_PLANKS.get());
-        add(ModBlocks.YEW_LEAVES.get(), createLeavesDrops(ModBlocks.YEW_LEAVES.get(), ModBlocks.YEW_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+
+        add(ModBlocks.YEW_LEAVES.get(),
+                createLeavesDrops(
+                        ModBlocks.YEW_LEAVES.get(),
+                        ModBlocks.YEW_SAPLING.get(),
+                        NORMAL_LEAVES_SAPLING_CHANCES)
+        );
+
         dropSelf(ModBlocks.YEW_SAPLING.get());
-        dropSelf(ModBlocks.END_HEATHER_STONE.get());
+
+        add(ModBlocks.END_HEATHER_STONE.get(),
+                createSilkTouchDispatchTable(
+                        ModBlocks.END_HEATHER_STONE.get(),
+                        LootItem.lootTableItem(Blocks.END_STONE)
+                )
+        );
 
         add(ModBlocks.YEW_SLAB.get(), this::createSlabItemTable);
 
@@ -97,6 +161,14 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.BRACKEN_BUSH.get());
         dropSelf(ModBlocks.END_MOSS_GRASS.get());
         dropSelf(ModBlocks.TWISTED_END_MOSS_GRASS.get());
+
+
+        add(ModBlocks.ICY_END_STONE.get(),
+                createSilkTouchDispatchTable(
+                        ModBlocks.ICY_END_STONE.get(),
+                        LootItem.lootTableItem(Blocks.END_STONE)
+                )
+        );
 
         dropWhenSilkTouch(ModBlocks.ANCIENT_ICE.get());
         dropWhenSilkTouch(ModBlocks.ANCIENT_PACKED_ICE.get());
