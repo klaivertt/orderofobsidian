@@ -87,9 +87,8 @@ public final class ModBiomes {
                 .build();
     }
 
-
     private static Biome frozenEnd(HolderGetter<PlacedFeature> placedFeatures,
-                                        HolderGetter<ConfiguredWorldCarver<?>> carvers) {
+                                   HolderGetter<ConfiguredWorldCarver<?>> carvers) {
 
         MobSpawnSettings.Builder spawns = new MobSpawnSettings.Builder();
         spawns.addSpawn(MobCategory.MONSTER, 3, new MobSpawnSettings.SpawnerData(EntityTypes.ENDERMAN, 1, 4));
@@ -116,6 +115,7 @@ public final class ModBiomes {
                 .generationSettings(generation.build())
                 .build();
     }
+
 
     private static ResourceKey<Biome> biomeKey(String name) {
         return ResourceKey.create(Registries.BIOME, OrderOfObsidian.id(name));

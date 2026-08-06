@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:ore",
+  "config": {
+    "discard_chance_on_air_exposure": 0.0,
+    "size": 24,
+    "targets": [
+      {
+        "state": {
+          "Name": "orderofobsidian:ancient_ice"
+        },
+        "target": {
+          "block": "orderofobsidian:icy_end_stone",
+          "predicate_type": "minecraft:block_match"
+        }
+      },
+      {
+        "state": {
+          "Name": "orderofobsidian:ancient_packed_ice"
+        },
+        "target": {
+          "block": "minecraft:end_stone",
+          "predicate_type": "minecraft:block_match"
+        }
+      },
+      {
+        "state": {
+          "Name": "orderofobsidian:ancient_blue_ice"
+        },
+        "target": {
+          "block": "minecraft:end_stone",
+          "predicate_type": "minecraft:block_match"
+        }
+      }
+    ]
+  }
+}

@@ -11,12 +11,9 @@ import net.minecraft.tags.BiomeTags;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.util.random.WeightedList;
 import net.minecraft.util.valueproviders.ConstantInt;
-import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.level.biome.Biomes;
-import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.minecraft.world.level.levelgen.GenerationStep;
 import net.minecraft.world.level.levelgen.VerticalAnchor;
 import net.minecraft.world.level.levelgen.blockpredicates.BlockPredicate;
@@ -25,23 +22,18 @@ import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.FossilFeatureConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.*;
 import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize;
-import net.minecraft.world.level.levelgen.feature.foliageplacers.BlobFoliagePlacer;
 import net.minecraft.world.level.levelgen.feature.foliageplacers.FancyFoliagePlacer;
-import net.minecraft.world.level.levelgen.feature.foliageplacers.RandomSpreadFoliagePlacer;
 import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
 import net.minecraft.world.level.levelgen.feature.stateproviders.WeightedStateProvider;
-import net.minecraft.world.level.levelgen.feature.trunkplacers.BendingTrunkPlacer;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.FancyTrunkPlacer;
-import net.minecraft.world.level.levelgen.feature.trunkplacers.ForkingTrunkPlacer;
-import net.minecraft.world.level.levelgen.feature.trunkplacers.StraightTrunkPlacer;
 import net.minecraft.world.level.levelgen.placement.*;
 import net.minecraft.world.level.levelgen.structure.templatesystem.*;
-import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.world.BiomeModifier;
 import net.neoforged.neoforge.common.world.BiomeModifiers;
 import net.neoforged.neoforge.registries.NeoForgeRegistries;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.resources.Identifier;
+import net.minecraft.world.level.levelgen.feature.configurations.NoneFeatureConfiguration;
 
 import java.util.List;
 import java.util.function.Supplier;
@@ -125,6 +117,27 @@ public final class OrderOfObsidianWorldgen {
     public static final ResourceKey<StructureProcessorList> ANCIENT_BONE_PROCESSORS =
             ResourceKey.create(Registries.PROCESSOR_LIST, OrderOfObsidian.id("ancient_bone_fossil"));
 
+    //Ancient Iceberg
+    public static final ResourceKey<ConfiguredFeature<?, ?>> ANCIENT_ICEBERG =
+            configuredFeatureKey("ancient_iceberg");
+    public static final ResourceKey<PlacedFeature> ANCIENT_ICEBERG_PLACED =
+            placedFeatureKey("ancient_iceberg");
+    public static final ResourceKey<BiomeModifier> ADD_ANCIENT_ICEBERG =
+            biomeModifierKey("add_ancient_iceberg");
+
+    public static final ResourceKey<ConfiguredFeature<?, ?>> ANCIENT_ICE_POCKET =
+            configuredFeatureKey("ancient_ice_pocket");
+    public static final ResourceKey<PlacedFeature> ANCIENT_ICE_POCKET_PLACED =
+            placedFeatureKey("ancient_ice_pocket");
+    public static final ResourceKey<BiomeModifier> ADD_ANCIENT_ICE_POCKET =
+            biomeModifierKey("add_ancient_ice_pocket");
+
+    public static final ResourceKey<ConfiguredFeature<?, ?>> ICY_END_STONE_OUTER_POCKET =
+            configuredFeatureKey("icy_end_stone_outer_pocket");
+    public static final ResourceKey<PlacedFeature> ICY_END_STONE_OUTER_POCKET_PLACED =
+            placedFeatureKey("icy_end_stone_outer_pocket");
+    public static final ResourceKey<BiomeModifier> ADD_ICY_END_STONE_OUTER_POCKET =
+            biomeModifierKey("add_icy_end_stone_outer_pocket");
 
 
     private OrderOfObsidianWorldgen() {
@@ -222,6 +235,38 @@ public final class OrderOfObsidianWorldgen {
         registerOreConfigured(_context, LEAD);
         registerOreConfigured(_context, SILVER);
         registerOreConfigured(_context, MITHRIL);
+
+        WeightedStateProvider iceMixState = new WeightedStateProvider(
+                WeightedList.<net.minecraft.world.level.block.state.BlockState>builder()
+                        .add(ModBlocks.ANCIENT_ICE.get().defaultBlockState(), 4)
+                        .add(ModBlocks.ANCIENT_PACKED_ICE.get().defaultBlockState(), 3)
+                        .add(ModBlocks.ANCIENT_BLUE_ICE.get().defaultBlockState(), 2)
+                        .build()
+        );
+
+        _context.register(ANCIENT_ICEBERG, new ConfiguredFeature<>(
+                ModFeatures.ANCIENT_ICE_SPIKE.get(),
+                NoneFeatureConfiguration.INSTANCE
+        ));
+
+        RuleTest endStoneTest = new BlockMatchTest(Blocks.END_STONE);
+
+        _context.register(ICY_END_STONE_OUTER_POCKET, new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(
+                endStoneTest,
+                ModBlocks.ICY_END_STONE.get().defaultBlockState(),
+                42
+        )));
+
+        List<OreConfiguration.TargetBlockState> icePocketTargets = List.of(
+                OreConfiguration.target(new BlockMatchTest(ModBlocks.ICY_END_STONE.get()), ModBlocks.ANCIENT_ICE.get().defaultBlockState()),
+                OreConfiguration.target(new BlockMatchTest(Blocks.END_STONE), ModBlocks.ANCIENT_PACKED_ICE.get().defaultBlockState()),
+                OreConfiguration.target(endStoneTest, ModBlocks.ANCIENT_BLUE_ICE.get().defaultBlockState())
+        );
+
+        _context.register(ANCIENT_ICE_POCKET, new ConfiguredFeature<>(Feature.ORE, new OreConfiguration(
+                icePocketTargets,
+                24
+        )));
     }
 
     public static void bootstrapPlacedFeatures(BootstrapContext<PlacedFeature> _context) {
@@ -327,6 +372,37 @@ public final class OrderOfObsidianWorldgen {
         registerOrePlaced(_context, configured, SILVER);
         registerOrePlaced(_context, configured, MITHRIL);
 
+
+        _context.register(ANCIENT_ICEBERG_PLACED, new PlacedFeature(
+                configuredFeatures.getOrThrow(ANCIENT_ICEBERG),
+                List.of(
+                        CountPlacement.of(3),
+                        InSquarePlacement.spread(),
+                        HeightmapPlacement.onHeightmap(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES),
+                        BiomeFilter.biome()
+                )
+        ));
+
+        _context.register(ICY_END_STONE_OUTER_POCKET_PLACED, new PlacedFeature(
+                configuredFeatures.getOrThrow(ICY_END_STONE_OUTER_POCKET),
+                List.of(
+                        CountPlacement.of(8),
+                        InSquarePlacement.spread(),
+                        HeightRangePlacement.uniform(VerticalAnchor.absolute(10), VerticalAnchor.absolute(60)),
+                        BiomeFilter.biome()
+                )
+        ));
+
+
+        _context.register(ANCIENT_ICE_POCKET_PLACED, new PlacedFeature(
+                configuredFeatures.getOrThrow(ANCIENT_ICE_POCKET),
+                List.of(
+                        CountPlacement.of(6),
+                        InSquarePlacement.spread(),
+                        HeightRangePlacement.uniform(VerticalAnchor.absolute(10), VerticalAnchor.absolute(60)),
+                        BiomeFilter.biome()
+                )
+        ));
     }
 
     public static void bootstrapBiomeModifiers(BootstrapContext<BiomeModifier> _context) {
@@ -396,6 +472,24 @@ public final class OrderOfObsidianWorldgen {
         registerOreBiomeModifier(_context, biomes, placedFeatures, LEAD);
         registerOreBiomeModifier(_context, biomes, placedFeatures, SILVER);
         registerOreBiomeModifier(_context, biomes, placedFeatures, MITHRIL);
+
+        _context.register(ADD_ANCIENT_ICEBERG, new BiomeModifiers.AddFeaturesBiomeModifier(
+                HolderSet.direct(biomes.getOrThrow(ModBiomes.FROZEN_END)),
+                HolderSet.direct(placedFeatures.getOrThrow(ANCIENT_ICEBERG_PLACED)),
+                GenerationStep.Decoration.SURFACE_STRUCTURES
+        ));
+
+        _context.register(ADD_ICY_END_STONE_OUTER_POCKET, new BiomeModifiers.AddFeaturesBiomeModifier(
+                HolderSet.direct(biomes.getOrThrow(ModBiomes.FROZEN_END)),
+                HolderSet.direct(placedFeatures.getOrThrow(ICY_END_STONE_OUTER_POCKET_PLACED)),
+                GenerationStep.Decoration.UNDERGROUND_ORES
+        ));
+
+        _context.register(ADD_ANCIENT_ICE_POCKET, new BiomeModifiers.AddFeaturesBiomeModifier(
+                HolderSet.direct(biomes.getOrThrow(ModBiomes.FROZEN_END)),
+                HolderSet.direct(placedFeatures.getOrThrow(ANCIENT_ICE_POCKET_PLACED)),
+                GenerationStep.Decoration.UNDERGROUND_ORES
+        ));
     }
 
     private static void registerOrePlaced(

@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "orderofobsidian:frozen_end",
+  "features": "orderofobsidian:icy_end_stone_outer_pocket",
+  "step": "underground_ores"
+}

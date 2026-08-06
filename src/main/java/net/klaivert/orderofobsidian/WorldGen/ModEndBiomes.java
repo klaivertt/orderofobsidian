@@ -12,27 +12,22 @@ public final class ModEndBiomes {
 
     public static void Register() {
 
-        EndBiomeRegistry.registerHighlandsBiome(ModBiomes.HEATHER_ISLANDS, 6);
-        EndBiomeRegistry.registerHighlandsBiome(ModBiomes.FROZEN_END, 5);
+        EndBiomeRegistry.registerHighlandsBiome(ModBiomes.HEATHER_ISLANDS, 5);
+        EndBiomeRegistry.registerHighlandsBiome(ModBiomes.FROZEN_END, 3);
 
         SurfaceRuleManager.addSurfaceRules(
                 SurfaceRuleManager.RuleCategory.END,
                 OrderOfObsidian.MOD_ID,
                 holderGetter -> SurfaceRules.sequence(
+
                         SurfaceRules.ifTrue(
                                 SurfaceRules.isBiome(holderGetter, ModBiomes.HEATHER_ISLANDS),
                                 SurfaceRules.ifTrue(
                                         SurfaceRules.ON_FLOOR,
                                         SurfaceRules.state(ModBlocks.END_HEATHER_STONE.get().defaultBlockState())
                                 )
-                        )
-                )
-        );
+                        ),
 
-        SurfaceRuleManager.addSurfaceRules(
-                SurfaceRuleManager.RuleCategory.END,
-                OrderOfObsidian.MOD_ID,
-                holderGetter -> SurfaceRules.sequence(
                         SurfaceRules.ifTrue(
                                 SurfaceRules.isBiome(holderGetter, ModBiomes.FROZEN_END),
                                 SurfaceRules.ifTrue(

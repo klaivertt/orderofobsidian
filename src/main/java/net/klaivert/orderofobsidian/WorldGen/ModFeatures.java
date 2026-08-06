@@ -17,6 +17,9 @@ public class ModFeatures
     public static final DeferredHolder<Feature<?>, OxysOreFeature> OXYS_ORE =
             features.register("oxys_ore", () -> new OxysOreFeature(NoneFeatureConfiguration.CODEC));
 
+    public static final DeferredHolder<Feature<?>, AncientIceSpikeFeature> ANCIENT_ICE_SPIKE =
+            features.register("ancient_ice_spike", () -> new AncientIceSpikeFeature(NoneFeatureConfiguration.CODEC));
+
     public static void Registered(IEventBus _eventBus)
     {
         features.register(_eventBus);
