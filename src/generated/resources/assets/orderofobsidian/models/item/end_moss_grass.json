@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "orderofobsidian:block/end_moss_grass"
+  }
+}

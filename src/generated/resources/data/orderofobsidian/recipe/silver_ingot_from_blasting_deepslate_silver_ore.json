@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "experience": 0.7,
+  "group": "silver",
+  "ingredient": "orderofobsidian:deepslate_silver_ore",
+  "result": {
+    "id": "orderofobsidian:silver_ingot"
+  }
+}

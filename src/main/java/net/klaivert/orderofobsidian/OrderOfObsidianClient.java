@@ -30,5 +30,6 @@ public class OrderOfObsidianClient
         // Some client setup code
         OrderOfObsidian.LOGGER.info("HELLO FROM CLIENT SETUP");
         OrderOfObsidian.LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
+
     }
 }

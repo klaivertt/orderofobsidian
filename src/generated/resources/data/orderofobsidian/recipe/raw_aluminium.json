@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "aluminium",
+  "ingredients": [
+    "orderofobsidian:raw_aluminium_block"
+  ],
+  "result": {
+    "count": 9,
+    "id": "orderofobsidian:raw_aluminium"
+  }
+}

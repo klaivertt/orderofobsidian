@@ -36,7 +36,12 @@ public class ModCreativeModTab
     protected static void StoreItems(CreativeModeTab.Output _output)
     {
         OxysRegistered(_output);
+        AluminiumRegistered(_output);
+        LeadRegistered(_output);
+        MithrilRegistered(_output);
+        SilverRegistered(_output);
         DephstoneRegistered(_output);
+        AncientIceRegistered(_output);
         _output.accept(ModBlocks.ANCIENT_BONE);
         YewRegistered(_output);
         OxysToolsRegistered(_output);
@@ -102,5 +107,50 @@ public class ModCreativeModTab
         _output.accept(ModBlocks.END_DEPHSTONE_TILES_STAIRS);
         _output.accept(ModBlocks.END_DEPHSTONE_TILES_WALL);
     }
+
+    protected static void AncientIceRegistered(CreativeModeTab.Output _output)
+    {
+        _output.accept(ModBlocks.ANCIENT_ICE);
+        _output.accept(ModBlocks.ANCIENT_PACKED_ICE);
+        _output.accept(ModBlocks.ANCIENT_BLUE_ICE);
+    }
+
+    protected static void AluminiumRegistered(CreativeModeTab.Output _output)
+    {
+        _output.accept(ModBlocks.ALUMINIUM_ORE);
+        _output.accept(ModBlocks.DEEPSLATE_ALUMINIUM_ORE);
+        _output.accept(ModBlocks.ALUMINIUM_BLOCK);
+        _output.accept(ModBlocks.RAW_ALUMINIUM_BLOCK);
+        _output.accept(ModItems.ALUMINIUM_INGOT);
+        _output.accept(ModItems.RAW_ALUMINIUM);
+    }
+
+    protected static void SilverRegistered(CreativeModeTab.Output _output)
+    {
+        _output.accept(ModBlocks.SILVER_ORE);
+        _output.accept(ModBlocks.DEEPSLATE_SILVER_ORE);
+        _output.accept(ModBlocks.SILVER_BLOCK);
+        _output.accept(ModItems.RAW_SILVER);
+        _output.accept(ModItems.SILVER_INGOT);
+    }
+
+    protected static void MithrilRegistered(CreativeModeTab.Output _output)
+    {
+        _output.accept(ModBlocks.MITHRIL_ORE);
+        _output.accept(ModBlocks.DEEPSLATE_MITHRIL_ORE);
+        _output.accept(ModBlocks.MITHRIL_BLOCK);
+        _output.accept(ModItems.RAW_MITHRIL);
+        _output.accept(ModItems.MITHRIL_INGOT);
+    }
+
+    protected static void LeadRegistered(CreativeModeTab.Output _output)
+    {
+        _output.accept(ModBlocks.LEAD_ORE);
+        _output.accept(ModBlocks.DEEPSLATE_LEAD_ORE);
+        _output.accept(ModBlocks.LEAD_BLOCK);
+        _output.accept(ModItems.RAW_LEAD);
+        _output.accept(ModItems.LEAD_INGOT);
+    }
+
 
 }

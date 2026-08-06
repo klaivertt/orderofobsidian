@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "experience": 0.7,
+  "group": "lead",
+  "ingredient": "orderofobsidian:raw_lead",
+  "result": {
+    "id": "orderofobsidian:lead_ingot"
+  }
+}

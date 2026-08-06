@@ -1,5 +1,13 @@
 {
   "values": [
-    "orderofobsidian:oxys_ore"
+    "orderofobsidian:oxys_ore",
+    "orderofobsidian:aluminium_ore",
+    "orderofobsidian:lead_ore",
+    "orderofobsidian:mithril_ore",
+    "orderofobsidian:silver_ore",
+    "orderofobsidian:deepslate_aluminium_ore",
+    "orderofobsidian:deepslate_lead_ore",
+    "orderofobsidian:deepslate_mithril_ore",
+    "orderofobsidian:deepslate_silver_ore"
   ]
 }

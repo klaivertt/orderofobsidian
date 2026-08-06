@@ -19,6 +19,15 @@
   "item.orderofobsidian.oxys_sword": "Oxys Sword",
   "item.orderofobsidian.oxys_spear": "Oxys Spear",
 
+  "item.orderofobsidian.raw_aluminium": "Raw Aluminium",
+  "item.orderofobsidian.raw_lead": "Raw Lead",
+  "item.orderofobsidian.raw_mithril": "Raw Mithril",
+  "item.orderofobsidian.raw_silver": "Raw Silver",
+
+  "item.orderofobsidian.aluminium_ingot": "Aluminium Ingot",
+  "item.orderofobsidian.mithril_ingot": "Mithril Ingot",
+  "item.orderofobsidian.silver_ingot": "Silver Ingot",
+  "item.orderofobsidian.lead_ingot": "Lead Ingot",
 
   "block.orderofobsidian.end_depthstone": "End Depthstone",
   "block.orderofobsidian.cracked_end_depthstone_bricks": "Cracked End Depthstone Bricks",
@@ -54,6 +63,33 @@
   "block.orderofobsidian.yew_trapdoor": "Yew Trapdoor",
 
   "block.orderofobsidian.ancient_bone": "Ancient Bone",
-  "block.orderofobsidian.bracken_bush": "Bracken Bush"
+  "block.orderofobsidian.bracken_bush": "Bracken Bush",
+
+  "block.orderofobsidian.ancient_ice": "Ancient Ice",
+  "block.orderofobsidian.ancient_packed_ice": "Ancient Packed Ice",
+  "block.orderofobsidian.ancient_blue_ice": "Ancient Blue Ice",
+
+  "block.orderofobsidian.raw_aluminium_block": "Raw Aluminium Block",
+  "block.orderofobsidian.raw_lead_block": "Raw Lead Block",
+  "block.orderofobsidian.raw_mithril_block": "Raw Mithril Block",
+  "block.orderofobsidian.raw_silver_block": "Raw Silver Block",
+
+  "block.orderofobsidian.aluminium_block": "Aluminium Block",
+  "block.orderofobsidian.lead_block": "Lead Block",
+  "block.orderofobsidian.mithril_block": "Mithril Block",
+  "block.orderofobsidian.silver_block": "Silver Block",
+
+  "block.orderofobsidian.aluminium_ore": "Aluminium Ore",
+  "block.orderofobsidian.lead_ore": "Lead Ore",
+  "block.orderofobsidian.mithril_ore": "Mithril Ore",
+  "block.orderofobsidian.silver_ore": "Silver Ore",
+
+  "block.orderofobsidian.deepslate_aluminium_ore": "Deepslate Aluminium Ore",
+  "block.orderofobsidian.deepslate_lead_ore": "Deepslate Lead Ore",
+  "block.orderofobsidian.deepslate_mithril_ore": "Deepslate Mithril Ore",
+  "block.orderofobsidian.deepslate_silver_ore": "Deepslate Silver Ore",
+
+  "block.orderofobsidian.end_moss_grass": "End Moss Grass",
+  "block.orderofobsidian.twisted_end_moss_grass": "Twisted End Moss Grass"
 
 }

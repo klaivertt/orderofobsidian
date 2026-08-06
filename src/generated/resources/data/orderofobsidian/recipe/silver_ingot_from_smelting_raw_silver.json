@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "experience": 0.7,
+  "group": "silver",
+  "ingredient": "orderofobsidian:raw_silver",
+  "result": {
+    "id": "orderofobsidian:silver_ingot"
+  }
+}

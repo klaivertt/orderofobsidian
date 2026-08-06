@@ -21,8 +21,17 @@ public class ModItemTagsProvider extends ItemTagsProvider {
         tag(Tags.Items.GEMS)
                 .add(ModItems.getRK(ModItems.OXYS.get()));
 
-        tag(Tags.Items.ORES)
-                .add(ModItems.getRK(ModBlocks.OXYS_ORE.get().asItem()));
+        tag(Tags.Items.RAW_MATERIALS)
+                .add(ModItems.getRK(ModItems.RAW_ALUMINIUM.get()))
+                .add(ModItems.getRK(ModItems.RAW_LEAD.get()))
+                .add(ModItems.getRK(ModItems.RAW_MITHRIL.get()))
+                .add(ModItems.getRK(ModItems.RAW_SILVER.get()));
+
+        tag(Tags.Items.INGOTS)
+                .add(ModItems.getRK(ModItems.ALUMINIUM_INGOT.get()))
+                .add(ModItems.getRK(ModItems.LEAD_INGOT.get()))
+                .add(ModItems.getRK(ModItems.MITHRIL_INGOT.get()))
+                .add(ModItems.getRK(ModItems.SILVER_INGOT.get()));
 
         tag(Tags.Items.STORAGE_BLOCKS)
                 .add(ModItems.getRK(ModBlocks.OXYS_BLOCK.get().asItem()));

@@ -92,7 +92,15 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
                 .add(ModBlocks.getRK(ModBlocks.OXYS_BLOCK.get()));
 
         tag(Tags.Blocks.ORES)
-                .add(ModBlocks.getRK(ModBlocks.OXYS_ORE.get()));
+                .add(ModBlocks.getRK(ModBlocks.OXYS_ORE.get()))
+                .add(ModBlocks.getRK(ModBlocks.ALUMINIUM_ORE.get()))
+                .add(ModBlocks.getRK(ModBlocks.LEAD_ORE.get()))
+                .add(ModBlocks.getRK(ModBlocks.MITHRIL_ORE.get()))
+                .add(ModBlocks.getRK(ModBlocks.SILVER_ORE.get()))
+                .add(ModBlocks.getRK(ModBlocks.DEEPSLATE_ALUMINIUM_ORE.get()))
+                .add(ModBlocks.getRK(ModBlocks.DEEPSLATE_LEAD_ORE.get()))
+                .add(ModBlocks.getRK(ModBlocks.DEEPSLATE_MITHRIL_ORE.get()))
+                .add(ModBlocks.getRK(ModBlocks.DEEPSLATE_SILVER_ORE.get()))        ;
 
         tag(Tags.Blocks.STORAGE_BLOCKS)
                 .add(ModBlocks.getRK(ModBlocks.OXYS_BLOCK.get()));
@@ -123,6 +131,11 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
                 .add(ModBlocks.getRK(ModBlocks.END_DEPHSTONE_BRICKS_WALL.get()))
                 .add(ModBlocks.getRK(ModBlocks.END_DEPHSTONE_TILES_WALL.get())
                 );
+
+        tag(BlockTags.ICE)
+                .add(ModBlocks.getRK(ModBlocks.ANCIENT_ICE.get()))
+                .add(ModBlocks.getRK(ModBlocks.ANCIENT_PACKED_ICE.get()))
+                .add(ModBlocks.getRK(ModBlocks.ANCIENT_BLUE_ICE.get()));
 
         tag(BlockTags.PRESSURE_PLATES)
                 .add(ModBlocks.getRK(ModBlocks.YEW_PRESSURE_PLATE.get()));
@@ -156,6 +169,11 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
         tag(ModTags.Blocks.SUPPORTS_YEW)
                 .add(ModBlocks.getRK(Blocks.END_STONE))
                 .add(ModBlocks.getRK(ModBlocks.END_HEATHER_STONE.get()));
+
+        tag(ModTags.Blocks.ANCIENT_ICE)
+                .add(ModBlocks.getRK(ModBlocks.ANCIENT_ICE.get()))
+                .add(ModBlocks.getRK(ModBlocks.ANCIENT_PACKED_ICE.get()))
+                .add(ModBlocks.getRK(ModBlocks.ANCIENT_BLUE_ICE.get()));
 
         tag(BlockTags.WOODEN_BUTTONS)
                 .add(ModBlocks.getRK(ModBlocks.YEW_BUTTON.get()));

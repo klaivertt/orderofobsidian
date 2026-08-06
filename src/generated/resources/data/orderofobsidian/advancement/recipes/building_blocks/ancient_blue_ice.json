@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_ancient_packed_ice": {
+      "conditions": {
+        "items": [
+          {
+            "items": "orderofobsidian:ancient_packed_ice"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "orderofobsidian:ancient_blue_ice"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_ancient_packed_ice"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "orderofobsidian:ancient_blue_ice"
+    ]
+  }
+}

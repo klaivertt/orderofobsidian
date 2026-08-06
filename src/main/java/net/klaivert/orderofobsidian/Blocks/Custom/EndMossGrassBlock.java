@@ -1,0 +1,19 @@
+package net.klaivert.orderofobsidian.Blocks.Custom;
+
+import net.klaivert.orderofobsidian.Tags.ModTags;
+import net.minecraft.core.BlockPos;
+import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.level.block.BushBlock;
+import net.minecraft.world.level.block.state.BlockState;
+
+public class EndMossGrassBlock extends BushBlock {
+
+    public EndMossGrassBlock(Properties properties) {
+        super(properties);
+    }
+
+    @Override
+    protected boolean mayPlaceOn(BlockState state, BlockGetter level, BlockPos pos) {
+        return state.is(ModTags.Blocks.END_MOSS_GRASS);
+    }
+}

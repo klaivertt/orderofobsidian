@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "lead",
+  "ingredients": [
+    "orderofobsidian:lead_block"
+  ],
+  "result": {
+    "count": 9,
+    "id": "orderofobsidian:lead_ingot"
+  }
+}

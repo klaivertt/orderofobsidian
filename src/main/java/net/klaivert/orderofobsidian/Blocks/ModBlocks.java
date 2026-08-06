@@ -1,9 +1,6 @@
 package net.klaivert.orderofobsidian.Blocks;
 
-import net.klaivert.orderofobsidian.Blocks.Custom.BrackenBushBlock;
-import net.klaivert.orderofobsidian.Blocks.Custom.EndHeatherStoneBlock;
-import net.klaivert.orderofobsidian.Blocks.Custom.YewLogBlock;
-import net.klaivert.orderofobsidian.Blocks.Custom.YewSaplingBlock;
+import net.klaivert.orderofobsidian.Blocks.Custom.*;
 import net.klaivert.orderofobsidian.OrderOfObsidian;
 import net.klaivert.orderofobsidian.WorldGen.ModTreeGrowers;
 import net.klaivert.orderofobsidian.items.ModItems;
@@ -260,6 +257,157 @@ public class ModBlocks {
     public static final DeferredBlock<Block> END_HEATHER_STONE = RegisterBlock("end_heather_stone",
             properties -> new EndHeatherStoneBlock(
                     properties.strength(2.0f, 3.0f).sound(SoundType.STONE).randomTicks()
+            )
+    );
+
+    //ancient Ice
+
+    public static final DeferredBlock<Block> ANCIENT_ICE = RegisterBlock("ancient_ice",
+            properties -> new IceBlock(
+                    properties.strength(1f, 2.0f).sound(SoundType.GLASS).friction(0.985f)
+            )
+    );
+
+    public static final DeferredBlock<Block> ANCIENT_PACKED_ICE = RegisterBlock("ancient_packed_ice",
+            properties -> new Block(
+                    properties.strength(1.5f, 2.2f).sound(SoundType.GLASS).friction(0.992f)
+            )
+    );
+
+    public static final DeferredBlock<Block> ANCIENT_BLUE_ICE = RegisterBlock("ancient_blue_ice",
+            properties -> new Block(
+                    properties.strength(1.6f, 2.2f).sound(SoundType.GLASS).friction(0.996f)
+            )
+    );
+
+
+    public static final DeferredBlock<Block> ALUMINIUM_ORE = RegisterBlock("aluminium_ore",
+            properties -> new Block(
+                    properties.strength(3.0f)
+                            .requiresCorrectToolForDrops()
+                            .sound(SoundType.STONE)
+            )
+    );
+    public static final DeferredBlock<Block> DEEPSLATE_ALUMINIUM_ORE = RegisterBlock("deepslate_aluminium_ore",
+            properties -> new Block(
+                    properties.strength(4.5f)
+                            .requiresCorrectToolForDrops()
+                            .sound(SoundType.DEEPSLATE)
+            )
+    );
+    public static final DeferredBlock<Block> ALUMINIUM_BLOCK = RegisterBlock("aluminium_block",
+            properties -> new Block(
+                    properties.strength(5.0f)
+                            .requiresCorrectToolForDrops()
+                            .sound(SoundType.METAL)
+            )
+    );
+    public static final DeferredBlock<Block> RAW_ALUMINIUM_BLOCK = RegisterBlock("raw_aluminium_block",
+            properties -> new Block(
+                    properties.strength(5.0f)
+                            .requiresCorrectToolForDrops()
+                            .sound(SoundType.STONE)
+            )
+    );
+
+    public static final DeferredBlock<Block> LEAD_ORE = RegisterBlock("lead_ore",
+            properties -> new Block(
+                    properties.strength(3.5f)
+                            .requiresCorrectToolForDrops()
+                            .sound(SoundType.STONE)
+            )
+    );
+    public static final DeferredBlock<Block> DEEPSLATE_LEAD_ORE = RegisterBlock("deepslate_lead_ore",
+            properties -> new Block(
+                    properties.strength(5.0f)
+                            .requiresCorrectToolForDrops()
+                            .sound(SoundType.DEEPSLATE)
+            )
+    );
+    public static final DeferredBlock<Block> LEAD_BLOCK = RegisterBlock("lead_block",
+            properties -> new Block(
+                    properties.strength(6.0f)
+                            .requiresCorrectToolForDrops()
+                            .sound(SoundType.METAL)
+            )
+    );
+    public static final DeferredBlock<Block> RAW_LEAD_BLOCK = RegisterBlock("raw_lead_block",
+            properties -> new Block(
+                    properties.strength(6.0f)
+                            .requiresCorrectToolForDrops()
+                            .sound(SoundType.STONE)
+            )
+    );
+
+    public static final DeferredBlock<Block> SILVER_ORE = RegisterBlock("silver_ore",
+            properties -> new Block(
+                    properties.strength(3.5f)
+                            .requiresCorrectToolForDrops()
+                            .sound(SoundType.STONE)
+            )
+    );
+    public static final DeferredBlock<Block> DEEPSLATE_SILVER_ORE = RegisterBlock("deepslate_silver_ore",
+            properties -> new Block(
+                    properties.strength(5.0f)
+                            .requiresCorrectToolForDrops()
+                            .sound(SoundType.DEEPSLATE)
+            )
+    );
+    public static final DeferredBlock<Block> SILVER_BLOCK = RegisterBlock("silver_block",
+            properties -> new Block(
+                    properties.strength(5.5f)
+                            .requiresCorrectToolForDrops()
+                            .sound(SoundType.METAL)
+            )
+    );
+    public static final DeferredBlock<Block> RAW_SILVER_BLOCK = RegisterBlock("raw_silver_block",
+            properties -> new Block(
+                    properties.strength(5.5f)
+                            .requiresCorrectToolForDrops()
+                            .sound(SoundType.STONE)
+            )
+    );
+
+    public static final DeferredBlock<Block> MITHRIL_ORE = RegisterBlock("mithril_ore",
+            properties -> new Block(
+                    properties.strength(6.0f)
+                            .requiresCorrectToolForDrops()
+                            .sound(SoundType.DEEPSLATE)
+            )
+    );
+    public static final DeferredBlock<Block> DEEPSLATE_MITHRIL_ORE = RegisterBlock("deepslate_mithril_ore",
+            properties -> new Block(
+                    properties.strength(7.5f)
+                            .requiresCorrectToolForDrops()
+                            .sound(SoundType.DEEPSLATE)
+            )
+    );
+    public static final DeferredBlock<Block> MITHRIL_BLOCK = RegisterBlock("mithril_block",
+            properties -> new Block(
+                    properties.strength(9.0f)
+                            .requiresCorrectToolForDrops()
+                            .sound(SoundType.NETHERITE_BLOCK)
+            )
+    );
+    public static final DeferredBlock<Block> RAW_MITHRIL_BLOCK = RegisterBlock("raw_mithril_block",
+            properties -> new Block(
+                    properties.strength(9.0f)
+                            .requiresCorrectToolForDrops()
+                            .sound(SoundType.DEEPSLATE)
+            )
+    );
+
+    public static final DeferredBlock<Block> END_MOSS_GRASS = RegisterBlock("end_moss_grass",
+            properties -> new EndMossGrassBlock(
+                    properties.noCollision().instabreak().replaceable()
+                            .sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ)
+            )
+    );
+
+    public static final DeferredBlock<Block> TWISTED_END_MOSS_GRASS = RegisterBlock("twisted_end_moss_grass",
+            properties -> new Block(
+                    properties.noCollision().instabreak().replaceable()
+                            .sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ)
             )
     );
 

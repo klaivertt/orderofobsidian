@@ -40,10 +40,16 @@ public class ModRecipeProvider extends RecipeProvider {
 
 
     private static final String OXYS_GROUP = "oxys";
+    private static final String ALUMINIUM_GROUP = "aluminium";
+    private static final String LEAD_GROUP = "lead";
+    private static final String SILVER_GROUP = "silver";
+    private static final String MITHRIL_GROUP = "mithril";
+
     private static final String OXYS_UPGRADE_GROUP = "oxys_upgrade_template";
 
     private static final String END_DEPHSTONE_GROUP = "end_depthstone";
     private static final String YEW_GROUP = "yew";
+    private static final String ANCIENT_ICE = "ancient_ice";
 
     @Override
     protected void buildRecipes() {
@@ -89,6 +95,145 @@ public class ModRecipeProvider extends RecipeProvider {
 
         oreSmelting(OXYS_SMELTABLES, RecipeCategory.MISC, CookingBookCategory.MISC, ModItems.OXYS.get(), 10.f, 450, OXYS_GROUP);
         oreBlasting(OXYS_SMELTABLES, RecipeCategory.MISC, CookingBookCategory.MISC, ModItems.OXYS.get(), 10.f, 250, OXYS_GROUP);
+
+        List<ItemLike> ALUMINIUM_SMELTABLES = List.of(
+                ModBlocks.ALUMINIUM_ORE, ModBlocks.DEEPSLATE_ALUMINIUM_ORE, ModItems.RAW_ALUMINIUM
+        );
+        oreSmelting(ALUMINIUM_SMELTABLES, RecipeCategory.MISC, CookingBookCategory.MISC, ModItems.ALUMINIUM_INGOT.get(), 0.7f, 200, ALUMINIUM_GROUP);
+        oreBlasting(ALUMINIUM_SMELTABLES, RecipeCategory.MISC, CookingBookCategory.MISC, ModItems.ALUMINIUM_INGOT.get(), 0.7f, 100, ALUMINIUM_GROUP);
+
+        shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ALUMINIUM_BLOCK.get())
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', ModItems.ALUMINIUM_INGOT.get())
+                .unlockedBy(getHasName(ModItems.ALUMINIUM_INGOT.get()), has(ModItems.ALUMINIUM_INGOT))
+                .group(ALUMINIUM_GROUP)
+                .save(output);
+
+        shapeless(RecipeCategory.MISC, ModItems.ALUMINIUM_INGOT.get(), 9)
+                .requires(ModBlocks.ALUMINIUM_BLOCK)
+                .unlockedBy(getHasName(ModBlocks.ALUMINIUM_BLOCK.get()), has(ModBlocks.ALUMINIUM_BLOCK))
+                .group(ALUMINIUM_GROUP)
+                .save(output);
+
+        shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RAW_ALUMINIUM_BLOCK.get())
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', ModItems.RAW_ALUMINIUM.get())
+                .unlockedBy(getHasName(ModItems.RAW_ALUMINIUM.get()), has(ModItems.RAW_ALUMINIUM))
+                .group(ALUMINIUM_GROUP)
+                .save(output);
+
+        shapeless(RecipeCategory.MISC, ModItems.RAW_ALUMINIUM.get(), 9)
+                .requires(ModBlocks.RAW_ALUMINIUM_BLOCK)
+                .unlockedBy(getHasName(ModBlocks.RAW_ALUMINIUM_BLOCK.get()), has(ModBlocks.RAW_ALUMINIUM_BLOCK))
+                .group(ALUMINIUM_GROUP)
+                .save(output);
+
+        List<ItemLike> LEAD_SMELTABLES = List.of(
+                ModBlocks.LEAD_ORE, ModBlocks.DEEPSLATE_LEAD_ORE, ModItems.RAW_LEAD
+        );
+        oreSmelting(LEAD_SMELTABLES, RecipeCategory.MISC, CookingBookCategory.MISC, ModItems.LEAD_INGOT.get(), 0.7f, 200, LEAD_GROUP);
+        oreBlasting(LEAD_SMELTABLES, RecipeCategory.MISC, CookingBookCategory.MISC, ModItems.LEAD_INGOT.get(), 0.7f, 100, LEAD_GROUP);
+
+        shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.LEAD_BLOCK.get())
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', ModItems.LEAD_INGOT.get())
+                .unlockedBy(getHasName(ModItems.LEAD_INGOT.get()), has(ModItems.LEAD_INGOT))
+                .group(LEAD_GROUP)
+                .save(output);
+
+        shapeless(RecipeCategory.MISC, ModItems.LEAD_INGOT.get(), 9)
+                .requires(ModBlocks.LEAD_BLOCK)
+                .unlockedBy(getHasName(ModBlocks.LEAD_BLOCK.get()), has(ModBlocks.LEAD_BLOCK))
+                .group(LEAD_GROUP)
+                .save(output);
+
+        shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RAW_LEAD_BLOCK.get())
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', ModItems.RAW_LEAD.get())
+                .unlockedBy(getHasName(ModItems.RAW_LEAD.get()), has(ModItems.RAW_LEAD))
+                .group(LEAD_GROUP)
+                .save(output);
+
+        shapeless(RecipeCategory.MISC, ModItems.RAW_LEAD.get(), 9)
+                .requires(ModBlocks.RAW_LEAD_BLOCK)
+                .unlockedBy(getHasName(ModBlocks.RAW_LEAD_BLOCK.get()), has(ModBlocks.RAW_LEAD_BLOCK))
+                .group(LEAD_GROUP)
+                .save(output);
+
+
+        List<ItemLike> SILVER_SMELTABLES = List.of(
+                ModBlocks.SILVER_ORE, ModBlocks.DEEPSLATE_SILVER_ORE, ModItems.RAW_SILVER
+        );
+        oreSmelting(SILVER_SMELTABLES, RecipeCategory.MISC, CookingBookCategory.MISC, ModItems.SILVER_INGOT.get(), 0.7f, 200, SILVER_GROUP);
+        oreBlasting(SILVER_SMELTABLES, RecipeCategory.MISC, CookingBookCategory.MISC, ModItems.SILVER_INGOT.get(), 0.7f, 100, SILVER_GROUP);
+
+        shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SILVER_BLOCK.get())
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', ModItems.SILVER_INGOT.get())
+                .unlockedBy(getHasName(ModItems.SILVER_INGOT.get()), has(ModItems.SILVER_INGOT))
+                .group(SILVER_GROUP)
+                .save(output);
+
+        shapeless(RecipeCategory.MISC, ModItems.SILVER_INGOT.get(), 9)
+                .requires(ModBlocks.SILVER_BLOCK)
+                .unlockedBy(getHasName(ModBlocks.SILVER_BLOCK.get()), has(ModBlocks.SILVER_BLOCK))
+                .group(SILVER_GROUP)
+                .save(output);
+
+        shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RAW_SILVER_BLOCK.get())
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', ModItems.RAW_SILVER.get())
+                .unlockedBy(getHasName(ModItems.RAW_SILVER.get()), has(ModItems.RAW_SILVER))
+                .group(SILVER_GROUP)
+                .save(output);
+
+        shapeless(RecipeCategory.MISC, ModItems.RAW_SILVER.get(), 9)
+                .requires(ModBlocks.RAW_SILVER_BLOCK)
+                .unlockedBy(getHasName(ModBlocks.RAW_SILVER_BLOCK.get()), has(ModBlocks.RAW_SILVER_BLOCK))
+                .group(SILVER_GROUP)
+                .save(output);
+
+        shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MITHRIL_BLOCK.get())
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', ModItems.MITHRIL_INGOT.get())
+                .unlockedBy(getHasName(ModItems.MITHRIL_INGOT.get()), has(ModItems.MITHRIL_INGOT))
+                .group(MITHRIL_GROUP)
+                .save(output);
+
+        shapeless(RecipeCategory.MISC, ModItems.MITHRIL_INGOT.get(), 9)
+                .requires(ModBlocks.MITHRIL_BLOCK)
+                .unlockedBy(getHasName(ModBlocks.MITHRIL_BLOCK.get()), has(ModBlocks.MITHRIL_BLOCK))
+                .group(MITHRIL_GROUP)
+                .save(output);
+
+        shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RAW_MITHRIL_BLOCK.get())
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', ModItems.RAW_MITHRIL.get())
+                .unlockedBy(getHasName(ModItems.RAW_MITHRIL.get()), has(ModItems.RAW_MITHRIL))
+                .group(MITHRIL_GROUP)
+                .save(output);
+
+        shapeless(RecipeCategory.MISC, ModItems.RAW_MITHRIL.get(), 9)
+                .requires(ModBlocks.RAW_MITHRIL_BLOCK)
+                .unlockedBy(getHasName(ModBlocks.RAW_MITHRIL_BLOCK.get()), has(ModBlocks.RAW_MITHRIL_BLOCK))
+                .group(MITHRIL_GROUP)
+                .save(output);
 
         oxysSmithing(Items.NETHERITE_SWORD, RecipeCategory.COMBAT, ModItems.OXYS_SWORD.get());
         oxysSmithing(Items.NETHERITE_PICKAXE, RecipeCategory.TOOLS, ModItems.OXYS_PICKAXE.get());
@@ -187,6 +332,25 @@ public class ModRecipeProvider extends RecipeProvider {
         trapdoorBuilder(ModBlocks.YEW_TRAPDOOR.get(), Ingredient.of(ModBlocks.YEW_PLANKS.get()))
                 .unlockedBy(getHasName(ModBlocks.YEW_PLANKS.get()), has(ModBlocks.YEW_PLANKS))
                 .group(YEW_GROUP).save(output);
+
+        shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ANCIENT_PACKED_ICE.get())
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', ModBlocks.ANCIENT_ICE.get())
+                .unlockedBy(getHasName(ModBlocks.ANCIENT_ICE.get()), has(ModBlocks.ANCIENT_ICE))
+                .group(ANCIENT_ICE)
+                .save(output);
+
+        shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.ANCIENT_BLUE_ICE.get())
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', ModBlocks.ANCIENT_PACKED_ICE.get())
+                .unlockedBy(getHasName(ModBlocks.ANCIENT_PACKED_ICE.get()), has(ModBlocks.ANCIENT_PACKED_ICE))
+                .group(ANCIENT_ICE)
+                .save(output);
+
     }
 
 

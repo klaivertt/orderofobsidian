@@ -16,6 +16,8 @@ public class ModTags
     {
         public static final TagKey<Block> SUPPORTS_YEW = createTag("supports_yew");
         public static final TagKey<Block> INCORRECT_FOR_OXYS_TOOL = createTag("incorrect_for_oxys_tool");
+        public static final TagKey<Block> ANCIENT_ICE = createTag("ancient_ice");
+        public static final TagKey<Block> END_MOSS_GRASS = createTag("end_moss_grass");
         private static TagKey<Block> createTag(String name)
         {
             return BlockTags.create(Identifier.fromNamespaceAndPath(OrderOfObsidian.MOD_ID, name));

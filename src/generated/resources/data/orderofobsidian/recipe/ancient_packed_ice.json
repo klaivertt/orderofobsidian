@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "ancient_ice",
+  "key": {
+    "A": "orderofobsidian:ancient_ice"
+  },
+  "pattern": [
+    "AAA",
+    "AAA",
+    "AAA"
+  ],
+  "result": {
+    "id": "orderofobsidian:ancient_packed_ice"
+  }
+}

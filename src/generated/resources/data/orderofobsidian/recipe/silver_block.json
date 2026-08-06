@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "silver",
+  "key": {
+    "A": "orderofobsidian:silver_ingot"
+  },
+  "pattern": [
+    "AAA",
+    "AAA",
+    "AAA"
+  ],
+  "result": {
+    "id": "orderofobsidian:silver_block"
+  }
+}

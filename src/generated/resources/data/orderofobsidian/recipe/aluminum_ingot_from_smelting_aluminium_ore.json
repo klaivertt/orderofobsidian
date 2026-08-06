@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "experience": 0.7,
+  "group": "aluminium",
+  "ingredient": "orderofobsidian:aluminium_ore",
+  "result": {
+    "id": "orderofobsidian:aluminum_ingot"
+  }
+}

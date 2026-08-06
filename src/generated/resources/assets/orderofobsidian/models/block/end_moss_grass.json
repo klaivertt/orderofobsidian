@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "orderofobsidian:block/end_moss_grass"
+  }
+}

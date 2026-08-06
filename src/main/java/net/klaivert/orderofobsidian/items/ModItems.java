@@ -42,6 +42,17 @@ public class ModItems
     public static final DeferredItem<Item> OXYS_BOOTS = items.registerItem("oxys_boots",
             properties -> new Item(properties.humanoidArmor(ModArmorMaterials.OXYS_ARMOR_MATERIAL, ArmorType.BOOTS)));
 
+    public static final DeferredItem<Item> ALUMINIUM_INGOT = items.registerSimpleItem("aluminium_ingot");
+    public static final DeferredItem<Item> RAW_ALUMINIUM = items.registerSimpleItem("raw_aluminium");
+
+    public static final DeferredItem<Item> LEAD_INGOT = items.registerSimpleItem("lead_ingot");
+    public static final DeferredItem<Item> RAW_LEAD = items.registerSimpleItem("raw_lead");
+
+    public static final DeferredItem<Item> MITHRIL_INGOT = items.registerSimpleItem("mithril_ingot");
+    public static final DeferredItem<Item> RAW_MITHRIL = items.registerSimpleItem("raw_mithril");
+
+    public static final DeferredItem<Item> SILVER_INGOT = items.registerSimpleItem("silver_ingot");
+    public static final DeferredItem<Item> RAW_SILVER = items.registerSimpleItem("raw_silver");
 
     public static void Register(IEventBus _eventBus)
     {
