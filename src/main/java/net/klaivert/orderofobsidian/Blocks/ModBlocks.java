@@ -1,6 +1,7 @@
 package net.klaivert.orderofobsidian.Blocks;
 
 import net.klaivert.orderofobsidian.Blocks.Custom.BrackenBushBlock;
+import net.klaivert.orderofobsidian.Blocks.Custom.EndHeatherStoneBlock;
 import net.klaivert.orderofobsidian.Blocks.Custom.YewLogBlock;
 import net.klaivert.orderofobsidian.Blocks.Custom.YewSaplingBlock;
 import net.klaivert.orderofobsidian.OrderOfObsidian;
@@ -248,12 +249,6 @@ public class ModBlocks {
             )
     );
 
-//    public static final DeferredBlock<Block> YEW_LEAF_LITTER = RegisterBlock("yew_leaf_litter",
-//            properties -> new LeafLitterBlock(
-//                    properties.noCollision().instabreak().replaceable()
-//                            .sound(SoundType.CHERRY_LEAVES)
-//            )
-//    );
 
     public static final DeferredBlock<Block> YEW_SAPLING = RegisterBlock("yew_sapling",
             properties -> new YewSaplingBlock(
@@ -263,8 +258,8 @@ public class ModBlocks {
     );
 
     public static final DeferredBlock<Block> END_HEATHER_STONE = RegisterBlock("end_heather_stone",
-            properties -> new GrassBlock(
-                    properties.strength(2.0f, 3.0f).sound(SoundType.STONE)
+            properties -> new EndHeatherStoneBlock(
+                    properties.strength(2.0f, 3.0f).sound(SoundType.STONE).randomTicks()
             )
     );
 

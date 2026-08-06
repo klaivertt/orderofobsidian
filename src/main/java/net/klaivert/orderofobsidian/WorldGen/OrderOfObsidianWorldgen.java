@@ -24,10 +24,12 @@ import net.minecraft.world.level.levelgen.feature.FossilFeatureConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.*;
 import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize;
 import net.minecraft.world.level.levelgen.feature.foliageplacers.BlobFoliagePlacer;
+import net.minecraft.world.level.levelgen.feature.foliageplacers.FancyFoliagePlacer;
 import net.minecraft.world.level.levelgen.feature.foliageplacers.RandomSpreadFoliagePlacer;
 import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
 import net.minecraft.world.level.levelgen.feature.stateproviders.WeightedStateProvider;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.BendingTrunkPlacer;
+import net.minecraft.world.level.levelgen.feature.trunkplacers.FancyTrunkPlacer;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.ForkingTrunkPlacer;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.StraightTrunkPlacer;
 import net.minecraft.world.level.levelgen.placement.*;
@@ -114,16 +116,11 @@ public final class OrderOfObsidianWorldgen {
                         Feature.TREE,
                         new TreeConfiguration.TreeConfigurationBuilder(
                                 BlockStateProvider.simple(ModBlocks.YEW_LOG.get()),
-                                new BendingTrunkPlacer(8, 3, 2, 3, UniformInt.of(1, 3)),
+                                new FancyTrunkPlacer(10, 6, 8),
                                 BlockStateProvider.simple(ModBlocks.YEW_LEAVES.get()),
-                                new RandomSpreadFoliagePlacer(
-                                        ConstantInt.of(2),
-                                        ConstantInt.of(4),
-                                        ConstantInt.of(3),
-                                        60
-                                ),
-                                new TwoLayersFeatureSize(3, 1, 6),
-                                BlockStateProvider.simple(Blocks.AIR)
+                                new FancyFoliagePlacer(ConstantInt.of(2), ConstantInt.of(4), 4),
+                                new TwoLayersFeatureSize(0, 0, 0, java.util.OptionalInt.of(6)),
+                                BlockStateProvider.simple(Blocks.END_STONE)
                         ).ignoreVines().build()
                 )
         );
