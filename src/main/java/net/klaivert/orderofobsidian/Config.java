@@ -18,18 +18,6 @@ public class Config
 {
     private static final ModConfigSpec.Builder BUILDER = new ModConfigSpec.Builder();
 
-    public static final ModConfigSpec.BooleanValue LOG_DIRT_BLOCK = BUILDER
-            .comment("Whether to log the dirt block on common setup")
-            .define("logDirtBlock", true);
-
-    public static final ModConfigSpec.IntValue MAGIC_NUMBER = BUILDER
-            .comment("A magic number")
-            .defineInRange("magicNumber", 42, 0, Integer.MAX_VALUE);
-
-    public static final ModConfigSpec.ConfigValue<String> MAGIC_NUMBER_INTRODUCTION = BUILDER
-            .comment("What you want the introduction message to be for the magic number")
-            .define("magicNumberIntroduction", "The magic number is... ");
-
     // a list of strings that are treated as resource locations for items
     public static final ModConfigSpec.ConfigValue<List<? extends String>> ITEM_STRINGS = BUILDER
             .comment("A list of items to log on common setup.")
@@ -38,7 +26,7 @@ public class Config
     // === oxys worldgen config ===
     public static final ModConfigSpec.IntValue OXYS_SPAWN_CHANCE_PERCENT = BUILDER
             .comment("Chance (0-100) for a chunk to contain one oxys vein")
-            .defineInRange("oxysSpawnChancePercent", 25, 0, 100);
+            .defineInRange("oxysSpawnChancePercent", 20, 0, 100);
 
     public static final ModConfigSpec.IntValue OXYS_VEIN_WEIGHT_SIZE_1 = BUILDER
             .comment("Relative weight for generating a vein of size 1 (higher = more likely; used with sizes 2 and 3)")

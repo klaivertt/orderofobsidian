@@ -8,11 +8,13 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.tags.BiomeTags;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.util.random.WeightedList;
 import net.minecraft.util.valueproviders.ConstantInt;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.level.biome.Biomes;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.minecraft.world.level.levelgen.GenerationStep;
@@ -33,19 +35,18 @@ import net.minecraft.world.level.levelgen.feature.trunkplacers.FancyTrunkPlacer;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.ForkingTrunkPlacer;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.StraightTrunkPlacer;
 import net.minecraft.world.level.levelgen.placement.*;
-import net.minecraft.world.level.levelgen.structure.templatesystem.BlockMatchTest;
+import net.minecraft.world.level.levelgen.structure.templatesystem.*;
 import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.world.BiomeModifier;
 import net.neoforged.neoforge.common.world.BiomeModifiers;
 import net.neoforged.neoforge.registries.NeoForgeRegistries;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.resources.Identifier;
-import net.minecraft.world.level.levelgen.structure.templatesystem.StructureProcessorList;
-import net.minecraft.world.level.levelgen.structure.templatesystem.RuleProcessor;
-import net.minecraft.world.level.levelgen.structure.templatesystem.ProcessorRule;
-import net.minecraft.world.level.levelgen.structure.templatesystem.AlwaysTrueTest;
 
 import java.util.List;
+import java.util.function.Supplier;
+
+import static net.klaivert.orderofobsidian.WorldGen.ModOreData.*;
 
 public final class OrderOfObsidianWorldgen {
 
@@ -55,29 +56,76 @@ public final class OrderOfObsidianWorldgen {
     private static final int END_MOSS_GRASS_COUNT = 2;
     private static final int TWISTED_END_MOSS_GRASS_COUNT = 2;
 
-    public static final ResourceKey<ConfiguredFeature<?, ?>> OXYS_ORE = configuredFeatureKey("oxys_ore");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> END_DEPTHSTONE_PATCH = configuredFeatureKey("end_depthstone_patch");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> YEW_TREE = configuredFeatureKey("yew_tree");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> BRACKEN_BUSH = configuredFeatureKey("bracken_bush");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> END_MOSS_GRASS = configuredFeatureKey("end_moss_grass");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> TWISTED_END_MOSS_GRASS = configuredFeatureKey("twisted_end_moss_grass");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> ANCIENT_BONE_FOSSIL = configuredFeatureKey("ancient_bone_fossil");
+    //Ore gen
+    public static final ResourceKey<BiomeModifier> ADD_END_ORES =
+            biomeModifierKey("add_end_ores");
 
-    public static final ResourceKey<PlacedFeature> OXYS_ORE_PLACED = placedFeatureKey("oxys_ore");
-    public static final ResourceKey<PlacedFeature> END_DEPTHSTONE_PATCH_PLACED = placedFeatureKey("end_depthstone_patch");
-    public static final ResourceKey<PlacedFeature> YEW_TREE_PLACED = placedFeatureKey("yew_tree");
-    public static final ResourceKey<PlacedFeature> BRACKEN_BUSH_PLACED = placedFeatureKey("bracken_bush");
-    public static final ResourceKey<PlacedFeature> END_MOSS_GRASS_PLACED = placedFeatureKey("end_moss_grass");
-    public static final ResourceKey<PlacedFeature> TWISTED_END_MOSS_GRASS_PLACED = placedFeatureKey("twisted_end_moss_grass");
-    public static final ResourceKey<PlacedFeature> ANCIENT_BONE_FOSSIL_PLACED = placedFeatureKey("ancient_bone_fossil");
+    public static final RuleTest STONE_ORE_REPLACEABLES =
+            new TagMatchTest(BlockTags.STONE_ORE_REPLACEABLES);
 
-    public static final ResourceKey<BiomeModifier> ADD_END_ORES = biomeModifierKey("add_end_ores");
-    public static final ResourceKey<BiomeModifier> ADD_YEW_TREE = biomeModifierKey("add_yew_tree");
-    public static final ResourceKey<BiomeModifier> ADD_BRACKEN_BUSH = biomeModifierKey("add_bracken_bush");
-    public static final ResourceKey<BiomeModifier> ADD_END_MOSS_GRASS = biomeModifierKey("add_end_moss_grass");
-    public static final ResourceKey<BiomeModifier> ADD_TWISTED_END_MOSS_GRASS = biomeModifierKey("add_twisted_end_moss_grass");
-    public static final ResourceKey<BiomeModifier> ADD_ANCIENT_BONE_FOSSIL = biomeModifierKey("add_ancient_bone_fossil");
-    public static final ResourceKey<StructureProcessorList> ANCIENT_BONE_PROCESSORS = ResourceKey.create(Registries.PROCESSOR_LIST, OrderOfObsidian.id("ancient_bone_fossil"));
+    public static final RuleTest DEEPSLATE_ORE_REPLACEABLES =
+            new TagMatchTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
+
+    //OXYS
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OXYS_ORE =
+            configuredFeatureKey("oxys_ore");
+    public static final ResourceKey<PlacedFeature> OXYS_ORE_PLACED =
+            placedFeatureKey("oxys_ore");
+
+
+    //DEPTHSTONE
+    public static final ResourceKey<ConfiguredFeature<?, ?>> END_DEPTHSTONE_PATCH =
+            configuredFeatureKey("end_depthstone_patch");
+
+    public static final ResourceKey<PlacedFeature> END_DEPTHSTONE_PATCH_PLACED =
+            placedFeatureKey("end_depthstone_patch");
+
+    //TREE
+    public static final ResourceKey<ConfiguredFeature<?, ?>> YEW_TREE =
+            configuredFeatureKey("yew_tree");
+
+    public static final ResourceKey<PlacedFeature> YEW_TREE_PLACED =
+            placedFeatureKey("yew_tree");
+
+    public static final ResourceKey<BiomeModifier> ADD_YEW_TREE =
+            biomeModifierKey("add_yew_tree");
+
+    //PLANT
+    public static final ResourceKey<ConfiguredFeature<?, ?>> BRACKEN_BUSH =
+            configuredFeatureKey("bracken_bush");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> END_MOSS_GRASS =
+            configuredFeatureKey("end_moss_grass");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> TWISTED_END_MOSS_GRASS =
+            configuredFeatureKey("twisted_end_moss_grass");
+
+    public static final ResourceKey<PlacedFeature> BRACKEN_BUSH_PLACED =
+            placedFeatureKey("bracken_bush");
+    public static final ResourceKey<PlacedFeature> END_MOSS_GRASS_PLACED =
+            placedFeatureKey("end_moss_grass");
+    public static final ResourceKey<PlacedFeature> TWISTED_END_MOSS_GRASS_PLACED =
+            placedFeatureKey("twisted_end_moss_grass");
+
+    public static final ResourceKey<BiomeModifier> ADD_BRACKEN_BUSH =
+            biomeModifierKey("add_bracken_bush");
+    public static final ResourceKey<BiomeModifier> ADD_END_MOSS_GRASS =
+            biomeModifierKey("add_end_moss_grass");
+    public static final ResourceKey<BiomeModifier> ADD_TWISTED_END_MOSS_GRASS =
+            biomeModifierKey("add_twisted_end_moss_grass");
+
+    //ANCIENT BONE FOSSIL
+    public static final ResourceKey<ConfiguredFeature<?, ?>> ANCIENT_BONE_FOSSIL =
+            configuredFeatureKey("ancient_bone_fossil");
+
+    public static final ResourceKey<PlacedFeature> ANCIENT_BONE_FOSSIL_PLACED =
+            placedFeatureKey("ancient_bone_fossil");
+
+    public static final ResourceKey<BiomeModifier> ADD_ANCIENT_BONE_FOSSIL =
+            biomeModifierKey("add_ancient_bone_fossil");
+
+    public static final ResourceKey<StructureProcessorList> ANCIENT_BONE_PROCESSORS =
+            ResourceKey.create(Registries.PROCESSOR_LIST, OrderOfObsidian.id("ancient_bone_fossil"));
+
+
 
     private OrderOfObsidianWorldgen() {
     }
@@ -169,6 +217,11 @@ public final class OrderOfObsidianWorldgen {
                         4
                 )
         ));
+
+        registerOreConfigured(_context, ALUMINIUM);
+        registerOreConfigured(_context, LEAD);
+        registerOreConfigured(_context, SILVER);
+        registerOreConfigured(_context, MITHRIL);
     }
 
     public static void bootstrapPlacedFeatures(BootstrapContext<PlacedFeature> _context) {
@@ -267,6 +320,13 @@ public final class OrderOfObsidianWorldgen {
                 )
         ));
 
+        HolderGetter<ConfiguredFeature<?, ?>> configured = _context.lookup(Registries.CONFIGURED_FEATURE);
+
+        registerOrePlaced(_context, configured, ALUMINIUM);
+        registerOrePlaced(_context, configured, LEAD);
+        registerOrePlaced(_context, configured, SILVER);
+        registerOrePlaced(_context, configured, MITHRIL);
+
     }
 
     public static void bootstrapBiomeModifiers(BootstrapContext<BiomeModifier> _context) {
@@ -332,17 +392,85 @@ public final class OrderOfObsidianWorldgen {
                 GenerationStep.Decoration.UNDERGROUND_STRUCTURES
         ));
 
+        registerOreBiomeModifier(_context, biomes, placedFeatures, ALUMINIUM);
+        registerOreBiomeModifier(_context, biomes, placedFeatures, LEAD);
+        registerOreBiomeModifier(_context, biomes, placedFeatures, SILVER);
+        registerOreBiomeModifier(_context, biomes, placedFeatures, MITHRIL);
     }
 
-    private static ResourceKey<ConfiguredFeature<?, ?>> configuredFeatureKey(String _name) {
+    private static void registerOrePlaced(
+            BootstrapContext<PlacedFeature> context,
+            HolderGetter<ConfiguredFeature<?, ?>> configured,
+            ModOreData ore
+    ) {
+        context.register(
+                ore.placed(),
+                new PlacedFeature(
+                        configured.getOrThrow(ore.configured()),
+                        List.of(
+                                CountPlacement.of(ore.count()),
+                                InSquarePlacement.spread(),
+                                HeightRangePlacement.triangle(
+                                        VerticalAnchor.absolute(ore.minY()),
+                                        VerticalAnchor.absolute(ore.maxY())
+                                ),
+                                BiomeFilter.biome()
+                        )
+                )
+        );
+    }
+
+    private static void registerOreConfigured(
+            BootstrapContext<ConfiguredFeature<?, ?>> context,
+            ModOreData ore
+    ) {
+        List<OreConfiguration.TargetBlockState> targets = List.of(
+                OreConfiguration.target(
+                        STONE_ORE_REPLACEABLES,
+                        ore.stoneOre().get().defaultBlockState()
+                ),
+                OreConfiguration.target(
+                        DEEPSLATE_ORE_REPLACEABLES,
+                        ore.deepslateOre().get().defaultBlockState()
+                )
+        );
+
+        context.register(
+                ore.configured(),
+                new ConfiguredFeature<>(
+                        Feature.ORE,
+                        new OreConfiguration(targets, ore.veinSize())
+                )
+        );
+    }
+
+    private static void registerOreBiomeModifier(
+            BootstrapContext<BiomeModifier> context,
+            HolderGetter<Biome> biomes,
+            HolderGetter<PlacedFeature> placed,
+            ModOreData ore
+    ) {
+        context.register(
+                ore.modifier(),
+                new BiomeModifiers.AddFeaturesBiomeModifier(
+                        biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                        HolderSet.direct(
+                                placed.getOrThrow(ore.placed())
+                        ),
+                        GenerationStep.Decoration.UNDERGROUND_ORES
+                )
+        );
+    }
+
+    static ResourceKey<ConfiguredFeature<?, ?>> configuredFeatureKey(String _name) {
         return ResourceKey.create(Registries.CONFIGURED_FEATURE, OrderOfObsidian.id(_name));
     }
 
-    private static ResourceKey<PlacedFeature> placedFeatureKey(String _name) {
+    static ResourceKey<PlacedFeature> placedFeatureKey(String _name) {
         return ResourceKey.create(Registries.PLACED_FEATURE, OrderOfObsidian.id(_name));
     }
 
-    private static ResourceKey<BiomeModifier> biomeModifierKey(String _name) {
+    static ResourceKey<BiomeModifier> biomeModifierKey(String _name) {
         return ResourceKey.create(NeoForgeRegistries.Keys.BIOME_MODIFIERS, OrderOfObsidian.id(_name));
     }
 }
