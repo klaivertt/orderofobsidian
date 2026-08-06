@@ -32,6 +32,11 @@ public final class ModBiomes {
             ModBiomes::heatherIslands
     );
 
+    public static final ResourceKey<Biome> FROZEN_END = register(
+            "frozen_end",
+            ModBiomes::frozenEnd
+    );
+
     private ModBiomes() {}
 
     public static void load() {
@@ -60,9 +65,6 @@ public final class ModBiomes {
         spawns.addSpawn(MobCategory.MONSTER, 3, new MobSpawnSettings.SpawnerData(EntityTypes.ENDERMAN, 1, 4));
 
         BiomeGenerationSettings.Builder generation = new BiomeGenerationSettings.Builder(placedFeatures, carvers);
-//        generation.addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, OrderOfObsidianWorldgen.OXYS_ORE_PLACED);
-//        generation.addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, OrderOfObsidianWorldgen.END_DEPTHSTONE_PATCH_PLACED);
-//        generation.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, OrderOfObsidianWorldgen.YEW_TREE_PLACED);
 
         BiomeSpecialEffects effects = new BiomeSpecialEffects.Builder()
                 .waterColor(0x491e49)
@@ -78,6 +80,36 @@ public final class ModBiomes {
         return new Biome.BiomeBuilder()
                 .hasPrecipitation(false)
                 .temperature(0.5f)
+                .downfall(0.5f)
+                .specialEffects(effects)
+                .mobSpawnSettings(spawns.build())
+                .generationSettings(generation.build())
+                .build();
+    }
+
+
+    private static Biome frozenEnd(HolderGetter<PlacedFeature> placedFeatures,
+                                        HolderGetter<ConfiguredWorldCarver<?>> carvers) {
+
+        MobSpawnSettings.Builder spawns = new MobSpawnSettings.Builder();
+        spawns.addSpawn(MobCategory.MONSTER, 3, new MobSpawnSettings.SpawnerData(EntityTypes.ENDERMAN, 1, 4));
+
+        BiomeGenerationSettings.Builder generation = new BiomeGenerationSettings.Builder(placedFeatures, carvers);
+
+        BiomeSpecialEffects effects = new BiomeSpecialEffects.Builder()
+                .waterColor(0x3f76e4)
+                .grassColorOverride(0x7a2d7a)
+                .foliageColorOverride(0x7a2d7a)
+                .build();
+
+        EnvironmentAttributeMap attributes = EnvironmentAttributeMap.builder()
+                .set(EnvironmentAttributes.FOG_COLOR, 0xa0c8d7)
+                .set(EnvironmentAttributes.SKY_COLOR, 0x000000)
+                .build();
+
+        return new Biome.BiomeBuilder()
+                .hasPrecipitation(false)
+                .temperature(0.0f)
                 .downfall(0.5f)
                 .specialEffects(effects)
                 .mobSpawnSettings(spawns.build())
