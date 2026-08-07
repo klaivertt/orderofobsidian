@@ -18,6 +18,8 @@ public class ModTags
         public static final TagKey<Block> INCORRECT_FOR_OXYS_TOOL = createTag("incorrect_for_oxys_tool");
         public static final TagKey<Block> ANCIENT_ICE = createTag("ancient_ice");
         public static final TagKey<Block> SUPPORTS_END_MOSS_GRASS = createTag("supports_end_moss_grass");
+        public static final TagKey<Block> SUPPORTS_ICY_FIREFLY_BUSH = createTag("supports_icy_firefly_bush");
+
         private static TagKey<Block> createTag(String name)
         {
             return BlockTags.create(Identifier.fromNamespaceAndPath(OrderOfObsidian.MOD_ID, name));
@@ -28,6 +30,8 @@ public class ModTags
     {
 
         public static final TagKey<Item> OXYS_REPAIRABLE = createTag("oxys_repairable");
+        public static final TagKey<Item> LEAD_REPAIRABLE = createTag("lead_repairable");
+        public static final TagKey<Item> DUST = createTag("dust");
 
         private static TagKey<Item> createTag(String name)
         {

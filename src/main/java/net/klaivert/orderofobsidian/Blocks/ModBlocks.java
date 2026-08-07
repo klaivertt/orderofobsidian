@@ -286,6 +286,12 @@ public class ModBlocks {
             )
     );
 
+    public static final DeferredBlock<Block> ICY_FIREFLY_BUSH = RegisterBlock("icy_firefly_bush",
+            properties -> new IcyFireflyBushBlock(
+                    properties.noCollision().instabreak().replaceable()
+                            .sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ)
+            )
+    );
 
     public static final DeferredBlock<Block> ALUMINIUM_ORE = RegisterBlock("aluminium_ore",
             properties -> new Block(
@@ -308,6 +314,7 @@ public class ModBlocks {
                             .sound(SoundType.METAL)
             )
     );
+
     public static final DeferredBlock<Block> RAW_ALUMINIUM_BLOCK = RegisterBlock("raw_aluminium_block",
             properties -> new Block(
                     properties.strength(5.0f)
@@ -414,6 +421,14 @@ public class ModBlocks {
             properties -> new Block(
                     properties.noCollision().instabreak().replaceable()
                             .sound(SoundType.GRASS).offsetType(BlockBehaviour.OffsetType.XZ)
+            )
+    );
+
+    public static final DeferredBlock<Block> DURALUMIN_BLOCK = RegisterBlock("duralumin_block",
+            properties -> new Block(
+                    properties.strength(5.0f)
+                            .requiresCorrectToolForDrops()
+                            .sound(SoundType.METAL)
             )
     );
 

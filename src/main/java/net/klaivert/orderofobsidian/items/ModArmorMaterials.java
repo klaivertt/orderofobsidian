@@ -17,11 +17,16 @@ public class ModArmorMaterials {
     public static final ResourceKey<? extends Registry<EquipmentAsset>> ROOT_ID = ResourceKey.createRegistryKey(Identifier.withDefaultNamespace("equipment_asset"));
 
     public static final ResourceKey<EquipmentAsset> OXYS_KEY = ResourceKey.create(ROOT_ID, Identifier.fromNamespaceAndPath(OrderOfObsidian.MOD_ID, "oxys"));
+    public static final ResourceKey<EquipmentAsset> LEAD_KEY = ResourceKey.create(ROOT_ID, Identifier.fromNamespaceAndPath(OrderOfObsidian.MOD_ID, "lead"));
+
 
     public static final ArmorMaterial OXYS_ARMOR_MATERIAL = new ArmorMaterial(1200,
             makeDefense(6, 8, 10, 6, 15), 30, SoundEvents.ARMOR_EQUIP_NETHERITE,
             4.5f, 0.2f, ModTags.Items.OXYS_REPAIRABLE, OXYS_KEY);
 
+    public static final ArmorMaterial LEAD_ARMOR_MATERIAL = new ArmorMaterial(500,
+            makeDefense(3, 6, 8, 3, 8), 9, SoundEvents.ARMOR_EQUIP_NETHERITE,
+            0f, 0f, ModTags.Items.LEAD_REPAIRABLE, LEAD_KEY);
 
     private static Map<ArmorType, Integer> makeDefense(int boots, int legs, int chest, int helm, int body) {
         return Maps.newEnumMap(

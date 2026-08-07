@@ -33,8 +33,22 @@ public class ModItemTagsProvider extends ItemTagsProvider {
                 .add(ModItems.getRK(ModItems.MITHRIL_INGOT.get()))
                 .add(ModItems.getRK(ModItems.SILVER_INGOT.get()));
 
+        tag(ModTags.Items.DUST)
+                .add(ModItems.getRK(ModItems.ALUMINIUM_DUST.get()))
+                .add(ModItems.getRK(ModItems.LEAD_DUST.get()))
+                .add(ModItems.getRK(ModItems.SILVER_DUST.get()))
+                .add(ModItems.getRK(ModItems.MITHRIL_DUST.get()))
+                .add(ModItems.getRK(ModItems.COPPER_DUST.get()))
+                .add(ModItems.getRK(ModItems.IRON_DUST.get()))
+                .add(ModItems.getRK(ModItems.GOLD_DUST.get()))
+                .add(ModItems.getRK(ModItems.NETHERITE_DUST.get()));
+
         tag(Tags.Items.STORAGE_BLOCKS)
-                .add(ModItems.getRK(ModBlocks.OXYS_BLOCK.get().asItem()));
+                .add(ModItems.getRK(ModBlocks.OXYS_BLOCK.get().asItem()))
+                .add(ModItems.getRK(ModBlocks.ALUMINIUM_BLOCK.get().asItem()))
+                .add(ModItems.getRK(ModBlocks.LEAD_BLOCK.get().asItem()))
+                .add(ModItems.getRK(ModBlocks.MITHRIL_BLOCK.get().asItem()))
+                .add(ModItems.getRK(ModBlocks.SILVER_BLOCK.get().asItem()));
 
         tag(Tags.Items.END_STONES)
                 .add(ModItems.getRK(ModBlocks.END_DEPHSTONE.get().asItem()));
@@ -95,7 +109,8 @@ public class ModItemTagsProvider extends ItemTagsProvider {
                 .add(ModItems.getRK(ModItems.OXYS_LEGGINGS.get().asItem()));
 
         tag(ItemTags.FOOT_ARMOR)
-                .add(ModItems.getRK(ModItems.OXYS_BOOTS.get().asItem()));
+                .add(ModItems.getRK(ModItems.OXYS_BOOTS.get().asItem()))
+                .add(ModItems.getRK(ModItems.LEAD_BOOTS.get().asItem()));
 
     }
 }

@@ -47,6 +47,7 @@ public final class OrderOfObsidianWorldgen {
     private static final int YEW_TREE_COUNT = 1;
     private static final int END_MOSS_GRASS_COUNT = 2;
     private static final int TWISTED_END_MOSS_GRASS_COUNT = 2;
+    private static final int ICY_FIREFLY_BUSH_COUNT = 5;
 
     //Ore gen
     public static final ResourceKey<BiomeModifier> ADD_END_ORES =
@@ -90,6 +91,9 @@ public final class OrderOfObsidianWorldgen {
     public static final ResourceKey<ConfiguredFeature<?, ?>> TWISTED_END_MOSS_GRASS =
             configuredFeatureKey("twisted_end_moss_grass");
 
+    public static final ResourceKey<ConfiguredFeature<?, ?>> ICY_FIREFLY_BUSH =
+            configuredFeatureKey("icy_firefly_bush");
+
     public static final ResourceKey<PlacedFeature> BRACKEN_BUSH_PLACED =
             placedFeatureKey("bracken_bush");
     public static final ResourceKey<PlacedFeature> END_MOSS_GRASS_PLACED =
@@ -97,12 +101,17 @@ public final class OrderOfObsidianWorldgen {
     public static final ResourceKey<PlacedFeature> TWISTED_END_MOSS_GRASS_PLACED =
             placedFeatureKey("twisted_end_moss_grass");
 
+    public static final ResourceKey<PlacedFeature> ICY_FIREFLY_BUSH_PLACED =
+            placedFeatureKey("icy_firefly_bush");
+
     public static final ResourceKey<BiomeModifier> ADD_BRACKEN_BUSH =
             biomeModifierKey("add_bracken_bush");
     public static final ResourceKey<BiomeModifier> ADD_END_MOSS_GRASS =
             biomeModifierKey("add_end_moss_grass");
     public static final ResourceKey<BiomeModifier> ADD_TWISTED_END_MOSS_GRASS =
             biomeModifierKey("add_twisted_end_moss_grass");
+    public static final ResourceKey<BiomeModifier> ADD_ICY_FIREFLY_BUSH =
+            biomeModifierKey("add_icy_firefly_bush");
 
     //ANCIENT BONE FOSSIL
     public static final ResourceKey<ConfiguredFeature<?, ?>> ANCIENT_BONE_FOSSIL =
@@ -201,6 +210,9 @@ public final class OrderOfObsidianWorldgen {
 
         _context.register(TWISTED_END_MOSS_GRASS, new ConfiguredFeature<>(Feature.SIMPLE_BLOCK,
                 new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.TWISTED_END_MOSS_GRASS.get()))));
+
+        _context.register(ICY_FIREFLY_BUSH, new ConfiguredFeature<>(Feature.SIMPLE_BLOCK,
+                new SimpleBlockConfiguration(BlockStateProvider.simple(ModBlocks.ICY_FIREFLY_BUSH.get()))));
 
 
         _context.register(ANCIENT_BONE_FOSSIL, new ConfiguredFeature<>(Feature.FOSSIL,
@@ -354,6 +366,19 @@ public final class OrderOfObsidianWorldgen {
                 )
         ));
 
+        _context.register(ICY_FIREFLY_BUSH_PLACED, new PlacedFeature(
+                configuredFeatures.getOrThrow(ICY_FIREFLY_BUSH),
+                List.of(
+                        CountPlacement.of(ICY_FIREFLY_BUSH_COUNT),
+                        InSquarePlacement.spread(),
+                        HeightmapPlacement.onHeightmap(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES),
+                        BlockPredicateFilter.forPredicate(
+                                BlockPredicate.matchesTag(new Vec3i(0, -1, 0), ModTags.Blocks.SUPPORTS_ICY_FIREFLY_BUSH)
+                        ),
+                        BiomeFilter.biome()
+                )
+        ));
+
         _context.register(ANCIENT_BONE_FOSSIL_PLACED, new PlacedFeature(
                 configuredFeatures.getOrThrow(ANCIENT_BONE_FOSSIL),
                 List.of(
@@ -442,6 +467,14 @@ public final class OrderOfObsidianWorldgen {
                 HolderSet.direct(
                         biomes.getOrThrow(Biomes.END_HIGHLANDS),
                         biomes.getOrThrow(ModBiomes.HEATHER_ISLANDS)
+                ),
+                HolderSet.direct(placedFeatures.getOrThrow(END_MOSS_GRASS_PLACED)),
+                GenerationStep.Decoration.VEGETAL_DECORATION
+        ));
+
+        _context.register(ADD_ICY_FIREFLY_BUSH, new BiomeModifiers.AddFeaturesBiomeModifier(
+                HolderSet.direct(
+                        biomes.getOrThrow(ModBiomes.FROZEN_END)
                 ),
                 HolderSet.direct(placedFeatures.getOrThrow(END_MOSS_GRASS_PLACED)),
                 GenerationStep.Decoration.VEGETAL_DECORATION

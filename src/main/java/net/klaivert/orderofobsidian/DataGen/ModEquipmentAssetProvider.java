@@ -26,6 +26,10 @@ public class ModEquipmentAssetProvider implements DataProvider {
         output.accept(ModArmorMaterials.OXYS_KEY, EquipmentClientInfo.builder()
                         .addHumanoidLayers(Identifier.fromNamespaceAndPath(OrderOfObsidian.MOD_ID, "oxys"), false)
                 .build());
+
+        output.accept(ModArmorMaterials.LEAD_KEY, EquipmentClientInfo.builder()
+                        .addHumanoidLayers(Identifier.fromNamespaceAndPath(OrderOfObsidian.MOD_ID, "lead"), false)
+                .build());
     }
 
     @Override
@@ -41,6 +45,6 @@ public class ModEquipmentAssetProvider implements DataProvider {
 
     @Override
     public String getName() {
-        return "TutorialMod Equipment Definitions";
+        return "OrderOfObsidian Equipment Definitions";
     }
 }

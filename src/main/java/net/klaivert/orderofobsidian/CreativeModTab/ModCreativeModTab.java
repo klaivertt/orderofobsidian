@@ -40,12 +40,15 @@ public class ModCreativeModTab
         LeadRegistered(_output);
         MithrilRegistered(_output);
         SilverRegistered(_output);
+        DuraluminRegistered(_output);
+        DustRegistered(_output);
         DephstoneRegistered(_output);
         AncientIceRegistered(_output);
         _output.accept(ModBlocks.ANCIENT_BONE);
         _output.accept(ModBlocks.BRACKEN_BUSH);
         _output.accept(ModBlocks.END_MOSS_GRASS);
         _output.accept(ModBlocks.TWISTED_END_MOSS_GRASS);
+        _output.accept(ModBlocks.ICY_FIREFLY_BUSH);
         YewRegistered(_output);
         OxysToolsRegistered(_output);
     }
@@ -127,6 +130,7 @@ public class ModCreativeModTab
         _output.accept(ModBlocks.RAW_ALUMINIUM_BLOCK);
         _output.accept(ModItems.ALUMINIUM_INGOT);
         _output.accept(ModItems.RAW_ALUMINIUM);
+        _output.accept(ModItems.ALUMINIUM_DUST);
     }
 
     protected static void SilverRegistered(CreativeModeTab.Output _output)
@@ -136,6 +140,7 @@ public class ModCreativeModTab
         _output.accept(ModBlocks.SILVER_BLOCK);
         _output.accept(ModItems.RAW_SILVER);
         _output.accept(ModItems.SILVER_INGOT);
+        _output.accept(ModItems.SILVER_DUST);
     }
 
     protected static void MithrilRegistered(CreativeModeTab.Output _output)
@@ -145,6 +150,8 @@ public class ModCreativeModTab
         _output.accept(ModBlocks.MITHRIL_BLOCK);
         _output.accept(ModItems.RAW_MITHRIL);
         _output.accept(ModItems.MITHRIL_INGOT);
+        _output.accept(ModItems.MITHRIL_SCRAP);
+        _output.accept(ModItems.MITHRIL_DUST);
     }
 
     protected static void LeadRegistered(CreativeModeTab.Output _output)
@@ -154,7 +161,21 @@ public class ModCreativeModTab
         _output.accept(ModBlocks.LEAD_BLOCK);
         _output.accept(ModItems.RAW_LEAD);
         _output.accept(ModItems.LEAD_INGOT);
+        _output.accept(ModItems.LEAD_DUST);
     }
 
+    protected static void DuraluminRegistered(CreativeModeTab.Output _output)
+    {
+        _output.accept(ModItems.DURALUMIN_INGOT);
+        _output.accept(ModItems.DURALUMIN_DUST);
+    }
+
+    protected static void DustRegistered(CreativeModeTab.Output _output)
+    {
+        _output.accept(ModItems.COPPER_DUST);
+        _output.accept(ModItems.IRON_DUST);
+        _output.accept(ModItems.GOLD_DUST);
+        _output.accept(ModItems.NETHERITE_DUST);
+    }
 
 }

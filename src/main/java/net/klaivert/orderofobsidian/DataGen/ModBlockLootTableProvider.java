@@ -101,6 +101,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.LEAD_BLOCK.get());
         dropSelf(ModBlocks.MITHRIL_BLOCK.get());
         dropSelf(ModBlocks.SILVER_BLOCK.get());
+        dropSelf(ModBlocks.DURALUMIN_BLOCK.get());
 
         dropSelf(ModBlocks.RAW_ALUMINIUM_BLOCK.get());
         dropSelf(ModBlocks.RAW_LEAD_BLOCK.get());
@@ -159,6 +160,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
         dropSelf(ModBlocks.ANCIENT_BONE.get());
         dropSelf(ModBlocks.BRACKEN_BUSH.get());
+        dropSelf(ModBlocks.ICY_FIREFLY_BUSH.get());
         dropSelf(ModBlocks.END_MOSS_GRASS.get());
         dropSelf(ModBlocks.TWISTED_END_MOSS_GRASS.get());
 

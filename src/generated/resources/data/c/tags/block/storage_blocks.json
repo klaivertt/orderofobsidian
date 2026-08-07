@@ -1,5 +1,10 @@
 {
   "values": [
-    "orderofobsidian:oxys_block"
+    "orderofobsidian:oxys_block",
+    "orderofobsidian:aluminium_block",
+    "orderofobsidian:lead_block",
+    "orderofobsidian:mithril_block",
+    "orderofobsidian:silver_block",
+    "orderofobsidian:duralumin_block"
   ]
 }

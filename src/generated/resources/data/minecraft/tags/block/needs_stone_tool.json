@@ -15,6 +15,11 @@
     "orderofobsidian:end_depthstone_tiles_stairs",
     "orderofobsidian:end_depthstone_tiles_slab",
     "orderofobsidian:end_heather_stone",
-    "orderofobsidian:end_depthstone_tiles_wall"
+    "orderofobsidian:end_depthstone_tiles_wall",
+    "orderofobsidian:duralumin_block",
+    "orderofobsidian:aluminium_ore",
+    "orderofobsidian:lead_ore",
+    "orderofobsidian:deepslate_aluminium_ore",
+    "orderofobsidian:deepslate_lead_ore"
   ]
 }

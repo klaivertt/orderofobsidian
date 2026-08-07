@@ -1,0 +1,31 @@
+{
+  "feature": "orderofobsidian:icy_firefly_bush",
+  "placement": [
+    {
+      "type": "minecraft:count",
+      "count": 5
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:heightmap",
+      "heightmap": "MOTION_BLOCKING_NO_LEAVES"
+    },
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:matching_block_tag",
+        "offset": [
+          0,
+          -1,
+          0
+        ],
+        "tag": "orderofobsidian:supports_icy_firefly_bush"
+      }
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

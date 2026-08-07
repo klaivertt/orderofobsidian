@@ -28,6 +28,18 @@
   "item.orderofobsidian.mithril_ingot": "Mithril Ingot",
   "item.orderofobsidian.silver_ingot": "Silver Ingot",
   "item.orderofobsidian.lead_ingot": "Lead Ingot",
+  "item.orderofobsidian.duralumin_ingot": "Duralumin Ingot",
+
+  "item.orderofobsidian.aluminium_dust": "Aluminium Dust",
+  "item.orderofobsidian.mithril_dust": "Mithril Dust",
+  "item.orderofobsidian.silver_dust": "Silver Dust",
+  "item.orderofobsidian.lead_dust": "Lead Dust",
+  "item.orderofobsidian.duralumin_dust": "Duralumin Dust",
+  "item.orderofobsidian.iron_dust": "Iron Dust",
+  "item.orderofobsidian.copper_dust": "Copper Dust",
+  "item.orderofobsidian.gold_dust": "Gold Dust",
+  "item.orderofobsidian.netherite_dust": "Netherite Dust",
+
 
   "block.orderofobsidian.end_depthstone": "End Depthstone",
   "block.orderofobsidian.cracked_end_depthstone_bricks": "Cracked End Depthstone Bricks",
@@ -79,6 +91,7 @@
   "block.orderofobsidian.lead_block": "Lead Block",
   "block.orderofobsidian.mithril_block": "Mithril Block",
   "block.orderofobsidian.silver_block": "Silver Block",
+  "block.orderofobsidian.duralumin_block": "Duralumin Block",
 
   "block.orderofobsidian.aluminium_ore": "Aluminium Ore",
   "block.orderofobsidian.lead_ore": "Lead Ore",

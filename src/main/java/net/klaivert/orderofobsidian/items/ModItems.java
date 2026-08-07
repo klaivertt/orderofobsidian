@@ -44,15 +44,32 @@ public class ModItems
 
     public static final DeferredItem<Item> ALUMINIUM_INGOT = items.registerSimpleItem("aluminium_ingot");
     public static final DeferredItem<Item> RAW_ALUMINIUM = items.registerSimpleItem("raw_aluminium");
+    public static final DeferredItem<Item> ALUMINIUM_DUST = items.registerSimpleItem("aluminium_dust");
 
     public static final DeferredItem<Item> LEAD_INGOT = items.registerSimpleItem("lead_ingot");
     public static final DeferredItem<Item> RAW_LEAD = items.registerSimpleItem("raw_lead");
+    public static final DeferredItem<Item> LEAD_DUST = items.registerSimpleItem("lead_dust");
 
     public static final DeferredItem<Item> MITHRIL_INGOT = items.registerSimpleItem("mithril_ingot");
     public static final DeferredItem<Item> RAW_MITHRIL = items.registerSimpleItem("raw_mithril");
+    public static final DeferredItem<Item> MITHRIL_DUST = items.registerSimpleItem("mithril_dust");
+    public static final DeferredItem<Item> MITHRIL_SCRAP = items.registerSimpleItem("mithril_scrap");
 
     public static final DeferredItem<Item> SILVER_INGOT = items.registerSimpleItem("silver_ingot");
     public static final DeferredItem<Item> RAW_SILVER = items.registerSimpleItem("raw_silver");
+    public static final DeferredItem<Item> SILVER_DUST = items.registerSimpleItem("silver_dust");
+
+    public static final DeferredItem<Item> DURALUMIN_INGOT = items.registerSimpleItem("duralumin_ingot");
+    public static final DeferredItem<Item> DURALUMIN_DUST = items.registerSimpleItem("duralumin_dust");
+
+    public static final DeferredItem<Item> IRON_DUST = items.registerSimpleItem("iron_dust");
+    public static final DeferredItem<Item> COPPER_DUST = items.registerSimpleItem("copper_dust");
+    public static final DeferredItem<Item> GOLD_DUST = items.registerSimpleItem("gold_dust");
+    public static final DeferredItem<Item> NETHERITE_DUST = items.registerSimpleItem("netherite_dust");
+
+
+    public static final DeferredItem<Item> LEAD_BOOTS = items.registerItem("lead_boots",
+            properties -> new Item(properties.humanoidArmor(ModArmorMaterials.LEAD_ARMOR_MATERIAL, ArmorType.BOOTS)));
 
     public static void Register(IEventBus _eventBus)
     {

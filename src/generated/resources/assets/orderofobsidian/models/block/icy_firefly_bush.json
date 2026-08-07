@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "orderofobsidian:block/icy_firefly_bush"
+  }
+}
