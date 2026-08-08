@@ -1,6 +1,8 @@
 package net.klaivert.orderofobsidian;
 
+import net.klaivert.orderofobsidian.Blocks.ModBlockEntities;
 import net.klaivert.orderofobsidian.Blocks.ModBlocks;
+import net.klaivert.orderofobsidian.Blocks.ModCapabilities;
 import net.klaivert.orderofobsidian.CreativeModTab.ModCreativeModTab;
 import net.klaivert.orderofobsidian.WorldGen.ModBiomes;
 import net.klaivert.orderofobsidian.WorldGen.ModEndBiomes;
@@ -37,9 +39,11 @@ public class OrderOfObsidian
         ModCreativeModTab.Register(_modEventBus);
         ModItems.Register(_modEventBus);
         ModBlocks.Registered(_modEventBus);
+        ModBlockEntities.register(_modEventBus);
         ModFeatures.Registered(_modEventBus);
         ModBiomes.load();
         ModEndBiomes.Register();
+        _modEventBus.addListener(ModCapabilities::register);
 
         NeoForge.EVENT_BUS.register(this);
 

@@ -176,6 +176,8 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropWhenSilkTouch(ModBlocks.ANCIENT_PACKED_ICE.get());
         dropWhenSilkTouch(ModBlocks.ANCIENT_BLUE_ICE.get());
 
+        dropSelf(ModBlocks.CRUSHER.get());
+
     }
 
     protected LootTable.Builder createNoFortuneOreDrop(Block block, Item item) {

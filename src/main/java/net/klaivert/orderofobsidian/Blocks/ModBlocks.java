@@ -432,6 +432,14 @@ public class ModBlocks {
             )
     );
 
+    public static final DeferredBlock<Block> CRUSHER = RegisterBlock("crusher",
+            properties -> new CrusherBlock(
+                    properties.strength(3.0f)
+                            .requiresCorrectToolForDrops()
+                            .sound(SoundType.WOOD)
+            )
+    );
+
     private static <T extends Block> DeferredBlock<T> RegisterBlock(String _name, Function<BlockBehaviour.Properties, T> _function) {
         DeferredBlock<T> toReturn = blocks.registerBlock(_name, _function);
         RegisterBlockItem(_name, toReturn);

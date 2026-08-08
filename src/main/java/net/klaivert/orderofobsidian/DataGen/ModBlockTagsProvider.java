@@ -57,7 +57,8 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
                 .add(ModBlocks.getRK(ModBlocks.DEEPSLATE_ALUMINIUM_ORE.get()))
                 .add(ModBlocks.getRK(ModBlocks.DEEPSLATE_LEAD_ORE.get()))
                 .add(ModBlocks.getRK(ModBlocks.DEEPSLATE_MITHRIL_ORE.get()))
-                .add(ModBlocks.getRK(ModBlocks.DEEPSLATE_SILVER_ORE.get()));
+                .add(ModBlocks.getRK(ModBlocks.DEEPSLATE_SILVER_ORE.get()))
+                .add(ModBlocks.getRK(ModBlocks.CRUSHER.get()));
 
         tag(BlockTags.MINEABLE_WITH_AXE)
                 .add(ModBlocks.getRK(ModBlocks.YEW_LOG.get()))
@@ -96,7 +97,8 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
                 .add(ModBlocks.getRK(ModBlocks.ALUMINIUM_ORE.get()))
                 .add(ModBlocks.getRK(ModBlocks.LEAD_ORE.get()))
                 .add(ModBlocks.getRK(ModBlocks.DEEPSLATE_ALUMINIUM_ORE.get()))
-                .add(ModBlocks.getRK(ModBlocks.DEEPSLATE_LEAD_ORE.get()));
+                .add(ModBlocks.getRK(ModBlocks.DEEPSLATE_LEAD_ORE.get()))
+                .add(ModBlocks.getRK(ModBlocks.CRUSHER.get()));
 
         tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.getRK(ModBlocks.MITHRIL_ORE.get()))

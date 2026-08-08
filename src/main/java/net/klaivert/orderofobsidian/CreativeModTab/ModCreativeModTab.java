@@ -49,6 +49,7 @@ public class ModCreativeModTab
         _output.accept(ModBlocks.END_MOSS_GRASS);
         _output.accept(ModBlocks.TWISTED_END_MOSS_GRASS);
         _output.accept(ModBlocks.ICY_FIREFLY_BUSH);
+        _output.accept(ModBlocks.CRUSHER);
         YewRegistered(_output);
         OxysToolsRegistered(_output);
     }

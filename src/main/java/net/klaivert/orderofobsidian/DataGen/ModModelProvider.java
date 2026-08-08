@@ -49,6 +49,8 @@ public class ModModelProvider extends ModelProvider {
         registerDuraluminModels(_blockModels,_itemModels);
         registerDustModels(_itemModels);
 
+        _blockModels.createNonTemplateModelBlock(ModBlocks.CRUSHER.get());
+
     }
 
     private void registerOxysModels(@NonNull BlockModelGenerators _blockModels, ItemModelGenerators _itemModels) {
